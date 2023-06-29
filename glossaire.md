@@ -4,11 +4,11 @@
 
 ### 🏷️ Internet
 
-https://fr.wikipedia.org/wiki/Internet
+> https://fr.wikipedia.org/wiki/Internet
 
 ### 🏷️ Web, HTML
 
-https://fr.wikipedia.org/wiki/World_Wide_Web
+> https://fr.wikipedia.org/wiki/World_Wide_Web
 
 #### 1, 2, 3… les incarnations du Web
 
@@ -26,52 +26,40 @@ https://fr.wikipedia.org/wiki/World_Wide_Web
 
 ### 🏷️ Web sémantique
 
-**API**
-> 🐌
+### API
+
+> https://fr.wikipedia.org/wiki/Interface_de_programmation
 
 ## Systèmes d'organisation des connaissances (SOC)
 
-**Donnée, base de données**
-> 🐌
+### Donnée, base de données
 
-**Document, corpus documentaire**
-> 🐌
+### Document, corpus documentaire
 
-**Thésauri**
-> 🐌
+### Thésauri
 
 ## Représenter le contenu des documents
 
-**XML**
-> 🐌
+### XML
 
-**TEI**
-> 🐌
+### TEI
 
-**MEI**
-> 🐌
+### MEI
 
-**IIIF**
-> 🐌
+### IIIF
 
 ## Modéliser les données
 
-**Modèle conceptuel**
-> 🐌
+### Modèle conceptuel
 
-**Modèle relationnel**
-> 🐌
+### Modèle relationnel
 
-**RDF**
-> 🐌
+### RDF
 
-**Ontologie**
-> 🐌
+### Ontologie
 
-**SKOS**
-> 🐌
+### SKOS
 
-**CIDOC-CRM**
-> 🐌
+### CIDOC-CRM
 
 ## Parlons langages de programmation ?
