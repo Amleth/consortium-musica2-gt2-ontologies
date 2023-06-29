@@ -8,10 +8,10 @@
 **Web**
 > 🐌
 
-**Serveur**
+**Architecture client/serveur**
 > 🐌
 
-**Web sémantiques**
+**Web sémantique**
 > 🐌
 
 **API**
@@ -26,6 +26,20 @@
 > 🐌
 
 **Thésauri**
+> 🐌
+
+## Représenter le contenu des documents
+
+**XML**
+> 🐌
+
+**TEI**
+> 🐌
+
+**MEI**
+> 🐌
+
+**IIIF**
 > 🐌
 
 ## Modéliser les données
@@ -46,18 +60,4 @@
 > 🐌
 
 **CIDOC-CRM**
-> 🐌
-
-## Représenter le contenu des documents
-
-**XML**
-> 🐌
-
-**TEI**
-> 🐌
-
-**MEI**
-> 🐌
-
-**IIIF**
 > 🐌
