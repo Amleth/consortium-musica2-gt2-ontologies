@@ -26,7 +26,7 @@
 
 ### 🏷️ Web sémantique
 
-### 🏷️ API
+### 🏷️ API (REST)
 
 > https://fr.wikipedia.org/wiki/Interface_de_programmation
 
@@ -61,5 +61,7 @@
 ### 🏷️ SKOS
 
 ### 🏷️ CIDOC-CRM
+
+### 🏷️ SPARQL, SPARQL endpoint
 
 ## Parlons langages de programmation ?
