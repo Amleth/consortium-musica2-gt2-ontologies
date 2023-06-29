@@ -14,9 +14,11 @@
 >   - Un document par adresse (URL).
 >   - Les contenus sont statiques.
 >   - Le paradigme de la bibliothèque.
+>
 > Web 2.0, dit « Web social »
 >   - Les contenus sont dynamiques : chaque URL pointe vers un serveur qui recompose une réponse en fonction de l'état d'une base de données.
 >   - Chaque client peut désormais envoyer des données.
+>
 > Web « 3.0 », dit « Web de données »
 >   - Machines qui échangent des données structurées entre elles.
 
