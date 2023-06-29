@@ -2,62 +2,62 @@
 
 ## Environnements socio-techniques
 
-Internet
-: 🐌
+**Internet**
+> 🐌
 
-Web
-: 🐌
+**Web**
+> 🐌
 
-Serveur
-: 🐌
+**Serveur**
+> 🐌
 
-Web sémantiques
-: 🐌
+**Web sémantiques**
+> 🐌
 
-API
-: 🐌
+**API**
+> 🐌
 
 ## Systèmes d'organisation des connaissances (SOC)
 
-Base de données
-: 🐌
+**Donnée, base de données**
+> 🐌
 
-Corpus documentaire
-: 🐌
+**Document, corpus documentaire**
+> 🐌
 
-Thésauri
-: 🐌
+**Thésauri**
+> 🐌
 
 ## Modéliser les données
 
-Modèle conceptuel
-: 🐌
+**Modèle conceptuel**
+> 🐌
 
-Modèle relationnel
-: 🐌
+**Modèle relationnel**
+> 🐌
 
-RDF
-: 🐌
+**RDF**
+> 🐌
 
-Ontologie
-: 🐌
+**Ontologie**
+> 🐌
 
-SKOS
-: 🐌
+**SKOS**
+> 🐌
 
-CIDOC-CRM
-: 🐌
+**CIDOC-CRM**
+> 🐌
 
 ## Représenter le contenu des documents
 
-XML
-: 🐌
+**XML**
+> 🐌
 
-TEI
-: 🐌
+**TEI**
+> 🐌
 
-MEI
-: 🐌
+**MEI**
+> 🐌
 
-IIIF
-: 🐌
+**IIIF**
+> 🐌
