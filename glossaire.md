@@ -12,7 +12,7 @@
 
 #### 1, 2, 3… les incarnations du Web
 
-- Web « 1.0 », dit « Web de documents »**
+- Web « 1.0 », dit « Web de documents »
   - Un document par adresse (URL).
   - Les contenus sont statiques.
   - Le paradigme de la bibliothèque.
