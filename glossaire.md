@@ -2,11 +2,11 @@
 
 ## Environnements socio-techniques
 
-### Internet
+### 🏷️ Internet
 
 https://fr.wikipedia.org/wiki/Internet
 
-### Web, HTML
+### 🏷️ Web, HTML
 
 https://fr.wikipedia.org/wiki/World_Wide_Web
 
@@ -22,9 +22,9 @@ https://fr.wikipedia.org/wiki/World_Wide_Web
 - Web « 3.0 », dit « Web de données »
   - Machines qui échangent des données structurées entre elles.
 
-### Notion d'adressabilité
+### 🏷️ Notion d'adressabilité
 
-### Web sémantique
+### 🏷️ Web sémantique
 
 **API**
 > 🐌
