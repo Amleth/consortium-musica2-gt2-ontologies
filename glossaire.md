@@ -3,12 +3,15 @@
 ## Environnements socio-techniques
 
 **Internet**
-> 🐌
+> https://fr.wikipedia.org/wiki/Internet
 
 **Web**
 > 🐌
 
 **Architecture client/serveur**
+> 🐌
+
+**Notion d'adressabilité**
 > 🐌
 
 **Web sémantique**
