@@ -81,14 +81,6 @@ La lecture scolastique :
 
 - Connectés entre eux, les triplets forment un graphe.
 
-```mermaid
-  graph LR
-    "http://example.org/bob#me" -- Link text --> B((Circle))
-    A --> C(Round Rect)
-    B --> D{Rhombus}
-    C --> D
-```
-
 ### 🏷️ API (REST)
 
 - https://fr.wikipedia.org/wiki/Interface_de_programmation
