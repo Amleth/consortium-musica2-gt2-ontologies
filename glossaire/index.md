@@ -18,6 +18,7 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
   - *سورة الأعراف, verset 13*, *apocalypse de saint jean chapitre 13 verset 18*
   - La troisième note de « J'ai du bon tabac »
   - Le bonhomme qui tient une balance coincé dans une vielle à roue dans [*Le Jardin des délices*](https://fr.wikipedia.org/wiki/Le_Jardin_des_d%C3%A9lices#/media/Fichier:The_Garden_of_earthly_delights.jpg) de Bosch
+- Une notion clef dans les mondes savants :
   - La lecture scolastique : *« Alors que le haut Moyen Âge ne connaissait que de modestes subdivisions du texte, reposant moins sur des signes spécifiques que sur des ornements (rehaussement des lettres initiales par la couleur, changements d'écriture, décorations diverses), on passe à un véritable système de techniques auxiliaires de la lecture et de la consultation du livre, destinées à identifier rapidement le passage que l'on recherche : rubrication, découpage en paragraphes, titres de chapitre, séparation du texte et du commentaire, sommaires, tables des concordances des termes, index et tables analytiques alphabétiques. »* (Cavallo & Chartier, *Histoire de la lecture dans le monde occidental*)
   - Le Web est le « milieu informationnel » dans laquelle la recherche se fait et met en visibilité ses productions en vue de les diffuser et de les ouvrir au commentaire. L'adressabilité des données et des documents est un enjeu clef.
 
