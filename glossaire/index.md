@@ -37,10 +37,6 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
     - même mécanisme d'identification (les URL)
   - …mais au bout d'une URL, on ne trouve pas de l'HTML destiné à être lu par un humain, mais des données au format RDF.
 
-### 🏷️ API (REST)
-
-- https://fr.wikipedia.org/wiki/Interface_de_programmation
-
 ---
 
 ## 📕 Données & documents
@@ -74,6 +70,10 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
 - Région d'image, à 90% de sa taille, rotation de 325°, niveau de gris, format PNG : [http://gallica.bnf.fr/iiif/ark:/12148/btv1b8451103b/full/max/0/gray.png](http://gallica.bnf.fr/iiif/ark:/12148/btv1b8451103b/f9/1200,1300,620,580/pct:90/325/gray.png)
 - Tester l'API Image : [https://tomcrane.github.io/the-long-iiif/image-api.html](https://tomcrane.github.io/the-long-iiif/image-api.html)
 - Requête d'informations sur l'image : [http://www.e-codices.unifr.ch/loris/sbb/sbb-C0005-2/sbb-C0005-2_0000_002r.jp2/info.json](http://www.e-codices.unifr.ch/loris/sbb/sbb-C0005-2/sbb-C0005-2_0000_002r.jp2/info.json)
+
+### 🏷️ API (REST)
+
+- https://fr.wikipedia.org/wiki/Interface_de_programmation
 
 ---
 
