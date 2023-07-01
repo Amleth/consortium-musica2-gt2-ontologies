@@ -2,7 +2,7 @@
 
 ## 📕 Environnements socio-techniques
 
-### 🏷️ Internet & le Web
+### 🏷️ Internet/Web
 
 - https://fr.wikipedia.org/wiki/Internet
 - https://fr.wikipedia.org/wiki/World_Wide_Web
