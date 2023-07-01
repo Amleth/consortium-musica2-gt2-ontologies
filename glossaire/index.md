@@ -2,31 +2,14 @@
 
 ## 📕 Environnements socio-techniques
 
-### 🏷️ Internet
+### 🏷️ Internet & le Web
 
 - https://fr.wikipedia.org/wiki/Internet
-
-### 🏷️ Web, HTML
-
 - https://fr.wikipedia.org/wiki/World_Wide_Web
 
-#### 1, 2, 3… les incarnations du Web
+### 🏷️ Le Web, un hypertexte dégradé ?
 
-- Web « 1.0 », dit « Web de documents »
-  - Un document par adresse (URL).
-  - Les contenus sont statiques.
-  - Le paradigme de la bibliothèque.
-- Web 2.0, dit « Web social »
-  - Les contenus sont dynamiques : chaque URL pointe vers un serveur qui recompose une réponse en fonction de l'état d'une base de données.
-  - Chaque client peut désormais envoyer des données.
-- Web « 3.0 », dit « Web de données »
-  - Machines qui échangent des données structurées entre elles.
-
-#### Le Web, un hypertexte dégradé ?
-
-Ted Nelson (inventeur de l'hypertexte) :
-
-*« HTML is precisely what we were trying to PREVENT— ever-breaking links, links going outward only, quotes you can't follow to their origins, no version management, no rights management. »*
+Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were trying to PREVENT— ever-breaking links, links going outward only, quotes you can't follow to their origins, no version management, no rights management. »*
 
 ### 🏷️ Notion d'adressabilité
 
@@ -34,11 +17,8 @@ Ted Nelson (inventeur de l'hypertexte) :
   - Le premier vers de la deuxième strophe de « Tombeau » de Mallarmé
   - *سورة الأعراف, verset 13*, *apocalypse de saint jean chapitre 13 verset 18*
   - La troisième note de « J'ai du bon tabac »
-  - Le bonhomme qui tient une balance coincé dans une vielle à roue dans [*Le Jardin des délices*](https://fr.wikipedia.org/wiki/Le_Jardin_des_d%C3%A9lices#/media/Fichier:The_Garden_of_earthly_delights.jpg) de Bosch.
-- Pourquoi commencer par cette notion ?
-  - Le Web est le « milieu informationnel » dans laquelle la recherche se fait et met en visibilité ses productions en vue de les diffuser.
-  - C'est à l'aune de cette notion que nous allons explorer différents aspects liés au Web pour les usages scientifiques dans la contexte des humanités où la source est centrale.
-- Adressabilité interne/externe
+  - Le bonhomme qui tient une balance coincé dans une vielle à roue dans [*Le Jardin des délices*](https://fr.wikipedia.org/wiki/Le_Jardin_des_d%C3%A9lices#/media/Fichier:The_Garden_of_earthly_delights.jpg) de Bosch
+- Le Web est le « milieu informationnel » dans laquelle la recherche se fait et met en visibilité ses productions en vue de les diffuser et de les ouvrir au commentaire. L'adressabilité des données et des documents est un enjeu clef.
 
 La lecture scolastique :
 
@@ -54,7 +34,7 @@ La lecture scolastique :
 - On ne peut jamais préciser le sens de ce sur quoi portent nos requêtes, qui sont exprimées en texte.
 - Pour désambiguïser le recours à un terme, il faudrait pouvoir l'identifier (et non pas seulement s'appuyer sur sa dénomination en langage naturel), c'est-à-dire, pouvoir s'y référer selon une URL (car on est sur le Web).
 - Le projet du Web sémantique est en premier lieu de donner une URL à chaque chose.
-- Préciser le sens de chaque chose à l'échelle du Web est parfaitement idiot (cela fait abstraction de la culture, les humains ne sont pas des ordinateurs).
+- Préciser le sens de chaque chose à l'échelle du Web est discutable (relents positivistes, cela fait abstraction de la culture, les humains ne sont pas des ordinateurs).
 
 #### Un peu plus précisément…
 
@@ -63,11 +43,6 @@ La lecture scolastique :
   - même protocole (HTTP)
   - même mécanisme d'identification (les URL)
 - …mais au bout d'une URL, on ne trouve pas de l'HTML destiné à être lu par un humain, mais des données au format RDF.
-- Le Web sémantique est inscrit dans le paradigme du Web « de données ».
-
-#### OK, mais à quoi ça sert ?
-
-- À s'assurer que les données culturelles, patrimoniales & artistiques existent encore dans 10, 20… 50 ans, ou plutôt qu'elles sont encore ‹compréhensibles›.
 
 ### 🏷️ RDF
 
@@ -85,6 +60,8 @@ La lecture scolastique :
 
 - https://fr.wikipedia.org/wiki/Interface_de_programmation
 
+---
+
 ## 📕 Données & documents
 
 ### 🏷️ Donnée (base de données) / Document (corpus documentaire)
@@ -95,9 +72,6 @@ La lecture scolastique :
 - Utilisé pendant la phase d'élaboration du cahier des charges.
 - Enjeu scientifique.
 
-*XML, TEI, MEI, IIIF…*
-
-<!--
 ### 🏷️ XML
 
 ### 🏷️ TEI
@@ -120,7 +94,7 @@ La lecture scolastique :
 - Tester l'API Image : [https://tomcrane.github.io/the-long-iiif/image-api.html](https://tomcrane.github.io/the-long-iiif/image-api.html)
 - Requête d'informations sur l'image : [http://www.e-codices.unifr.ch/loris/sbb/sbb-C0005-2/sbb-C0005-2_0000_002r.jp2/info.json](http://www.e-codices.unifr.ch/loris/sbb/sbb-C0005-2/sbb-C0005-2_0000_002r.jp2/info.json)
 
--->
+---
 
 ## 📕 Web sémantique
 
@@ -145,10 +119,13 @@ La lecture scolastique :
 
 - Émanation de l'ICOM (International Council of Museums)
 - Ontologie pour la représentation du patrimoine matériel et immatériel de l'humanité, et des connaissances produites à son endroit.
+- Opinion : L'infrastructure technique et informationnelle du Web sémantique conjuguée à la communauté internationale CIDOC-CRM constituent une des meilleures réponses socio-techniques possibles en 2023 pour s'assurer que les données scientifiques et patrimoniales seront encore lisibles dans 10 ou 20 ans.
 
 ### 🏷️ SPARQL, SPARQL endpoint
 
 - Langage d'interrogation de graphes de données RDF.
 - Il est possible de publier l'intégralité d'une base de données RDF via un SPARQL endpoint.
+
+---
 
 ## 📕 Parlons langages de programmation ?
