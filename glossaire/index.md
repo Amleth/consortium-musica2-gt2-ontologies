@@ -81,6 +81,14 @@ La lecture scolastique :
 
 - Connectés entre eux, les triplets forment un graphe.
 
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 ### 🏷️ API (REST)
 
 - https://fr.wikipedia.org/wiki/Interface_de_programmation
