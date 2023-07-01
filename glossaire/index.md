@@ -7,7 +7,7 @@
 - https://fr.wikipedia.org/wiki/Internet
 - https://fr.wikipedia.org/wiki/World_Wide_Web
 
-### 🏷️ hypertexte
+### 🏷️ Hypertexte
 
 Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were trying to PREVENT— ever-breaking links, links going outward only, quotes you can't follow to their origins, no version management, no rights management. »*
 
@@ -36,18 +36,6 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
     - même protocole (HTTP)
     - même mécanisme d'identification (les URL)
   - …mais au bout d'une URL, on ne trouve pas de l'HTML destiné à être lu par un humain, mais des données au format RDF.
-
-### 🏷️ RDF
-
-- Représente toute information sous forme d'un triplet sujet-prédicat-objet.
-- *« Jean-Sébastien Bach est né à Eisenach » :*
-  - Sujet : [http://data.doremus.org/artist/269cec9d-5025-3a8a-b2ef-4f7acb088f2b](http://data.doremus.org/artist/269cec9d-5025-3a8a-b2ef-4f7acb088f2b)
-  - Prédicat : [http://dbpedia.org/property/birthPlace](http://dbpedia.org/property/birthPlace)
-  - Objet : [http://data.doremus.org/describe/?url=http://dbpedia.org/resource/Eisenach](http://data.doremus.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FEisenach)
-
-<img src="example-graph-iris.jpg" style="width: 50%;"/>
-
-- Connectés entre eux, les triplets forment un graphe.
 
 ### 🏷️ API (REST)
 
@@ -90,6 +78,18 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
 ---
 
 ## 📕 Web sémantique
+
+### 🏷️ RDF
+
+- Représente toute information sous forme d'un triplet sujet-prédicat-objet.
+- *« Jean-Sébastien Bach est né à Eisenach » :*
+  - Sujet : [http://data.doremus.org/artist/269cec9d-5025-3a8a-b2ef-4f7acb088f2b](http://data.doremus.org/artist/269cec9d-5025-3a8a-b2ef-4f7acb088f2b)
+  - Prédicat : [http://dbpedia.org/property/birthPlace](http://dbpedia.org/property/birthPlace)
+  - Objet : [http://data.doremus.org/describe/?url=http://dbpedia.org/resource/Eisenach](http://data.doremus.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FEisenach)
+
+<img src="example-graph-iris.jpg" style="width: 50%;"/>
+
+- Connectés entre eux, les triplets forment un graphe.
 
 ### 🏷️ Thésauri
 
