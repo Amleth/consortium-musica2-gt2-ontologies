@@ -7,11 +7,11 @@
 - https://fr.wikipedia.org/wiki/Internet
 - https://fr.wikipedia.org/wiki/World_Wide_Web
 
-### 🏷️ Le Web, un hypertexte dégradé ?
+### 🏷️ hypertexte
 
 Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were trying to PREVENT— ever-breaking links, links going outward only, quotes you can't follow to their origins, no version management, no rights management. »*
 
-### 🏷️ Notion d'adressabilité
+### 🏷️ Adressabilité
 
 - De quoi est-il question ?
   - Le premier vers de la deuxième strophe de « Tombeau » de Mallarmé
