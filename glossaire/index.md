@@ -24,21 +24,18 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
 
 ### 🏷️ Web sémantique
 
-#### Un projet insensé
-
-- Constatation : le Web, c'est le bazar ; notamment du fait de l'homonymie : mais de quoi parle t-on au juste quand on tape « Doors » sur Google ?
-- On ne peut jamais préciser le sens de ce sur quoi portent nos requêtes, qui sont exprimées en texte.
-- Pour désambiguïser le recours à un terme, il faudrait pouvoir l'identifier (et non pas seulement s'appuyer sur sa dénomination en langage naturel), c'est-à-dire, pouvoir s'y référer selon une URL (car on est sur le Web).
-- Le projet du Web sémantique est en premier lieu de donner une URL à chaque chose.
-- Préciser le sens de chaque chose à l'échelle du Web est discutable (relents positivistes, cela fait abstraction de la culture, les humains ne sont pas des ordinateurs).
-
-#### Un peu plus précisément…
-
-- Le Web sémantique est basé sur les mêmes principes que les Web « 1.0 » (de documents) & « 2.0 » (social) :
-  - même structure informationnelle (l'hypertexte)
-  - même protocole (HTTP)
-  - même mécanisme d'identification (les URL)
-- …mais au bout d'une URL, on ne trouve pas de l'HTML destiné à être lu par un humain, mais des données au format RDF.
+- Un projet insensé
+  - Constatation : le Web, c'est le bazar ; notamment du fait de l'homonymie : mais de quoi parle t-on au juste quand on tape « Doors » sur Google ?
+  - On ne peut jamais préciser le sens de ce sur quoi portent nos requêtes, qui sont exprimées en texte.
+  - Pour désambiguïser le recours à un terme, il faudrait pouvoir l'identifier (et non pas seulement s'appuyer sur sa dénomination en langage naturel), c'est-à-dire, pouvoir s'y référer selon une URL (car on est sur le Web).
+  - Le projet du Web sémantique est en premier lieu de donner une URL à chaque chose.
+  - Préciser le sens de chaque chose à l'échelle du Web est discutable (relents positivistes, cela fait abstraction de la culture, les humains ne sont pas des ordinateurs).
+- Un peu plus précisément…
+  - Le Web sémantique est basé sur les mêmes principes que les Web « 1.0 » (de documents) & « 2.0 » (social) :
+    - même structure informationnelle (l'hypertexte)
+    - même protocole (HTTP)
+    - même mécanisme d'identification (les URL)
+  - …mais au bout d'une URL, on ne trouve pas de l'HTML destiné à être lu par un humain, mais des données au format RDF.
 
 ### 🏷️ RDF
 
