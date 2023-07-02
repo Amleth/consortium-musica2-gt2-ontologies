@@ -82,7 +82,7 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
 
 ---
 
-## 📕 Web sémantique
+## 📕 Technologies en rapport avec le Web sémantique
 
 ### 🏷️ RDF
 
