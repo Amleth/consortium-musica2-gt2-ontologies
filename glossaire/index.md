@@ -49,7 +49,7 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
 - Utilisé pendant la phase d'élaboration du cahier des charges.
 - Enjeu scientifique.
 
-### Langage de description de format de document
+### 🏷️ Langage de description de format de document
 
 - Langage permettant de définir un jeu de règles et contraintes qui seront utilisées pour savoir si une instance de document est valide par rapport à ce même jeu de règles et contraintes. ([Wikipedia](https://fr.wikipedia.org/wiki/Langage_de_description_de_format_de_document))
 - Exemple : https://music-encoding.org/schema/4.0.1/mei-CMN.rng
