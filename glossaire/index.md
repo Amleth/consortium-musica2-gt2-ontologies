@@ -15,7 +15,8 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
 
 - De quoi est-il question ?
   - Le premier vers de la deuxième strophe de « Tombeau » de Mallarmé
-  - *سورة الأعراف, verset 13*, *apocalypse de saint jean chapitre 13 verset 18*
+  - apocalypse de saint jean chapitre 13 verset 18
+  - سورة الأعراف, verset 13
   - La troisième note de « J'ai du bon tabac »
   - Le bonhomme qui tient une balance coincé dans une vielle à roue dans [*Le Jardin des délices*](https://fr.wikipedia.org/wiki/Le_Jardin_des_d%C3%A9lices#/media/Fichier:The_Garden_of_earthly_delights.jpg) de Bosch
 - Clef de voûte des mondes savants :
