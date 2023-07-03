@@ -32,7 +32,7 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
   - Le projet du Web sémantique est en premier lieu de donner une URL à chaque chose.
   - Préciser le sens de chaque chose à l'échelle du Web est discutable (relents positivistes, cela fait abstraction de la culture, les humains ne sont pas des ordinateurs).
 - Un peu plus précisément…
-  - Le Web sémantique est basé sur les mêmes principes que les Web « 1.0 » (de documents) & « 2.0 » (social) :
+  - Le Web sémantique est basé sur les mêmes principes que le Web :
     - même structure informationnelle (l'hypertexte)
     - même protocole (HTTP)
     - même mécanisme d'identification (les URL)
