@@ -1,7 +1,7 @@
 Bonjour ! 
 
 ```mermaid
-flowchart LR
+graph LR
 
 A[Hard] -->|Text| B(Round)
 B --> C{Decision}
