@@ -1,7 +1,7 @@
 Bonjour ! 
 
 ```mermaid
-graph
+class
 
 A(iremus:2 <br>crm:E85_joining) --> |crm:p144_joined_with| F(iremus:1 <br>crm:E74_Group)
 
