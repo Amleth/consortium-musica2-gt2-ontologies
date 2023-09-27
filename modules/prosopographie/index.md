@@ -4,7 +4,7 @@
 ```mermaid
 graph TD;
 
-B(E7_activity) -->|crm:P14_carried_out_by| A(crm:E21_Person<br>Personne 1)
+B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
 B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
 
 B(E7_activity) -->|P7_took_place_at| I(E53_place)
@@ -21,8 +21,8 @@ D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 ```mermaid
 graph TD;
 
-B(E7_activity) -->|crm:P14_carried_out_by| A(crm:E21_Person<br>Personne 1)
-B(E7_activity) -->|crm:P14_carried_out_by| J(crm:E21_Person<br>Personne 2)
+B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+B(E7_activity) -->|crm:P14_carried_out_by| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
 B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
 
 B(E7_activity) -->|P7_took_place_at| I(E53_place)
