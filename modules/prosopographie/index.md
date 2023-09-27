@@ -63,7 +63,7 @@ G(crm:E85_joining) ---->|crm:P144_joined| C("crm:E21_Person<br>Personne 2 🧔�
 G(crm:E85_joining) -->|crm:P143_joined_with| H(crm:E74_group<br>Connaissance)
 G(crm:E85_joining) ---->|crm:P144_joined| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
 
-O(crm:E13_attribute_assignement) ---->|crm:p140:assigned_attribute_to| G(crm:E85_joining)
+O(crm:E13_attribute_assignement) --->|crm:p140:assigned_attribute_to| G(crm:E85_joining)
 
 ```
 
