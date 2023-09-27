@@ -27,8 +27,8 @@ B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
 
 B(E7_activity) -->|P7_took_place_at| I(E53_place)
 K(crm:E85_joining) -->|P144_joined_with| L(crm:E74_group)
-K(crm:E85_joining) -->|P144_joined| A(crm:E21_Person<br>Personne 1)
-K(crm:E85_joining) -->|P144_joined| J(crm:E21_Person<br>Personne 2)
+K(crm:E85_joining) -->|P144_joined| A("crm:E21_Person<br>Personne 1 👩🏼")
+K(crm:E85_joining) -->|P144_joined| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
 
 
 B(E7_activity) --> |crm:p4_has_time_span| D(crm:E52_time_span)
