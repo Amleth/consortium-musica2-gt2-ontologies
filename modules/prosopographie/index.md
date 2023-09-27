@@ -50,20 +50,28 @@ D(E7_activity<br>Fréquentation 1&3) -->|crm:P2_has_type| F(E55_type<br>Fréquen
 
 B(E7_activity<br>Fréquentation 1&2) ---> |crm:p4_has_time_span| I(crm:E52_time_span)
 
-B(E7_activity<br>Fréquentation 1&2) ---->|crm:P14_carried_out_by| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+B(E7_activity<br>Fréquentation 1&2) ------>|crm:P14_carried_out_by| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
 B(E7_activity<br>Fréquentation 1&2) ---->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
-D(E7_activity<br>Fréquentation 1&3) --->|crm:P7_took_place_at| S(E53_place)
-B(E7_activity<br>Fréquentation 1&2) --->|crm:P7_took_place_at| S(E53_place)
-D(E7_activity<br>Fréquentation 1&3) ---->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
-D(E7_activity<br>Fréquentation 1&3) ---->|crm:P14_carried_out_by| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
+D(E7_activity<br>Fréquentation 1&3) --->|crm:P7_took_place_at| M(E53_place)
+B(E7_activity<br>Fréquentation 1&2) --->|crm:P7_took_place_at| M(E53_place)
+D(E7_activity<br>Fréquentation 1&3) ------>|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+D(E7_activity<br>Fréquentation 1&3) ------>|crm:P14_carried_out_by| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
 
 D(E7_activity<br>Fréquentation 1&3) ---> |crm:p4_has_time_span| N(crm:E52_time_span)
 
-G(crm:E85_joining) ---->|crm:P144_joined| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+G(crm:E85_joining) ------>|crm:P144_joined| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
 G(crm:E85_joining) -->|crm:P143_joined_with| H(crm:E74_group<br>Connaissance)
-G(crm:E85_joining) ---->|crm:P144_joined| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
+G(crm:E85_joining) ------>|crm:P144_joined| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
 
 O(crm:E13_attribute_assignement) --->|crm:p140:assigned_attribute_to| G(crm:E85_joining)
 
 ```
+I(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| S("Date ISO 8601")
+I(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| T("Date ISO 8601")
+I(crm:E52_time_span) --> |crm:p81b_begin_of_the_end|U("Date ISO 8601")
+I(crm:E52_time_span) --> |crm:p82b_end_of_the_end| V("Date ISO 8601")
 
+N(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| W("Date ISO 8601")
+N(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| X("Date ISO 8601")
+N(crm:E52_time_span) --> |crm:p81b_begin_of_the_end|Y("Date ISO 8601")
+N(crm:E52_time_span) --> |crm:p82b_end_of_the_end| Z("Date ISO 8601")
