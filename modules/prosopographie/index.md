@@ -64,15 +64,17 @@ D(E7_activity<br>Fréquentation 1&3) ------>|crm:P14_carried_out_by| E("crm:E21_
 
 D(E7_activity<br>Fréquentation 1&3) ---> |crm:p4_has_time_span| N(crm:E52_time_span)
 
-I(crm:E52_time_span) ---> |crm:p82a_begin_of_the_begin| S("Date ISO 8601")
-I(crm:E52_time_span) ---> |crm:p81a_end_of_the_begin| T("Date ISO 8601")
-I(crm:E52_time_span) ---> |crm:p81b_begin_of_the_end|U("Date ISO 8601")
-I(crm:E52_time_span) ---> |crm:p82b_end_of_the_end| V("Date ISO 8601")
+I(crm:E52_time_span) ------> |crm:p82a_begin_of_the_begin| S("Date ISO 8601<br>Période 1&2")
+I(crm:E52_time_span) ------> |crm:p81a_end_of_the_begin| S("Date ISO 8601<br>Période 1&2")
+I(crm:E52_time_span) ------> |crm:p81b_begin_of_the_end|S("Date ISO 8601<br>Période 1&2")
+I(crm:E52_time_span) ------> |crm:p82b_end_of_the_end| S("Date ISO 8601<br>Période 1&2")
 
-N(crm:E52_time_span) ---> |crm:p82a_begin_of_the_begin| W("Date ISO 8601")
-N(crm:E52_time_span) ---> |crm:p81a_end_of_the_begin| X("Date ISO 8601")
-N(crm:E52_time_span) ---> |crm:p81b_begin_of_the_end|Y("Date ISO 8601")
-N(crm:E52_time_span) ---> |crm:p82b_end_of_the_end| Z("Date ISO 8601")
+N(crm:E52_time_span) ------> |crm:p82a_begin_of_the_begin| T("Date ISO 8601<br>Période 1&3")
+N(crm:E52_time_span) ------> |crm:p81a_end_of_the_begin| T("Date ISO 8601<br>Période 1&3")
+N(crm:E52_time_span) ------> |crm:p81b_begin_of_the_end|T("Date ISO 8601<br>Période 1&3")
+N(crm:E52_time_span) ------> |crm:p82b_end_of_the_end| T("Date ISO 8601<br>Période 1&3")
 
+U(crm:E52_time_span<br>Croisement des périodes 1&2 et 1&3)-. text .-> S("Date ISO 8601<br>Période 1&2")
+U(crm:E52_time_span<br>Croisement des périodes 1&2 et 1&3)-. text .-> T("Date ISO 8601<br>Période 1&3")
 
 ```
