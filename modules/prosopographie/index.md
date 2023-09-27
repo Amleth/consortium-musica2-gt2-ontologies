@@ -39,21 +39,32 @@ D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 
 ```
 
-- Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne :
+- Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
 
 ```mermaid
 graph TD;
 
-B(E7_activity) -->|crm:P14_carried_out_by| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
-B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
 
-D(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
-D(E7_activity) -->|crm:P14_carried_out_by| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
+B(E7_activity<br>Fréquentation 1&2) -->|crm:P2_has_type| F(E55_type<br>Fréquentation)
+D(E7_activity<br>Fréquentation 1&3) -->|crm:P2_has_type| F(E55_type<br>Fréquentation)
 
-B(E7_activity) -->|crm:P2_has_type| F(E55_type<br>Fréquentation)
-D(E7_activity) -->|crm:P2_has_type| F(E55_type<br>Fréquentation)
+B(E7_activity<br>Fréquentation 1&2) ---> |crm:p4_has_time_span| I(crm:E52_time_span)
 
-G(crm:E85_joining) -->|P144_joined| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
-G(crm:E85_joining) -->|P144_joined| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
-G(crm:E85_joining) -->|P143_joined_with| L(crm:E74_group<br>Connaissance)
+B(E7_activity<br>Fréquentation 1&2) ---->|crm:P14_carried_out_by| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+B(E7_activity<br>Fréquentation 1&2) ---->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+D(E7_activity<br>Fréquentation 1&3) --->|P7_took_place_at| S(E53_place)
+B(E7_activity<br>Fréquentation 1&2) --->|P7_took_place_at| S(E53_place)
+D(E7_activity<br>Fréquentation 1&3) ---->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+D(E7_activity<br>Fréquentation 1&3) ---->|crm:P14_carried_out_by| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
+
+D(E7_activity<br>Fréquentation 1&3) ---> |crm:p4_has_time_span| N(crm:E52_time_span)
+
+G(crm:E85_joining) ---->|P144_joined| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+
+G(crm:E85_joining) -->|P143_joined_with| H(crm:E74_group<br>Connaissance)
+
+
+G(crm:E85_joining) ---->|P144_joined| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
+
+```
 
