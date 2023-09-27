@@ -44,25 +44,56 @@ D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 ```mermaid
 graph TD;
 
-B(E7_activity<br>Fréquentation 1&2) ---> |crm:p4_has_time_span| I(crm:E52_time_span)
-B(E7_activity<br>Fréquentation 1&2) ----->|crm:P2_has_type| F(E55_type<br>Fréquentation)
+
+O(E7_activity<br>1 entremet 2 et 3) ------>|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+O(E7_activity<br>1 entremet 2 et 3) ------>|crm:P11_had_participant| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+O(E7_activity<br>1 entremet 2 et 3) ------>|crm:P11_had_participant| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
+D(E7_activity<br>Fréquentation 1&3) ------>|crm:P11_had_participant| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
+B(E7_activity<br>Fréquentation 1&2) ------>|crm:P11_had_participant| A("crm:E21_Person<br>Personne 1 👩🏼")
+D(E7_activity<br>Fréquentation 1&3) ------>|crm:P11_had_participant| A("crm:E21_Person<br>Personne 1 👩🏼")
+B(E7_activity<br>Fréquentation 1&2) ------>|crm:P11_had_participant| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+
+B(E7_activity<br>Fréquentation 1&2) --->|crm:P2_has_type| F(E55_type<br>Fréquentation)
+D(E7_activity<br>Fréquentation 1&3) --->|crm:P2_has_type| F(E55_type<br>Fréquentation)
+O(E7_activity<br>1 entremet 2 et 3) ---> |crm:p2_has_type| P(crm:e55_type<br>entremettage)
+
+B(E7_activity<br>Fréquentation 1&2) ----> |crm:p4_has_time_span| I(crm:E52_time_span)
+D(E7_activity<br>Fréquentation 1&3) ----> |crm:p4_has_time_span| N(crm:E52_time_span)
+
+D(E7_activity<br>Fréquentation 1&3) ----->|crm:P7_took_place_at| M(E53_place)
+B(E7_activity<br>Fréquentation 1&2) ----->|crm:P7_took_place_at| M(E53_place)
+O(E7_activity<br>1 entremet 2 et 3) -----> |crm:P7_took_place_at| M(E53_place)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 G(crm:E85_joining) ------>|crm:P144_joined| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
 G(crm:E85_joining) -->|crm:P143_joined_with| H(crm:E74_group<br>Connaissance)
 G(crm:E85_joining) ------>|crm:P144_joined| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
-
 O(crm:E13_attribute_assignement) --->|crm:p140:assigned_attribute_to| G(crm:E85_joining)
-
-D(E7_activity<br>Fréquentation 1&3) -->|crm:P2_has_type| F(E55_type<br>Fréquentation)
-
-B(E7_activity<br>Fréquentation 1&2) ------>|crm:P14_carried_out_by| C("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
-B(E7_activity<br>Fréquentation 1&2) ---->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
-D(E7_activity<br>Fréquentation 1&3) --->|crm:P7_took_place_at| M(E53_place)
-B(E7_activity<br>Fréquentation 1&2) --->|crm:P7_took_place_at| M(E53_place)
-D(E7_activity<br>Fréquentation 1&3) ------>|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
-D(E7_activity<br>Fréquentation 1&3) ------>|crm:P14_carried_out_by| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
-
-D(E7_activity<br>Fréquentation 1&3) ---> |crm:p4_has_time_span| N(crm:E52_time_span)
 
 I(crm:E52_time_span) ------> |crm:p82a_begin_of_the_begin| S("Date ISO 8601<br>Période 1&2")
 I(crm:E52_time_span) ------> |crm:p81a_end_of_the_begin| S("Date ISO 8601<br>Période 1&2")
@@ -74,7 +105,3 @@ N(crm:E52_time_span) ------> |crm:p81a_end_of_the_begin| T("Date ISO 8601<br>Pé
 N(crm:E52_time_span) ------> |crm:p81b_begin_of_the_end|T("Date ISO 8601<br>Période 1&3")
 N(crm:E52_time_span) ------> |crm:p82b_end_of_the_end| T("Date ISO 8601<br>Période 1&3")
 
-U(crm:E52_time_span<br>Croisement des périodes 1&2 et 1&3)-. text .-> S("Date ISO 8601<br>Période 1&2")
-U(crm:E52_time_span<br>Croisement des périodes 1&2 et 1&3)-. text .-> T("Date ISO 8601<br>Période 1&3")
-
-```
