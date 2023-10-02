@@ -3,10 +3,12 @@
 ```mermaid
 graph TD;
 
-B(crm:F6_concept) --> |crm:p2_has_type| C(crm:E55_type<br>Concept musicologique)
-B(crm:F6_concept) --> |P102_has_title| D(crm:E35_title<br>XXX)
-E(crm:E65_creation) -->|crm:p94_has_created| B(crm:F6_concept)
+B(crm:F6_concept) ---> |crm:p2_has_type| C(crm:E55_type<br>Concept musicologique)
+B(crm:F6_concept) ---> |P102_has_title| D(crm:E35_title<br>XXX)
+E(crm:E65_creation) --->|crm:p94_has_created| B(crm:F6_concept)
 
-	
+
+F(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| E(crm:E65_creation)
+F(crm:E13_attribute_assignement) --> |crm:P141_assigned| G(crm:E21_person)
 
 ```
