@@ -26,5 +26,7 @@ N(crm:E13_attribute_assignement) -----> |crm:P140_assigned_attribute_to| B(crm:F
 N(crm:E13_attribute_assignement) -->|crm:P177_assigned_property_of_type| O(crm:E55_type<br>Personne associée)
 
 
+
 ```
 
+Q(crm:e7_activity) --> |crm:P14_carried_out_by| P(crm:E21_person) 
