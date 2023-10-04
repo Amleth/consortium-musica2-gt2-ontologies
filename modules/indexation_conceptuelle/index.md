@@ -41,9 +41,18 @@ D(crm:E65_creation) --> |crm:p94_has_created| A(crm:E36_visual_item)
 D(crm:E65_creation) ---> |crm:p4_has_time_span| H(crm:E52_time_span)
 D(crm:E65_creation) ---> |crm:p7_took_place_at| I(crm:E53_place)
 
+G(crm:E22_human-made-object)--> |P1 is identified by| A(crm:E36_visual_item)
+J(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
+J(crm:E13_attribute_assignement) --> |crm:p4_has_time_span| K(crm:E52_time_span)
+J(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| N(Date d'édition)
 
-G(crm:E22_human-made-object)  ---> |P1 is identified by| A(crm:E36_visual_item)
+L(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
+L(crm:E13_attribute_assignement) --> |crm:p7_took_place_at| M(crm:E53_place)
+L(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| O(Lieu d'édition)
+
+
 
 ```
+
 
 
