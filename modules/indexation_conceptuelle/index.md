@@ -25,8 +25,20 @@ K(crm:E24_physical_man-made_thing) ---> |crm:p2_has_type| M(crm:E55_type<br>Book
 N(crm:E13_attribute_assignement) -----> |crm:P140_assigned_attribute_to| B(crm:F6_concept)
 N(crm:E13_attribute_assignement) -->|crm:P177_assigned_property_of_type| O(crm:E55_type<br>Personne associée)
 
-
-
 ```
 
-Q(crm:e7_activity) --> |crm:P14_carried_out_by| P(crm:E21_person) 
+**Indexation de concepts :**
+
+
+```mermaid
+graph TD;
+
+A(crm:E36_visual_item) --> |crm:p2_has_type| B(crm:E55_type<br>Partition)
+E(crm:E7_activity) --> |crm:p14_carried_out_by| C(crm:E21_person<br>Compositeur)
+E(crm:E7_activity) --> |crm:p2_has_type| F(crm:E55_type<br>Composition musicale)
+D(crm:E65_creation) --> |crm:p94_has_created| A(crm:E36_visual_item)
+E(crm:E7_activity) -->|crm:p9_consists_of| D(crm:E65_creation)
+
+```
+D(crm:E22_human-made_object)
+
