@@ -32,13 +32,18 @@ N(crm:E13_attribute_assignement) -->|crm:P177_assigned_property_of_type| O(crm:E
 
 ```mermaid
 graph TD;
-
-A(crm:E36_visual_item) --> |crm:p2_has_type| B(crm:E55_type<br>Partition)
 E(crm:E7_activity) --> |crm:p14_carried_out_by| C(crm:E21_person<br>Compositeur)
+A(crm:E36_visual_item) --> |crm:p2_has_type| B(crm:E55_type<br>Partition)
+E(crm:E7_activity) --->|crm:p9_consists_of| D(crm:E65_creation)
 E(crm:E7_activity) --> |crm:p2_has_type| F(crm:E55_type<br>Composition musicale)
+
 D(crm:E65_creation) --> |crm:p94_has_created| A(crm:E36_visual_item)
-E(crm:E7_activity) -->|crm:p9_consists_of| D(crm:E65_creation)
+D(crm:E65_creation) ---> |crm:p4_has_time_span| H(crm:E52_time_span)
+D(crm:E65_creation) ---> |crm:p7_took_place_at| I(crm:E53_place)
+
+
+G(crm:E22_human-made-object)  ---> |P1 is identified by| A(crm:E36_visual_item)
 
 ```
-D(crm:E22_human-made_object)
+
 
