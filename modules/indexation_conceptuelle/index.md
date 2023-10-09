@@ -48,7 +48,7 @@ J(crm:E13_attribute_assignement) --> |crm:p4_has_time_span| K(crm:E52_time_span)
 J(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| N(Date d'édition)
 
 L(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
-L(crm:E13_attribute_assignement) --> |crm:p7_took_place_at| M(crm:E53_place)
+L(crm:E13_attribute_assignement) --> |crm:p141_assigned| M(crm:E53_place)
 L(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| O(Lieu d'édition)
 
 
