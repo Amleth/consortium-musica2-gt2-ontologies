@@ -42,7 +42,7 @@ D(crm:E65_creation) ---> |crm:p4_has_time_span| H(crm:E52_time_span)
 D(crm:E65_creation) ---> |crm:p7_took_place_at| I(crm:E53_place)
 D(crm:E65_creation) ---> |crm:p94_has_created| P(crm:E28_conceptual_object)
 
-G(crm:E22_human-made-object)--> |P1 is identified by| A(crm:E73_symbolic_object)
+G(crm:E22_human-made-object)--> |P128_carries| A(crm:E73_symbolic_object)
 J(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
 J(crm:E13_attribute_assignement) --> |crm:p4_has_time_span| K(crm:E52_time_span)
 J(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| N(Date d'édition)
@@ -55,5 +55,5 @@ L(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| O(Lieu
 
 ```
 
-
+P128_carries lien entre deux objets
 
