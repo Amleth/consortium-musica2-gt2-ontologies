@@ -33,7 +33,7 @@ N(crm:E13_attribute_assignement) -->|crm:P177_assigned_property_of_type| O(crm:E
 ```mermaid
 graph TD;
 E(crm:E7_activity) --> |crm:p14_carried_out_by| C(crm:E21_person<br>Compositeur)
-A(crm:E36_visual_item) --> |crm:p2_has_type| B(crm:E55_type<br>Partition)
+A(crm:E73_symbolic_object) --> |crm:p2_has_type| B(crm:E55_type<br>Partition)
 E(crm:E7_activity) --->|crm:p9_consists_of| D(crm:E65_creation)
 E(crm:E7_activity) --> |crm:p2_has_type| F(crm:E55_type<br>Composition musicale)
 
@@ -42,7 +42,7 @@ D(crm:E65_creation) ---> |crm:p4_has_time_span| H(crm:E52_time_span)
 D(crm:E65_creation) ---> |crm:p7_took_place_at| I(crm:E53_place)
 D(crm:E65_creation) ---> |crm:p94_has_created| P(crm:E28_conceptual_object)
 
-G(crm:E22_human-made-object)--> |P1 is identified by| A(crm:E36_visual_item)
+G(crm:E22_human-made-object)--> |P1 is identified by| A(crm:E73_symbolic_object)
 J(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
 J(crm:E13_attribute_assignement) --> |crm:p4_has_time_span| K(crm:E52_time_span)
 J(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| N(Date d'édition)
