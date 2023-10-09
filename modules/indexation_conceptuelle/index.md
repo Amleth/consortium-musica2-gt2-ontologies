@@ -40,6 +40,7 @@ E(crm:E7_activity) --> |crm:p2_has_type| F(crm:E55_type<br>Composition musicale)
 D(crm:E65_creation) --> |crm:p94_has_created| A(crm:E36_visual_item)
 D(crm:E65_creation) ---> |crm:p4_has_time_span| H(crm:E52_time_span)
 D(crm:E65_creation) ---> |crm:p7_took_place_at| I(crm:E53_place)
+D(crm:E65_creation) ---> |crm:p94_has_created| P(crm:E28_conceptual_object)
 
 G(crm:E22_human-made-object)--> |P1 is identified by| A(crm:E36_visual_item)
 J(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
