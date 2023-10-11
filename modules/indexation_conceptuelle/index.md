@@ -1,5 +1,14 @@
-**Consortium Musica2, GT2 **
-Atelier du jeudi 12/10/2023 ; Indexation conceptuelle et _Thesaurii_
+**Consortium Musica2, GT2**
+Atelier du jeudi 12/10/2023 : Indexation conceptuelle et _Thesaurii_
+
+Théodora Psychoyou, MCF Sorbonne et directrice de l'IReMus
+Thomas Bottini, IE IReMus
+Augustin Braud, IR IReMus / Musica2
+Guillaume Pélerin, IRCAM
+Louis Moreau-Gaudry
+Lucia Pasini
+Joann Élart, PR Rouen
+Jean-François Goudesenne
 
 **Introduction**
 
