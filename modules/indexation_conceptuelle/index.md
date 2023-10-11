@@ -1,34 +1,37 @@
-**Concept :**
+**Consortium Musica2, GT2 **
+Atelier du jeudi 12/10/2023 ; Indexation conceptuelle et _Thesaurii_
 
-```mermaid
-graph TD;
+**Introduction**
 
-B(crm:F6_concept) --> |crm:p2_has_type| C(crm:E55_type<br>Concept musicologique)
-E(crm:E65_creation) --->|crm:p94_has_created| B(crm:F6_concept)
+- Objectif de la journée : imaginer le référentiel du futur, tout en étant conscient de l’utilisation des existants
+- Expliciter les termes de thesaurus et référentiel :
+    - Thesaurus : structure interne de mots et concepts mais pas de choses
+    - Référentiel : système d’organisation de la connaissance (ou base de données), caractérisé par sa valeur d’usage et désir d’usage. N’est référentiel qu’un système où le désir d’usage est prouvé.
 
-J(crm:E73_symbolic_object) --->|P165 incorporates| B(crm:F6_concept)
-J(crm:E73_symbolic_object) --> |P102_has_title| D(crm:E35_title<br>XXX)
-J(crm:E73_symbolic_object) --> |crm:P65_shows_visual_item| K(crm:E24_physical_man-made_thing)
-A(lrmoo:F5_Item) --> |crm:P46_is_composed_of| K(crm:E24_physical_man-made_thing)
+**1er temps ; qu’est-ce qui constitue l’acte d'indexer ?** (Sémiotique)
 
-B(crm:F6_concept) -->|crm:P1_is_identified_by| I(crm:E42_identifier)
-H(crm:E32_Authority_Document)  --> |crm:P71_lists| B(crm:F6_concept)
+Donnons la parole aux présents :
 
-F(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| E(crm:E65_creation)
-F(crm:E13_attribute_assignement) --> |crm:P141_assigned| G(crm:E21_person)
+- Aborder le geste d’indexation en tant que lui-même 
+- L’indexation descriptive vs. Indexation thématique (association) —> comment ?
+- L’indexation conceptuelle ou lexicale / lieu —> quoi ?
+- Y-a-t’il une indexation de métadonnées ; quel statut donne-t-on à la valeur ? Il ne s’agit pas d’une caractérisation de la forme musicale ? 
+- Quels sont les enjeux scientifiques ?
 
+**2e temps ; comment indexe-t-on ?** (Technique et méthodologique)
 
-A(lrmoo:F5_Item) --> |crm:P1_is_identified_by| L(crm:E42_Identifier<br>Identifiant dataBNF)
-K(crm:E24_physical_man-made_thing) ---> |crm:p2_has_type| M(crm:E55_type<br>Book)
+Donnons la parole aux présents :
+(On ne parlera que des systèmes d’organisation de la connaissance et pas des bases de données)
 
+- Quand apparait la nécessité d’indexer ?
+- Nécessité d’établir un vocabulaire contrôlé
+- Insuffisance des ressources existantes, ou méconnaissance : création d’un référentiel
 
-N(crm:E13_attribute_assignement) -----> |crm:P140_assigned_attribute_to| B(crm:F6_concept)
-N(crm:E13_attribute_assignement) -->|crm:P177_assigned_property_of_type| O(crm:E55_type<br>Personne associée)
+Il serait bon de :
+- Noter les différences dans les pratiques d’indexation selon les périodes, etc.
+- Faire un inventaire des référentiels utiles : liste des référentiels existants et méthodologie pour les lister.
 
-```
-
-**Indexation de concepts :**
-
+**Tentative de graph ; indexation de concepts :**
 
 ```mermaid
 graph TD;
