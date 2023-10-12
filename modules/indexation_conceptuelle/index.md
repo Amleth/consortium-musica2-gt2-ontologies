@@ -98,6 +98,14 @@ Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris
 
 **Désambiguïsation**
 
+
+Afin de lever le voile sur l'ambiguïté de certains termes au sein du thesaurus, la présence de musicologues responsables de corpus est nécessaire bien qu'il s'agisse d'une activité chronophage par nature. On peut ensuite l'exploiter scientifiquement avec confiance.
+
+La question des langues est également important ; nous proposons d'annoter (E13) de manière supplémentaire avec la langue utilisée. 
+
+
+
+
 - -
 
 Thomas : Polyphonia avec Marco : dvlpt outil Tonalities 
@@ -107,9 +115,7 @@ Cas « Josquin », seul Marco sait qui est vraiment Josquin avec l’ortograph
 
 Grosse question de désambiguisation / cf ce que dit Théo envers les catalogues 
 
-Responsables de corpus nécessaires ; Nathalie dit que l’indexation est chronophage par nature, il faut accepter cela / explication des raisonnements scientifiques, etc. 
 
-Afin de répondre à des problématiques scientifiques, il faut que le corpora ait été contrôlé par une équipe / personne / « musicologues responsables de corpus » —> il pourra ensuite être exploité scientifiquement 
 Différences linguistiques soulevées par Goudesenne ; pb de connaissances implicites liées au système : une bonne pratique pourrait être d’annoter avec la langue 
 Joann expé Dezède : mise en place d’un système qui associe un ISNI à chaque personne (exemple Tchaikovsky) ; travail manuel et imposé à la communauté, les utilisateurs doivent le chercher eux-mêmes, ils ne sont pas tous à la BnF former une communauté sur une pratique facile à effectuer et permet une plus grande facilité de travail à partir du moment où l’habitude est adoptée
 Sur wiki FR pas d’ISNI, alors que sur wiki EN il existe
