@@ -101,7 +101,9 @@ Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris
 
 Afin de lever le voile sur l'ambiguïté de certains termes au sein du thesaurus, la présence de musicologues responsables de corpus est nécessaire bien qu'il s'agisse d'une activité chronophage par nature. On peut ensuite l'exploiter scientifiquement avec confiance.
 
-La question des langues est également important ; nous proposons d'annoter (E13) de manière supplémentaire avec la langue utilisée. 
+La question des langues est également importante ; nous proposons d'annoter les références plus en détail en précisant la langue utilisée afin de pallier au manque implicite de connaissances des systèmes.
+
+En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque personne citée, afin d'éviter les problématiques liées aux différentes orthographes.
 
 
 
