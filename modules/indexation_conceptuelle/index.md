@@ -23,7 +23,7 @@ La question des langues est également importante ; nous proposons d'annoter les
 
 En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque personne citée, afin d'éviter les problématiques liées aux différentes orthographes. On peut notamment évoquer l'exemple de Tchaïkovsky et les diverses écritures de son nom. Il faut également souligner la présence de l'ISNI sur Wiki EN, au contraire de Wiki FR.
 
-## **1. Quels sont les composants principaux de l’acte d'indexer ?**
+## **1. Quels sont les composants principaux de l’acte d'indexation ?**
 
 L'indexation doit cibler une liste de données indexables factuellement descriptible pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
 
