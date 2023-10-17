@@ -15,7 +15,7 @@ Joann Elart, MCF Université de Rouen
 Michela Berti, IR PerformArt   
 Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris  
 
-**Désambiguïsation**
+**Préambule : la nécéssité de la désambiguïsation**
 
 Afin de lever le voile sur l'ambiguïté de certains termes au sein du thesaurus, la présence de musicologues responsables de corpus est nécessaire bien qu'il s'agisse d'une activité chronophage par nature. On peut ensuite l'exploiter scientifiquement avec confiance.
 
@@ -23,21 +23,14 @@ La question des langues est également importante ; nous proposons d'annoter les
 
 En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque personne citée, afin d'éviter les problématiques liées aux différentes orthographes. On peut notamment évoquer l'exemple de Tchaïkovsky et les diverses écritures de son nom. Il faut également souligner la présence de l'ISNI sur Wiki EN, au contraire de Wiki FR.
 
-Localisation des toponymes (lieu)
-Joann : https://dezede.hypotheses.org/1045 
-L‘indexation est un cadre méthodologique
+**1. Quels sont les composants principaux de l’acte d'indexer ?**
 
-1er temps ; qu’est-ce qui constitue l’acte d'indexer ?
-
-Nathalie Mercure : 
-
-Tous les airs, objectif d’écrire la musique à travers des éléments très factuels (compositeur librettiste) et des éléments musicaux (tonalités forme etc) (décrit, caractère très empirique)
-Corpus de textes : indexer les personnes, les lieux, les mots-clés, thématiques : chaque texte est indexé par une personne et livre l’analyse d’une personne (analysé par une personne)
-Nancy parle de l’aspect d’indexer pour défricher un terrain (soit organiser une grande quantité d’infos)
-Lucia a hérité d’une BDD mise en place depuis 20 ans ; pb de saisie de données car tout a changé au fur et à mesure des années : d’abord désambiguisation puis standardisation
-Question de l’alignement des deux modèles et tensions en résultant
-Travail d’indexation = abstraction / modélisation (Théo) ? Extraction de caractéristiques, mises en évidence par la rencontre de deux bases de données ;
-Nathalie : circulation au sein du corpus-même, réseau des index et des textes au sein du corpus-même, renvois internes
+L'indexation doit cibler des éléments bien précis pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
+- les personnes
+- les lieux
+- les mots-clés
+- les thématiques :
+Il est également important de souligner que chaque point est indexé par une personne et que cela doit être explicite ; dans le cas d'usage de l'ontologie Cidoc-CRM, on systématisera l'usage d'un E13. Ces précisions sont tout particulièrement utiles compte-tenu de la circulation au sein du corpus-même de concepts, d'un réseau d'index et des textes dense qui porte de nombreux renvois internes.
 
 Théo : pour chaque oeuvre il y a une liste de données indexables qui correspond à du factuel descriptible par source ; également des choses liées à la notice, la conservation, à l’exemplaire exact, etc
 Cartographie conceptuelle du corpus avec mots-clés, mots-matières, concepts n’apparaissant pas tels quels dans la source, sujet à un gros travail analytique 
@@ -103,6 +96,9 @@ Livrable donnant des exemples d’usage des API des référentiels
 Christophe Corbier / Projet Perso : enregistrements grecs sur rouleaux ayant inspiré Ravel etc / question du sonore ? Gestion du corpus, re-documentation et volet analytique, il faut construire un thesaurus qui n’existe pas encore donc difficile. Pas de mise en ligne tant qu’un accord n’est pas trouvé
 
 
+Enfin, pour la localisation des toponymes, Joann utilise 
+Joann : https://dezede.hypotheses.org/1045 
+L‘indexation est un cadre méthodologique
 
 
 
