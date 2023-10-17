@@ -25,18 +25,20 @@ En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque p
 
 **1. Quels sont les composants principaux de l’acte d'indexer ?**
 
-L'indexation doit cibler des éléments bien précis pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
+L'indexation doit cibler une liste de données indexables factuellement descriptible pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
 - les personnes
 - les lieux
 - les mots-clés
-- les thématiques :
+- les thématiques
+- informations liées à la notice, la conservation, à l’exemplaire exact, etc
+
 Il est également important de souligner que chaque point est indexé par une personne et que cela doit être explicite ; dans le cas d'usage de l'ontologie Cidoc-CRM, on systématisera l'usage d'un E13. Ces précisions sont tout particulièrement utiles compte-tenu de la circulation au sein du corpus-même de concepts, d'un réseau d'index et des textes dense qui porte de nombreux renvois internes.
 
-Théo : pour chaque oeuvre il y a une liste de données indexables qui correspond à du factuel descriptible par source ; également des choses liées à la notice, la conservation, à l’exemplaire exact, etc
+Comme abordé en préambule, on observe une vrai nécéssité de contrôler pour des corpus limités ; l'assemblée propose un consensus humainement possible pour un maximum de 2000 sources. Le travail d’identification requiert en effet une véritable expertise. En exemple, les personnes ne sont pas toujours citées par leurs noms et leur identification requiert une identification historiographique fine, par exemple : le Duc, le Marquis, etc... Ces titres changent très régulièrement. La nécéssité d’offrir un outil cumulatif où chacun peut consulter les ressources issuees des recherches précédentes est également mentionnée.
+
 Cartographie conceptuelle du corpus avec mots-clés, mots-matières, concepts n’apparaissant pas tels quels dans la source, sujet à un gros travail analytique 
 Thesaurus très générique mais avec un pan organologique isolé 
-Nécéssité de contrôler pour des corpus de 500 à 2000 sources, si c’est beaucoup plus ça devient beaucoup plus compliqué / travail d’identification car les noms cités ne sont pas toujours cités (exemple : le Duc, le Marquis, ça change tous les 5 ans donc compliqué de trouver qui est qui)
-Nécéssité d’offrir un outil cumulatif où tout le monde peut consulter les ressources précédentes 
+
 
 Thesaurii : 
 
