@@ -42,12 +42,12 @@ _Définir les Thesaurii : _
 Il est notamment posé la question de la polysémie, où l'on fait souvent face au fait que deux auteurs utilisent des termes similaires pour deux choses très différentes (l'exemple de « cadence » est cité); le contexte permet de déterminer le sens. Le mot n’est ainsi jamais univoque.
 Faut-il ainsi faire appel à plusieurs _thesaurii _pour un meme mot ou bien intégrer plusieurs définitions dans un seul _thesaurus_?
 
-Le principal problème des _thesaurii_ est le fait qu'ils ne soulignent pas clairement les aspects génétiques et diachroniques. Un enjeu pour la constitution de futurs _thesaurii_ est leur publication avec les usages leur correspondant.
+Le principal problème des _thesaurii_ est le fait qu'ils ne soulignent pas clairement les aspects génétiques et diachroniques. Un enjeu pour la constitution de futurs _thesaurii_ est leur publication avec les usages leur correspondant, en considérant la possibilité d'une cartographie de la transmission, avec à nouveau l'usage de E13.
+La tradition orale (acceptation de l'attribution d'une source, etc) empêche parfois l'information d'être traitée de la bonne manière et peut même mener jusqu'à l'anachronisme, en utilisant des outils récents pour commenter le passé.
 
-JFG : pb d’un non-correspondance entre des mots et des concepts, par exemple partition qui ne correspond pas au concept, pb d’attribution : l’historiographie continue à parler d’un ancien nom alors que l’on a trouvé récemment que ce n’était pas lui / pb de la tradition orale
 Provenance - usage - origine ; pour les informations de localisation
-Un des risques pouvant peser sur les jeunes musicologues pourrait être l’anachronisme en utilisant des outils récents pour commenter le passé.
-Être sensible aux variations et effectuer une cartographie de la transmission, cf la diffusion d’une oeuvre par exemple / exemple des chantres vs compositeurs / E13 partout
+
+
 
 Faire le point sur les termes : 
 
