@@ -1,128 +1,29 @@
 **Consortium Musica2, GT2**
 Atelier du jeudi 12/10/2023 : Indexation conceptuelle et _Thesaurii_
 
-Théodora Psychoyou, MCF Sorbonne et directrice de l'IReMus
-Thomas Bottini, IE IReMus
-Augustin Braud, IR IReMus / Musica2
-Guillaume Pélerin, IRCAM
-Louis Moreau-Gaudry
-Lucia Pasini
-Joann Élart, PR Rouen
-Jean-François Goudesenne
-
-**Introduction**
-
-- Objectif de la journée : imaginer le référentiel du futur, tout en étant conscient de l’utilisation des existants
-- Expliciter les termes de thesaurus et référentiel :
-    - Thesaurus : structure interne de mots et concepts mais pas de choses
-    - Référentiel : système d’organisation de la connaissance (ou base de données), caractérisé par sa valeur d’usage et désir d’usage. N’est référentiel qu’un système où le désir d’usage est prouvé.
-
-**1er temps ; qu’est-ce qui constitue l’acte d'indexer ?** (Sémiotique)
-
-Donnons la parole aux présents :
-
-- Aborder le geste d’indexation en tant que lui-même 
-- L’indexation descriptive vs. Indexation thématique (association) —> comment ?
-- L’indexation conceptuelle ou lexicale / lieu —> quoi ?
-- Y-a-t’il une indexation de métadonnées ; quel statut donne-t-on à la valeur ? Il ne s’agit pas d’une caractérisation de la forme musicale ? 
-- Quels sont les enjeux scientifiques ?
-
-**2e temps ; comment indexe-t-on ?** (Technique et méthodologique)
-
-Donnons la parole aux présents :
-(On ne parlera que des systèmes d’organisation de la connaissance et pas des bases de données)
-
-- Quand apparait la nécessité d’indexer ?
-- Nécessité d’établir un vocabulaire contrôlé
-- Insuffisance des ressources existantes, ou méconnaissance : création d’un référentiel
-
-Il serait bon de :
-- Noter les différences dans les pratiques d’indexation selon les périodes, etc.
-- Faire un inventaire des référentiels utiles : liste des référentiels existants et méthodologie pour les lister.
-
-**Tentative de graph ; indexation de concepts :**
-
-```mermaid
-graph TD;
-E(crm:E7_activity) --> |crm:p14_carried_out_by| C(crm:E21_person<br>Compositeur)
-A(crm:E73_symbolic_object) --> |crm:p2_has_type| B(crm:E55_type<br>Partition)
-E(crm:E7_activity) --->|crm:p9_consists_of| D(crm:E65_creation)
-E(crm:E7_activity) --> |crm:p2_has_type| F(crm:E55_type<br>Composition musicale)
-
-D(crm:E65_creation) --> |crm:p94_has_created| A(crm:E36_visual_item)
-D(crm:E65_creation) ---> |crm:p4_has_time_span| H(crm:E52_time_span)
-D(crm:E65_creation) ---> |crm:p7_took_place_at| I(crm:E53_place)
-D(crm:E65_creation) ---> |crm:p94_has_created| P(crm:E28_conceptual_object)
-
-G(crm:E22_human-made-object)--> |P128_carries| A(crm:E73_symbolic_object)
-J(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
-J(crm:E13_attribute_assignement) --> |crm:p4_has_time_span| K(crm:E52_time_span)
-J(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| N(Date d'édition)
-
-L(crm:E13_attribute_assignement) ---> |crm:P140_assigned_attribute_to| G(crm:E22_human-made-object)
-L(crm:E13_attribute_assignement) --> |crm:p141_assigned| M(crm:E53_place)
-L(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| O(Lieu d'édition)
-
-
-
-```
-
-P128_carries lien entre deux objets
-
-
-
-
-- - - 
-
-
-
-
-
-Prise de notes Augustin :
-
-12/10/2023
-
 Présents : 
-Thomas Bottini, IE IReMus
-Augustin Braud, IR Musica2 / IReMus
-Théodora Psychoyou, MCF Sorbonne Université, Directrice de l'IReMus
-Nancy Hachem, Docteure en Musicologie
-Nathalie Berthon-Blivet, IR IReMus 
-Marco Gurrieri, IR IReMus
-Jean-François Goudesenne, CR IRHT 
-Lucia Pasini, Post-doctorante Bern University of Applied Sciences
-Achille Davy-Rigaux, DR IReMus
-Joann Elart, MCF Université de Rouen
-Michela Berti, IR PerformArt 
-Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris
+Thomas Bottini, IE IReMus  
+Augustin Braud, IR Musica2 / IReMus  
+Théodora Psychoyou, MCF Sorbonne Université, Directrice de l'IReMus  
+Nancy Hachem, Docteure en Musicologie  
+Nathalie Berthon-Blivet, IR IReMus   
+Marco Gurrieri, IR IReMus  
+Jean-François Goudesenne, CR IRHT   
+Lucia Pasini, Post-doctorante Bern University of Applied Sciences  
+Achille Davy-Rigaux, DR IReMus  
+Joann Elart, MCF Université de Rouen  
+Michela Berti, IR PerformArt   
+Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris  
 
 **Désambiguïsation**
-
 
 Afin de lever le voile sur l'ambiguïté de certains termes au sein du thesaurus, la présence de musicologues responsables de corpus est nécessaire bien qu'il s'agisse d'une activité chronophage par nature. On peut ensuite l'exploiter scientifiquement avec confiance.
 
 La question des langues est également importante ; nous proposons d'annoter les références plus en détail en précisant la langue utilisée afin de pallier au manque implicite de connaissances des systèmes.
 
-En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque personne citée, afin d'éviter les problématiques liées aux différentes orthographes.
+En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque personne citée, afin d'éviter les problématiques liées aux différentes orthographes. On peut notamment évoquer l'exemple de Tchaïkovsky et les diverses écritures de son nom. Il faut également souligner la présence de l'ISNI sur Wiki EN, au contraire de Wiki FR.
 
-
-
-
-- -
-
-Thomas : Polyphonia avec Marco : dvlpt outil Tonalities 
-Corpus de partions en MEI repris et possédant des méta-données 
-—> fichier MEI est une source établie en regardant une autre source
-Cas « Josquin », seul Marco sait qui est vraiment Josquin avec l’ortographe qu’il a choisi 
-
-Grosse question de désambiguisation / cf ce que dit Théo envers les catalogues 
-
-
-Différences linguistiques soulevées par Goudesenne ; pb de connaissances implicites liées au système : une bonne pratique pourrait être d’annoter avec la langue 
-Joann expé Dezède : mise en place d’un système qui associe un ISNI à chaque personne (exemple Tchaikovsky) ; travail manuel et imposé à la communauté, les utilisateurs doivent le chercher eux-mêmes, ils ne sont pas tous à la BnF former une communauté sur une pratique facile à effectuer et permet une plus grande facilité de travail à partir du moment où l’habitude est adoptée
-Sur wiki FR pas d’ISNI, alors que sur wiki EN il existe
-
-L’ajout d’un ISNI est indispensable + localisation des toponymes (lieu)
+Localisation des toponymes (lieu)
 Joann : https://dezede.hypotheses.org/1045 
 L‘indexation est un cadre méthodologique
 
