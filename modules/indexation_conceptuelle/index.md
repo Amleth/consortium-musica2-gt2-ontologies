@@ -26,9 +26,10 @@ En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque p
 **1. Quels sont les composants principaux de l’acte d'indexer ?**
 
 L'indexation doit cibler une liste de données indexables factuellement descriptible pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
+
 - les personnes
 - les lieux
-- les mots-clés
+- les mots-clés & mots-matières
 - les thématiques
 - informations liées à la notice, la conservation, à l’exemplaire exact, etc
 
@@ -36,20 +37,12 @@ Il est également important de souligner que chaque point est indexé par une pe
 
 Comme abordé en préambule, on observe une vrai nécéssité de contrôler pour des corpus limités ; l'assemblée propose un consensus humainement possible pour un maximum de 2000 sources. Le travail d’identification requiert en effet une véritable expertise. En exemple, les personnes ne sont pas toujours citées par leurs noms et leur identification requiert une identification historiographique fine, par exemple : le Duc, le Marquis, etc... Ces titres changent très régulièrement. La nécéssité d’offrir un outil cumulatif où chacun peut consulter les ressources issuees des recherches précédentes est également mentionnée.
 
-Cartographie conceptuelle du corpus avec mots-clés, mots-matières, concepts n’apparaissant pas tels quels dans la source, sujet à un gros travail analytique 
-Thesaurus très générique mais avec un pan organologique isolé 
+_Définir les Thesaurii : _
 
+Il est notamment posé la question de la polysémie, où l'on fait souvent face au fait que deux auteurs utilisent des termes similaires pour deux choses très différentes (l'exemple de « cadence » est cité); le contexte permet de déterminer le sens. Le mot n’est ainsi jamais univoque.
+Faut-il ainsi faire appel à plusieurs _thesaurii _pour un meme mot ou bien intégrer plusieurs définitions dans un seul _thesaurus_?
 
-Thesaurii : 
-
-Quelle différence entre mots-clés / mots-matières et concepts ? 
-
-Polysémie, fait que deux auteurs utilisent des termes similaires pour deux choses très différentes (par exemple « cadence », le contexte permet de déterminer le sens) ; le mot n’est jamais univoque, c’est une image. L’écriture scientifique est une « anti-littérature ».
-
-Michela ; liberté de chercheur est problématique car il y a un souci pour l’indexation, politique qui limite la liberté de chaque personne et donne un niveau de recherche et de précision cohérente ; sans cette politique ça aurait été chaotique. Plusieurs thesaurii pour un meme mot ou bien plusieurs définitions ?
-
-Pb des thesaurii ; ne montrent pas les aspects génétiques et diachroniques donc pb ?
-Un enjeu pour les thésaurii est de les publier avec les usages leur correspondant
+Le principal problème des _thesaurii_ est le fait qu'ils ne soulignent pas clairement les aspects génétiques et diachroniques. Un enjeu pour la constitution de futurs _thesaurii_ est leur publication avec les usages leur correspondant.
 
 JFG : pb d’un non-correspondance entre des mots et des concepts, par exemple partition qui ne correspond pas au concept, pb d’attribution : l’historiographie continue à parler d’un ancien nom alors que l’on a trouvé récemment que ce n’était pas lui / pb de la tradition orale
 Provenance - usage - origine ; pour les informations de localisation
