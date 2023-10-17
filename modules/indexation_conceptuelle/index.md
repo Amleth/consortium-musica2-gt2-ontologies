@@ -57,7 +57,7 @@ L'ontologie permet de se doter d’une définition formelle des concepts, et d'e
 #### _Référentiel :_   
 Organisation devant être reconnue par un nombre suffisant de membres de la communauté scientifique pour attester de son statut de référence. Ceci est atteint par une confiance donnée à l’institution qui porte le référentiel, un nombre suffisant d'alignements, _etc_. Il est par ailleurs possible pour un même objet de s'inscrire dans plusieurs référentiels qui ne correspondent pas forcément ; le choix de l'outil est absolument situationnel.
 
-## **2. Quels outils pour indexer ? ** 
+## **2. Quels outils pour indexer ?** 
 
 Nous présentons ici divers référentiels intéressants, ayant été expertisés par un ingénieur et/ou développeur et présentant une pérennité prouvée sur les plans techniques tout autant que scientifiques. 
 - ISNI pour les personnes.
