@@ -1,4 +1,22 @@
 **Prosopographie :**  
+
+Introduction : 
+
+
+
+
+Quelles sont les situations où les enjeux prosopographiques sont importants ?
+
+
+
+Quelle est la méthodologie appliquée dans le cadre d'une recherche prosopographique ? 
+
+- Systématiser une méthode ? Quels sont les éléments indispensables ?
+- Lien vers l'atelier datation, la notion d'incertitude est absolument primordiale
+- Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant)
+- 
+
+
 - Quelqu'un a fréquenté un lieu :
   
 ```mermaid
