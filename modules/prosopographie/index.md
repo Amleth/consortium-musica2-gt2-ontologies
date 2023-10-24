@@ -17,8 +17,9 @@
 - Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant).
 - Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
 
+## Exemples de modélisations prosopographiques à l'aide de l'ontologie Cidoc-CRM :
 
-- Quelqu'un a fréquenté un lieu :
+### - Quelqu'un a fréquenté un lieu :
   
 ```mermaid
 graph TD;
@@ -34,8 +35,7 @@ D(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| F("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p81b_begin_of_the_end|G("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 ```
-
-- Quelqu'un a rencontré quelqu'un dans un lieu qu'ils on tous deux fréquentés :
+### - Quelqu'un a rencontré quelqu'un dans un lieu qu'ils on tous deux fréquentés :
   
 ```mermaid
 graph TD;
@@ -58,7 +58,7 @@ D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 
 ```
 
-- Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
+### - Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
 
 ```mermaid
 graph TD;
