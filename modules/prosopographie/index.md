@@ -1,20 +1,21 @@
-**Prosopographie :**  
+# **Prosopographie :**  
 
-Introduction : 
+## Introduction : 
 
+- Introduction AB et TB : définition de la _prosopographie_ : étude biographique visant à souligner les caractères communs d'un groupe d'acteurs historiques. Lien direct avec la musicologie historique mais aussi rattachement aux sciences sociales. 
+- Présentation des différents intervenants et de leurs rapports aux enjeux prosopographiques.
 
+## Quelles sont les situations où les enjeux prosopographiques sont importants ?
 
+- Comment vient-on à utiliser une méthodologie prosopographique ?
+- Pourquoi le besoin prosopographique est-il impérieux ? Question du doute et de la désambiguïsation, de la non-correspondance des sources ? 
 
-Quelles sont les situations où les enjeux prosopographiques sont importants ?
-
-
-
-Quelle est la méthodologie appliquée dans le cadre d'une recherche prosopographique ? 
+## Quelle est la méthodologie appliquée dans le cadre d'une recherche prosopographique ? 
 
 - Systématiser une méthode ? Quels sont les éléments indispensables ?
-- Lien vers l'atelier datation, la notion d'incertitude est absolument primordiale
-- Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant)
-- 
+- Lien vers l'atelier datation, la notion d'incertitude est absolument primordiale.
+- Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant).
+- Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
 
 
 - Quelqu'un a fréquenté un lieu :
