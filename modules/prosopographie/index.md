@@ -22,7 +22,7 @@
 - Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
 
 - Réponses des participants à ces questions, exemples et cas concrets utiles.
-- Définir une méthodologie-type ; quelle est la question à laquelle nous devons répondre, quelles sont les étapes et leur ordre, les éléments à posséder en amont ?
+- Définir une méthodologie-type ; trouver les bons outils en fonction de la question posée, quelles étapes et leur ordre, les éléments à posséder en amont ? Définir des incertitudes acceptables, adopter les bons référentiels...
 
 ## Exemples de modélisations prosopographiques à l'aide de l'ontologie Cidoc-CRM :
 
