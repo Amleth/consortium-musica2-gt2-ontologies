@@ -17,6 +17,8 @@
 - Systématiser une méthode ? Quels sont les éléments indispensables ?
 - Lien vers l'atelier datation, la notion d'incertitude est absolument primordiale.
 - Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant).
+- Comment indiquer les lieux avec précision ? Nécessité d'alignement des référentiels, de manière similaire à la datation.
+  
 - Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
 
 ## Exemples de modélisations prosopographiques à l'aide de l'ontologie Cidoc-CRM :
