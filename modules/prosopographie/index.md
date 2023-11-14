@@ -44,11 +44,7 @@ D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 ```mermaid
 graph TD;
 
-
-
-
 K(socE_relationship/socE_social_bond) --->|P7_took_place_at| I(E53_place)
-
 
 K(socE_relationship/socE_social_bond) --> |crm:p4_has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| E("Date ISO 8601")
