@@ -61,13 +61,6 @@ K(socE_relationship/socE_social_bond) --->|socP_binds| J("crm:E21_Person<br>Pers
 
 ```
 
-B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
-B(E7_activity) -->|crm:P14_carried_out_by| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
-K(crm:E85_joining) -->|crm:P144_joined| A("crm:E21_Person<br>Personne 1 👩🏼")
-K(crm:E85_joining) -->|crm:P144_joined| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
-
-K(crm:E85_joining) -->|crm:P143_joined_with| L(crm:E74_group)
-
 ### - Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
 
 ```mermaid
@@ -103,4 +96,11 @@ D(E7_activity<br>Fréquentation 1&3) ----> |crm:p4_has_time_span| N(crm:E52_time
 - https://docs.google.com/document/d/1tE_5Uj6_B-XhYYmJVlo-FHxoBFYyf6qm/edit
 - Dériver la classe activité et faire une sous classe avec une autre ontologie pour exprimer le fait que les personnes se rencontrent (crm soc) / qu'est-ce qu'une rencontre ? Activité avec un prédicat spécifique (le P14 ne suffit pas) ou bien notions de présence/coprésence dans un timespan et une place (prédicat p132)
 - Dérivé de E7 (rencontre) Personne qui se rencontre dérive de P11 et personne qui initie dérive de P14
-- 
+
+
+B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+B(E7_activity) -->|crm:P14_carried_out_by| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+K(crm:E85_joining) -->|crm:P144_joined| A("crm:E21_Person<br>Personne 1 👩🏼")
+K(crm:E85_joining) -->|crm:P144_joined| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+
+K(crm:E85_joining) -->|crm:P143_joined_with| L(crm:E74_group)
