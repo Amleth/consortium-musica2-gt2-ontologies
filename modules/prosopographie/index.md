@@ -44,23 +44,29 @@ D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 ```mermaid
 graph TD;
 
-B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
-B(E7_activity) -->|crm:P14_carried_out_by| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
-B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
-
-B(E7_activity) -->|P7_took_place_at| I(E53_place)
-K(crm:E85_joining) -->|crm:P143_joined_with| L(crm:E74_group)
-K(crm:E85_joining) -->|crm:P144_joined| A("crm:E21_Person<br>Personne 1 👩🏼")
-K(crm:E85_joining) -->|crm:P144_joined| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
 
 
-B(E7_activity) --> |crm:p4_has_time_span| D(crm:E52_time_span)
+
+K(socE_relationship/socE_social_bond) --->|P7_took_place_at| I(E53_place)
+
+
+K(socE_relationship/socE_social_bond) --> |crm:p4_has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| E("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| F("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p81b_begin_of_the_end|G("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 
+K(socE_relationship/socE_social_bond) --->|socP_binds| A("crm:E21_Person<br>Personne 1 👩🏼")
+K(socE_relationship/socE_social_bond) --->|socP_binds| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+
 ```
+
+B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+B(E7_activity) -->|crm:P14_carried_out_by| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+K(crm:E85_joining) -->|crm:P144_joined| A("crm:E21_Person<br>Personne 1 👩🏼")
+K(crm:E85_joining) -->|crm:P144_joined| J("crm:E21_Person<br>Personne 2 🧔🏻‍♂️")
+
+K(crm:E85_joining) -->|crm:P143_joined_with| L(crm:E74_group)
 
 ### - Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
 
@@ -95,5 +101,6 @@ D(E7_activity<br>Fréquentation 1&3) ----> |crm:p4_has_time_span| N(crm:E52_time
 ## Bibliographie
 
 - https://docs.google.com/document/d/1tE_5Uj6_B-XhYYmJVlo-FHxoBFYyf6qm/edit
-- Dériver la classe activité et faire une sous classe avec une autre ontologie pour exprimer le fait que les personnes se rencontrent (crm soc) / qu'est-ce qu'une rencontre ? Activité avec un prédicat spécifique (le P14 ne suffit pas) ou bien notions de présence/coprésence dans un timespan et une place (prédicat p132) 
+- Dériver la classe activité et faire une sous classe avec une autre ontologie pour exprimer le fait que les personnes se rencontrent (crm soc) / qu'est-ce qu'une rencontre ? Activité avec un prédicat spécifique (le P14 ne suffit pas) ou bien notions de présence/coprésence dans un timespan et une place (prédicat p132)
+- Dérivé de E7 (rencontre) Personne qui se rencontre dérive de P11 et personne qui initie dérive de P14
 - 
