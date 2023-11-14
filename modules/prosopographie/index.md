@@ -14,15 +14,12 @@
 
 ## 2. Quelle est la méthodologie appliquée dans le cadre d'une recherche prosopographique ? 
 
-- Systématiser une méthode ? Quels sont les éléments indispensables ?
+- Systématiser une méthode ? Quels sont les éléments indispensables ? Un objectif de la séance pourrait être : Définir une méthodologie-type ; trouver les bons outils en fonction de la question posée, quelles étapes et leur ordre, les éléments à posséder en amont ? Définir des incertitudes acceptables, adopter les bons référentiels...
 - Lien vers l'atelier datation, la notion d'incertitude est absolument primordiale.
 - Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant).
 - Comment indiquer les lieux avec précision ? Nécessité d'alignement des référentiels, de manière similaire à la datation.
-  
 - Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
-
 - Réponses des participants à ces questions, exemples et cas concrets utiles.
-- Définir une méthodologie-type ; trouver les bons outils en fonction de la question posée, quelles étapes et leur ordre, les éléments à posséder en amont ? Définir des incertitudes acceptables, adopter les bons référentiels...
 
 ## Exemples de modélisations prosopographiques à l'aide de l'ontologie Cidoc-CRM :
 
