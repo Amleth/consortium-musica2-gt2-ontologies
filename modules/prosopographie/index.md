@@ -2,7 +2,7 @@
 
 ## Introduction : 
 
-- Introduction AB et TB : définition de la _prosopographie_ : étude biographique visant à souligner les caractères communs d'un groupe d'acteurs historiques. Lien direct avec la musicologie historique mais aussi rattachement aux sciences sociales. 
+- Introduction AB et TB : définition de la _prosopographie_ : étude biographique visant à souligner les caractères communs d'un groupe d'acteurs historiques, qu'est-ce qui fait réseau ? Lien direct avec la musicologie historique mais aussi rattachement aux sciences sociales. 
 - Présentation des différents intervenants et de leurs rapports aux enjeux prosopographiques.
 
 ## 1. Quelles sont les situations où les enjeux prosopographiques sont importants ?
