@@ -1,8 +1,8 @@
-# **Consortium Musica2, GT2**  
+# Consortium Musica2, GT2
 
 ## Atelier du jeudi 12/10/2023 : Indexation conceptuelle et _Thesaurii_
 
-Présents :
+Présent·e·s :
 
 - Thomas Bottini, IE IReMus  
 - Augustin Braud, IR Musica2 / IReMus  
@@ -17,7 +17,7 @@ Présents :
 - Michela Berti, IR ERC PerformArt *(BDD 6000 transcriptions de documents et événements spectaculaires)*
 - Louis Moreau-Gaudry, Ingénieur en éducation numérique, pôle ressource de la Philharmonie de Paris *(BDD documentaires physiques et numériques)*
 
-## **Préambule : la nécéssité de la désambiguïsation**
+## Préambule : la nécéssité de la désambiguïsation
 
 Afin de lever le voile sur l'ambiguïté de certains termes au sein d'un _thesaurus_, la présence de musicologues responsables de corpus est nécessaire, bien qu'il s'agisse d'une activité chronophage par nature. On peut ensuite l'exploiter scientifiquement avec confiance.
 
@@ -25,7 +25,16 @@ La question des langues est également importante ; nous proposons d'annoter les
 
 En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque personne citée (comme le fait Dezède, en imposant aux membres de sa communauté d'aller chercher les ISNI, ce qui implique des actions/documents de formation), afin d'éviter les problématiques liées aux différentes orthographes. On peut notamment évoquer l'exemple de Tchaïkovsky et les diverses écritures de son nom. Il faut également souligner la présence de l'ISNI sur Wiki EN, au contraire de Wiki FR.
 
-## **1. Quels sont les composants principaux de l’acte d'indexation ?**
+## Enjeux scientifiques de l'indexation ?
+
+Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opérations mentales et techniques sur lequel s'appuie le travail scientifique, qui convoquent la notion d'indexation :
+
+- Indexer pour décrire. La ressource d'indexation revêtent ici le rôle de caractériser la ressource indexée, par exemple à des fins de synthèse ou de représentation synoptique des thématiques d'un corpus.
+- Indexer pour rendre fouillable. Les ressources d'indexation constituent ici des éléments d'interface avec lesquels l'utilisateur peut interagir pour effectuer une recherche au sein des corpus.
+- Indexer pour défricher un corpus, à l'occasion du premier contact. Les ressources d'indexation permettent d'asseoir une progression dans la découverte d'un corpus en fournissant une unification de ce qui a déjà été rencontrée (activité synthétique au fil de l'eau).
+- Indexer pour se repérer. Les ressources d'indexation sont des petits cailloux blancs permettant au lecteur-Petit Poucet de ne pas se perdre dans son corpus. Elles constituent des marque-page sémantiques.
+- Indexer pour analyser. Les ressources d'indexation 
+
 
 L'indexation doit cibler une liste de données indexables factuellement descriptible pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
 
@@ -63,7 +72,7 @@ L'ontologie permet de se doter d’une définition formelle des concepts, et d'e
 
 Organisation devant être reconnue par un nombre suffisant de membres de la communauté scientifique pour attester de son statut de référence. Ceci est atteint par une confiance donnée à l’institution qui porte le référentiel, un nombre suffisant d'alignements, _etc_. Il est par ailleurs possible pour un même objet de s'inscrire dans plusieurs référentiels qui ne correspondent pas forcément ; le choix de l'outil est absolument situationnel.
 
-## **2. Quels outils pour indexer ?** 
+## Quels outils pour indexer ?
 
 Nous présentons ici divers référentiels intéressants, ayant été expertisés par un ingénieur et/ou développeur et présentant une pérennité prouvée sur les plans techniques tout autant que scientifiques. 
 - ISNI pour les personnes.
