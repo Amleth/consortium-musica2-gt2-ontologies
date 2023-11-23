@@ -54,7 +54,7 @@ MG
 une base prosopographique regroupe des données qui sont des métadonnées dans d'autres projets. La récolte du matériau n'est que la base. Le vrai enjeu prosopographique se fait dans une deuxième phase, sur l'étude des liens entre personnes et institutions. Les données prosopographiques sont les résultats inférés à partir de ce qui a été récolté, ce sont des données d'essence relationnelle. Ne pas croire que la phase 1 est prosopographique.
 
 NH
-1) Quand il y a foisonnement et éparpillement des documents, la constitution de données prosopographiques constitue un outil de recherche et d'appropriation des corpus.
+Quand il y a foisonnement et éparpillement des documents, la constitution de données prosopographiques constitue un outil de recherche et d'appropriation des corpus.
 
 GA
 Cela dépend de la question de base, pose t-on une question prosopographique au départ du projet ? (c'est le cas de MUSEFREM, de Ricercar). Un autre projet pourra vouloir constituer des données brutes, et les données prosopographiques émergeront d'une mise en regard des données avec celles d'autres projets.
