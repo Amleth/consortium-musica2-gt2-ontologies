@@ -105,7 +105,7 @@ LP :
 Dezède : deux types de statuts/rôles : à chaque personne sont associés plusieurs statuts (compositeur, poète, chanteur, librettiste), pas de vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
 
 TB :
-Comment modéliser la notion de dédicataire en CRM ?
+Comment modéliser les notions de dédicataire et d'hommage en CRM ?
 
 NBB :
 Toute relation doit s'accompagner de la mention des périodes et des dates.
