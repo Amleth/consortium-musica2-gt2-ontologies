@@ -146,6 +146,8 @@ GA : Synthèse des échanges : on peut associer un rôle à une personne, ou ass
 
 MG : Caractère symétrique (frère) ou non (maître/élève) de la relation.
 
+LP : Dans Dezède, si A est élève de B, alors B est maître de A (automatiquement).
+
 # Webographie
 
 - https://spectacle-de-curiosites.msh.uca.fr/
@@ -155,6 +157,7 @@ MG : Caractère symétrique (frère) ou non (maître/élève) de la relation.
 - https://performart.huma-num.fr/
 - https://dezede.org/
 
+<hr/>
 
 # Notes préparatoires
 
