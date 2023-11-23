@@ -58,7 +58,7 @@ Note : dans Ricercar, il y a des centaines de personnes qui n'existent pas aill
 NBB :
 La BDD n'est qu'un support, le travail prosopographique ne se fait qu'à partir de l'exploitation des données.
 
-# Entités, propriétés, relations
+# Personnes
 
 ## Personne physique ou morale ?
 
@@ -155,6 +155,10 @@ LP : Dans Dezède, si A est élève de B, alors B est maître de A (automatiquem
 
 JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectées en regardant le graphe, et dynamiquement injectée dans le cartouche de présentation de la personne.
 
+# Institutions
+
+JP : Chef de tel institution de telle date à telle date. Théâtre qui contient deux salles. Théâtre éphèmère. Tout cela fonctionne assez bien dans Dezède.
+
 # Webographie
 
 - https://spectacle-de-curiosites.msh.uca.fr/
@@ -166,6 +170,7 @@ JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectée
 - https://shs.hal.science/halshs-03406115/file/Beretta_Alamercery_ReUSE_Nantes_20211019.pdf
 - https://shs.hal.science/halshs-03764597/document
 - https://phn-wiki.ish-lyon.cnrs.fr/doku.php?id=intro_histoire_numerique:conceptualisation_information
+- https://ontome.net/namespace/3#namespace-hierarchy
 
 <hr/>
 
