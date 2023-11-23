@@ -8,7 +8,7 @@
 ## 1. Quelles sont les situations où les enjeux prosopographiques sont importants ?
 
 - Comment vient-on à utiliser une méthodologie prosopographique ?
-- Quand le besoin prosopographique est-il nécessaire ? Question du doute et de la désambiguïsation, de la non-correspondance des sources ?
+- Quand l'outil prosopographique est-il nécessaire ? Question du doute et de la désambiguïsation, de la non-correspondance des sources ?
 
 - Réponses des participants à ces questions, exemples et cas concrets utiles. 
 
