@@ -142,6 +142,10 @@ SF : Ces rôles ne sont pas reliés à des événements particuliers, mais attri
 
 GA : Synthèse des échanges : on peut associer un rôle à une personne, ou associer un rôle à une personne par le truchement d'un événement.
 
+## Relations
+
+MG : Caractère symétrique (frère) ou non (maître/élève) de la relation.
+
 # Webographie
 
 - https://spectacle-de-curiosites.msh.uca.fr/
