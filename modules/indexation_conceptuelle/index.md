@@ -1,3 +1,5 @@
+***NE PAS LIRE, WORK IN PROGRESS***
+
 # Consortium Musica2, GT2
 
 ## Atelier du jeudi 12/10/2023 : Indexation conceptuelle et _Thesaurii_
