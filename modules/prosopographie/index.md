@@ -104,6 +104,9 @@ Statut
 LP :
 Dezède : deux types de statuts/rôles : à chaque personne sont associés plusieurs statuts (compositeur, poète, chanteur, librettiste), pas de vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
 
+TB :
+Comment modéliser la notion de dédicataire en CRM ?
+
 NBB :
 Toute relation doit s'accompagner de la mention des périodes et des dates.
 
@@ -147,6 +150,8 @@ GA : Synthèse des échanges : on peut associer un rôle à une personne, ou ass
 MG : Caractère symétrique (frère) ou non (maître/élève) de la relation.
 
 LP : Dans Dezède, si A est élève de B, alors B est maître de A (automatiquement).
+
+JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectées en regardant le graphe, et dynamiquement injectée dans le cartouche de présentation de la personne.
 
 # Webographie
 
