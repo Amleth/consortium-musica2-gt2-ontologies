@@ -105,7 +105,7 @@ LP :
 Dezède : deux types de statuts/rôles : à chaque personne sont associés plusieurs statuts (compositeur, poète, chanteur, librettiste), pas de vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
 
 TB :
-Comment modéliser les notions de dédicataire et d'hommage en CRM ?
+Comment modéliser les notions de dédicataire, de commandiraire informel et d'hommage en CRM ?
 
 NBB :
 Toute relation doit s'accompagner de la mention des périodes et des dates.
@@ -163,6 +163,9 @@ JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectée
 - http://ricercar-old.cesr.univ-tours.fr/3-programmes/basechanson/03231-0.htm
 - https://performart.huma-num.fr/
 - https://dezede.org/
+- https://shs.hal.science/halshs-03406115/file/Beretta_Alamercery_ReUSE_Nantes_20211019.pdf
+- https://shs.hal.science/halshs-03764597/document
+- https://phn-wiki.ish-lyon.cnrs.fr/doku.php?id=intro_histoire_numerique:conceptualisation_information
 
 <hr/>
 
