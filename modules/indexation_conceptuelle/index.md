@@ -2,19 +2,20 @@
 
 ## Atelier du jeudi 12/10/2023 : Indexation conceptuelle et _Thesaurii_
 
-Présents : 
-Thomas Bottini, IE IReMus  
-Augustin Braud, IR Musica2 / IReMus  
-Théodora Psychoyou, MCF Sorbonne Université, Directrice de l'IReMus  
-Nancy Hachem, Docteure en Musicologie  
-Nathalie Berthon-Blivet, IR IReMus   
-Marco Gurrieri, IR IReMus  
-Jean-François Goudesenne, CR IRHT   
-Lucia Pasini, Post-doctorante Bern University of Applied Sciences  
-Achille Davy-Rigaux, DR IReMus  
-Joann Elart, MCF Université de Rouen  
-Michela Berti, IR PerformArt   
-Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris  
+Présents :
+
+- Thomas Bottini, IE IReMus  
+- Augustin Braud, IR Musica2 / IReMus  
+- Théodora Psychoyou, MCF Sorbonne Université, Directrice de l'IReMus  
+- Nancy Hachem, Docteure en Musicologie  
+- Nathalie Berthon-Blivet, IR IReMus *(a indexé une sélection d'articles parus dans le Mercure Galant avec le Référentiel de l'Ancien Régime qu'elle dirige)*
+- Marco Gurrieri, IR IReMus  
+- Jean-François Goudesenne, CR IRHT, depuis le 01/10 équipex Biblissima+ Cluster 6 patrimoins musical *(répertoire très spécifique, il peut y avoir des noms de compositeurs, des œuvres, de la transmission orale, thésauri, le concept d'œuvre est discuté)*
+- Lucia Pasini, Post-doctorante Bern University of Applied Sciences  
+- Achille Davy-Rigaux, DR IReMus  
+- Joann Elart, MCF Université de Rouen  
+- Michela Berti, IR PerformArt   
+- Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris  
 
 ## **Préambule : la nécéssité de la désambiguïsation**
 
