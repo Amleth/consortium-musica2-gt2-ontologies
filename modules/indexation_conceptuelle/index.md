@@ -27,6 +27,8 @@ En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque p
 
 ## Enjeux scientifiques de l'indexation ?
 
+### Fonctions possibles de l'indexation
+
 Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opérations mentales et techniques sur lequel s'appuie le travail scientifique, qui convoquent la notion d'indexation :
 
 - ***Indexer pour décrire.*** La ressource d'indexation revêtent ici le rôle de caractériser la ressource indexée, par exemple à des fins de synthèse ou de représentation synoptique des thématiques d'un corpus.
@@ -38,6 +40,13 @@ Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opératio
 - ***Indexer pour créer une circulation hypertextuelle à l'intérieur des corpus même.*** Ici, l'indexation se positionne comme pratique éditoriale, la ressource d'indexation jouant le rôle de point de passage d'un document à l'autre.
 - ***Constituer des thésaurii/référentiels pour analyser.*** L'activité de conception d'un thésaurus ou d'un référentiel d'entités récurrentes est à considérer comme une pratique scientifique et non seulement documentaire, car le système d'organisation des connaissances qui en résulte est un point de vue sur la teneur des savoirs (conceptuels, lexicaux…) convoqués dans l'analyse des sources, c'est une méta-connaissance.
 
+### Retours sur les pratiques
+
+#### Le cas du Mercure Galant
+
+Deux cas de figure :
+
+1) 
 
 L'indexation doit cibler une liste de données indexables factuellement descriptible pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
 
