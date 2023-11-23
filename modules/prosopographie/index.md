@@ -1,4 +1,164 @@
-# **Prosopographie :**  
+# Atelier n° 4 : prosopographie
+
+# Tour de table
+
+- Augustin Braud
+- Thomas Bottini
+- Achille Davy-Rigaux
+    Au contact de la base MUSEFREM
+- Nancy Hachem
+    Lieux, gens, gens dans ces lieux : comment mieux modéliser ?
+- Christophe Corbier
+    Pour une recherche en cours sur un ensemble d'archives sonores et écrites sur Hubert Pernot (héléniste, enregistrements sur l'île de Chios en 1898–1899).
+    Approche prosopographique centrale : identifier les informateurs en France et en Grèce.
+- Jonathan Parisi
+    Mediabase du Palazzetto Bru Zane
+    Dezède
+- Aurélien Balland Chatignon
+- Kévin Roger
+    Ingénieur Biblissima+ (agrégation des données historiques liées au patrimoine écrit). Question au sein de ce projet : comment identifier numériquement un individu ?
+- Lucia Parisi
+    Postdoc à la Haute École de Berne
+    Répertoire de la mélodie française importé dans Dezède, 30000 œuvres, donc beaucoup d'individus (compositeurs, poètes, dédicataires).
+- Théodora Psychoyou
+    BDD sur un corpus d'écrits sur la musique qui mobilise une série d'auteur dont il est intéressant de définir le profil (protocole de la base Philidor du CMBV). Nom, date, statut des auteurs (maître de musique, facteur d'instruments, mathématicien, philosophe, géomètre…). Méta-index des noms (index des index des traités).
+- Guillaume Avocat
+    Ingénieur CESR
+    Contributeur MUSEFREM
+    Projet de recherche sur la musique d'Église au XIXe contenant une BDD
+- Suzy Piat
+    Base Ricercar, individus, événements (dates), œuvres
+- Nathalie Berton-Blivet
+    Référentiel des lieux de la France de l'Ancien Régime
+    ANR Acadec consacrée aux académies de province au XVIIIe, croisement de données avec MUSEFREM, parcours professionnels de certains gagistes.
+- Sarra Ferjani
+    CESR base Ricercar
+    Personnes (programme des BVH) : ontologie autour de la gestion des agents/personnes
+    Créer des méthodologies non centrées sur une discipline, mais favorisant le dialogue entre BDD qui détiennent des personnes en commun.
+- Aurélie Vasile
+    MSH Clermont-Ferrand
+    BDD « Spectacles de curiosités » prosopographique des voyages de personnes au XVIIIe siècle qui ont présenté des spectacles de curiosités (ex : événement qui dit quand une personne arrive dans une ville au moment de l'enregistrement par les autorités).
+- Marco Gurrieri
+    Métadonnées des entêtes MEI
+
+De ce tour de table émerge la friction avec la question de l'*identification* des personnes et le *recours à des référentiels* de personnes.
+
+# Prolégomènes
+
+Acteurs
+Réseau
+
+# À quel moment intervient la méthode/les bases prosopographiques ?
+
+MG
+une base prosopographique regroupe des données qui sont des métadonnées dans d'autres projets. La récolte du matériau n'est que la base. Le vrai enjeu prosopographique se fait dans une deuxième phase, sur l'étude des liens entre personnes et institutions. Les données prosopographiques sont les résultats inférés à partir de ce qui a été récolté, ce sont des données d'essence relationnelle. Ne pas croire que la phase 1 est prosopographique.
+
+NH
+1) Quand il y a foisonnement et éparpillement des documents, la constitution de données prosopographiques constitue un outil de recherche et d'appropriation des corpus.
+
+GA
+Cela dépend de la question de base, pose t-on une question prosopographique au départ du projet ? (c'est le cas de MUSEFREM, de Ricercar). Un autre projet pourra vouloir constituer des données brutes, et les données prosopographiques émergeront d'une mise en regard des données avec celles d'autres projets.
+Note : dans Ricercar, il y a des centaines de personnes qui n'existent pas ailleurs sur le Web.
+
+NBB
+La BDD n'est qu'un support, le travail prosopographique ne se fait qu'à partir de l'exploitation des données.
+
+# Entités, propriétés, relations
+
+## Personne physique ou morale ?
+
+SF
+Personne : physique ou morale ?
+
+JP
+Dezède distingue : personne physique/institution
+Une notice par institution (avec la succession des noms qu'elle a pu avoir dans l'histoire)
+
+## Personne réelle ou fictive ?
+
+KR
+Quid des personnages mythologiques ?
+
+JP
+Dans Dezède, il y a les rôles, donc des autorités rôles.
+
+TP
+Même cas dans le méta-index. Attribution à des figures mythologiques.
+
+KR
+Comment fait-on dans le CRM ?
+
+TB
+Réponse fonctionnaliste et non substantialiste.
+
+JP
+Une autorité individu réelle et fictive ne peuvent pas être utilisées de la même manière.
+
+TB
+Un événement de création peut-il engendrer des personnages modélisés comme des E21 ?
+Un crm:P2_has_type E55/fictif sur les E21 ?
+
+KR
+On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.
+
+## Statut/rôle/fonction d'une personne ?
+
+TP
+Statut
+
+LP
+Dezède : deux types de statuts/rôles : à chaque personne sont associés plusieurs statuts (compositeur, poète, chanteur, librettiste), pas de vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
+
+NBB
+Toute relation doit s'accompagner de la mention des périodes et des dates.
+
+TP
+Différence entre statut et rôle (à détacher de la prosopographie de la personne).
+Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Brossard ?»).
+Pouvoir désigner une personne selon une facette.
+
+TB
+Quand on indexe une personne, on indexe la personne en qualité de la fonction selon laquelle on la considère (Théodora en tant que directrice de l'IReMus, ou, Théodora en tant que spécialiste des rapports entre musique et sciences aux XVIIe et XVIIIe siècles).
+
+NH
+Dans les documents juridiques, les personnes sont désignées selon leur métier ou leur titre.
+
+TB
+Petit topo sur les E7, E21, E12/E65…
+
+LP
+Oui mais si n'a pas de dates, ça n'obère pas cette modélisation ?
+
+TB
+Non, et c'est un modèle accueillant et ouvert.
+
+JP
+Statut/profession
+Rôle/poste/fonction
+Le statut ne détermine pas notre fonction
+On est toujours musicologue/penseur de la musique même hors du cadre de notre fonction
+Mais comment juste dire que LVB était pédagogue ?
+
+TB
+On ne construirait pas un graphe dénotant l'activité pédagogique de LVB (car les données sont lacunaires), mais un E13 signé par un chercheur qui éprouverait le besoin de distribuer l'étiquette "pédagogue". Cet étiquetage pourrait alors être discuté sur le Web.
+
+NH
+Question : Suzy, Guillaume, Sarra, avez-vous travaillé sur la prosopographie des chantres de la Renaissance, comment ont été construites les étiquettes (composer, musician singer, master of music) ?
+
+SF
+Ces rôles ne sont pas reliés à des événements particuliers, mais attribués à une personne comme parties de son identité. Avons défini une liste fermée des choix des différents rôles.
+
+# Webographie
+
+- https://spectacle-de-curiosites.msh.uca.fr/
+- https://philidor.cmbv.fr/Publications/Bases-prosopographiques/MUSEFREM-Base-de-donnees-prosopographique-des-musiciens-d-Eglise-en-1790
+- https://ricercar.pcr.cesr.univ-tours.fr/
+- http://ricercar-old.cesr.univ-tours.fr/3-programmes/basechanson/03231-0.htm
+- https://performart.huma-num.fr/
+- https://dezede.org/
+
+
+# Notes préparatoires
 
 ## Introduction : 
 
