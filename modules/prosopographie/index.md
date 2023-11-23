@@ -157,7 +157,7 @@ JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectée
 
 # Institutions
 
-JP : Chef de tel institution de telle date à telle date. Théâtre qui contient deux salles. Théâtre éphèmère. Tout cela fonctionne assez bien dans Dezède.
+JP : Chef de tel institution de telle date à telle date. Théâtre qui contient deux salles. Théâtre éphèmère. Tout cela fonctionne assez bien dans Dezède. Dans le cas d'une programmation d'une institution dans une autre institution mais dans le cadre de sa propre programmation.
 
 # Webographie
 
