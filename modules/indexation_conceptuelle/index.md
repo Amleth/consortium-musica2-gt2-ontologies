@@ -6,16 +6,16 @@ Présents :
 
 - Thomas Bottini, IE IReMus  
 - Augustin Braud, IR Musica2 / IReMus  
-- Théodora Psychoyou, MCF Sorbonne Université, Directrice de l'IReMus  
+- Théodora Psychoyou, MCF Sorbonne Université, Directrice de l'IReMus *(catalogage de manuscrits musicaux anciens à la BnF, catalogue de traités de musiques du XVIIe œuvres et sources, méta-index)*
 - Nancy Hachem, Docteure en Musicologie  
 - Nathalie Berthon-Blivet, IR IReMus *(a indexé une sélection d'articles parus dans le Mercure Galant avec le Référentiel de l'Ancien Régime qu'elle dirige)*
 - Marco Gurrieri, IR IReMus  
 - Jean-François Goudesenne, CR IRHT, depuis le 01/10 équipex Biblissima+ Cluster 6 patrimoins musical *(répertoire très spécifique, il peut y avoir des noms de compositeurs, des œuvres, de la transmission orale, thésauri, le concept d'œuvre est discuté)*
-- Lucia Pasini, Post-doctorante Bern University of Applied Sciences  
+- Lucia Pasini, Post-doctorante Bern University of Applied Sciences *(histoire de la musique dodécaphonique suisse, refonte du répertoire de la mélodie française, importé dans Dezède)*
 - Achille Davy-Rigaux, DR IReMus  
 - Joann Elart, MCF Université de Rouen  
-- Michela Berti, IR PerformArt   
-- Louis Moreau-Gaudry, Ingénieur en éducation numérique, Philharmonie de Paris  
+- Michela Berti, IR ERC PerformArt *(BDD 6000 transcriptions de documents et événements spectaculaires)*
+- Louis Moreau-Gaudry, Ingénieur en éducation numérique, pôle ressource de la Philharmonie de Paris *(BDD documentaires physiques et numériques)*
 
 ## **Préambule : la nécéssité de la désambiguïsation**
 
