@@ -75,7 +75,7 @@ KR :
 Quid des personnages mythologiques ?
 
 JP :
-Dans Dezède, il y a les rôles, donc des autorités rôles.
+Dans Dezède, il y a les rôles, donc des autorités rôles. 
 
 TP :
 Même cas dans le méta-index. Attribution à des figures mythologiques.
@@ -84,14 +84,15 @@ KR :
 Comment fait-on dans le CRM ?
 
 TB :
-Réponse fonctionnaliste et non substantialiste.
+Réponse fonctionnaliste et non substantialiste. 
 
 JP :
 Une autorité individu réelle et fictive ne peuvent pas être utilisées de la même manière.
 
 TB :
 Un événement de création peut-il engendrer des personnages modélisés comme des E21 ?
-Un crm:P2_has_type E55/fictif sur les E21 ?
+Un crm:P2_has_type E55/fictif sur les E21 ? 
+Ou encore E28 objet conceptuel ? Un personnage mythologique est quoi qu'il arrive ré-instancié sur le plan scientifique pour faciliter sa modélisation.
 
 KR :
 On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.
