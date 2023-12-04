@@ -46,13 +46,13 @@ De ce tour de table émerge la friction avec la question de l'*identification* d
 # À quel moment intervient la méthode/les bases prosopographiques ?
 
 MG :
-une base prosopographique regroupe des données qui sont des métadonnées dans d'autres projets. La récolte du matériau, phase 1, n'est que la base. Le vrai enjeu prosopographique se fait dans une deuxième phase, sur l'étude des liens entre personnes et institutions. Les données prosopographiques sont les résultats inférés à partir de ce qui a été récolté, ce sont des données d'essence relationnelle. Ne pas croire que la phase 1 est prosopographique.
+une base prosopographique regroupe des données qui sont des métadonnées dans d'autres projets. La récolte du matériau, phase 1, n'est que la base. Le vrai enjeu prosopographique se fait dans une deuxième phase, sur l'étude des liens entre personnes et institutions. Les données prosopographiques sont les résultats inférés à partir de ce qui a été récolté, ce sont des données d'essence relationnelle, émanant de l'interprétation et du croisement des métadonnées. Ne pas croire que la phase 1 est prosopographique.
 
 NH :
 Quand il y a foisonnement et éparpillement des documents, la constitution de données prosopographiques constitue un outil de recherche et d'appropriation des corpus. Il n'y a pas vraiment de phase 1 dans ce cas.
 
 GA :
-Cela dépend de la question de base, pose t-on une question prosopographique au départ du projet ? (c'est le cas de MUSEFREM, de Ricercar). Un autre projet pourra vouloir constituer des données brutes, et les données prosopographiques émergeront d'une mise en regard des données avec celles d'autres projets.
+Cela dépend de la question de base, pose t-on une question prosopographique au départ du projet ? (c'est le cas de MUSEFREM, de Ricercar). Un autre projet pourra vouloir constituer des données brutes, et les données prosopographiques émergeront d'une mise en regard des données avec celles d'autres projets. Guillaume souligne la nécessité de l'alignement à un stade plus avancé du travail prosopographique.
 Note : dans Ricercar, il y a des centaines de personnes qui n'existent pas ailleurs sur le Web.
 
 NBB :
