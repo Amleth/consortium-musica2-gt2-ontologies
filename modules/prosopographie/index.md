@@ -151,13 +151,13 @@ NH : Question : Suzy, Guillaume, Sarra, avez-vous travaillé sur la prosopograp
 
 SF : Ces rôles ne sont pas reliés à des événements particuliers, mais attribués à une personne comme parties de son identité. Avons défini une liste fermée des choix des différents rôles.
 
-GA : Synthèse des échanges : on peut associer un rôle à une personne, ou associer un rôle à une personne par le truchement d'un événement.
+GA : Synthèse des échanges : on peut associer un rôle à une personne, ou associer un rôle à une personne par le truchement d'un événement indexé en fonction du rôle le plus pertinent.
 
 TB : S'investir dans ```crm:P14.1_in_the_role_of```.
 
 ## Relations
 
-MG : Caractère symétrique (frère) ou non (maître/élève) de la relation.
+MG : Caractère symétrique (frère) ou non (maître/élève) de la relation. 
 
 LP : Dans Dezède, si A est élève de B, alors B est maître de A (automatiquement).
 
