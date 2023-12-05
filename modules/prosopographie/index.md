@@ -91,11 +91,13 @@ Une autorité individu réelle et fictive ne peuvent pas être utilisées de la 
 
 TB :
 Un événement de création peut-il engendrer des personnages modélisés comme des E21 ?
-Un crm:P2_has_type E55/fictif sur les E21 ? 
-Ou encore E28 objet conceptuel ? Un personnage mythologique est quoi qu'il arrive ré-instancié sur le plan scientifique pour faciliter sa modélisation.
+Un crm:P2_has_type E55/fictif sur les E21 ? Ou encore E28 objet conceptuel ? Un personnage mythologique est quoi qu'il arrive ré-instancié sur le plan scientifique pour faciliter sa modélisation. 
+
+AV : 
+Quelle ontologie choisir pour avoir une interopérabilité maximale ? 
 
 KR :
-On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.
+Souligne que la dualité fictif et réel peut aussi être appropriée en parlant d'événements. On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.  
 
 ## Statut/rôle/fonction d'une personne ?
 
@@ -117,7 +119,11 @@ Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Br
 Pouvoir désigner une personne selon une facette.
 
 TB :
-Quand on indexe une personne, on indexe la personne en qualité de la fonction selon laquelle on la considère (Théodora en tant que directrice de l'IReMus, ou, Théodora en tant que spécialiste des rapports entre musique et sciences aux XVIIe et XVIIIe siècles).
+Quand on indexe une personne, on indexe la personne en qualité de la fonction selon laquelle on la considère (Théodora en tant que directrice de l'IReMus, ou, Théodora en tant que spécialiste des rapports entre musique et sciences aux XVIIe et XVIIIe siècles). Dans le CRM, les rôles sont temporellement assignés et liés de manière intrinsèque à un _time span_ et/ou une _place_ ; le statut n’est donc pas tant inhérent à une personne qu'à une période temporelle. 
+
+Un géomètre :
+—> prend part à une activité qui est liée à la géométrie 
+—> auteur d’une oeuvre à teneur géométrique 
 
 NH :
 Dans les documents juridiques, les personnes sont désignées selon leur métier ou leur titre.
@@ -126,7 +132,7 @@ TB :
 Petit topo sur les E7, E21, E12/E65…
 
 LP :
-Oui mais si n'a pas de dates, ça n'obère pas cette modélisation ?
+Oui mais si n'a pas de dates, ça n'opère pas cette modélisation ?
 
 TB :
 Non, et c'est un modèle accueillant et ouvert.
@@ -134,9 +140,10 @@ Non, et c'est un modèle accueillant et ouvert.
 JP : 
 Statut/profession.
 Rôle/poste/fonction.
-Le statut ne détermine pas notre fonction.
-On est toujours musicologue/penseur de la musique même hors du cadre de notre fonction
+Le statut ne détermine pas notre fonction ; nécessité d’exprimer un grand nombre de tâches sans pouvoir attester des activités liées à cette fonction. On est toujours musicologue/penseur de la musique même hors du cadre de notre fonction
 Mais comment juste dire que LVB était pédagogue ?
+
+NBB : il ne faut pas mélanger les niveaux, Maître Jean est maître à partir de son diplôme mais aussi appelé (nom d’usage) Maître Jean.
 
 TB : On ne construirait pas un graphe dénotant l'activité pédagogique de LVB (car les données sont lacunaires), mais un E13 signé par un chercheur qui éprouverait le besoin de distribuer l'étiquette "pédagogue". Cet étiquetage pourrait alors être discuté sur le Web.
 
