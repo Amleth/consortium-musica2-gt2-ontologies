@@ -161,7 +161,7 @@ MG : Caractère symétrique (frère) ou non (maître/élève) de la relation.
 
 LP : Dans Dezède, si A est élève de B, alors B est maître de A (automatiquement).
 
-JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectées en regardant le graphe, et dynamiquement injectée dans le cartouche de présentation de la personne.
+JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectées en regardant le graphe, et dynamiquement injectée dans le cartouche de présentation de la personne. La démonstration prouve que cet exemple de prosopographie relationnelle prend sens par l'interprétation des données.
 
 # Institutions
 
