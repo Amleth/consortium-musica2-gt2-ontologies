@@ -101,16 +101,6 @@ L'assemblée souligne que la part de subjectivité mise en œuvre va jouer sur l
 
 
 
-Faire le point sur les termes : 
-
-Vocabulaire contrôlé : arrive dès que l’utilisateur ne peut pas saisir npq mais a le choix entre des termes définis au sein de l’outil (cf exemple des en-têtes MEI) 
-
-
-
-Ontologie permet de se doter d’une définition formelle des concepts ; « qu’est ce qui est irréductible à la teneur conceptuelle de ce qui fait l’homme ? »
-Décrire / être à l’intérieur de : analyse ontologique, perception de la teneur des choses
-Fixation de la représentation commune de quelque chose / modélisation schématisation abstraction du produit de sa lecture
-
 Base de données peut ne pas être rangée, rassemblement de données sans supposer le fait qu’elles soient écrites, etc. 
 
 Référentiel doit être reconnu par suffisamment de personnes pour attester de son statut de référence ; question de confiance à l’institution qui la porte, question des alignements.
@@ -130,7 +120,7 @@ Mimo : deux référentiels etc : au-delà du référentiel principal, on relie u
 Theo ; la subjectivité va jouer sur la profondeur de l’analyse et du détail, il faut accepter de s’arrêter à un moment / penser aux index-matières du RILM 
 une partie du périmètre peut être pensée en amont
 
-Thesaurus n’a de sens que pour ce que pour quoi il a été conçu
+
 
 Livrable conjoint entre GT2 et GTZZ ; personne référence pour faire des pivots et remplissage d’un graphe du consortium en ajoutant des données
 Serveur Humanum pour Mimo, lien avec la Philharmonie, facade prouvant que plusieurs jeux de données peuvent être mis en commun conformité nécessaire avec data bnf
