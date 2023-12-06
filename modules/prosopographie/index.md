@@ -167,6 +167,14 @@ JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectée
 
 JP : Chef de tel institution de telle date à telle date. Théâtre qui contient deux salles. Théâtre éphèmère. Tout cela fonctionne assez bien dans Dezède. Dans le cas d'une programmation d'une institution dans une autre institution mais dans le cadre de sa propre programmation.
 
+# Commanditaires 
+
+On se pose la question de la possibilité de modéliser :
+- un hommage, une dédicace : l'idée de dédicataire existe dans l’ontologie SDHSS, un projet managé par la même équipe que le CRM-Soc.
+- une transcription : aisé à exprimer en Lrm.
+- un commanditaire : si lien avec l’institution plus aisé à exprimer qu'un commanditaire _informel_ (par exemple, commande à l'occasion d'un anniversaire, etc). Dans le cadre d'une commande institutionnelle on peut exprimer des données prosopographiques très précises sur un _time-span_ : direction, changement d'adresse, etc.
+- Doremus ainsi que l'ébauche de la Péniche Opéra peuvent être de bons référentiels dans ces cas.
+
 # Webographie
 
 - https://spectacle-de-curiosites.msh.uca.fr/
