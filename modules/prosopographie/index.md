@@ -62,7 +62,7 @@ La BDD n'est qu'un support, le travail prosopographique ne se fait qu'à partir 
 
 ## Personne physique ou morale ?
 
-Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. Les personnes physiques sont ainsi des formants des personnes morales
+Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. O
 
 SF :
 Personne : physique ou morale ?
@@ -73,8 +73,7 @@ Une notice par institution (avec la succession des noms qu'elle a pu avoir dans 
 
 ## Personne réelle ou fictive ?
 
-KR :
-Quid des personnages mythologiques ?
+Les personnages fictifs, tels que des personnages mythologiques, posent question car leur modélisation ne peut être similaire. Dans le cas d'un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif. Dans ce cas, la fonction prime sur la nature, puisqu'un personnage mythologique sera forcément ré-instancié sur le plan scientifique. À nouveau dans le cas de Dézède, des rôles sont confiés aux personnages et font autorité sur leur caractère fictif ou non, ce qui détermine ensuite leur usage.
 
 JP :
 Dans Dezède, il y a les rôles, donc des autorités rôles. 
@@ -93,7 +92,7 @@ Une autorité individu réelle et fictive ne peuvent pas être utilisées de la 
 
 TB :
 Un événement de création peut-il engendrer des personnages modélisés comme des E21 ?
-Un crm:P2_has_type E55/fictif sur les E21 ? Ou encore E28 objet conceptuel ? Un personnage mythologique est quoi qu'il arrive ré-instancié sur le plan scientifique pour faciliter sa modélisation. 
+Un  ? Ou encore E28 objet conceptuel ? Un personnage mythologique est quoi qu'il arrive ré-instancié sur le plan scientifique pour faciliter sa modélisation. 
 
 AV : 
 Quelle ontologie choisir pour avoir une interopérabilité maximale ? 
