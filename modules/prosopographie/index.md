@@ -45,15 +45,9 @@ De ce tour de table émerge la friction avec la question de l'*identification* d
 
 # À quel moment intervient la méthode/les bases prosopographiques ?
 
-L'intérêt d'une base prosopographique est de regrouper des données étant en fait des métadonnées dans d'autres projets. La récolte des informations constitue la première étape du travail et ne présente _in fine_ aucun caractère prosopographique. Néanmoins, lors d'un foisonnement et éparpillement des documents, la constitution de données prosopographiques devient un outil de recherche et d'appropriation des corpus et se substitue à la phase 1. Dans des cas moins complexes, l'enjeu prosopographique réel est révélé dans la seconde étape, consistant à étudier les liens tangibles entres personnes et institutions. Les données prosopographiques sont donc les résultats inférés à partir de ce qui a été récolté, des données d'essence relationnelle émanant de l'interprétation et du croisement des métadonnées.
+L'intérêt d'une base prosopographique est de regrouper des données étant en fait des métadonnées dans d'autres projets. La méthodologie à utiliser dépend fortement de la question initiale ; si celle-ci revêt une dimension prosopographique inhérente (MUSEFREM, Ricercar), le processus sera différent de la constitution d'une base de données brutes où l'aspect prosopographique émergera d'une mise en regard de mutiple données. La singularité de chaque base est importante (Ricercar contient par exemple des centaines de personnes n'existant nulle part ailleurs) et se révèle par le croisement des sources. 
 
-
-GA :
-Cela dépend de la question de base, pose t-on une question prosopographique au départ du projet ? (c'est le cas de MUSEFREM, de Ricercar). Un autre projet pourra vouloir constituer des données brutes, et les données prosopographiques émergeront d'une mise en regard des données avec celles d'autres projets. Guillaume souligne la nécessité de l'alignement à un stade plus avancé du travail prosopographique.
-Note : dans Ricercar, il y a des centaines de personnes qui n'existent pas ailleurs sur le Web.
-
-NBB :
-La BDD n'est qu'un support, le travail prosopographique ne se fait qu'à partir de l'exploitation des données.
+Le travail sur une telle base est divisé une plusieurs étapes : la récolte des informations entame le travail et ne présente _in fine_ aucun caractère prosopographique. Néanmoins, lors d'un foisonnement et éparpillement des documents, la constitution de données prosopographiques devient un outil de recherche et d'appropriation des corpus et se substitue à la phase 1. Dans des cas moins complexes, l'enjeu prosopographique réel est révélé dans la seconde étape, consistant à étudier les liens tangibles entres personnes et institutions. Les données prosopographiques sont donc les résultats inférés à partir de ce qui a été récolté, des données d'essence relationnelle émanant de l'interprétation et du croisement des métadonnées. La base n'est néanmoins qu'un support, le travail prosopographique étant effectué lors de l'exploitation des données.
 
 # Personnes
 
@@ -61,41 +55,11 @@ La BDD n'est qu'un support, le travail prosopographique ne se fait qu'à partir 
 
 Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. O
 
-SF :
-Personne : physique ou morale ?
-
-JP :
-Dezède distingue : personne physique/institution.
-Une notice par institution (avec la succession des noms qu'elle a pu avoir dans l'histoire).
-
 ## Personne réelle ou fictive ?
 
-Les personnages fictifs, tels que des personnages mythologiques, posent question car leur modélisation ne peut être similaire. Dans le cas d'un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif. Dans ce cas, la fonction prime sur la nature, puisqu'un personnage mythologique sera forcément ré-instancié sur le plan scientifique. À nouveau dans le cas de Dézède, des rôles sont confiés aux personnages et font autorité sur leur caractère fictif ou non, ce qui détermine ensuite leur usage.
+Les personnages fictifs, tels que des personnages mythologiques, posent question car leur modélisation ne peut être similaire. Dans le cas de l'usage du Cidoc CRM pour un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif ; il est néanmoins nécessaire de réflechir au choix d'une ontologie permettant une interopérabilité maximale ?  
 
-JP :
-Dans Dezède, il y a les rôles, donc des autorités rôles. 
-
-TP :
-Même cas dans le méta-index. Attribution à des figures mythologiques.
-
-KR :
-Comment fait-on dans le CRM ?
-
-TB :
-Réponse fonctionnaliste et non substantialiste. 
-
-JP :
-Une autorité individu réelle et fictive ne peuvent pas être utilisées de la même manière.
-
-TB :
-Un événement de création peut-il engendrer des personnages modélisés comme des E21 ?
-Un  ? Ou encore E28 objet conceptuel ? Un personnage mythologique est quoi qu'il arrive ré-instancié sur le plan scientifique pour faciliter sa modélisation. 
-
-AV : 
-Quelle ontologie choisir pour avoir une interopérabilité maximale ? 
-
-KR :
-Souligne que la dualité fictif et réel peut aussi être appropriée en parlant d'événements. On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.  
+Dans ce cas, la fonction prime sur la nature, puisqu'un personnage mythologique sera forcément ré-instancié sur le plan scientifique. En dehors de problématiques de modélisation, des rôles sont confiés aux personnages et font autorité sur leur caractère fictif ou non, ce qui détermine ensuite leur usage. Il faut également souligner que la dualité entre fictif et réel peut aussi être appropriée en parlant d'événements. On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.  
 
 ## Statut/rôle/fonction d'une personne ?
 
