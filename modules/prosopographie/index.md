@@ -53,7 +53,7 @@ Le travail sur une telle base est divisé une plusieurs étapes : la récolte de
 
 ## Personne physique ou morale ?
 
-Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. O
+Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. 
 
 ## Personne réelle ou fictive ?
 
@@ -62,6 +62,13 @@ Les personnages fictifs, tels que des personnages mythologiques, posent question
 Dans ce cas, la fonction prime sur la nature, puisqu'un personnage mythologique sera forcément ré-instancié sur le plan scientifique. En dehors de problématiques de modélisation, des rôles sont confiés aux personnages et font autorité sur leur caractère fictif ou non, ce qui détermine ensuite leur usage. Il faut également souligner que la dualité entre fictif et réel peut aussi être appropriée en parlant d'événements. On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.  
 
 ## Statut/rôle/fonction d'une personne ?
+
+Les personnes peuvent être qualifiées par des statuts ou des rôles : les statuts désignent une position objective occupée en fonction d'une qualification d'un grade, et sont définis par plusieurs caractéristiques objectives qui déterminent socialement la position des individus. Le rôle vient s'ajouter au statut de manière souvent plus informelle et permet de distinguer la place sociale des individus.
+
+
+(à détacher de la prosopographie de la personne).
+Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Brossard ?»).
+Pouvoir désigner une personne selon une facette.
 
 TP :
 Statut
@@ -76,9 +83,7 @@ NBB :
 Toute relation doit s'accompagner de la mention des périodes et des dates.
 
 TP :
-Différence entre statut et rôle (à détacher de la prosopographie de la personne).
-Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Brossard ?»).
-Pouvoir désigner une personne selon une facette.
+
 
 TB :
 Quand on indexe une personne, on indexe la personne en qualité de la fonction selon laquelle on la considère (Théodora en tant que directrice de l'IReMus, ou, Théodora en tant que spécialiste des rapports entre musique et sciences aux XVIIe et XVIIIe siècles). Dans le CRM, les rôles sont temporellement assignés et liés de manière intrinsèque à un _time span_ et/ou une _place_ ; le statut n’est donc pas tant inhérent à une personne qu'à une période temporelle. 
