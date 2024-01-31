@@ -62,6 +62,8 @@ La BDD n'est qu'un support, le travail prosopographique ne se fait qu'à partir 
 
 ## Personne physique ou morale ?
 
+Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. Les personnes physiques sont ainsi des formants des personnes morales
+
 SF :
 Personne : physique ou morale ?
 
