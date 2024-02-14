@@ -13,18 +13,20 @@ Ces ateliers ont malgré tout démontré la nécessité de l'usage d'outils onto
 
 Nous avons également souhaité valoriser les ressources du Consortium Musica2 à travers deux ateliers démontrant l'intérêt du croisement d'outils ontologiques avec d'autres approches. Nous avons ainsi collaboré avec le GT1 "MEI" pour un atelier dédié à la question des métadonnées MEI dans divers projets éditoriaux, et pourrons ainsi aborder le croisement des outils issus de la MEI et du Cidoc-CRM dans le travail sur les **éditions critiques**. Bien que les cas abordés se focalisent majoritairement sur des périodes allant de la musique ancienne au Romantisme, nous avons souhaité collaborer avec le GT4 "Numérisation et archivage des musiques contemporaines" afin de réfléchir aux possibilités de **modélisation ontologique pour le répertoire contemporaine**. Le large scope abordé par ces thématiques transversales vient compléter les modules fondamentaux et nourrit une réflexion critique.
 
-## **1. Besoin musicologique** (ou méthodologique) de modélisation exprimé sous la forme d’une questions (le guide répond à des questions concrètes)
+## 1. Datation : 
+### a. Besoins musicologiques
 
-Guide : liste de cas de modélisation organisée en grandes thématiques (plus ou moins thématiques des ateliers) 
+### b. Problématisation 
 
-**2. Problématisation :** lister ce qui n’est pas trivial, les écueils, les choses qui ne se perçoivent pas immédiatement (apport analytique et mise en contexte)
+### c. Contextualisation technique
 
-
-
-
+### d. Proposition Cidoc-CRM
 
 
-**3. Contextualisation technique :** expérience problématique puis analyse technique de la question
+
+
+
+expérience problématique puis analyse technique de la question
 
 **Dates**
 Directions retenues
@@ -44,7 +46,7 @@ Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre �
 
 **
 
-4. Proposition Cidoc-CRM : a) bout de graphe qui illustre la proposition b) alternatives CRM commentées c) identifier les limitations, les problèmes potentiels
+: a) bout de graphe qui illustre la proposition b) alternatives CRM commentées c) identifier les limitations, les problèmes potentiels
 
 · Faire des liens entre les cas
 · Montrer les liens avec le GT1 et GT4 
