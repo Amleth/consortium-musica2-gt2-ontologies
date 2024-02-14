@@ -11,7 +11,7 @@ Bien que nous abordions diverses ontologies durant ces ateliers, telles LRMoo ou
 
 Ces ateliers ont malgré tout démontré la nécessité de l'usage d'outils ontologiques dans la bonne gestion de certaines métadonnées et l'interopérabilité qu'elles offrent dans le cadre de projets de recherche à toutes échelles. Certains modules nécéssitent malgré tout une attention toute particulière et furent abordés en détail dans des ateliers éponymes, afin de poser le fondations sur lesquelles notre groupe de travail fournira des recommandations de bonnes pratiques. Ce document abordera dans un premier temps des questions liées à la **datation** et plus particulièrement à l'adéquation recherchée entre la nécessité informatique d'une date précise et la souplesse nécessaire à la juste transmission de l'information scientifique. Faisant logiquement suite à ces problématiques, nous nous questionnerons sur les enjeux soulevés lors d'un travail de **prosopographie**, s'intéressant aux dates et lieux mais aussi aux personnes et institutions, ajoutant ainsi un niveau supplémentaire de complexité à notre travail de modélisation. Après avoir abordé ces points, nous pourrons nous consacrer à l'**indexation conceptuelle** et l'usage des _thesaurii_, nous permettant à nouveau d'aborder un champ d'abstraction supplémentaire dans notre travail de modélisation. 
 
-Nous avons également souhaité valoriser les ressources du Consortium Musica2 à travers deux ateliers démontrant l'intérêt du croisement d'outils ontologiques avec d'autres approches. Nous avons ainsi collaboré avec le GT1 "MEI" pour un atelier dédié à la question des métadonnées MEI dans divers projets éditoriaux, et pourrons ainsi aborder le croisement des outils issus de la MEI et du Cidoc-CRM dans le travail sur les **éditions critiques**. Bien que les cas abordés se focalisent majoritairement sur des périodes allant de la musique ancienne au Romantisme, nous avons souhaité collaborer avec le GT4 "Numérisation et archivage des musiques contemporaines" afin de réfléchir aux possibilités de **modélisation ontologique pour le répertoire contemporaine**. Le large scope abordé par ces thématiques transversales vient compléter les modules fondamentaux et nourrit une réflexion critique.
+Nous avons également souhaité valoriser les ressources du Consortium Musica2 à travers deux ateliers démontrant l'intérêt du croisement d'outils ontologiques avec d'autres approches. Nous avons ainsi collaboré avec le GT1 "MEI" pour un atelier dédié à la question des métadonnées MEI dans divers projets éditoriaux, et pourrons ainsi aborder le croisement des outils issus de la MEI et du Cidoc-CRM dans le travail sur les **éditions critiques**. Bien que les cas abordés se focalisent majoritairement sur des périodes allant de la musique ancienne au Romantisme, nous avons souhaité collaborer avec le GT4 "Numérisation et archivage des musiques contemporaines" afin de réfléchir aux possibilités de **modélisation ontologique pour le répertoire contemporain**. Le large scope abordé par ces thématiques transversales vient compléter les modules fondamentaux et nourrit une réflexion critique.
 
 ## 1. Datation : 
 ### a. Besoins musicologiques
@@ -62,5 +62,43 @@ Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre �
 · Faire des liens entre les cas
 · Montrer les liens avec le GT1 et GT4 
 
+## 2. Prosopographie : 
+### a. Besoins musicologiques
+
+### b. Problématisation 
+
+### c. Contextualisation technique
+
+### d. Proposition Cidoc-CRM
 
 
+
+
+## 3. Indexation conceptuelle et thesaurii : 
+### a. Besoins musicologiques
+
+### b. Problématisation 
+
+### c. Contextualisation technique
+
+### d. Proposition Cidoc-CRM
+
+
+## 4. Éditions critiques : 
+### a. Besoins musicologiques
+
+### b. Problématisation 
+
+### c. Contextualisation technique
+
+### d. Proposition Cidoc-CRM
+
+
+## 5. Modélisation ontologique pour le répertoire contemporain : 
+### a. Besoins musicologiques
+
+### b. Problématisation 
+
+### c. Contextualisation technique
+
+### d. Proposition Cidoc-CRM
