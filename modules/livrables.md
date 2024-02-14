@@ -16,6 +16,10 @@ Nous avons également souhaité valoriser les ressources du Consortium Musica2 �
 ## 1. Datation : 
 ### a. Besoins musicologiques
 
+Pour le chercheur en sciences humaines, la possibilité d'exprimer le temps de manière souple est primordiale
+
+pour le chercheur en SHS, le fait qu'un événement ne dispose pas de date calculable par la machine (c'est-à-dire exprimable en ISO 8601) l'exclu de fait de toute représentation chronologique calculée des données. En conséquence, il faudrait que toute date « souple » soit flanquée d'un intervalle défini par deux dates calculables. Ces dates devraient pouvoir être définies par le chercheur, car il est le seul à savoir comment doit être raisonablement résolue une approximation comme « 3ème quart du 4ème siècle » (350—375 ? Autre chose ?). Les intervalles peuvent alors être définis de quatre manières principales :
+
 ### b. Problématisation 
 
 ### c. Contextualisation technique
@@ -30,7 +34,7 @@ expérience problématique puis analyse technique de la question
 
 **Dates**
 Directions retenues
-Si la possibilité d'exprimer le temps de manière souple est importante pour le chercheur en SHS, le fait qu'un événement ne dispose pas de date calculable par la machine (c'est-à-dire exprimable en ISO 8601) l'exclu de fait de toute représentation chronologique calculée des données. En conséquence, il faudrait que toute date « souple » soit flanquée d'un intervalle défini par deux dates calculables. Ces dates devraient pouvoir être définies par le chercheur, car il est le seul à savoir comment doit être raisonablement résolue une approximation comme « 3ème quart du 4ème siècle » (350—375 ? Autre chose ?). Les intervalles peuvent alors être définis de quatre manières principales :
+
 
 **
 
