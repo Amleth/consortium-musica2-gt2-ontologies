@@ -20,11 +20,18 @@ Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre �
 ## 1. Datation : 
 ### a. Besoins musicologiques
 
-Les besoins variés du chercheur en sciences humaines pour la définition du temps et de ses implications ont été clairement soulignés lors de l'atelier _datation_. Ceux-ci peuvent être exprimés comme suit :
+Les besoins variés du chercheur en sciences humaines pour la définition du temps et de ses implications ont été clairement soulignés lors de l'atelier _datation_ par la mise en exergue de divers cas particuliers complexes, voire douteux. Par exemple, dans le cas de _L’Heure espagnole_ de Ravel, la partition chant et piano a été publiée en 1908 mais l'orchestration réalisée en 1910. La première interprétation publique de l’opéra a eu lieu en 1911, la même année que la publication de la partition pour orchestre. Ce cas souligne donc la possibilité de multiplier les champs "date" correspondant aux diverses versions de l'œuvre.
+  - **Pour une personne :** une incertitude se présente pour une personne née la dernière décennie de février 1766, pouvant également être exprimé le 2?/02/1766. Idem pour une date présentant une incertitude plus ou moins toléré, comme un décès survenu le 7 ou 15/12/1654. Lors de l'usage du Cidoc CRM, plusieurs instances de E13 viendront justifier les choix de datation.
+  - **Pour une institution :** le terme _circa_ est régulièrement utilisé ; quid de sa désignation scientifique ? Par exemple, une institution fondée circa 1540.
+
+Ceux-ci peuvent être exprimés comme suit :
 
 - Pouvoir exprimer le temps de manière souple
 - Rendre compte d'un doute 
 - S'inscrire dans un champ temporel informatiquement normé et compréhensible
+
+
+  - **Pour un événement.**
 
 ### b. Problématisation 
 
@@ -43,13 +50,7 @@ En conséquence, il faudrait que toute date « souple » soit flanquée d'un int
 
 #### Souplesse dans l'expression des dates vs nécessité informatique d'une date précise
 
-##### Besoins musicologiques
 
-- Marco Gurrieri présente des exemples d'indications temporelles avec incertitudes pouvant être complexes, voire douteux :
-  - **Pour un objet :** la datation de _L’Heure espagnole_ de Ravel porte par exemple à confusion. La partition chant et piano a été publiée en 1908 mais l'orchestration réalisée en 1910. La première interprétation de l’opéra a eu lieu en 1911, la même année que la publication de la partition pour orchestre. Ce cas souligne donc la possibilité de multiplier les champs "date".
-  - **Pour une personne :** une incertitude se présente pour une personne née la dernière décennie de février 1766, pouvant également être exprimé le 2?/02/1766. Idem pour une date présentant une incertitude plus ou moins toléré, comme un décès survenu le 7 ou 15/12/1654. Lors de l'usage du Cidoc CRM, plusieurs instances de E13 viendront justifier les choix de datation.
-  - **Pour une institution :** le terme _circa_ est régulièrement utilisé ; quid de sa désignation scientifique ? Par exemple, une institution fondée circa 1540.
-  - **Pour un événement.**
 
 
 ##### Directions retenues
