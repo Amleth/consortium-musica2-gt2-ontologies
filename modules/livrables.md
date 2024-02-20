@@ -284,9 +284,6 @@ On se pose la question de la possibilité de modéliser :
 - https://phn-wiki.ish-lyon.cnrs.fr/doku.php?id=intro_histoire_numerique:conceptualisation_information
 - https://ontome.net/namespace/3#namespace-hierarchy
 
-<hr/>
-
-
 
 
 
@@ -375,7 +372,7 @@ O(E7_activity<br>1 entremet 2 et 3) ---> |crm:p2_has_type| P(crm:e55_type<br>ent
 B(E7_activity<br>Fréquentation 1&2) ----> |crm:p4_has_time_span| I(crm:E52_time_span)
 D(E7_activity<br>Fréquentation 1&3) ----> |crm:p4_has_time_span| N(crm:E52_time_span)
 
-
+```
 
 ##3. Indexation conceptuelle et thesaurii :
 ### a. Besoins musicologiques
