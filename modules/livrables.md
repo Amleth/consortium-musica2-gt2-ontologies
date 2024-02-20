@@ -17,20 +17,6 @@ Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre �
 
 ### **_Définition de termes importants :_**  
 
-#### _Thesaurii :_  
-
-Les _thesaurii_ portent soit des mots, soit des concepts. Il se pose alors notamment la question de la polysémie, où l'on fait souvent face au fait que deux auteurs utilisent des termes similaires pour deux choses très différentes (l'exemple de « cadence » est cité); le contexte permet de déterminer le sens. Le mot n’est ainsi jamais univoque. Les _thesaurii_ présentent de manière intrinsèque un aspect arborescent. Un terme peut avoir plusieurs parents et apparaître à différents endroits, un noeud peut avoir plusieurs parents ; un _thesaurus_ n’a donc de sens que pour ce que pour quoi il a été conçu.
-
-Faut-il ainsi faire appel à plusieurs _thesaurii_ pour un meme mot ou bien intégrer plusieurs définitions dans un seul _thesaurus_? Les _thesaurii_ possèdent par ailleurs un aspect arborescent ; un terme peut avoir plusieurs parents et apparaître à différents endroits, un noeud peut avoir plusieurs parents, etc... L'expression du doute étant fondamentale dans notre travail, nous avons besoin de E13 pour informer des choix et de leur nature. 
-
-Le principal problème des _thesaurii_ est le fait qu'ils ne soulignent pas clairement les aspects génétiques et diachroniques. Il n'y a en effet pas de sens de constituer un thesaurus avant de mettre le nez dans les sources ; l'assemblée emploi l'expression d'un « couteau affuté au fur et à mesure de son usage », un parallélisme tempéré par l’expérience de la recherche. Un enjeu pour la constitution de futurs _thesaurii_ est leur publication avec les usages leur correspondant, en considérant la possibilité d'une cartographie de la transmission, avec à nouveau l'usage de E13. La tradition orale (acceptation de l'attribution d'une source, _etc_) empêche parfois l'information d'être traitée de la bonne manière et peut même mener jusqu'à l'anachronisme, en utilisant des outils récents pour commenter le passé.
-
-#### _Vocabulaire contrôlé :_  
-
-Il s'agit d'une circonscription du vocable indiquant à l’utilisateur des termes définis au sein de l’outil au contraire d'un champ de texte libre. 
-
-L'assemblée souligne le problème de cas limites présentant une non-correspondance entre mots et concepts, en prenant l'exemple de "partition" qui ne correspond pas au concept et peut donc soulever des problèmes d’attribution. Il est donc nécessaire de régulièrement remettre à jour ces vocables, en veillant à l’anachronisme de l'usage d'outils récents pour commenter le passé.
-
 #### _Ontologie :_  
 
 L'ontologie permet de se doter d’une définition formelle des concepts, et d'exprimer ce qui est irréductible à la teneur conceptuelle. Par l'usage de l'analyse et  modélisation ontologique, on peut décrire l'intérieur-même des concepts et viser une perception fine de la teneur des choses.
@@ -39,6 +25,15 @@ L'ontologie permet de se doter d’une définition formelle des concepts, et d'e
 
 Organisation devant être reconnue par un nombre suffisant de membres de la communauté scientifique pour attester de son statut de référence. Ceci est atteint par une confiance donnée à l’institution qui porte le référentiel, un nombre suffisant d'alignements, _etc_. Il est par ailleurs possible pour un même objet de s'inscrire dans plusieurs référentiels qui ne correspondent pas forcément ; le choix de l'outil est absolument situationnel.
 
+#### _Thesaurii :_  
+
+Les _thesaurii_ portent soit des mots, soit des concepts. Il se pose alors notamment la question de la polysémie, où l'on fait souvent face au fait que deux auteurs utilisent des termes similaires pour deux choses très différentes (l'exemple de « cadence » est cité); le contexte permet de déterminer le sens. Le mot n’est ainsi jamais univoque. Les _thesaurii_ présentent de manière intrinsèque un aspect arborescent. Un terme peut avoir plusieurs parents et apparaître à différents endroits, un noeud peut avoir plusieurs parents ; un _thesaurus_ n’a donc de sens que pour ce que pour quoi il a été conçu.
+
+#### _Vocabulaire contrôlé :_  
+
+Il s'agit d'une circonscription du vocable indiquant à l’utilisateur des termes définis au sein de l’outil au contraire d'un champ de texte libre. 
+
+L'assemblée souligne le problème de cas limites présentant une non-correspondance entre mots et concepts, en prenant l'exemple de "partition" qui ne correspond pas au concept et peut donc soulever des problèmes d’attribution. Il est donc nécessaire de régulièrement remettre à jour ces vocables, en veillant à l’anachronisme de l'usage d'outils récents pour commenter le passé.
 
 
 **
@@ -48,20 +43,15 @@ Organisation devant être reconnue par un nombre suffisant de membres de la comm
 
 Les besoins variés du chercheur en sciences humaines pour la définition du temps et de ses implications ont été clairement soulignés lors de l'atelier _datation_ par la mise en exergue de divers cas particuliers complexes, voire douteux. Par exemple, dans le cas de _L’Heure espagnole_ de Ravel, la partition chant et piano a été publiée en 1908 mais l'orchestration réalisée en 1910. La première interprétation publique de l’opéra a eu lieu en 1911, la même année que la publication de la partition pour orchestre. Ce cas souligne donc la possibilité de multiplier les champs "date" correspondant aux diverses versions de l'œuvre. Le terme _circa_ est par ailleurs régulièrement employé bien qu'il manque de précision à plusieurs égards. 
 
-Ceux-ci peuvent être exprimés comme suit :
+Les différents référentiels calendaires en usage questionnent également quant à leur lisibilité mais aussi leur alignement avec d'autres normes. Nous pouvons notamment évoquer pour la période s'étirant du Moyen-Âge à la Renaissance les calendriers suivants : 
+- Style de la Circoncision de Jésus : calendrier débutant au 1er janvier ;
+- Style vénitien : calendrier débutant au 1er mars ;
+- Style florentin / style de l’Annonciation : calendrier débutant au 25 mars; typique du sud de l’Europe et de Angleterre ;
+- Style de la Nativité de Jésus : calendrier débutant au 25 décembre  ;
+- Calendrier débutant à Pâques (notamment dans certaines régions françaises) ;
+- En 1564 l’édit de Roussillon signé par Charles IX établit qu’en France l’année commence le 1er janvier.
 
-- Pouvoir exprimer le temps de manière souple
-- Rendre compte d'un doute 
-- S'inscrire dans un champ temporel informatiquement normé et compréhensible
-
-- Marco Gurrieri présente à nouveau des exemples de référentiels calendaires particuliers, requérant une attention toute particulière:
-  - **Moyen Âge/Renaissance :**  
-    · Calendrier débutant au 1er janvier (style de la Circoncision de Jésus) ;  
-    · Calendrier débutant au 1er mars (style vénitien) ;  
-    · Calendrier débutant au 25 mars (style florentin ou style de l’Annonciation, typique dans le sud de l’Europe et en Angleterre) ;  
-    · Calendrier débutant au 25 décembre (style de la Nativité de Jésus) ;  
-    · Calendrier débutant à Pâques (notamment dans certaines régions françaises) ;  
-    · En 1564 l’édit de Roussillon signé par Charles IX établit qu’en France l’année commence le 1er janvier.
+-    
   - **Révolution française/Première République :**  
     · Calendrier républicain ou révolutionnaire français [officiellement du 1er vendémiaire an I (= 22 septembre 1792) au 22 fructidor an XIII (= 9 septembre 1805), mais entré en vigueur le 15 vendémiaire an II (= 6 octobre 1793).]    
     · Commune de Paris 1871 : calendrier républicain repris à l’an 79 de la République.  
@@ -71,6 +61,13 @@ Ceux-ci peuvent être exprimés comme suit :
         · Deux jours du travail, après le 30 avril ;  
         · Deux jours de l'industrie, après le 7 novembre ;  
         · Un jour supplémentaire, après le 30 février (les années bissextiles).
+
+À la lumière de ces exemples, nous pouvons d'ores et déjà définir quelques besoins principaux :
+- Pouvoir exprimer le temps de manière souple
+- Rendre compte d'un doute 
+- S'inscrire dans un champ temporel informatiquement normé et compréhensible
+
+
 
 ### b. Problématisation 
 
@@ -402,7 +399,9 @@ Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opératio
 
 ### b. Problématisation
 
+Faut-il ainsi faire appel à plusieurs _thesaurii_ pour un meme mot ou bien intégrer plusieurs définitions dans un seul _thesaurus_? Les _thesaurii_ possèdent par ailleurs un aspect arborescent ; un terme peut avoir plusieurs parents et apparaître à différents endroits, un noeud peut avoir plusieurs parents, etc... L'expression du doute étant fondamentale dans notre travail, nous avons besoin de E13 pour informer des choix et de leur nature. 
 
+Le principal problème des _thesaurii_ est le fait qu'ils ne soulignent pas clairement les aspects génétiques et diachroniques. Il n'y a en effet pas de sens de constituer un thesaurus avant de mettre le nez dans les sources ; l'assemblée emploi l'expression d'un « couteau affuté au fur et à mesure de son usage », un parallélisme tempéré par l’expérience de la recherche. Un enjeu pour la constitution de futurs _thesaurii_ est leur publication avec les usages leur correspondant, en considérant la possibilité d'une cartographie de la transmission, avec à nouveau l'usage de E13. La tradition orale (acceptation de l'attribution d'une source, _etc_) empêche parfois l'information d'être traitée de la bonne manière et peut même mener jusqu'à l'anachronisme, en utilisant des outils récents pour commenter le passé.
 
 ### c. Contextualisation technique
 
