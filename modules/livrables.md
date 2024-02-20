@@ -141,22 +141,6 @@ D(crm:E52_time_span) --> |crm:p81b_begin_of_the_end| J("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| K("Date ISO 8601")
 ```
 
-**Dates**
-Directions retenues
-
-
-**
-
-
-
-
-
-
-
-: a) bout de graphe qui illustre la proposition b) alternatives CRM commentées c) identifier les limitations, les problèmes potentiels
-
-· Faire des liens entre les cas 
-
 ## 2. Prosopographie : 
 ### a. Besoins musicologiques
 
@@ -170,12 +154,11 @@ L'intérêt d'une base prosopographique est de regrouper des données étant en 
 
 Le travail sur une telle base est divisé une plusieurs étapes : la récolte des informations entame le travail et ne présente _in fine_ aucun caractère prosopographique. Néanmoins, lors d'un foisonnement et éparpillement des documents, la constitution de données prosopographiques devient un outil de recherche et d'appropriation des corpus et se substitue à la phase 1. Dans des cas moins complexes, l'enjeu prosopographique réel est révélé dans la seconde étape, consistant à étudier les liens tangibles entres personnes et institutions. Les données prosopographiques sont donc les résultats inférés à partir de ce qui a été récolté, des données d'essence relationnelle émanant de l'interprétation et du croisement des métadonnées. La base n'est néanmoins qu'un support, le travail prosopographique étant effectué lors de l'exploitation des données.
 
-# Personnes
 
-## Personne physique ou morale ?
 
 Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. 
 
+### b. Problématisation 
 ## Personne réelle ou fictive ?
 
 Les personnages fictifs, tels que des personnages mythologiques, posent question car leur modélisation ne peut être similaire. Dans le cas de l'usage du Cidoc CRM pour un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif ; il est néanmoins nécessaire de réflechir au choix d'une ontologie permettant une interopérabilité maximale ?  
@@ -191,8 +174,7 @@ Les personnes peuvent être qualifiées par des statuts ou des rôles : les stat
 Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Brossard ?»).
 Pouvoir désigner une personne selon une facette.
 
-TP :
-Statut
+### c. Contextualisation technique
 
 LP :
 Dezède : deux types de statuts/rôles : à chaque personne sont associés plusieurs statuts (compositeur, poète, chanteur, librettiste), pas de vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
@@ -278,6 +260,10 @@ On se pose la question de la possibilité de modéliser :
 
 <hr/>
 
+
+
+
+
 # Notes préparatoires
 
 ## Introduction : 
@@ -300,29 +286,8 @@ On se pose la question de la possibilité de modéliser :
 - Comment indiquer les lieux avec précision ? Nécessité d'alignement des référentiels, de manière similaire à la datation.
 - Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
 - Réponses des participants à ces questions, exemples et cas concrets utiles.
-
-
-
-
-```
-
-## Bibliographie
-
-- https://ceur-ws.org/Vol-2119/paper10.pdf
-- https://docs.google.com/document/d/1tE_5Uj6_B-XhYYmJVlo-FHxoBFYyf6qm/edit
-- Dériver la classe activité et faire une sous classe avec une autre ontologie pour exprimer le fait que les personnes se rencontrent (crm soc) / qu'est-ce qu'une rencontre ? Activité avec un prédicat spécifique (le P14 ne suffit pas) ou bien notions de présence/coprésence dans un timespan et une place (prédicat p132)
-- Dérivé de E7 (rencontre) Personne qui se rencontre dérive de P11 et personne qui initie dérive de P14
-
-
-
-
-### b. Problématisation 
-
-### c. Contextualisation technique
-
-### d. Proposition Cidoc-CRM
-
-## Exemples de modélisations prosopographiques à l'aide de l'ontologie Cidoc-CRM :
+- 
+#### d. Proposition Cidoc-CRM 
 
 ### - Quelqu'un a fréquenté un lieu :
   
