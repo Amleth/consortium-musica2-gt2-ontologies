@@ -43,24 +43,7 @@ L'assemblée souligne le problème de cas limites présentant une non-correspond
 
 Les besoins variés du chercheur en sciences humaines pour la définition du temps et de ses implications ont été clairement soulignés lors de l'atelier _datation_ par la mise en exergue de divers cas particuliers complexes, voire douteux. Par exemple, dans le cas de _L’Heure espagnole_ de Ravel, la partition chant et piano a été publiée en 1908 mais l'orchestration réalisée en 1910. La première interprétation publique de l’opéra a eu lieu en 1911, la même année que la publication de la partition pour orchestre. Ce cas souligne donc la possibilité de multiplier les champs "date" correspondant aux diverses versions de l'œuvre. Le terme _circa_ est par ailleurs régulièrement employé bien qu'il manque de précision à plusieurs égards. 
 
-Les différents référentiels calendaires en usage questionnent également quant à leur lisibilité mais aussi leur alignement avec d'autres normes. Nous pouvons notamment évoquer pour la période s'étirant du Moyen-Âge à la Renaissance les calendriers suivants : 
-- Style de la Circoncision de Jésus : calendrier débutant au 1er janvier ;
-- Style vénitien : calendrier débutant au 1er mars ;
-- Style florentin / style de l’Annonciation : calendrier débutant au 25 mars; typique du sud de l’Europe et de Angleterre ;
-- Style de la Nativité de Jésus : calendrier débutant au 25 décembre  ;
-- Calendrier débutant à Pâques (notamment dans certaines régions françaises) ;
-- En 1564 l’édit de Roussillon signé par Charles IX établit qu’en France l’année commence le 1er janvier.
-
--    
-  - **Révolution française/Première République :**  
-    · Calendrier républicain ou révolutionnaire français [officiellement du 1er vendémiaire an I (= 22 septembre 1792) au 22 fructidor an XIII (= 9 septembre 1805), mais entré en vigueur le 15 vendémiaire an II (= 6 octobre 1793).]    
-    · Commune de Paris 1871 : calendrier républicain repris à l’an 79 de la République.  
-  - **Révolution soviétique :**  
-    · Calendrier soviétique débutant à partir du 1er octobre 1929 : l’année comptait 72 segments de cinq jours (360 jours) dont quatre étaient des jours ouvrés, le cinquième un jour de repos. Chaque mois comptait désormais 30 jours, et les cinq ou six jours restants furent ajoutés comme jours intermédiaires de congé, n'appartenant à aucun mois et à aucune semaine. Ces jours étaient :  
-        · Le jour de Lénine, après le 30 janvier ;  
-        · Deux jours du travail, après le 30 avril ;  
-        · Deux jours de l'industrie, après le 7 novembre ;  
-        · Un jour supplémentaire, après le 30 février (les années bissextiles).
+Les différents référentiels calendaires en usage questionnent également quant à leur lisibilité mais aussi leur alignement avec d'autres normes. Nous pouvons notamment évoquer pour la période s'étirant du Moyen-Âge à la Renaissance des calendriers tels que le style vénitien, débutant au 1er mars, ou encore le style florentin, aussi appelé style de l’Annonciation, débutant au 25 mars. Un peu plus tard, les calendriers de la Première République proposent de nouvelles dénominations et complexifient à nouveau le travail d'alignement du chercheur. Celui-ci est d'autant plus difficile à appréhender qu'il début officiellement le 1er vendémiaire an I (= 22 septembre 1792) au 22 fructidor an XIII (= 9 septembre 1805), mais n'entre en vigueur que le 15 vendémiaire an II (= 6 octobre 1793). Enfin, dans le cadre du calendrier soviétique débutant à partir du 1er octobre 1929, l’année comptait soixante-douze segments de cinq jours (soit trois-cent soixante jours) dont quatre étaient des jours ouvrés, le cinquième un jour de repos. Chaque mois comptait désormais 30 jours, et les cinq ou six jours restants furent ajoutés comme jours intermédiaires de congé, n'appartenant à aucun mois et à aucune semaine. Ces jours étaient : le jour de Lénine, après le 30 janvier, deux jours du travail, après le 30 avril, deux jours de l'industrie, après le 7 novembre et un jour supplémentaire, après le 30 février (les années bissextiles). La complexité et la difficulté d'interopérabilité entre ces différents référentiels calendaires nous oriente vers une volonté d'unification des systèmes pour une meilleure lecture et compréhension des interactions entre différentes dates.
 
 À la lumière de ces exemples, nous pouvons d'ores et déjà définir quelques besoins principaux :
 - Pouvoir exprimer le temps de manière souple
