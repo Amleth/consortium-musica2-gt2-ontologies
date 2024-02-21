@@ -15,26 +15,6 @@ Nous avons également souhaité valoriser les ressources du Consortium Musica2 �
 
 Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre à jour de manière régulière, en conséquence de nos réfléxions tout autant que d'avancées dans les solutions de modélisation.
 
-### **_Définition de termes importants :_**  
-
-#### _Ontologie :_  
-
-L'ontologie permet de se doter d’une définition formelle des concepts, et d'exprimer ce qui est irréductible à la teneur conceptuelle. Par l'usage de l'analyse et  modélisation ontologique, on peut décrire l'intérieur-même des concepts et viser une perception fine de la teneur des choses.
-
-#### _Référentiel :_   
-
-Organisation devant être reconnue par un nombre suffisant de membres de la communauté scientifique pour attester de son statut de référence. Ceci est atteint par une confiance donnée à l’institution qui porte le référentiel, un nombre suffisant d'alignements, _etc_. Il est par ailleurs possible pour un même objet de s'inscrire dans plusieurs référentiels qui ne correspondent pas forcément ; le choix de l'outil est absolument situationnel.
-
-#### _Thesaurii :_  
-
-Les _thesaurii_ portent soit des mots, soit des concepts. Il se pose alors notamment la question de la polysémie, où l'on fait souvent face au fait que deux auteurs utilisent des termes similaires pour deux choses très différentes (l'exemple de « cadence » est cité); le contexte permet de déterminer le sens. Le mot n’est ainsi jamais univoque. Les _thesaurii_ présentent de manière intrinsèque un aspect arborescent. Un terme peut avoir plusieurs parents et apparaître à différents endroits, un noeud peut avoir plusieurs parents ; un _thesaurus_ n’a donc de sens que pour ce que pour quoi il a été conçu.
-
-#### _Vocabulaire contrôlé :_  
-
-Il s'agit d'une circonscription du vocable indiquant à l’utilisateur des termes définis au sein de l’outil au contraire d'un champ de texte libre. 
-
-L'assemblée souligne le problème de cas limites présentant une non-correspondance entre mots et concepts, en prenant l'exemple de "partition" qui ne correspond pas au concept et peut donc soulever des problèmes d’attribution. Il est donc nécessaire de régulièrement remettre à jour ces vocables, en veillant à l’anachronisme de l'usage d'outils récents pour commenter le passé.
-
 
 **
 
@@ -60,7 +40,7 @@ Ces dates devraient pouvoir être définies par le chercheur, car il est le seul
  - Strictement contenu dans la période de recherche
  - Couvre la période de recherche
  - Commence avant la période de recherche et se termine en son sein
-  - Commence pendant la période de recherche et se termine après
+ - Commence pendant la période de recherche et se termine après
 
 L'atelier a montré que cette pratique consistant à adjoindre à chaque date exprimée par le chercheur en langage naturel une date calculable par la machine était répandue :
   - *« 3ème quart du 4ème siècle »* correspond par défaut pour la machine à la fourchette 350–375.
@@ -147,21 +127,17 @@ TODO : comment, avec le CRM, mettre en annotation la date constatée sur la sour
 ## 2. Prosopographie : 
 ### a. Besoins musicologiques
 
-L'intérêt d'une base prosopographique est de regrouper des données revêtant un rôle de métadonnées dans d'autres projets. La méthodologie à utiliser dépend alors fortement de la question initiale ; si celle-ci possède une dimension prosopographique inhérente, comme dans les projets MUSEFREM ou encore Ricercar, le processus sera différent de celui visant à constituer une base de données brutes où l'aspect prosopographique émergera d'une mise en regard de mutiple éléments. 
+L'intérêt d'une base prosopographique dans un projet musicologique est de regrouper une importante quantité de données, revêtant elles-mêmes un rôle de métadonnées dans d'autres projets. La méthodologie à utiliser dépend alors fortement de la question initialement posée ; si celle-ci possède une dimension prosopographique inhérente, comme dans les projets MUSEFREM ou encore Ricercar, le processus sera différent de celui visant à constituer une base de données brutes où l'aspect prosopographique émergera d'une mise en regard de mutiple éléments. 
 
-La singularité de chaque base est importante (Ricercar contient par exemple des centaines de personnes n'existant nulle part ailleurs) et se révèle par le croisement des sources. 
+Le travail sur une telle base est divisé en plusieurs étapes : la récolte des informations entame le travail et ne présente _in fine_ aucun caractère prosopographique. Néanmoins, lors d'un foisonnement et éparpillement des documents, la constitution de données prosopographiques devient un outil de recherche et d'appropriation des corpus et se substitue à la phase 1. Dans des cas moins complexes, l'enjeu prosopographique réel est révélé dans la seconde étape, consistant à étudier les liens tangibles entres personnes et institutions. Les données prosopographiques sont donc les résultats inférés à partir de ce qui a été récolté, des données d'essence relationnelle émanant de l'interprétation et du croisement des métadonnées. La base n'est néanmoins qu'un support, le travail prosopographique étant effectué lors de l'exploitation des données.
 
-De ce tour de table émerge la friction avec la question de l'*identification* des personnes et le *recours à des référentiels* de personnes.
+La singularité de chaque base est importante (Ricercar contient par exemple des centaines de personnes n'existant nulle part ailleurs) et se révèle par le croisement des sources. La méthodologie prosopographique doit donc être appliquée avec vigilance à l'égard une éventuelle friction avec la question de l'*identification* des personnes et le *recours à des référentiels* de personnes. Nous nous interrogeons plus particulièrement à cet égard sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. 
 
-# À quel moment intervient la méthode/les bases prosopographiques ?
+À la lumière de ces exemples, nous pouvons d'ores et déjà définir quelques besoins principaux :
+- Faire émerger de manière claire la distinction entre personnes physiques et morales
+- Faire apparaître les liens tangibles entre différentes personnes et institutions
+- Intégrer les données à un champ spatio-temporel normé et perceptible
 
-
-
-Le travail sur une telle base est divisé une plusieurs étapes : la récolte des informations entame le travail et ne présente _in fine_ aucun caractère prosopographique. Néanmoins, lors d'un foisonnement et éparpillement des documents, la constitution de données prosopographiques devient un outil de recherche et d'appropriation des corpus et se substitue à la phase 1. Dans des cas moins complexes, l'enjeu prosopographique réel est révélé dans la seconde étape, consistant à étudier les liens tangibles entres personnes et institutions. Les données prosopographiques sont donc les résultats inférés à partir de ce qui a été récolté, des données d'essence relationnelle émanant de l'interprétation et du croisement des métadonnées. La base n'est néanmoins qu'un support, le travail prosopographique étant effectué lors de l'exploitation des données.
-
-
-
-Nous nous interrogeons sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. 
 
 ### b. Problématisation 
 ## Personne réelle ou fictive ?
@@ -180,6 +156,8 @@ Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Br
 Pouvoir désigner une personne selon une facette.
 
 ### c. Contextualisation technique
+
+Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. 
 
 LP :
 Dezède : deux types de statuts/rôles : à chaque personne sont associés plusieurs statuts (compositeur, poète, chanteur, librettiste), pas de vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
@@ -550,6 +528,32 @@ Marco propose un document partagé en partant de humdrum :
 
 Il nous faudrait un document commun de spécifications entre le GT Édition critique (Nathalie Fabien Alban) et le GT Métadonnées comme le souligne Marco.
 Convertisseur DoRéMus —> MEI ?
+
+- - -
+
+### **_Définition de termes importants :_**  
+
+#### _Ontologie :_  
+
+L'ontologie permet de se doter d’une définition formelle des concepts, et d'exprimer ce qui est irréductible à la teneur conceptuelle. Par l'usage de l'analyse et  modélisation ontologique, on peut décrire l'intérieur-même des concepts et viser une perception fine de la teneur des choses.
+
+#### _Référentiel :_   
+
+Organisation devant être reconnue par un nombre suffisant de membres de la communauté scientifique pour attester de son statut de référence. Ceci est atteint par une confiance donnée à l’institution qui porte le référentiel, un nombre suffisant d'alignements, _etc_. Il est par ailleurs possible pour un même objet de s'inscrire dans plusieurs référentiels qui ne correspondent pas forcément ; le choix de l'outil est absolument situationnel.
+
+#### _Thesaurii :_  
+
+Les _thesaurii_ portent soit des mots, soit des concepts. Il se pose alors notamment la question de la polysémie, où l'on fait souvent face au fait que deux auteurs utilisent des termes similaires pour deux choses très différentes (l'exemple de « cadence » est cité); le contexte permet de déterminer le sens. Le mot n’est ainsi jamais univoque. Les _thesaurii_ présentent de manière intrinsèque un aspect arborescent. Un terme peut avoir plusieurs parents et apparaître à différents endroits, un noeud peut avoir plusieurs parents ; un _thesaurus_ n’a donc de sens que pour ce que pour quoi il a été conçu.
+
+#### _Vocabulaire contrôlé :_  
+
+Il s'agit d'une circonscription du vocable indiquant à l’utilisateur des termes définis au sein de l’outil au contraire d'un champ de texte libre. 
+
+L'assemblée souligne le problème de cas limites présentant une non-correspondance entre mots et concepts, en prenant l'exemple de "partition" qui ne correspond pas au concept et peut donc soulever des problèmes d’attribution. Il est donc nécessaire de régulièrement remettre à jour ces vocables, en veillant à l’anachronisme de l'usage d'outils récents pour commenter le passé.
+
+
+
+
 
 ### a. Besoins musicologiques
 
