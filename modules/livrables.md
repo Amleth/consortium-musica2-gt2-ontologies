@@ -50,8 +50,6 @@ Les différents référentiels calendaires en usage questionnent également quan
 - Rendre compte d'un doute 
 - S'inscrire dans un champ temporel informatiquement normé et compréhensible
 
-
-
 ### b. Problématisation 
 
 En conséquence, il faudrait que toute date « souple » soit flanquée d'un intervalle défini par deux dates calculables. Ces dates devraient pouvoir être définies par le chercheur, car il est le seul à savoir comment doit être raisonablement résolue une approximation comme « 3ème quart du 4ème siècle » (350—375 ? Autre chose ?). Les intervalles peuvent alors être définis de quatre manières principales :
@@ -95,10 +93,6 @@ Il apparaît que seul le chercheur est en capacité de donner une signification 
 - Le chercheur doit saisir ses dates en opérant une conversion en ISO 8601.
 - Les systèmes informatiques doivent être délestés de la conversion des dates exprimées selon des calendriers non standards.
 - La date constatée sur la source est reportée en annotation.
-
-```
-TODO : comment, avec le CRM, mettre en annotation la date constatée sur la source ? On pourrait, avec CRMinf, exprimer que le chercheur constate une date sur une source, puis effectue une opération de conversion impliquant une connaissance du calendrier non standard résultant sur la production d'une nouvelle date. Mais ceci serait bien trop complexe !
-```
 
 Attention : le champ permettant d'exprimer une date de manière souple ne doit pas être détourné pour y saisir des dates exprimées dans des référentiels calendaires non standards. En effet, une date comme « 13 fructose an 2 » n'est pas « souple » ou « floue » au sens ou « au XVIe siècle » pourrait l'être, elle est parfaitement définie, et doit être convertie en date calculable du calendrier standard.
 
@@ -146,17 +140,22 @@ D(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| I("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p81b_begin_of_the_end| J("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| K("Date ISO 8601")
 ```
+```
+TODO : comment, avec le CRM, mettre en annotation la date constatée sur la source ? On pourrait, avec CRMinf, exprimer que le chercheur constate une date sur une source, puis effectue une opération de conversion impliquant une connaissance du calendrier non standard résultant sur la production d'une nouvelle date. Mais ceci serait bien trop complexe !
+```
 
 ## 2. Prosopographie : 
 ### a. Besoins musicologiques
 
-# Atelier n° 4 : prosopographie
+L'intérêt d'une base prosopographique est de regrouper des données revêtant un rôle de métadonnées dans d'autres projets. La méthodologie à utiliser dépend alors fortement de la question initiale ; si celle-ci possède une dimension prosopographique inhérente, comme dans les projets MUSEFREM ou encore Ricercar, le processus sera différent de celui visant à constituer une base de données brutes où l'aspect prosopographique émergera d'une mise en regard de mutiple éléments. 
+
+La singularité de chaque base est importante (Ricercar contient par exemple des centaines de personnes n'existant nulle part ailleurs) et se révèle par le croisement des sources. 
 
 De ce tour de table émerge la friction avec la question de l'*identification* des personnes et le *recours à des référentiels* de personnes.
 
 # À quel moment intervient la méthode/les bases prosopographiques ?
 
-L'intérêt d'une base prosopographique est de regrouper des données étant en fait des métadonnées dans d'autres projets. La méthodologie à utiliser dépend fortement de la question initiale ; si celle-ci revêt une dimension prosopographique inhérente (MUSEFREM, Ricercar), le processus sera différent de la constitution d'une base de données brutes où l'aspect prosopographique émergera d'une mise en regard de mutiple données. La singularité de chaque base est importante (Ricercar contient par exemple des centaines de personnes n'existant nulle part ailleurs) et se révèle par le croisement des sources. 
+
 
 Le travail sur une telle base est divisé une plusieurs étapes : la récolte des informations entame le travail et ne présente _in fine_ aucun caractère prosopographique. Néanmoins, lors d'un foisonnement et éparpillement des documents, la constitution de données prosopographiques devient un outil de recherche et d'appropriation des corpus et se substitue à la phase 1. Dans des cas moins complexes, l'enjeu prosopographique réel est révélé dans la seconde étape, consistant à étudier les liens tangibles entres personnes et institutions. Les données prosopographiques sont donc les résultats inférés à partir de ce qui a été récolté, des données d'essence relationnelle émanant de l'interprétation et du croisement des métadonnées. La base n'est néanmoins qu'un support, le travail prosopographique étant effectué lors de l'exploitation des données.
 
