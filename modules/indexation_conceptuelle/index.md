@@ -75,6 +75,10 @@ Comme abordé en préambule, on observe une vrai nécéssité de contrôler pour
 
 > JFG : transmission de la musique de l'antiquité au XXe siècle, pb que les mots et les concepts ne correspondent pas toujours, pb avec les mots auteurs/compositeurs/partitions, tradition de critique d'attribution (avec attribution symbolique), la notion de compositeur avant le XII (toutes les attributions du calixtinus sont fausses), léonin et pérotin, on ne s'y retrouve pas avec compositeur et œuvre (90% est de tradition orale), nom de timbre, mais ce n'est pas ça qui caractérise le répertoire. Provenance, usage, origine.... pas facile de localisation. Risque de regarder le passé avec des outils conceptuels anachroniques. Qu'est ce que la notion d'œuvre : repérer les variations (comme sur trouvères et troubadours), la même œuvre va prendre des formes différentes, cartographie de la transmission. C'est à ça que sert une base. Œuvres et auteurs ne collent pas pour cela. Les pratiques de chantre ne peuvent être vus avec les lunettes d'œuvre musicale composée. Pourquoi on a donné l'attribution un tel... E13 partout. Même monodie/polyphonie c'est louche.
 
+### Que décrire ?
+
+> CC : enregistrements sonores sur cylindres (précurseur de l'ethnomusicologie, esprit de la schola cantorum). Quid du son ? Quoi décrire : les mettre en ligne, le contenu des étiquettes, le recueil en 1903 : lieux d'enregistrement, villages, chanteurs et chanteuses, instrumentistes, le texte, translitération, transcription de 1903 de la musique, aller jusqu'à la caractérisation de la mélodie ? « Il faut que je réfléchisse ». NBB : construire un thésaurus qui n'existe pas. Pas encore dans le catalogue général, accord avec SVM. Rien en ligne tant que le projet n'est pas coordonné.
+
 ## Définition de termes importants
 
 ### Thesaurii
@@ -99,6 +103,8 @@ L'ontologie permet de se doter d’une définition formelle des concepts, et d'e
 
 Organisation devant être reconnue par un nombre suffisant de membres de la communauté scientifique pour attester de son statut de référence. Ceci est atteint par une confiance donnée à l’institution qui porte le référentiel, un nombre suffisant d'alignements, _etc_. Il est par ailleurs possible pour un même objet de s'inscrire dans plusieurs référentiels qui ne correspondent pas forcément ; le choix de l'outil est absolument situationnel.
 
+Un bon référentiel doit aussi avoir été expertisé par des informaticiens (identifiants stables, technologies open-sources, recours à des standards du Web/sémantiques/documentaires). Ceci pour des raisons de pérénité, un référentiel doit encore l'être dans 10 ans.
+
 ## Quels outils pour indexer ?
 
 Nous présentons ici divers référentiels intéressants, ayant été expertisés par un ingénieur et/ou développeur et présentant une pérennité prouvée sur les plans techniques tout autant que scientifiques. 
@@ -108,6 +114,13 @@ Nous présentons ici divers référentiels intéressants, ayant été expertisé
 - Il est fait état du manque d'un référentiel pour le recueil d’œuvres 
 
 L'assemblée souligne que la part de subjectivité mise en œuvre va jouer sur la profondeur de l’analyse et du détail ; il faut donc accepter de devoir s’arrêter à un moment lors du processus analytique. L‘indexation est définie par le cadre méthodologique dans lequel elle s'inscrit.
+
+## Thésaurus
+
+- Il faut un thésaurus d'œuvres.
+- Il faut un thésaurus de genres.
+- Voir les formes numériques du RILM. Cartographie du savoir musicologique à l'échelle globale.
+- Idée d'un livrable qui donne des exemples d'usage des API des référentiels.
 
 ---
 
