@@ -128,40 +128,24 @@ Le travail sur une telle base est divisé en plusieurs étapes : la récolte des
 La singularité de chaque base est importante (Ricercar contient par exemple des centaines de personnes n'existant nulle part ailleurs) et se révèle par le croisement des sources. La méthodologie prosopographique doit donc être appliquée avec vigilance à l'égard une éventuelle friction avec la question de l'*identification* des personnes et le *recours à des référentiels* de personnes. Nous nous interrogeons plus particulièrement à cet égard sur la distinction à opérer entre les personnes physiques et morales, qui portent des informations fondamentalement différentes. 
 
 À la lumière de ces exemples, nous pouvons d'ores et déjà définir quelques besoins principaux :
-- Faire émerger de manière claire la distinction entre personnes physiques et morales
+- Faire émerger de manière claire la distinction entre personnes réelles et fictives
 - Faire apparaître les liens tangibles entre différentes personnes et institutions
 - Intégrer les données à un champ spatio-temporel normé et perceptible
 
 ### b. Problématisation 
 
-Personne réelle ou fictive ? Les personnages fictifs, tels que des personnages mythologiques, posent question car leur modélisation ne peut être similaire. Dans le cas de l'usage du Cidoc CRM pour un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif ; il est néanmoins nécessaire de réflechir au choix d'une ontologie permettant une interopérabilité maximale ?  
+La question de la modélisation des personnes est primordiale ; il convient plus précisément d'examiner les différences d'expression entre personnes fictives et réelles. Dans le cas des personnages fictifs, la fonction prime sur la nature puisqu'un personnage mythologique sera forcément ré-instancié sur le plan scientifique. En dehors de problématiques de modélisation, des rôles sont confiés aux personnages et font autorité sur leur caractère fictif ou non, ce qui détermine ensuite leur usage. Il faut également souligner que la dualité entre fictif et réel peut aussi être appropriée en parlant d'événements. On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.  
 
-Dans ce cas, la fonction prime sur la nature, puisqu'un personnage mythologique sera forcément ré-instancié sur le plan scientifique. En dehors de problématiques de modélisation, des rôles sont confiés aux personnages et font autorité sur leur caractère fictif ou non, ce qui détermine ensuite leur usage. Il faut également souligner que la dualité entre fictif et réel peut aussi être appropriée en parlant d'événements. On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.  
+Les personnes peuvent également être qualifiées par des statuts ou des rôles : les statuts désignent une position objective occupée en fonction d'une qualification d'un grade, et sont définis par plusieurs caractéristiques objectives qui déterminent socialement la position des individus. Le rôle vient s'ajouter au statut de manière souvent plus informelle et permet de distinguer la place sociale des individus ; dans le cadre d'un travail prosopographique, une personne est rarement désignée par l'intégralité de ses fonctions ; nous tâcherons donc de faire le point sur les meilleurs moyens de désigner une personne selon l'une de ses facettes.
 
-Statut/rôle/fonction d'une personne ? Les personnes peuvent être qualifiées par des statuts ou des rôles : les statuts désignent une position objective occupée en fonction d'une qualification d'un grade, et sont définis par plusieurs caractéristiques objectives qui déterminent socialement la position des individus. Le rôle vient s'ajouter au statut de manière souvent plus informelle et permet de distinguer la place sociale des individus.
-
-(à détacher de la prosopographie de la personne).
-Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Brossard ?»).
-Pouvoir désigner une personne selon une facette.
+Nous nous intérogeons également sur les différentes moyens de modéliser la notion de propriété, d'appartenance, par exemple dans le cadre d'un objet physique.
 
 ### c. Contextualisation technique
 
-Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. 
+Pour répondre à la question Dans le cas de l'usage du Cidoc CRM pour un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif ; il est néanmoins nécessaire de réflechir au choix d'une ontologie permettant une interopérabilité maximale ?  
+Dans le cas de la base de données Dezède, les personnes physiques sont distinguées des institutions auxquelles elles appartiennent. Une notice existe par institution, prenant en compte sa chronologie et recensant les personnes y étant affiliées. À chaque personne sont associés plusieurs statuts, compositeur, poète, chanteur, librettiste sans vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
 
-LP :
-Dezède : deux types de statuts/rôles : à chaque personne sont associés plusieurs statuts (compositeur, poète, chanteur, librettiste), pas de vocabulaire figé. On peut indiquer sur la page d'un individu s'il a des relations familiales ou professionnelles (élève, maître, dédicataire) avec un autre individu (ces relations sont dans un vocabulaire contrôlé).
-
-TB :
-Comment modéliser les notions de dédicataire, de commandiraire informel et d'hommage en CRM ?
-
-NBB :
-Toute relation doit s'accompagner de la mention des périodes et des dates.
-
-TP :
-
-
-TB :
-Quand on indexe une personne, on indexe la personne en qualité de la fonction selon laquelle on la considère (Théodora en tant que directrice de l'IReMus, ou, Théodora en tant que spécialiste des rapports entre musique et sciences aux XVIIe et XVIIIe siècles). Dans le CRM, les rôles sont temporellement assignés et liés de manière intrinsèque à un _time span_ et/ou une _place_ ; le statut n’est donc pas tant inhérent à une personne qu'à une période temporelle. 
+Hors cet exemple, nous nous intérrogeons sur les possibilités de modélisation des notions de dédicataire, de commandiraire informel et d'hommage en CRM. lorsqu'on indexe une personne, on indexe la personne en qualité de la fonction selon laquelle on la considère (Théodora en tant que directrice de l'IReMus, ou, Théodora en tant que spécialiste des rapports entre musique et sciences aux XVIIe et XVIIIe siècles). Dans le CRM, les rôles sont temporellement assignés et liés de manière intrinsèque à un _time span_ et/ou une _place_ ; le statut n’est donc pas tant inhérent à une personne qu'à une période temporelle. 
 
 Un géomètre :
 —> prend part à une activité qui est liée à la géométrie 
