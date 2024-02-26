@@ -335,40 +335,16 @@ Christophe Corbier / Projet Perso : enregistrements grecs sur rouleaux ayant ins
 
 ### d. Proposition Cidoc-CRM
 
-## 4. Éditions critiques :
+## 4. Éditions critiques et MEI :
 ### a. Besoins musicologiques
 
-ADR : manie pas directement le MEI mais en voit les intérêts pour un projet sur le livre de choeur de Pollio (?) ou également dans des projets comme Neuma, passé du xml au MEI
-Marco : responsable MEI / cesr projet Gesualdo online, exploitation du MEI pour les variations, gestion des métadonnées avec un autre outil / travaille avec Tonalities et Polifonia sur les possibilités d’enrichissement, la question du stockage des métadonnées est faite par le biais du MEI
-Fabien : MEI dans Collabscore, s’intéresse et réfléchi à des publications de brouillons de CSS, MEI pourrait offrir des possibilités intéressantes 
-Léo : travaille avec Latek et Lylypond / MEI peut apporter des possibilités de collaboration au sein même des fichiers 
-NBB : tous les fichiers qui peuvent bénéficier en vue de l’édition critique
-Kevin : deviner et déduire ce qui est bon au sein de la grande richesse du format (MEI vient de TEI)
-Lucia : post-doc HE Berne histoire de la musique dodécaphonique, n’utilise pas le MEI
-Nicolas Moron : MCF Rouen grosse activité éditoriale critique de Prokofiev, TEI pour la correspondance de Prokofiev ; extraits musicaux à encoder au sein des lettres, intéressé par le lien MEI / TEI
-Marie Demeillez : ne manie pas le MEI mais intéressée par les possibles / coordonne l’édition critique d’articles dans le domaine musique
-Aleksandra : doctorante SU, transcription, connais pas MEI donc veut découvrir
-Théodora : directrice IReMus, pas d’expérience de ces outils mais s’intéresse aux questions de publication numérique / usage du MEI dans l’herméneutique
-Mi-sung : doctorante sur Don Quichotte (500/100 œuvres) usage de feuille de calcul, curiosité et chercher une solution avec MEI
-Jana : chercheuse en Rep Tcheque et musique médiévale, musique du 18ème et intérêt
-Justine : chargée d’éditions de corpus numérique, stage IReMus, a fait du TEI
-Sandrine : doctorante, pas de pratique du MEI, étudie un corpus non imprimé et édité
-Margaux : IE à la MSH de Paris Saclay, responsable de la conception d’une plateforme Scripto? Données iconographiques (incluant musicologie) donc intérêt. Tout début de la conception, pas encore de projets identifiés / UVSQ 
-Suzy : dvlpt web, travail avec l’équipe Ricercar et manipule donc des fichiers MEI.
-
-Marco : présentation du MEI / enrichissement par l’usage de méta-données
-Les possibilités du MEI sont difficilement exploitables aujourd’hui / on a MEIfriend qui est intéressant (à la fois code et score)
+Dans le cadre d'un atelier conjoitement organisé par le GT1 et le GT2, nous nous sommes interrogés sur les apports d'une modélisation ontologique et du MEI dans le cadre d’un projet d’édition critique. Il faut tout d'abord exprimer l'inadéquation de ces outils à certaines musiques favorisant une notation symbolique, qu'il s'agisse de la musique du 14e tout autant que de la musique contemporaine. Sur les corpus visés, il est donc pertinent d'envisager la fixation de bonnes pratiques dans le renseignement des méta-données en MEI, en prenant compte des évolutions en MEI5 par une veille et le noyautage des groupes de travail, tout en établissant des canons méthodologiques. 
 
 ### B. Problématisation
 
-Ontologie et MEI dans le cadre d’un projet d’édition critique ? 
-
-Compliqué musique 14e et musique contemporaine cf notation symbolique (Kevin et moi)
-Marco : Genre est une caractéristique de l’oeuvre et non de la source,
-Envisager de fixer une bonne pratique dans le renseignement des méta-données en MEI, en prenant compte des évolutions en MEI5. Veille et noyautage des groupes de travail, établissement de canons méthodologiques. 
-
 Thomas propose un tour de table informel, tout le monde exprime une ou deux métadonnées importantes : 
 Balises de base : titre, compositeur / présent dans les trois niveaux, item, oeuvre et sa manifestation (édition) / problème de redondance ? Exploitation à 100% multi-directionnelle répond Marco, tout le monde peut l’exploiter
+Marco : Genre est une caractéristique de l’oeuvre et non de la source,
 FRBR  : oeuvre (idée de l’oeuvre, précède le niveau sémiotique) / expression (strictement sémiotique) / manifestation (mise en oeuvre d’une expression, niveau editorial) / item (objet, exemplaire) dans les entêtes on peut détailler les 4 niveaux
 Le titre est un exemple de méta-données qui peut varier sur les 4 niveaux / idem avec le nom du compositeur qui peut être translittéré 
 
