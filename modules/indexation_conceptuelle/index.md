@@ -71,6 +71,10 @@ Il est également important de souligner que chaque point est indexé par une pe
 
 Comme abordé en préambule, on observe une vrai nécéssité de contrôler pour des corpus limités ; l'assemblée propose un consensus humainement possible pour un maximum de 2000 sources. Le travail d’identification requiert en effet une véritable expertise. En exemple, les personnes ne sont pas toujours citées par leurs noms et leur identification requiert une identification historiographique fine, par exemple : le Duc, le Marquis, _etc_... Ces titres changent très régulièrement. La nécéssité d’offrir un outil cumulatif où chacun peut consulter les ressources issuees des recherches précédentes est également mentionnée.
 
+### Moyen-Âge
+
+> JFG : transmission de la musique de l'antiquité au XXe siècle, pb que les mots et les concepts ne correspondent pas toujours, pb avec les mots auteurs/compositeurs/partitions, tradition de critique d'attribution (avec attribution symbolique), la notion de compositeur avant le XII (toutes les attributions du calixtinus sont fausses), léonin et pérotin, on ne s'y retrouve pas avec compositeur et œuvre (90% est de tradition orale), nom de timbre, mais ce n'est pas ça qui caractérise le répertoire. Provenance, usage, origine.... pas facile de localisation. Risque de regarder le passé avec des outils conceptuels anachroniques. Qu'est ce que la notion d'œuvre : repérer les variations (comme sur trouvères et troubadours), la même œuvre va prendre des formes différentes, cartographie de la transmission. C'est à ça que sert une base. Œuvres et auteurs ne collent pas pour cela. Les pratiques de chantre ne peuvent être vus avec les lunettes d'œuvre musicale composée. Pourquoi on a donné l'attribution un tel... E13 partout. Même monodie/polyphonie c'est louche.
+
 ## Définition de termes importants
 
 ### Thesaurii
