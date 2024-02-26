@@ -15,9 +15,6 @@ Nous avons également souhaité valoriser les ressources du Consortium Musica2 �
 
 Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre à jour de manière régulière, en conséquence de nos réfléxions tout autant que d'avancées dans les solutions de modélisation.
 
-
-**
-
 ## 1. Datation : 
 ### a. Besoins musicologiques
 
@@ -66,9 +63,6 @@ Il apparaît que seul le chercheur est en capacité de donner une signification 
 
 - Toute attribution de date repose sur une interprétation, aussi minime soit-elle, et est donc connectée au graphe par une instance de `crm:E13_Attribute_Assignment`.
 - Le standard [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) est retenu pour l'expression des dates dans les bases de données.
-
-
-
 - Le chercheur est estimé spécialiste des calendriers non standards dans lesquels les dates dans ses sources sont exprimées.
 - Le chercheur doit saisir ses dates en opérant une conversion en ISO 8601.
 - Les systèmes informatiques doivent être délestés de la conversion des dates exprimées selon des calendriers non standards.
@@ -138,18 +132,13 @@ La singularité de chaque base est importante (Ricercar contient par exemple des
 - Faire apparaître les liens tangibles entre différentes personnes et institutions
 - Intégrer les données à un champ spatio-temporel normé et perceptible
 
-
 ### b. Problématisation 
-## Personne réelle ou fictive ?
 
-Les personnages fictifs, tels que des personnages mythologiques, posent question car leur modélisation ne peut être similaire. Dans le cas de l'usage du Cidoc CRM pour un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif ; il est néanmoins nécessaire de réflechir au choix d'une ontologie permettant une interopérabilité maximale ?  
+Personne réelle ou fictive ? Les personnages fictifs, tels que des personnages mythologiques, posent question car leur modélisation ne peut être similaire. Dans le cas de l'usage du Cidoc CRM pour un personnage n'ayant pas existé, on privilégie un E28 objet conceptuel ou E21 personne dont la nature fictive est précisée par un crm:P2_has_type E55/fictif ; il est néanmoins nécessaire de réflechir au choix d'une ontologie permettant une interopérabilité maximale ?  
 
 Dans ce cas, la fonction prime sur la nature, puisqu'un personnage mythologique sera forcément ré-instancié sur le plan scientifique. En dehors de problématiques de modélisation, des rôles sont confiés aux personnages et font autorité sur leur caractère fictif ou non, ce qui détermine ensuite leur usage. Il faut également souligner que la dualité entre fictif et réel peut aussi être appropriée en parlant d'événements. On ne mélange pas contexte fictif et réel, la prosopographie demeure dans un contexte commun.  
 
-## Statut/rôle/fonction d'une personne ?
-
-Les personnes peuvent être qualifiées par des statuts ou des rôles : les statuts désignent une position objective occupée en fonction d'une qualification d'un grade, et sont définis par plusieurs caractéristiques objectives qui déterminent socialement la position des individus. Le rôle vient s'ajouter au statut de manière souvent plus informelle et permet de distinguer la place sociale des individus.
-
+Statut/rôle/fonction d'une personne ? Les personnes peuvent être qualifiées par des statuts ou des rôles : les statuts désignent une position objective occupée en fonction d'une qualification d'un grade, et sont définis par plusieurs caractéristiques objectives qui déterminent socialement la position des individus. Le rôle vient s'ajouter au statut de manière souvent plus informelle et permet de distinguer la place sociale des individus.
 
 (à détacher de la prosopographie de la personne).
 Comment modéliser la notion de propriété ? (« Tel ouvrage appartient à Brossard ?»).
@@ -181,15 +170,6 @@ Un géomètre :
 NH :
 Dans les documents juridiques, les personnes sont désignées selon leur métier ou leur titre.
 
-TB :
-Petit topo sur les E7, E21, E12/E65…
-
-LP :
-Oui mais si n'a pas de dates, ça n'opère pas cette modélisation ?
-
-TB :
-Non, et c'est un modèle accueillant et ouvert.
-
 JP : 
 Statut/profession.
 Rôle/poste/fonction.
@@ -208,68 +188,23 @@ GA : Synthèse des échanges : on peut associer un rôle à une personne, ou ass
 
 TB : S'investir dans ```crm:P14.1_in_the_role_of```.
 
-## Relations
-
-MG : Caractère symétrique (frère) ou non (maître/élève) de la relation. 
+Relations : MG : Caractère symétrique (frère) ou non (maître/élève) de la relation. 
 
 LP : Dans Dezède, si A est élève de B, alors B est maître de A (automatiquement).
 
 JP : Démo de https://dezede.org/individus/falla/. Les fonctions sont collectées en regardant le graphe, et dynamiquement injectée dans le cartouche de présentation de la personne. La démonstration prouve que cet exemple de prosopographie relationnelle prend sens par l'interprétation des données.
 
-# Institutions
+Institutions JP : Chef de tel institution de telle date à telle date. Théâtre qui contient deux salles. Théâtre éphèmère. Tout cela fonctionne assez bien dans Dezède. Dans le cas d'une programmation d'une institution dans une autre institution mais dans le cadre de sa propre programmation.
 
-JP : Chef de tel institution de telle date à telle date. Théâtre qui contient deux salles. Théâtre éphèmère. Tout cela fonctionne assez bien dans Dezède. Dans le cas d'une programmation d'une institution dans une autre institution mais dans le cadre de sa propre programmation.
-
-# Commanditaires 
-
-On se pose la question de la possibilité de modéliser :
+Commanditaires : On se pose la question de la possibilité de modéliser :
 - un hommage, une dédicace : l'idée de dédicataire existe dans l’ontologie SDHSS, un projet managé par la même équipe que le CRM-Soc.
 - une transcription : aisé à exprimer en Lrm.
 - un commanditaire : si lien avec l’institution plus aisé à exprimer qu'un commanditaire _informel_ (par exemple, commande à l'occasion d'un anniversaire, etc). Dans le cadre d'une commande institutionnelle on peut exprimer des données prosopographiques très précises sur un _time-span_ : direction, changement d'adresse, etc.
 - Doremus ainsi que l'ébauche de la Péniche Opéra peuvent être de bons référentiels dans ces cas.
+ 
+### d. Proposition Cidoc-CRM 
 
-# Webographie
-
-- https://spectacle-de-curiosites.msh.uca.fr/
-- https://philidor.cmbv.fr/Publications/Bases-prosopographiques/MUSEFREM-Base-de-donnees-prosopographique-des-musiciens-d-Eglise-en-1790
-- https://ricercar.pcr.cesr.univ-tours.fr/
-- http://ricercar-old.cesr.univ-tours.fr/3-programmes/basechanson/03231-0.htm
-- https://performart.huma-num.fr/
-- https://dezede.org/
-- https://shs.hal.science/halshs-03406115/file/Beretta_Alamercery_ReUSE_Nantes_20211019.pdf
-- https://shs.hal.science/halshs-03764597/document
-- https://phn-wiki.ish-lyon.cnrs.fr/doku.php?id=intro_histoire_numerique:conceptualisation_information
-- https://ontome.net/namespace/3#namespace-hierarchy
-
-
-
-
-# Notes préparatoires
-
-## Introduction : 
-
-- Introduction AB et TB : définition de la _prosopographie_ : étude biographique visant à souligner les caractères communs d'un groupe d'acteurs historiques, qu'est-ce qui fait réseau ? Lien direct avec la musicologie historique mais aussi rattachement aux sciences sociales. 
-- Présentation des différents intervenants et de leurs rapports aux enjeux prosopographiques.
-
-## 1. Quelles sont les situations où les enjeux prosopographiques sont importants ?
-
-- Comment vient-on à utiliser une méthodologie prosopographique ?
-- Quand l'outil prosopographique est-il nécessaire ? Question du doute et de la désambiguïsation, de la non-correspondance des sources ?
-
-- Réponses des participants à ces questions, exemples et cas concrets utiles. 
-
-## 2. Quelle est la méthodologie appliquée dans le cadre d'une recherche prosopographique ? 
-
-- Systématiser une méthode ? Quels sont les éléments indispensables ? Un objectif de la séance pourrait être : Définir une méthodologie-type ; trouver les bons outils en fonction de la question posée, quelles étapes et leur ordre, les éléments à posséder en amont ? Définir des incertitudes acceptables, adopter les bons référentiels...
-- Lien vers l'atelier datation, la notion d'incertitude est absolument primordiale.
-- Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant).
-- Comment indiquer les lieux avec précision ? Nécessité d'alignement des référentiels, de manière similaire à la datation.
-- Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
-- Réponses des participants à ces questions, exemples et cas concrets utiles.
-- 
-#### d. Proposition Cidoc-CRM 
-
-### - Quelqu'un a fréquenté un lieu :
+#### - Quelqu'un a fréquenté un lieu :
   
 ```mermaid
 graph TD;
@@ -285,7 +220,7 @@ D(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| F("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p81b_begin_of_the_end|G("Date ISO 8601")
 D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
 ```
-### - Quelqu'un a rencontré quelqu'un dans un lieu qu'ils on tous deux fréquentés :
+#### - Quelqu'un a rencontré quelqu'un dans un lieu qu'ils on tous deux fréquentés :
   
 ```mermaid
 graph TD;
@@ -303,12 +238,10 @@ K(socE_relationship/socE_social_bond) --->|socP_binds| J("crm:E21_Person<br>Pers
 
 ```
 
-### - Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
+#### - Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
 
 ```mermaid
 graph TD;
-
-
 
 B(E7_activity<br>Fréquentation 1&2) ----->|crm:P11_had_participant| A("crm:E21_Person<br>Personne 1 👩🏼")
 D(E7_activity<br>Fréquentation 1&3) ----->|crm:P11_had_participant| A("crm:E21_Person<br>Personne 1 👩🏼")
@@ -334,17 +267,13 @@ D(E7_activity<br>Fréquentation 1&3) ----> |crm:p4_has_time_span| N(crm:E52_time
 ##3. Indexation conceptuelle et thesaurii :
 ### a. Besoins musicologiques
 
-## Préambule : la nécéssité de la désambiguïsation
-
-Afin de lever le voile sur l'ambiguïté de certains termes au sein d'un _thesaurus_, la présence de musicologues responsables de corpus est nécessaire, bien qu'il s'agisse d'une activité chronophage par nature. On peut ensuite l'exploiter scientifiquement avec confiance.
+Préambule : la nécéssité de la désambiguïsation : Afin de lever le voile sur l'ambiguïté de certains termes au sein d'un _thesaurus_, la présence de musicologues responsables de corpus est nécessaire, bien qu'il s'agisse d'une activité chronophage par nature. On peut ensuite l'exploiter scientifiquement avec confiance.
 
 La question des langues est également importante ; nous proposons d'annoter les références plus en détail en précisant la langue utilisée afin de pallier au manque implicite de connaissances des systèmes. Le format RDF gère nativement la localisation des données (les thésaurus implémentés en SKOS bénéficient donc de cette possibilité).
 
 En ce qui concerne les personnes, il semble juste d'ajouter son ISNI à chaque personne citée (comme le fait Dezède, en imposant aux membres de sa communauté d'aller chercher les ISNI, ce qui implique des actions/documents de formation), afin d'éviter les problématiques liées aux différentes orthographes. On peut notamment évoquer l'exemple de Tchaïkovsky et les diverses écritures de son nom. Il faut également souligner la présence de l'ISNI sur Wiki EN, au contraire de Wiki FR.
 
-## Enjeux scientifiques de l'indexation ?
-
-### Fonctions possibles de l'indexation
+Enjeux scientifiques de l'indexation ? Fonctions possibles de l'indexation ?
 
 Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opérations mentales et techniques sur lequel s'appuie le travail scientifique, qui convoquent la notion d'indexation :
 
@@ -365,12 +294,9 @@ Le principal problème des _thesaurii_ est le fait qu'ils ne soulignent pas clai
 
 ### c. Contextualisation technique
 
+Retours sur les pratiques
 
-
-
-### Retours sur les pratiques
-
-#### Le cas du Mercure Galant
+Le cas du Mercure Galant
 
 Deux cas de figure :
 
@@ -388,20 +314,13 @@ Il est également important de souligner que chaque point est indexé par une pe
 
 Comme abordé en préambule, on observe une vrai nécéssité de contrôler pour des corpus limités ; l'assemblée propose un consensus humainement possible pour un maximum de 2000 sources. Le travail d’identification requiert en effet une véritable expertise. En exemple, les personnes ne sont pas toujours citées par leurs noms et leur identification requiert une identification historiographique fine, par exemple : le Duc, le Marquis, _etc_... Ces titres changent très régulièrement. La nécéssité d’offrir un outil cumulatif où chacun peut consulter les ressources issuees des recherches précédentes est également mentionnée.
 
-## Quels outils pour indexer ?
-
-Nous présentons ici divers référentiels intéressants, ayant été expertisés par un ingénieur et/ou développeur et présentant une pérennité prouvée sur les plans techniques tout autant que scientifiques. 
+Quels outils pour indexer : Nous présentons ici divers référentiels intéressants, ayant été expertisés par un ingénieur et/ou développeur et présentant une pérennité prouvée sur les plans techniques tout autant que scientifiques. 
 - ISNI pour les personnes.
 - En ce qui concerne les instruments, Mimo semble incontournable et est utilisé par la Philharmonie de Paris.
 - Pour les lieux il existe un grand nombre de possibilités : Cassini, Geonames, Google...
 - Il est fait état du manque d'un référentiel pour le recueil d’œuvres 
 
 L'assemblée souligne que la part de subjectivité mise en œuvre va jouer sur la profondeur de l’analyse et du détail ; il faut donc accepter de devoir s’arrêter à un moment lors du processus analytique. L‘indexation est définie par le cadre méthodologique dans lequel elle s'inscrit.
-
-- - - 
-
-
-
 
 Base de données peut ne pas être rangée, rassemblement de données sans supposer le fait qu’elles soient écrites, etc. 
 
@@ -422,19 +341,16 @@ Mimo : deux référentiels etc : au-delà du référentiel principal, on relie u
 Theo ; la subjectivité va jouer sur la profondeur de l’analyse et du détail, il faut accepter de s’arrêter à un moment / penser aux index-matières du RILM 
 une partie du périmètre peut être pensée en amont
 
-
-
 Livrable conjoint entre GT2 et GTZZ ; personne référence pour faire des pivots et remplissage d’un graphe du consortium en ajoutant des données
 Serveur Humanum pour Mimo, lien avec la Philharmonie, facade prouvant que plusieurs jeux de données peuvent être mis en commun conformité nécessaire avec data bnf
 Livrable donnant des exemples d’usage des API des référentiels 
 
 Christophe Corbier / Projet Perso : enregistrements grecs sur rouleaux ayant inspiré Ravel etc / question du sonore ? Gestion du corpus, re-documentation et volet analytique, il faut construire un thesaurus qui n’existe pas encore donc difficile. Pas de mise en ligne tant qu’un accord n’est pas trouvé
 
-
 ### d. Proposition Cidoc-CRM
 
-
 ## 4. Éditions critiques :
+### a. Besoins musicologiques
 
 ADR : manie pas directement le MEI mais en voit les intérêts pour un projet sur le livre de choeur de Pollio (?) ou également dans des projets comme Neuma, passé du xml au MEI
 Marco : responsable MEI / cesr projet Gesualdo online, exploitation du MEI pour les variations, gestion des métadonnées avec un autre outil / travaille avec Tonalities et Polifonia sur les possibilités d’enrichissement, la question du stockage des métadonnées est faite par le biais du MEI
@@ -457,7 +373,7 @@ Suzy : dvlpt web, travail avec l’équipe Ricercar et manipule donc des fichier
 Marco : présentation du MEI / enrichissement par l’usage de méta-données
 Les possibilités du MEI sont difficilement exploitables aujourd’hui / on a MEIfriend qui est intéressant (à la fois code et score)
 
-- - -
+### B. Problématisation
 
 Ontologie et MEI dans le cadre d’un projet d’édition critique ? 
 
