@@ -15,6 +15,22 @@ Nous avons également souhaité valoriser les ressources du Consortium Musica2 �
 
 Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre à jour de manière régulière, en conséquence de nos réfléxions tout autant que d'avancées dans les solutions de modélisation.
 
+# Un cas = une fiche 
+## une liste à puce : c'est mon problème
+### une liste à puce : au-delà de mon problème, voici les choses à voir plus loin
+#### un graphe
+
+Le guide est vivant et est voué à évoluer, une nouvelle fiche à chaque nouveau cas
+Il faut une partie A : postulats, grands cas généraux (esprit des E13 par exemple)
+Dans la partie A, rendre adressable les réfléxions théoriques identifiées / utiliser un glossaire (cf annotation interprétative par exemple)
+Nombreux éléments à mettre dans le glossaire, notamment analytiques
+Tandis que pour la fiche calendrier (exemple) les connaissances internes à celles-ci ne risquent pas de déborder dans d'autres fiches
+
+Dossier livrables :
+**Premier dossier** : texte à caractère analytique / argumenté
+**Second dossier** : _des sous-dossiers thématiques pour commencer_ : autant de fichiers markdown que de questions, titrés selon la question
+**Troisième dossier** : autant de fichers markdown qu'il y a de mots dans le glossaire
+
 ## 1. Datation : 
 ### a. Besoins musicologiques
 
