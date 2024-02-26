@@ -40,6 +40,9 @@ Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opératio
 - ***Indexer pour créer une circulation hypertextuelle à l'intérieur des corpus même.*** Ici, l'indexation se positionne comme pratique éditoriale, la ressource d'indexation jouant le rôle de point de passage d'un document à l'autre.
 - ***Constituer des thésaurii/référentiels pour analyser.*** L'activité de conception d'un thésaurus ou d'un référentiel d'entités récurrentes est à considérer comme une pratique scientifique et non seulement documentaire, car le système d'organisation des connaissances qui en résulte est un point de vue sur la teneur des savoirs (conceptuels, lexicaux…) convoqués dans l'analyse des sources, c'est une méta-connaissance.
 - ***Indexer pour décrire des sources ou des œuvres.*** (cf. exemple de l'indexation des airs du Mercure Galant).
+- ***Indexer pour nettoyer des données existantes.*** (cas un peu marginal) Dans la perspective de la reprise d'une base existante, l'indexation aligne les données non-alignées sur des référentiels, les rendant ainsi fouillables sémantiquement.
+- ***Indexer pour rendre visible l'invisible.*** Dans le cas d'une source qui traite d'un concept sans pour autant 
+- ***Indexer pour formaliser des connaissances structurées.*** 
 
 ### Fonctions importantes
 
