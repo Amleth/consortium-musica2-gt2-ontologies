@@ -41,8 +41,8 @@ Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opératio
 - ***Constituer des thésaurii/référentiels pour analyser.*** L'activité de conception d'un thésaurus ou d'un référentiel d'entités récurrentes est à considérer comme une pratique scientifique et non seulement documentaire, car le système d'organisation des connaissances qui en résulte est un point de vue sur la teneur des savoirs (conceptuels, lexicaux…) convoqués dans l'analyse des sources, c'est une méta-connaissance.
 - ***Indexer pour décrire des sources ou des œuvres.*** (cf. exemple de l'indexation des airs du Mercure Galant).
 - ***Indexer pour nettoyer des données existantes.*** (cas un peu marginal) Dans la perspective de la reprise d'une base existante, l'indexation aligne les données non-alignées sur des référentiels, les rendant ainsi fouillables sémantiquement.
-- ***Indexer pour rendre visible l'invisible.*** Dans le cas d'une source qui traite d'un concept sans pour autant 
-- ***Indexer pour formaliser des connaissances structurées.*** 
+- ***Indexer pour rendre visible l'invisible.*** Dans le cas d'une source qui traite d'un concept ou d'une entité sans pour autant le ou la nommer explicitement.
+- ***Indexer pour formaliser des connaissances structurées.*** On indexe avec des concepts, des termes ou des entités, et la réflexion sur leur nature, leur dénomination et leur organisation (de type thésaurus pour les concepts et les termes, de type ontologie pour les entités) relève également d'une pratique interprétative (pensons notamment à un thésaurus organologique historique, qui est une construction analytique a posteriori).
 
 ### Fonctions importantes
 
