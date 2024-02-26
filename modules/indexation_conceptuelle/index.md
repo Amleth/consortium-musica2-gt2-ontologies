@@ -33,12 +33,17 @@ Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opératio
 
 - ***Indexer pour décrire.*** La ressource d'indexation revêtent ici le rôle de caractériser la ressource indexée, par exemple à des fins de synthèse ou de représentation synoptique des thématiques d'un corpus.
 - ***Indexer pour rendre fouillable.*** Les ressources d'indexation constituent ici des éléments d'interface avec lesquels l'utilisateur peut interagir pour effectuer une recherche au sein des corpus.
-- ***Indexer pour défricher un corpus.*** Les ressources d'indexation permettent d'asseoir une progression dans la découverte d'un corpus à l'occasion du premier contact en fournissant une unification de ce qui a déjà été rencontrée (activité synthétique au fil de l'eau).
+- ***Indexer pour défricher un corpus.*** Les ressources d'indexation permettent d'asseoir une progression dans la découverte d'un corpus à l'occasion du premier contact en fournissant une unification de ce qui a déjà été rencontrée (activité synthétique au fil de l'eau). Exemple d'un corpus vaste, impossible à appréhender, dans lequel une personne peut apparaître 25 fois mais sous des noms différents (ou sous des noms présentant des graphies différentes). Ici l'indexation fédère le divers, elle est indispensable pour pouvoir se repérer (logique du Petit-Poucet).
 - ***Indexer pour se repérer.*** Les ressources d'indexation sont des petits cailloux blancs permettant au lecteur-Petit Poucet de ne pas se perdre dans son corpus. Elles constituent des marque-page sémantiques.
 - ***Indexer pour analyser.*** Les ressources d'indexation constituent une réserve de concepts analytiques qui, distribués sur les sources, en explicitent le sens. L'activité d'indexation n'est pas qu'une activité de redocumentarisation, elle est également une activité scientifique convoquant des interprétant, un cadre théorique, une méthodologie. Les pratiques d'indexation relevant de cet aspect soulignent la nécessiter de signer les annotations d'indexation produites.
 - ***Indexer pour faire des statistiques.*** Ceci est un usage plus spécifique de l'indexation à finalité synthétique.
 - ***Indexer pour créer une circulation hypertextuelle à l'intérieur des corpus même.*** Ici, l'indexation se positionne comme pratique éditoriale, la ressource d'indexation jouant le rôle de point de passage d'un document à l'autre.
 - ***Constituer des thésaurii/référentiels pour analyser.*** L'activité de conception d'un thésaurus ou d'un référentiel d'entités récurrentes est à considérer comme une pratique scientifique et non seulement documentaire, car le système d'organisation des connaissances qui en résulte est un point de vue sur la teneur des savoirs (conceptuels, lexicaux…) convoqués dans l'analyse des sources, c'est une méta-connaissance.
+- ***Indexer pour décrire des sources ou des œuvres.*** (cf. exemple de l'indexation des airs du Mercure Galant).
+
+### Fonctions importantes
+
+- Signer une indexation pour exprimer la responsabilité scientifique. Une indexation ne doit pas être vue comme une simple opération de redocumentarisation anonyme, mais comme une opération interprétative située. Note d'implémentation : avec des E13 du CRM, chaque indexation étant vu comme un événement d'apport de connaissance signé/daté/contextualisé.
 
 ## Retours sur les pratiques
 
@@ -46,7 +51,8 @@ Durant cette séance d'atelier, nous avons fait émerger un ensemble d'opératio
 
 Deux cas de figure :
 
-1) 
+1) Pour le corpus d'airs : décrire la musique (compositeur, librettiste, réseaux d'attribution, retrouver l'œuvre : incipit musical et littéraire, éléments de description : tonalité, forme, genre).
+2) Pour le corpus de textes : il s'agit d'une masse énorme de texte, qu'il faut pouvoir rendre fouillable. Pour savoir quoi en tirer, il a fallu indexer les personnes, les lieux, les mots-clefs (thématiques abordées par l'auteur de l'article). Chaque article est indexé par une personne et livre l'analyse de cette personne. l'indexation permet ici de créer une circulation à l'intérieur du corpus même.
 
 L'indexation doit cibler une liste de données indexables factuellement descriptible pour "défricher un terrain" et organiser une grande quantité d’informations concernant leurs sources :
 
