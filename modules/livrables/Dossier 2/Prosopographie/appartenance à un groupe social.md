@@ -1,8 +1,8 @@
 # Appartenance à un groupe social
 
-# a. Besoins musicologiques
+## a. Besoins musicologiques
 
-# b. Problématisation
+## b. Problématisation
 
 ## c. Contextualisation technique
 
