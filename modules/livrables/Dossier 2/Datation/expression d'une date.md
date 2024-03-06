@@ -12,31 +12,22 @@ Comment exprimer une incertitude, tout en se présentant des données normées e
 
 ## c. Contextualisation technique
 
-La meilleure manière d'exprimer une date est de la définir à travers deux intervalles, chacun constitué de deux dates exprimées en ISO 8601
-
-
-Les intervalles peuvent alors être définis de quatre manières principales : 
+La meilleure manière d'exprimer une date est de la définir par le biais de deux intervalles, l'un exprimant l'incertitude sur son début, l'autre sur sa fin. Chacun est constitué de deux dates exprimées en ISO 8601 et peuvent être définis de quatre manières principales : 
  - Strictement contenu dans la période de recherche
  - Couvre la période de recherche
  - Commence avant la période de recherche et se termine en son sein
  - Commence pendant la période de recherche et se termine après
 
-Le système doit enregistrer chaque date soumise par les chercheurs comme des valeurs signées et datées. Le système ne doit ainsi pas considérer la valeur d'un champ date comme une donnée monolithique, mais comme un succession de contributions contextualisées, un peu à la manière d'un cahier de laboratoire.
+Dans le cas d'une date n'apparaîssant pas dans la source, les intervalles saisis par les chercheurs sont des reconstructions qui doivent être argumentées par un champ permettant d'exprimer un degré de certitude. Un vocabulaire contrôlé proposant des paliers d'expression de la certitude doit être proposé, et partagé au sein du Consortium Musica2.
 
-
-
-- Quand la date n'apparaît pas dans la source, les dates saisies par les chercheurs sont des reconstructions argumentées, ce qui légitime encore davantage le mécanisme exposé juste *supra* qui permet de persister un faisceau d'indices.
-- Chaque contribution doit offrir un champ permettant d'exprimer un degré de certitude. Un vocabulaire contrôlé proposant des paliers d'expression de la certitude doit être proposé, et partagé au sein du CM2.
+Le système doit enregistrer chaque date soumise par les chercheurs comme des valeurs signées et datées, en ne considérant pas la valeur d'un champ date comme une donnée monolithique, mais comme un succession de contributions contextualisées, un peu à la manière d'un cahier de laboratoire.
 
 ## d. Proposition Cidoc-CRM
 
-- Toute attribution de date repose sur une interprétation, aussi minime soit-elle, et est donc connectée au graphe par une instance de `crm:E13_Attribute_Assignment`.
-- Le standard [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) est retenu pour l'expression des dates dans les bases de données.
-- Le chercheur est estimé spécialiste des calendriers non standards dans lesquels les dates dans ses sources sont exprimées.
-- Le chercheur doit saisir ses dates en opérant une conversion en ISO 8601.
-- Les systèmes informatiques doivent être délestés de la conversion des dates exprimées selon des calendriers non standards.
-- La date constatée sur la source est reportée en annotation.
-- Plusieurs instances de E13 viennent justifier les choix de datation.
+ - Le standard [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) est retenu pour l'expression des dates dans les bases de données.
+ - La date constatée sur la source est reportée en annotation.
+ - Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car touteattribution de date repose sur une 
+   interprétation, aussi minime soit-elle.
 
 ```mermaid
 graph TD;
