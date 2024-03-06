@@ -10,3 +10,9 @@ Nous avons besoin de modéliser la relation liant le commanditaire d'une œuvre 
 
 ## d. Proposition Cidoc-CRM
 
+```mermaid
+graph TD;
+
+A(crm:E28_conceptual_object) --> |crmdig:l35_has_commissioner| B(crm:E40_legal_body)
+
+```
