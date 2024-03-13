@@ -9,7 +9,7 @@ Le chercheur en sciences humaines doit pouvoir exprimer une incertitude avec sou
 
 ## c. Contextualisation technique
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 
 ```mermaid
