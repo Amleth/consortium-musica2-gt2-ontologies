@@ -19,3 +19,4 @@ B(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| D("Date ISO 8601")
 B(crm:E52_time_span) --> |crm:p81b_begin_of_the_end| E("Date ISO 8601")
 B(crm:E52_time_span) --> |crm:p82b_end_of_the_end| F("Date ISO 8601")
 ```
+
