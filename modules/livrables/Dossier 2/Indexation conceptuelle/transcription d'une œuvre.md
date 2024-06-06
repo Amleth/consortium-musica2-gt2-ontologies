@@ -19,6 +19,7 @@ A[crm:E7_activity] --> |crm:p16_used_specific_object| D[crm:E28_conceptual_objec
 
 E[crm:E7_activity] --> |crm:p14_carried_out_by| F[crm:E21_person<br>John Doe]
 E[crm:E7_activity] --> |crm:p2_has_type| G[crm:E55_type<br>Composition]
+D[crm:E28_conceptual_object<br>Œuvre]  --> |crm:XXX| G[crm:E55_type<br>Composition]
 
 ```
 
