@@ -12,7 +12,7 @@
 graph TD;
 
 A(crm:E22_person<br>John Doe)
-|p2_has_type
+|crm:p2_has_type|
 C(crm:E7_type<br>
 
 ```
