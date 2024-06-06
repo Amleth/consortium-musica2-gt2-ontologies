@@ -11,9 +11,8 @@
 ```mermaid
 graph TD;
 
-A(crm:E22_person<br>John Doe)
-|crm:p2_has_type|
-C(crm:E7_type<br>
+A(crm:E22_person<br>John Doe) 
+|crm:p2_has_type| C(crm:E7_type<br>)
 
 ```
 
