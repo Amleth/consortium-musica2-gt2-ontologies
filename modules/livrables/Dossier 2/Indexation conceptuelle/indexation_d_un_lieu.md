@@ -2,8 +2,6 @@
 
 ## a. Besoins musicologiques
 
-
-
 ## b. Problématisation 
 
 ## c. Contextualisation technique
@@ -13,9 +11,9 @@
 ```mermaid
 graph TD;
 
-A(crm:E28_conceptual_object<br>Œuvre) --> |crmdig:l35_has_commissioner| B(crm:E40_legal_body<br>Commanditaire)
-B(crm:E40_legal_body<br>Commanditaire) --> |crm:p2_has_type| C[crm:E55_type<br>Orchestre]
-B(crm:E40_legal_body<br>Commanditaire) --> |crm:P107_has_current_or_former_member| D[crm:E22_person<br>John Doe]
+A(crm:E53_place<br>Bibliothèque_Nationale_de_France) --> |crm:P55_has_current_location| B(crm:E19_physical_object<br>Site François Mitterand)
+C(crm:E13_attribute_assignement<br>URI)
+
 
 ```
 
