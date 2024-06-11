@@ -15,7 +15,8 @@ graph TD;
 
 A(crm:E22_person<br>John Doe) --> |crm:p2_has_type| B(crm:E7_type<br>Composer)
 A(crm:E22_person<br>John Doe) --> |crm:p94_has_created| C(crm:E28_conceptual_object<br>Œuvre)
-D(crm:E37_mark<br>To_Jane_Doe) ---> |crm:p67_refers_to|C(crm:E28_conceptual_object<br>Œuvre) 
+D(crm:E37_mark<br>To_Jane_Doe) ---> |crm:p67_refers_to| C(crm:E28_conceptual_object<br>Œuvre)
+C(crm:E28_conceptual_object<br>Œuvre) --> |xxx| F(frbroo:F28_expression_creation)
 D(crm:E37_mark<br>To_Jane_Doe) ---> |crm:p2_has_type| E(crm:E7_type<br>Dedication)
 
 ```
