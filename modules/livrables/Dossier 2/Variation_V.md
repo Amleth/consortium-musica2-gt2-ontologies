@@ -20,6 +20,11 @@ P(lrm:F28_expression_creation<br>Variation V) -->|crm:P14_carried_out_by| L(crm:
 P(lrm:F28_expression_creation<br>Variation V) -->|frbr:R17_created| M(crm:E36_visual_item)
 M(crm:E36_visual_item) --> |crm:p2_has_type| N(crm:E55_type<br>TV Pictures)
 
+W(crm:E12_creation) --> |crm:P2_has_type| X(crm:E55_has_type<br>Enregistrement)
+U(lrm:F5_item) --> |crm:P2_has_type| V(crm:E55_has_type<br>Bande)
+W(crm:E12_creation) ---> |crm:P14_carried_out_by| G(crm:E21_person<br>John Cage)
+
+
 ```
 
 Mettre tous les E55 en couleur, possible avec mermaid ? Orange
