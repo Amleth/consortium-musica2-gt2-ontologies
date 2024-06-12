@@ -1,28 +1,33 @@
 ```mermaid
 ---
-title: Animal example
+title: Mon beau graph
 ---
 classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
+
+class JC {
+    crm:P1 "John Cage"
+    rdf:type crm:E21
+}
+
+class E65_parition {
+    rdf:type crm:E65_Creation
+}
+
+class Toto {
+rdf:type crm:E21
+crm:P2_has_type E55_choucroute
+}
+
+class Titi {
+rdf:type crm:E21
+}
+
+E65_parition --> JC: P14_carried_out_by
+Toto --> JC: Ne peut pas blairer
+Titi --> E65_parition: Hihihi
+Titi --> Toto: Ne peut pas blairer
+Tata --> Toto: Ne peut pas blairer
+JC --> Tata: Aime beaucoup
+Toto --> E65_parition: Aimerait y manger une choucroute
+
 ```
