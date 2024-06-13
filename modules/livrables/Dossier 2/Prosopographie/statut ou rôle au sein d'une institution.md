@@ -4,7 +4,7 @@
 
 ## b. Problématisation
 
-## c. Contextualisation technique
+## c. Contextualisation technique 
 
 ## d. Proposition Cidoc-CRM
 
