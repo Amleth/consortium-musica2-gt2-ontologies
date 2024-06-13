@@ -31,6 +31,7 @@ M(crm:E36_visual_item) --> |crm:p2_has_type| N(crm:E55_type<br>TV Pictures)
 ```mermaid
 graph TD;
 
+A(lrm:F1_work<Variation V) -->|mus:U5_had_premiere| 
 
 
 ```
