@@ -26,14 +26,11 @@ P(lrm:F28_expression_creation<br>Variation V) -->|crm:P14_carried_out_by| L(crm:
 P(lrm:F28_expression_creation<br>Variation V) -->|frbr:R17_created| M(crm:E36_visual_item)
 M(crm:E36_visual_item) --> |crm:p2_has_type| N(crm:E55_type<br>TV Pictures)
 
-```
-
-```mermaid
-graph TD;
-
-A(lrm:F1_work<Variation V) -->|mus:U5_had_premiere| 
-
+Z(lrm:F1_work<Variation V) -->|mus:U5_had_premiere| AA(lrm:F31_performance)
+AA(lrm:F31_performance) --> |crm:P7_took_place_at| AB(crm:E53_place<br>NY)
+AA(lrm:F31_performance) -->|crm:P4_has_time_span| AC(crm:E52_time_span)
+AC(crm:E52_time_span) -->|crm:P82a_begin_of_begin| AD(23/07/1965)
+AC(crm:E52_time_span) -->|crm:P82b_end_of_the_end| AD(23/07/1965)
 
 ```
 
-Mettre tous les E55 en couleur, possible avec mermaid ? Orange
