@@ -11,9 +11,9 @@
 ```mermaid
 graph TD;
 
-H(crm:E7_activity) --> |crm:P14_carried_out_by| K(crm:E21_person<br>John Doe)
 H(crm:E7_activity) --> |crm:socP11_has_role| J(crm:socE15_role)
 J(crm:socE15_role) -->|crm:P2_has_type| I(crm:E55_type<br>Direction)
+H(crm:E7_activity) --> |crm:P14_carried_out_by| K(crm:E21_person<br>John Doe)
 
 L[crm:E85_joining] -->|crm:P143_joined| K(crm:E21_person<br>John Doe)
 M(crm:E74_group) --> |crm:P107_has_current_or_former_member| K(crm:E21_person<br>John Doe)
