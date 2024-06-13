@@ -11,6 +11,9 @@
 ```mermaid
 graph TD;
 
+H(crm:E7_activity) --> |crm:P14_carried_out_by| G(crm:E21_person)
+H(crm:E7_activity) --> |crm:socP11_has_role| J(crm:socE15_role)
+J(crm:socE15_role) -->|crm:P2_has_type| I(crm:E55_type<br>Direction)
 
 A(crm:E74_entity) -->|crm:P2_has_type| B(crm:E55_type<br>institution<br>aat:300026004)
 A(crm:E1_entity) -->|crm:P55_has_current_location| C(crm:E53_place)
