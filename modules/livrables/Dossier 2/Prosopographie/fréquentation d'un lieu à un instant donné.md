@@ -17,7 +17,7 @@ L'utilisation de deux intervalles est primordiale pour exprimer une incertitude 
 ```mermaid
 graph TD;
 
-B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>Personne 1 👩🏼")
+B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>John Doe")
 B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
 
 B(E7_activity) -->|crm:P7_took_place_at| I(E53_place)
