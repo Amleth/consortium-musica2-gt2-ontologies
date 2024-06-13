@@ -2,6 +2,8 @@
 
 ## a. Besoins musicologiques
 
+De toutes époques, les institutions sont au cœur de la vie musicale.
+
 ## b. Problématisation
 
 ## c. Contextualisation technique
