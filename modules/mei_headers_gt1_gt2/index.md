@@ -15,4 +15,6 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 - En FR on applique la méthode de Bédier sans savoir qui est Bédier, en s'en éloignant parfois sans vraiment le vouloir. La méthode Bédier est bonne lorsque l'on a très peu de sources. Dans l'Opéra par exemple on situe la première représentation puis on travaille ensuite à partir de cela. Exemple de _Don Giovanni_ entre la version de Prague (première) ou la version de Vienne qui connait de nombreux ajouts, parfois on fait une version hybride entre les deux, comme à Venise.
 
 - **Ce qui est important pour nous pour le header MEI en FRBR c'est que la liste des oeuvres / expressions / manifestations / items corresponde à la _recensio_ et ensuite préciser quel type de méthode on a adopté ; 1ère partie de header la liste complète, puis dans _source_desc_ la liste après la _collatio_ et insérer un texte explicatif**
+  
+Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
 
