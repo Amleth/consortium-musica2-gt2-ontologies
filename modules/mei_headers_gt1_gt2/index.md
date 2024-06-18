@@ -18,3 +18,5 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
   
 Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
 
+- Une école intéressante pour nos questions serait le _Copy-text_ (au labo c'est Damien Colas qui maitrise cela) : https://www.jstor.org/stable/40371494 (méthode utilisée par Philippe Gossett, édition Operia Seria de Rossini)
+  
