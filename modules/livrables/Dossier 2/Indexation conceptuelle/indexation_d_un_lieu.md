@@ -22,3 +22,6 @@ C(crm:E44_place_appellation<br>Site François Mitterand) --> |crm:P140_assigned_
 
 Faire un E74 connecté à un E53 avec un P74 et pas besoin de E13 / représenter le fait qu'une institution a plusieurs lieux
 E44 et E45 n'existent plus, l'adresse P1 --> E41 adresse postale
+
+E74 BNF / E53 le site Tolbiac P1 --> E41 --> P190 ("3 rue blablabla")
+                                         --> P2 --> E55 --> P1 ("adresse")
