@@ -9,10 +9,7 @@
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
-graph TD;
-
-H(crm:E7_activity) --> |crm:P2_has_type| I(crm:E55_type<br>Direction)
-H(crm:E7_activity) --> |crm:P14_carried_out_by| K(crm:E21_person<br>John Doe)
+graph TD:
 
 L[crm:E85_joining] -->|crm:P143_joined| K(crm:E21_person<br>John Doe)
 M(crm:E74_group) --> |crm:P107_has_current_or_former_member| K(crm:E21_person<br>John Doe)
@@ -24,6 +21,11 @@ P(crm:E66_formation)  -->|crm:P95_has_formed| M(crm:E74_group)
 P(crm:E66_formation) -->|crm:P4_has_time_span| Q(crm:E52_time_span)
 Q(crm:E52_time_span) -->|crm:P82a_begin_of_begin| R(Date_ISO_8601)
 Q(crm:E52_time_span) -->|crm:P82b_end_of_the_end| R(Date_ISO_8601)
+
+M(crm:E74_group) --> |crm:P107_has_current_or_former_member| S(crm:E74_group)
+S(crm:E74_group) --> |crm:P2_has_type| T(crm:E55_type<br>Direction)
+U[crm:E85_joining] -->|crm:P143_joined| K(crm:E21_person<br>John Doe)
+U[crm:E85_joining] --> |crm:P144_joined_with| S(crm:E74_group)
 
 ```
 
