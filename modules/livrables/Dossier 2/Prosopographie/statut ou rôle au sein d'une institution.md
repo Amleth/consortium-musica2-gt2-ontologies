@@ -9,7 +9,7 @@
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
-graph TD:
+graph TD;
 
 L[crm:E85_joining] -->|crm:P143_joined| K(crm:E21_person<br>John Doe)
 M(crm:E74_group) --> |crm:P107_has_current_or_former_member| K(crm:E21_person<br>John Doe)
