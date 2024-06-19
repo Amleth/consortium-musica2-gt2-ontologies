@@ -18,8 +18,7 @@ Le thésaurus Getty AAT permet de caractériser la typologie "institution" à l'
 graph TD;
 
 A(crm:E74_group) -->|crm:P2_has_type| B(crm:E55_type<br>institution<br>aat:300026004)
-A(crm:E74_group) -->|crm:P74_has_current_or_former_residence| C(crm:E53_place)
-C(crm:E53_place) -->|crm:P140_assigned_attribute_to| D(crm:E13_attribute_assignement<br>geonames)
+A(crm:E74_group) -->|crm:P74_has_current_or_former_residence| C(crm:E53_place<br>geonames)
 A(crm:E74_group) -->|crm:P95_has_formed| G(crm:E66_formation)
 G(crm:E66_formation) -->|crm:P4_has_time_span| E(crm:E52_time_span)
 E(crm:E52_time_span) -->|crm:P82a_begin_of_begin| F(Date_ISO_8601)
