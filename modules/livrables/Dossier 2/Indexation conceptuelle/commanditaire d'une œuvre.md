@@ -18,3 +18,6 @@ B(crm:E40_legal_body<br>Commanditaire) --> |crm:p2_has_type| C[crm:E55_type<br>O
 B(crm:E40_legal_body<br>Commanditaire) --> |crm:P107_has_current_or_former_member| D[crm:E22_person<br>John Doe]
 
 ```
+A(crm:F27_work_creation) --> |lrm:R16_created| B(crm:F1)
+Va contenir un sous F27 "commande" relié au 1er F27 par un P9
+On type le 2nd F27 (E55 commande avec le getty) et il n'y a plus d'E40, un P14 lie le 2nd F27 à un E74 "institution"
