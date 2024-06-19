@@ -17,7 +17,7 @@ H(crm:E7_activity) --> |crm:P14_carried_out_by| K(crm:E21_person<br>John Doe)
 L[crm:E85_joining] -->|crm:P143_joined| K(crm:E21_person<br>John Doe)
 M(crm:E74_group) --> |crm:P107_has_current_or_former_member| K(crm:E21_person<br>John Doe)
 L[crm:E85_joining] --> |crm:P144_joined_with| M(crm:E74_group)
-L[crm:E85_joining] --> |crm:P2_has_type| T(crm:E55_type)
+L[crm:E85_joining] --> |crm:P2_has_type| Z(crm:E55_type)
 
 M(crm:E74_group) -->|crm:P2_has_type| N(crm:E55_type<br>institution<br>aat:300026004)
 M(crm:E74_group) -->|crm:P55_has_current_location| O(crm:E53_place)
