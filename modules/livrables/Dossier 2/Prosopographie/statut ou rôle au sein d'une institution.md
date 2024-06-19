@@ -28,3 +28,5 @@ R(crm:E52_time_span) -->|crm:P82b_end_of_the_end| S(Date_ISO_8601)
 
 ```
 
+Aussi possible avec des E74 : sous-groupes 
+
