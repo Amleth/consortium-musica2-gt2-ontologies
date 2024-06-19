@@ -20,3 +20,4 @@ C(crm:E44_place_appellation<br>Site François Mitterand) --> |crm:P140_assigned_
 
 ```
 
+Faire un E74 connecté à un E53 avec un P74 et pas besoin de E13 / représenter le fait qu'une institution a plusieurs lieux
