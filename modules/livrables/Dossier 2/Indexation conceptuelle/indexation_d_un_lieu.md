@@ -6,6 +6,8 @@
 
 ## c. Contextualisation technique
 
+Quels sont les critères d'indexation nécessaires pour identifier un lieu ? 
+
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
