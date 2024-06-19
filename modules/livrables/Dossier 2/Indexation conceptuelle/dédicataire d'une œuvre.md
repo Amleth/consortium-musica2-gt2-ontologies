@@ -6,7 +6,11 @@ La dédicace d'une œuvre musicale diffère de la commande dans la mesure où n'
 
 ## b. Problématisation
 
+Comment exprimer la dédicace, mention textuelle présente au sein de la partition ? Il s'agira également de distinguer clairement cette notion de la commande.
+
 ## c. Contextualisation technique
+
+
 
 ## d. Proposition Cidoc-CRM
 
