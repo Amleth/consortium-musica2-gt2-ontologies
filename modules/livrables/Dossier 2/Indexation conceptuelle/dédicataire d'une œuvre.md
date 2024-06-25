@@ -10,7 +10,7 @@ Comment exprimer la dédicace, mention textuelle présente au sein de la partiti
 
 ## c. Contextualisation technique
 
-Nous ferons de nouveau appel au thesauras Getty Aat afin de typer
+Nous ferons de nouveau appel au thesauras Getty Aat afin de typer les différents éléments du graphe Cidoc-CRM.
 
 ## d. Proposition Cidoc-CRM
 
