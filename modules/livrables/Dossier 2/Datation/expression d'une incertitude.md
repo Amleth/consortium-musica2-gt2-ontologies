@@ -2,12 +2,16 @@
 
 ## a. Besoins musicologiques
 
-Le chercheur en sciences humaines doit pouvoir exprimer une incertitude avec souplesse, afin de transmettre avec justesse l'information scientifique, tout en étant conscient de la nécessité informatique d'une date précise exprimée dans un format référence.
-
+Le chercheur en sciences humaines doit pouvoir exprimer une incertitude avec souplesse, afin de transmettre avec justesse l'information scientifique, tout en étant conscient de la nécessité informatique d'une date précise exprimée dans un format référence. Il faut ainsi fournir une méthode permettant l'expression de divers doutes, besoins, etc.
 
 ## b. Problématisation
 
+Quels sont les outils permettant l'expression de l'incertitude entourant une datation en Cidoc-CRM ?
+
 ## c. Contextualisation technique
+
+Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une 
+   interprétation, aussi minime soit-elle.
 
 ## d. Proposition CIDOC CRM
 
