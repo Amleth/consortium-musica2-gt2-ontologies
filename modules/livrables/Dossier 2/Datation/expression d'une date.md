@@ -8,7 +8,7 @@ Les implications de la définition du temps ont été clairement soulignés par 
 
 ## b. Problématisation
 
-Comment exprimer une incertitude, tout en se présentant des données normées et informatiquement précises ? On constate par exemple que le terme _circa_ est régulièrement employé, malgré son manque de précision. Nous devons également présenter une date calculable par la machine (c'est-à-dire exprimable en ISO 8601)afin de l'intégrer dans une représentation chronologique calculée des données. 
+Comment exprimer une date, dans un référentiel normé et informatiquement précis ? On constate par exemple que le terme _circa_ est régulièrement employé, malgré son manque de précision. Nous devons également présenter une date calculable par la machine (c'est-à-dire exprimable en ISO 8601)afin de l'intégrer dans une représentation chronologique calculée des données. 
 
 ## c. Contextualisation technique
 
@@ -26,7 +26,7 @@ Le système doit enregistrer chaque date soumise par les chercheurs comme des va
 
  - Le standard [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) est retenu pour l'expression des dates dans les bases de données.
  - La date constatée sur la source est reportée en annotation.
- - Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car touteattribution de date repose sur une 
+ - Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une 
    interprétation, aussi minime soit-elle.
 
 ```mermaid
