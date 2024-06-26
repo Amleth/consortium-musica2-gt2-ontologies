@@ -8,3 +8,10 @@
 
 ## d. Proposition Cidoc-CRM
 
+
+```mermaid
+graph TD;
+
+
+
+```
