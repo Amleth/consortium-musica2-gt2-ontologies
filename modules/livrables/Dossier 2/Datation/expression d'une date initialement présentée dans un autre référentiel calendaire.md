@@ -22,5 +22,5 @@ B(crm:E52_time_span) --> |crm:P82a_begin_of_the_begin| C("Date ISO 8601")
 B(crm:E52_time_span) --> |crm:P81a_end_of_the_begin| D("Date ISO 8601")
 B(crm:E52_time_span) --> |crm:P81b_begin_of_the_end| E("Date ISO 8601")
 B(crm:E52_time_span) --> |crm:P82b_end_of_the_end| F("Date ISO 8601")
-B(crm:E52_time_span) --> |crm:P140_assigned_attribute_to| G(crm:E13_attribute_assignement)
+B(crm:E52_time_span) --> |crm:P140_assigned_attribute_to| H(crm:E13_attribute_assignement)
 ```
