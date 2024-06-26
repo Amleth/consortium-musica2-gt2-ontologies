@@ -24,11 +24,6 @@ Le système doit enregistrer chaque date soumise par les chercheurs comme des va
 
 ## d. Proposition Cidoc-CRM
 
- - Le standard [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) est retenu pour l'expression des dates dans les bases de données.
- - La date constatée sur la source est reportée en annotation.
- - Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une 
-   interprétation, aussi minime soit-elle.
-
 ```mermaid
 graph TD;
 
