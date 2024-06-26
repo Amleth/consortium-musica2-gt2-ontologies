@@ -2,9 +2,11 @@
 
 ## a. Besoins musicologiques
 
-Les chercheurs spécialisés en musicologie historique naviguent entre un grand nombre de référentiels calendaires. 
+Les chercheurs spécialisés en musicologie historique naviguent entre un grand nombre de référentiels calendaires. Il convient de proposer une convention qui permette leur compréhension immédiate à travers leur modélisation en Cidoc-CRM, tout en permettant aux chercheurs de témoigner d'incertitudes mais aussi d'éclairer la méthodologie derrière la conversion des dates.
 
 ## b. Problématisation
+
+De quelle manière exprimer de manière compréhensible une date originellement exprimée dans un référentiel calendaire ancien, ou peu commun ?
 
 ## c. Contextualisation technique
 
