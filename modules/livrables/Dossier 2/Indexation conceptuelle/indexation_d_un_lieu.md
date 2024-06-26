@@ -2,11 +2,13 @@
 
 ## a. Besoins musicologiques
 
+Lors du processus d'indexation conceptuelle, il est nécessaire de distinguer les lieux à l'aide de divers critères remarquables, tout en prenant soin - si besoin est - de relier chaque lieu à l'institution qu'il incarne. Il est également important de fournir des coordonnées GPS afin de pouvoir saisir la position géographique réelle du lieu. 
+
 ## b. Problématisation 
 
 ## c. Contextualisation technique
 
-Quels sont les critères d'indexation nécessaires pour identifier un lieu ? Utiliser le E53 ou le E74 comme critère d'indexation
+Quels sont les critères d'indexation nécessaires pour identifier un lieu ? 
 
 ## d. Proposition Cidoc-CRM
 
