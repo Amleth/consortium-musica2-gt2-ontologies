@@ -20,7 +20,7 @@ U[crm:E85_joining] -->|crm:P143_joined| A(crm:E21_person<br>John Doe)
 U[crm:E85_joining] --> |crm:P144_joined_with| M(crm:E74_group)
 
 K(crm:E28_conceptual_object<br>John Doe) --> |crm:P2_has_type| C(crm:E55_type<br>protagonist<br>aat:300410266)
-K(crm:E28_conceptual_object<br>John Doe) --> |crm:P2_has_type| C(crm:E55_type<br>protagonist<br>aat:300410266)
+A(crm:E21_person<br>John Doe) --> |crm:P2_has_type| C(crm:E55_type<br>protagonist<br>aat:300410266)
 
 ```
 
