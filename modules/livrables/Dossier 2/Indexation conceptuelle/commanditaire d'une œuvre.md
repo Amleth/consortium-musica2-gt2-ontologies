@@ -17,10 +17,10 @@ Le thesaurus Getty AAT nous permet de typer l'action de commande, tandis que l'i
 ```mermaid
 graph TD;
 
-A(crm:E7_work_creation) --> |lrm:R16_created| B(crm:F1_work)
-A(crm:E7_work_creation) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date ISO 8601)
+A(crm:E7_activity) --> |lrm:R16_created| B(crm:F1_work)
+A(crm:E7_activity) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date ISO 8601)
 
-C(crm:F27_work_creation) -->|crm:P9_consists_of| A(crm:F27_work_creation)
+C(crm:F27_work_creation) -->|crm:P9_consists_of| A(crm:E7_activity)
 C(crm:F27_work_creation) --> |crm:P2_has_type| D(crm:E55_type<br>Commande<br>aat:300400904)
 C(crm:F27_work_creation) --> |crm:P14_carried_out_by| E(crm:E74_group)
 C(crm:F27_work_creation) --> |crm:P4_has_time_span| K(crm:E52_time_span<br>Date ISO 8601)
