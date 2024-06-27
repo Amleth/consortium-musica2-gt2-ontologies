@@ -33,6 +33,9 @@ E(crm:E74_group) --> |crm:P74_has_current_or_former_residence| I(crm:E53_place<b
 I(crm:E53_place<br>Opéra de Paris) --> |crm:P168_is_defined_by| G(crm:E94_space_primitive
 48.866667, 2.333333)
 
+I(crm:E53_place<br>Opéra de Paris) --> |crm:P1_is_identified_by| S(crm:P190_has_symbolic_content<br>Quai François Mauriac, 75706 Paris)
+S(crm:P190_has_symbolic_content<br>Place de l'Opéra, 75009, Paris) --> |crm:P2_has_type| T(crm:E55_type<br>adresse<br>aat:300386983) 
+
 
 
 ```
