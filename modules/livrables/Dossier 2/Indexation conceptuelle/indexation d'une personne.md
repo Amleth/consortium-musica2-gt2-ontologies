@@ -2,6 +2,8 @@
 
 ## a. Besoins musicologiques
 
+Afin d'indexer une personne, nous avons dans un premier temps besoin d'informations biographiques basiques liées aux dates de naissance et de mort de l'individu.
+
 ## b. Problématisation
 
 ## c. Contextualisation technique
