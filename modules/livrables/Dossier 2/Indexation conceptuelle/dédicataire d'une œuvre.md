@@ -21,18 +21,16 @@ M(crm:F27_work_creation) --> |crm:P9_consists_of| C(crm:E7_activity)
 M(crm:F27_work_creation) --> |crm:P9_consists_of| A(crm:F27_work_creation)
 M(crm:F27_work_creation) --> |crm:P9_consists_of| G(crm:F27_work_creation)
 
+C(crm:E7_activity) --> |crm:P2_has_type| O(crm:E55_type<br>Dedication<br>aat:300026114)
+
 A(crm:F27_work_creation) --> |lrm:R16_created| B(crm:F1_work)
-A(crm:F27_work_creation) --> |crm:P2_has_type| N(E55_type<br>Composition musicale<br>300417577)
+A(crm:F27_work_creation) --> |crm:P2_has_type| N(E55_type<br>Composition musicale<br>aat:300417577)
 A(crm:F27_work_creation) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date ISO 8601)
 A(crm:F27_work_creation) --> |crm:P14_carried_out_by| L(crm:E21_person<br>Compositeur<br>aat:300025671)
-
-
 
 G(crm:F27_work_creation) --> |lrm:R16_created| E(crm:F3_manifestation) 
 E(crm:F3_manifestation) --> |crm:P3_has_note| H(crm:E34_inscription)
 H(crm:E34_inscription) --> |crm:p2_has_type| F(crm:E55_type<br>Dedicatee<br>aat:300121765)
-
-
 
 ```
 
