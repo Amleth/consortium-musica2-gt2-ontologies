@@ -17,18 +17,18 @@ Le thesaurus Getty AAT nous permet de typer l'action de commande, tandis que l'i
 ```mermaid
 graph TD;
 
-A(crm:E7_activity) --> |lrm:R16_created| B(crm:F1_work)
-A(crm:E7_activity) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date ISO 8601)
+A(crm:F27_work_creation) --> |lrm:R16_created| B(crm:F1_work)
+A(crm:F27_work_creation) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date ISO 8601)
 
-C(crm:F27_work_creation) -->|crm:P9_consists_of| A(crm:E7_activity)
-C(crm:F27_work_creation) --> |crm:P2_has_type| D(crm:E55_type<br>Commande<br>aat:300400904)
-C(crm:F27_work_creation) --> |crm:P14_carried_out_by| E(crm:E74_group)
-C(crm:F27_work_creation) --> |crm:P4_has_time_span| K(crm:E52_time_span<br>Date ISO 8601)
+C(crm:E7_activity) -->|crm:P9_consists_of| A(crm:F27_work_creation)
+C(crm:E7_activity) --> |crm:P2_has_type| D(crm:E55_type<br>Commande<br>aat:300400904)
+C(crm:E7_activity) --> |crm:P14_carried_out_by| E(crm:E74_group)
+C(crm:E7_activity) --> |crm:P4_has_time_span| K(crm:E52_time_span<br>Date ISO 8601)
 E(crm:E74_group) -->|crm:P2_has_type| F(crm:E55_type<br>institution<br>aat:300026004)
 E(crm:E74_group) --> |crm:P74_has_current_or_former_residence| I(crm:E53_place<br>Opéra de Paris)
 I(crm:E53_place<br>Opéra de Paris) --> |crm:P168_is_defined_by| G(crm:E94_space_primitive
 48.866667, 2.333333)
-C(crm:F27_work_creation) --> |crm:P14_carried_out_by| H(crm:E21_person<John Doe)
+C(crm:E7_activity) --> |crm:P14_carried_out_by| H(crm:E21_person<John Doe)
 
 
 ```
