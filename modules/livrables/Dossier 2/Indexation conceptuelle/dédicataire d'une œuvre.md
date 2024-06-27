@@ -23,7 +23,7 @@ D(crm:E37_mark<br>To_Jane_Doe) ---> |crm:p67_refers_to| C(crm:E28_conceptual_obj
 
 G(crm:F27_work_creation) --> |lrm:R16_created| E(crm:F3_manifestation) 
 E(crm:F3_manifestation) --> |crm:P3_has_note| H(crm:E34_inscription)
-H(crm:E34_inscription) --> |crm:p2_has_type| E(crm:E55_type<br>Dedicatee<br>aat:300121765)
+H(crm:E34_inscription) --> |crm:p2_has_type| F(crm:E55_type<br>Dedicatee<br>aat:300121765)
 
 
 
