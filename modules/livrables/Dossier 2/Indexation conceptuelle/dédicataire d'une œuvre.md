@@ -17,9 +17,16 @@ Nous ferons de nouveau appel au thesauras Getty Aat afin de typer les différent
 ```mermaid
 graph TD;
 
-A(crm:E22_person<br>John Doe) --> |crm:p2_has_type| B(crm:E55_type<br>Composer<br>aat:300025671) 
-A(crm:E22_person<br>John Doe) --> |crm:p94_has_created| C(crm:E28_conceptual_object<br>Œuvre)
-D(crm:E37_mark<br>To_Jane_Doe) ---> |crm:p67_refers_to| C(crm:E28_conceptual_object<br>Œuvre)
+M(crm:F27_work_creation) --> |crm:P9_consists_of| C(crm:E7_activity)
+M(crm:F27_work_creation) --> |crm:P9_consists_of| A(crm:F27_work_creation)
+M(crm:F27_work_creation) --> |crm:P9_consists_of| G(crm:F27_work_creation)
+
+A(crm:F27_work_creation) --> |lrm:R16_created| B(crm:F1_work)
+A(crm:F27_work_creation) --> |crm:P2_has_type| N(E55_type<br>Composition musicale<br>300417577)
+A(crm:F27_work_creation) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date ISO 8601)
+A(crm:F27_work_creation) --> |crm:P14_carried_out_by| L(crm:E21_person<br>Compositeur<br>aat:300025671)
+
+
 
 G(crm:F27_work_creation) --> |lrm:R16_created| E(crm:F3_manifestation) 
 E(crm:F3_manifestation) --> |crm:P3_has_note| H(crm:E34_inscription)
