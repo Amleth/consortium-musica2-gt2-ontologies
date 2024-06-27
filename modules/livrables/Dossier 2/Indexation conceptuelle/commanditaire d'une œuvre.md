@@ -2,7 +2,7 @@
 
 ## a. Besoins musicologiques
 
-Nous avons besoin de modéliser la relation liant le commanditaire d'une œuvre et le compositeur, ainsi que la modélisation de l'œuvre elle-même pour modéliser l'influence du commanditaire sur celle-ci. 
+Nous avons besoin de modéliser la relation liant le commanditaire d'une œuvre au compositeur, ainsi que la pièce résultant de cette collaboration. Le commanditaire est souvent une personne morale (institution) plus qu'une personne physique.
 
 ## b. Problématisation 
 
