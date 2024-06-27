@@ -23,6 +23,7 @@ M(crm:F27_work_creation) --> |crm:P9_consists_of| C(crm:E7_activity)
 A(crm:F27_work_creation) --> |lrm:R16_created| B(crm:F1_work)
 A(crm:F27_work_creation) --> |crm:P2_has_type| N(E55_type<br>Composition musicale<br>300417577)
 A(crm:F27_work_creation) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date ISO 8601)
+A(crm:F27_work_creation) --> |crm:P14_carried_out_by| K(crm:E21_person<br>Compositeur<br>aat:300025671)
 
 C(crm:E7_activity) --> |crm:P2_has_type| D(crm:E55_type<br>Commande<br>aat:300400904)
 C(crm:E7_activity) --> |crm:P14_carried_out_by| E(crm:E74_group)
