@@ -5,7 +5,7 @@
 Nous avons besoin de modéliser la relation liant le commanditaire d'une œuvre au compositeur, ainsi que la pièce résultant de cette collaboration. Le commanditaire est souvent une personne morale (institution) plus qu'une personne physique ; nous nous attacherons néanmoins à expliciter ces deux possibilités distinctes. 
 
 ## b. Problématisation 
-
+ 
 De quelle manière peut-on révéler l'aspect conséquentiel de l'œuvre suite à l'action de la commande ? Comment modéliser les différents types de commanditaires : institutionnels ou bien plus informels, commande d'une personne à une autre ?
 
 ## c. Contextualisation technique
