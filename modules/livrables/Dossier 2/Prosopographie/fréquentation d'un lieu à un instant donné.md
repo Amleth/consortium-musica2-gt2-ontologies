@@ -20,9 +20,10 @@ graph TD;
 B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>John Doe")
 B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
 
-B(E7_activity) -->|crm:P7_took_place_at| I(E53_place)
-I(E53_place) --> |crm:P1_is_identified_by| J(crm:P190_has_symbolic_content<br>Quai François Mauriac, 75706 Paris)
-J(crm:P190_has_symbolic_content<br>Quai François Mauriac, 75706 Paris) --> |crm:P2_has_type| K(crm:E55_type<br>adresse<br>aat:300386983)
+B(E7_activity) -->|crm:P7_took_place_at| I(E53_place<br>Cathédrale Notre Dame de Paris)
+I(E53_place<br>Cathédrale Notre Dame de Paris) --> |crm:P168_is_defined_by| L(crm:E94_space_primitive<br>48.8471097, 2.3590381)
+I(E53_place<br>Cathédrale Notre Dame de Paris) --> |crm:P1_is_identified_by| J(crm:P190_has_symbolic_content<br>crm:P190_has_symbolic_content<br>6 Parvis Notre-Dame - Place Jean-Paul II, 75004 Paris)
+J(crm:P190_has_symbolic_content<br>6 Parvis Notre-Dame - Place Jean-Paul II, 75004 Paris) --> |crm:P2_has_type| K(crm:E55_type<br>adresse<br>aat:300386983)
 
 B(E7_activity) --> |crm:P4_has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crm:P82a_begin_of_the_begin| E("Date ISO 8601")
