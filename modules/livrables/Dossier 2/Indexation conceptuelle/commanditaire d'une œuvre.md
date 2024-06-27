@@ -6,7 +6,11 @@ Nous avons besoin de modéliser la relation liant le commanditaire d'une œuvre 
 
 ## b. Problématisation 
 
+De quelle manière peut-on révéler l'aspect conséquentiel de l'œuvre suite à l'action de la commande ? Comment modéliser les différents types de commanditaires : institutionnels ou bien plus informels, commande d'une personne à une autre ?
+
 ## c. Contextualisation technique
+
+Le thesaurus Getty AAT nous permet de typer l'action de commande, tandis que l'institution est inscrite dans un champ spatio-temporel. La date de commande de l'œuvre est ainsi, ainsi que sa date de finalisation. 
 
 ## d. Proposition Cidoc-CRM
 
