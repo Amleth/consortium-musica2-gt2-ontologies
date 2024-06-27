@@ -8,3 +8,9 @@
 
 ## d. Proposition Cidoc-CRM
 
+```mermaid
+graph TD;
+
+A(crm:E21_person) 
+
+```
