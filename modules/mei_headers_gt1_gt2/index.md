@@ -36,8 +36,8 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
    - <sourceDesc> très important pour nous / question de la place des <statement>, pour Marco indispensable dans <sourceDesc>, c'est la partie   
       de <fileDesc> dans laquelle on donne exactement le contenu scientifique (cf 3.6.11)
 - <workList> : pas de renvoi au modèle FRBR, ce qui ne nous arrange pas... **il faut donc déployer le modèle FRBR à cet endroit**
-   - <expressionList> on peut nommer les différentes expressions : il y aura **_une expression 0_** qui sera le point de départ (expression directe) tandis que l'expression indirecte se déploie avec des chiffres (1,2 etc)
-   - <manifestationList> dans <workList> ? Ainsi que les <itemList>
+   - <expressionList> on peut nommer les différentes expressions : il y aura **_une expression 0_** qui sera le point de départ (expression            directe) tandis que l'expression indirecte se déploie avec des chiffres (1,2 etc)
+   - <manifestationList> dans <workList> ? Ainsi que les <itemList> / **_manifestation 0 est l'autographe_** si on a pas l'autographe on parle       **d'omega** issu de _stemma caudicum_ (arbre généalogique qui décrit la tradition) ; si on a pas l'autographe on laisse manifestation 0          vide, idéalement le fichier MEI devrait remplacer manifestation 0 (omega)
    - Pour chaque expression un <manifestationList>, pour chaque manifestation un <itemList>
       - Préciser que pour des manuscrits manifestation = item
    - Le fichier MEI que l'on créé est une autre manifestation de l'œuvre ; il faut aussi renseigner ce fichier en tant que MEI
