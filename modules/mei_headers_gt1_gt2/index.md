@@ -9,10 +9,10 @@ La seconde méthode établie par Joseph Bédier (1864-1938) critique fondamental
 Bien que ces deux modèles soient les plus importants, il existe également une troisième méthode "synthétiste" imaginée par Giorgio Pasquali (1885-1952) ; moins critique avec Lachmann, sa méthode  hybride les apports des deux précédentes en maintenant la version de Lachmann, tout en prenant en compte les critiques de Bédier. Une dernière école est celle du _Copy-text_, notamment utilisée par Philip Gossett (1941-2017) dans le cadre de l'édition critique des opéras de Rossini.
 
 Dans le cadre de la présentation de notre protocole de renseignement des métadonnées au sein des headers MEI pour l'établissement d'éditions critiques, nous prenons donc comme point d'appui les deux modèles philologiques "historiquement importants" que sont la méthode Karl Lachmann et méthode Joseph Bédier. La convergence des deux méthodes nous offre ainsi un socle pour entrevoir les éléments à renseigner en utilisant les éléments du header MEI représentant des entités FRBR.
-  
-
 
 ## 2. Approche des GT1 et GT2 pour la complétion des header MEI
+
+L'appui sur les normes FRBR nous parait central et permet de combler une lacune dans l'interopérabilité des données de fichiers encodés en MEI.
 
 - **Ce qui est important pour nous pour le header MEI en FRBR c'est que la liste des oeuvres / expressions / manifestations / items corresponde à la _recensio_ et ensuite préciser quel type de méthode on a adopté ; 1ère partie de header la liste complète, puis dans _source_desc_ la liste après la _collatio_ et insérer un texte explicatif**
 
