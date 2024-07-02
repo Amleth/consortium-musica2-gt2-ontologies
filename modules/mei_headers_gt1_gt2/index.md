@@ -34,7 +34,7 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 - <fileDesc>
    - Tous les éléments
    - <sourceDesc> très important pour nous / question de la place des <statement>, pour Marco indispensable dans <sourceDesc>, c'est la partie   
-      de <fileDesc> dans laquelle on donne exactement le contenu scientifique
+      de <fileDesc> dans laquelle on donne exactement le contenu scientifique (cf 3.6.11)
 - Les quatre entités FRBR et la manière dont ils interagissent avec <fileDesc>
 
 
