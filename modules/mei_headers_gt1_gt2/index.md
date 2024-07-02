@@ -35,7 +35,9 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
    - Tous les éléments
    - <sourceDesc> très important pour nous / question de la place des <statement>, pour Marco indispensable dans <sourceDesc>, c'est la partie   
       de <fileDesc> dans laquelle on donne exactement le contenu scientifique (cf 3.6.11)
-- Les quatre entités FRBR et la manière dont ils interagissent avec <fileDesc>
+- <workList> : pas de renvoi au modèle FRBR, ce qui ne nous arrange pas... **il faut donc déployer le modèle FRBR à cet endroit**
+   - <manifestationList> dans <workList> ? Ainsi que les <item> 
+   - Le fichier MEI que l'on créé est une autre manifestation de l'œuvre ; il faut aussi renseigner ce fichier en tant que MEI
 
 
 - Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique".
