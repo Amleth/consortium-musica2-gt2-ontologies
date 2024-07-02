@@ -29,6 +29,15 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 
 - Remplir le MEIheader de la manière la plus complète possible ; notre protocole est orienté vers la **redondance** : remplir toutes les cases possibles, le compositeur est donc répété une dizaine de fois. L'important pour notre protocole est **l'interopérabilité** / faire communauté et permettre la vérification, par exemple dans le cas d'éditions critiques
 
+- <meiHead>
+   - Tittle stat etc
+- <fileDesc>
+   - Tous les éléments
+   - <sourceDesc> très important pour nous / question de la place des <statement>, pour Marco indispensable dans <sourceDesc>, c'est la partie   
+      de <fileDesc> dans laquelle on donne exactement le contenu scientifique
+- Les quatre entités FRBR et la manière dont ils interagissent avec <fileDesc>
+
+
 - Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique".
 
 - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
@@ -42,4 +51,4 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 
  - - -
 
- Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Keper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
+ Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Johannes Kepper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
