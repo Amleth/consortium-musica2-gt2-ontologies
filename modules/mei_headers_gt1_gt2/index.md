@@ -1,11 +1,8 @@
-**18/05/2024 avec Marco et Thomas**
-
-Une fiche unique autour de la méthodologie pour l'édition critique / épouser la structure des guidelines en évoquant les grands chapitres
-Mettre les exemples en fichiers séparés ; un fichier par exemple. 
-
 ## 1. Présentation générale de l'approche méthodologique
 
-- Les besoins de l'édition critique textuelle se sont historiquement structurés à partir de deux modèles philologiques historiquement importants. Le premier d'entre eux, que l'on doit à l'allemand Karl Lachmann (1793 - 1851)
+Ce document vise à proposer un protocole détaillé de renseignements des métadonnées au sein des headers MEI pour l'établissement d'éditions critiques. Notre objectif visera à améliorer la précision et l'interopérabilité des données par le recours au modèle FRBR. Les besoins de l'édition critique textuelle se sont historiquement structurés à partir de deux modèles philologiques historiquement importants. Le premier d'entre eux, que l'on doit à l'allemand Karl Lachmann (1793 - 1851), s'articule en cinq points, en débutant par la _recensio_, soit l'identification des sources, aussi appelée "étude de la tradition".
+
+
    
 --> besoins de l'édition critique structurés à partir de deux modèles philologiques "historiquement importants" : méthode Karl Lachmann et méthode Joseph Bedier. Les deux méthodo convergent sur certains points ; cette partie commune constitue un socle qui peut être renseigné en utilisant les éléments du header MEI représentant des entités FRBR
 
