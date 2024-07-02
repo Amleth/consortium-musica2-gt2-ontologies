@@ -23,7 +23,7 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 - Également troisième méthode autour de Barbi, Contini et Pasquali qui est moins critique avec Lachmann, hybride entre les deux, continue à maintenir la version de Lachmann en prenant en compte les critiques de Bédier.
 - Une école intéressante pour nos questions serait le _Copy-text_ (au labo c'est Damien Colas qui maitrise cela) : https://www.jstor.org/stable/40371494 (méthode utilisée par Philippe Gossett, édition des opéras de Rossini)
 
-## Approche des GT1 et GT2 pour la complétion des header MEI
+## 2. Approche des GT1 et GT2 pour la complétion des header MEI
 
 - **Ce qui est important pour nous pour le header MEI en FRBR c'est que la liste des oeuvres / expressions / manifestations / items corresponde à la _recensio_ et ensuite préciser quel type de méthode on a adopté ; 1ère partie de header la liste complète, puis dans _source_desc_ la liste après la _collatio_ et insérer un texte explicatif**
 
