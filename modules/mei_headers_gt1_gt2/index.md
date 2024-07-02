@@ -39,6 +39,9 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
    - <manifestationList> dans <workList> ? Ainsi que les <item> 
    - Le fichier MEI que l'on créé est une autre manifestation de l'œuvre ; il faut aussi renseigner ce fichier en tant que MEI
 
+- Expression origniale : tradition directe
+- Parodies, transcriptions, citations etc : tradition indirecte
+
 
 - Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique".
 
