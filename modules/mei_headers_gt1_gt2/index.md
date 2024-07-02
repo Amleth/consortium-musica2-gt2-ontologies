@@ -1,6 +1,8 @@
 ## 1. Présentation générale de l'approche méthodologique
 
-Ce document vise à proposer un protocole détaillé de renseignements des métadonnées au sein des headers MEI pour l'établissement d'éditions critiques. Notre objectif visera à améliorer la précision et l'interopérabilité des données par le recours au modèle FRBR. Les besoins de l'édition critique textuelle se sont historiquement structurés à partir de deux modèles philologiques historiquement importants. Le premier d'entre eux, que l'on doit à l'allemand Karl Lachmann (1793 - 1851), s'articule en cinq points, en débutant par la _recensio_, soit l'identification des sources, l'étude de la tradition.
+Ce document vise à proposer un protocole détaillé de renseignements des métadonnées au sein des headers MEI pour l'établissement d'éditions critiques. Notre objectif visera à améliorer la précision et l'interopérabilité des données par le recours au modèle FRBR. 
+
+Les besoins de l'édition critique textuelle se sont historiquement structurés à partir de deux modèles philologiques historiquement importants. Le premier d'entre eux, que l'on doit à l'allemand Karl Lachmann (1793 - 1851), s'articule en cinq points, en débutant par la première étape de la _recensio_, soit l'identification des sources, l'étude de la tradition. À ce stade, il s'agit de différencier les sources de _tradition directe_ - les manuscrits autographes, à défaut - et les sources de _tradition indirecte_, les traductions, citations, commentaires et parodies. Une fois cette première étape terminée, la seconde partie de la _recensio_ peut s'effectuer afin de compléter l'identification des sources.
 
 
    
