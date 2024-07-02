@@ -27,6 +27,8 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 
 - **Ce qui est important pour nous pour le header MEI en FRBR c'est que la liste des oeuvres / expressions / manifestations / items corresponde à la _recensio_ et ensuite préciser quel type de méthode on a adopté ; 1ère partie de header la liste complète, puis dans _source_desc_ la liste après la _collatio_ et insérer un texte explicatif**
 
+- Remplir le MEIheader de la manière la plus complète possible ; notre protocole est orienté vers la **redondance** : remplir toutes les cases possibles, le compositeur est donc répété une dizaine de fois. L'important pour notre protocole est **l'interopérabilité** / faire communauté et permettre la vérification, par exemple dans le cas d'éditions critiques
+
 - Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique".
 
 - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
@@ -37,3 +39,7 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 --> exemple de Sophie : une expression, deux manifestations, deux items.
 
    Il s'agira donc de rentrer dans le détail de l'organisation MEI/FRBR de expressionList, manifestationList et itemList => un document fils pour chaque de ce trois 'chapitres'.
+
+ - - -
+
+ Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Keper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
