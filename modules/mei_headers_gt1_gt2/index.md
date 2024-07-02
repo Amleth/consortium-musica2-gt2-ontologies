@@ -42,6 +42,10 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
       - Préciser que pour des manuscrits manifestation = item
    - Le fichier MEI que l'on créé est une autre manifestation de l'œuvre ; il faut aussi renseigner ce fichier en tant que MEI
 
+- Mettre des xmlID pour manifestation et item, cf manif 0 ; il faut que l'on trouve une manière de nommer les choses / un item ne peut pas être 0
+
+- Nomenclature ? Chacun s'organise, mais on essaie de respecter la tradition et la nomenclature
+
 **L'expression dans notre protocole correspond à la _recensio_ : discours commun aux deux théories**
 - Expression origniale : tradition directe
 - Parodies, transcriptions, citations etc : tradition indirecte
@@ -60,4 +64,5 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 
  - - -
 
- Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Johannes Kepper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
+Faire valider par Kévin pour la place du modèle FRBR, pour nous c'est dans <workList>
+Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Johannes Kepper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
