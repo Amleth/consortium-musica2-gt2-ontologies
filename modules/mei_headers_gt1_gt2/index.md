@@ -8,6 +8,8 @@ La seconde méthode établie par Joseph Bédier (1864-1938) critique fondamental
 
 Pour Bédier, le seul bon outil développé par Lachman est lié aux deux premiers points - les deux étapes de la _recensio_ - qui doivent être réalisés afin d'imaginer correctement effectuer un travail d'édition critique. Cette méthode, également dite du _bon manuscrit_ vise à choisir d'emblée la source la moins corrompue afin qu'elle constitue la base de l'édition critique ; les éventuelles erreurs seront corrigées au fur et à mesure du processus par les déductions du philologue.
 
+- Également troisième méthode autour de Barbi, Contini et Pasquali qui est moins critique avec Lachmann, hybride entre les deux, continue à maintenir la version de Lachmann en prenant en compte les critiques de Bédier.
+- Une école intéressante pour nos questions serait le _Copy-text_ (au labo c'est Damien Colas qui maitrise cela) : https://www.jstor.org/stable/40371494 (méthode utilisée par Philippe Gossett, édition des opéras de Rossini)
 
 
 
@@ -24,8 +26,7 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
 
 ### D'autres méthodes ?
   
-- Également troisième méthode autour de Barbi, Contini et Pasquali qui est moins critique avec Lachmann, hybride entre les deux, continue à maintenir la version de Lachmann en prenant en compte les critiques de Bédier.
-- Une école intéressante pour nos questions serait le _Copy-text_ (au labo c'est Damien Colas qui maitrise cela) : https://www.jstor.org/stable/40371494 (méthode utilisée par Philippe Gossett, édition des opéras de Rossini)
+
 
 ## 2. Approche des GT1 et GT2 pour la complétion des header MEI
 
