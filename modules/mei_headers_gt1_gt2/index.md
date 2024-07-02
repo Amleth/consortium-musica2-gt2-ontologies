@@ -6,7 +6,11 @@ Les besoins de l'édition critique textuelle se sont historiquement structurés 
 
 La seconde méthode établie par Joseph Bédier (1864-1938) critique fondamentalement la méthode de Lachmann : le _stemma codicum_ aboutit toujours à une division systématique de l'_omega_ (autographe en deux branches. Selon Bédier, le résultat est alors toujours banalisé, au contraire d'une vision plus fine et complexe du phénomère réel où l'on aurait plus de branches 
 
-_**Pourquoi forcément en deux parties ?**_
+
+
+__**Pourquoi forcément en deux parties ?**_ mécanisme logique qui fait en sorte que l'on a ce pb là, dans la réalité des faits et de son application on assiste à une certaine binarité / application d'une logique formelle : s'il y aune erreur entre deux exemplaires, ces deux exemplaires sont mis en relation, copie d'une erreur forcément
+
+
 
 ; chez Lachmann, quand on fait la comparaison des sources on arrive à un document qui n'a jamais existé dans l'histoire
 
