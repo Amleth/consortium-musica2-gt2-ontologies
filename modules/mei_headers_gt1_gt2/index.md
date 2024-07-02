@@ -39,6 +39,7 @@ Il faut un petit paragraphe qui présente les deux méthodes : https://prezi.com
    - <manifestationList> dans <workList> ? Ainsi que les <item> 
    - Le fichier MEI que l'on créé est une autre manifestation de l'œuvre ; il faut aussi renseigner ce fichier en tant que MEI
 
+**L'expression dans notre protocole correspond à la _recensio_ : discours commun aux deux théories**
 - Expression origniale : tradition directe
 - Parodies, transcriptions, citations etc : tradition indirecte
 
