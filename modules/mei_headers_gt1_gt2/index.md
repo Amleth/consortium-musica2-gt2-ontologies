@@ -14,6 +14,7 @@ Dans le cadre de la présentation de notre protocole de renseignement des métad
 
 L'appui sur les normes FRBR nous parait central, afin de combler une lacune dans l'interopérabilité des données de fichiers encodés en MEI. Dans le cadre de l'usage des normes FRBR en MEI, il est ainsi primordial que la liste des œuvres, des expressions, des manifestations puis des items corresponde de manière fine à la _recensio_ ; le header doit être rempli de la manière la plus complète et rigoureuse possible. Notre protocole étant orienté vers la redondance, il est ainsi probable que des métadonnées soient régulièrement répétées, par exemple le nom du compositeur que nous renseignerons une dizaine de fois.
 
+Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des _guidelines_ MEI, afin d'en faciliter l'approche. Notons que des exemples concrets sont joints au sein du _repository_, ainsi qu'un modèle vierge qui pourra être copié et rempli au sein des headers des utilisateurs, pour une interopérabilité maximale. 
 
 - <meiHead>
    - Tittle stat etc
