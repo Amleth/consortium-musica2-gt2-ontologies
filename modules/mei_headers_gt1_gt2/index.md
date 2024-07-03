@@ -24,10 +24,8 @@ Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des 
       
 - _workList_ : selon les _guidelines_ MEI, il n'y a pas de renvoi au modèle FRBR au sein de _workList_. Il faut donc déployer le modèle FRBR à cet endroit.
    - _expressionList_ : il s'agit de nommer et détailler les différentes expressions. Nous avons fait le choix de nommer l'expression de tradition directe _expression 0_. Les expressions indirectes se déploient ensuite avec des chiffres (1,2 _etc_) ou bien des noms en toutes lettres.
-   - _manifestationList_ : de manière similaire à _expressionList_, nous nommons le manuscrit autographe (ou l'_omega_ issu du _stemma codicum_ si l'on ne possède pas l'autographe) _manifestation 0_.
-   - Pour chaque expression un <manifestationList>, pour chaque manifestation un <itemList>
-      - Préciser que pour des manuscrits manifestation = item
-   - Le fichier MEI que l'on créé est une autre manifestation de l'œuvre ; il faut aussi renseigner ce fichier en tant que MEI
+   - _manifestationList_ : de manière similaire à _expressionList_, nous nommons le manuscrit autographe (ou l'_omega_ issu du _stemma codicum_ si l'on ne possède pas l'autographe) _manifestation 0_. Pour chaque expression il convient d'utiliser une isntance de _manifestationList_ et pour chaque manifestation un _itemList_. Dans le cadre de manuscrits, la manifestation et l'item ne font qu'un. 
+   - Le fichier MEI que nous sommes en train de renseigner est par ailleurs une autre manifestation de l'œuvre, et doit par conséquent faire partie de la _manifestation_list_.
 - Mettre des xmlID pour manifestation et item, cf manif 0 ; il faut que l'on trouve une manière de nommer les choses / un item ne peut pas être 0
 - Nomenclature ? Chacun s'organise, mais on essaie de respecter la tradition et la nomenclature
 
