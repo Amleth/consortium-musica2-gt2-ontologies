@@ -16,11 +16,11 @@ L'appui sur les normes FRBR nous parait central, afin de combler une lacune dans
 
 Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des _guidelines_ MEI, afin d'en faciliter l'approche. Notons que des exemples concrets sont joints au sein du _repository_, ainsi qu'un modèle vierge qui pourra être copié et rempli au sein des headers des utilisateurs, pour une interopérabilité maximale. 
 
-- <meiHead>
+- _meiHead_
    - Tittle stat etc
-- <fileDesc>
+- _fileDesc_
    - Tous les éléments
-   - <sourceDesc> Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique
+   - _sourceDesc_ Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique
       
 - <workList> : pas de renvoi au modèle FRBR, ce qui ne nous arrange pas... **il faut donc déployer le modèle FRBR à cet endroit**
    - <expressionList> on peut nommer les différentes expressions : il y aura **_une expression 0_** qui sera le point de départ (expression            directe) tandis que l'expression indirecte se déploie avec des chiffres (1,2 etc)
