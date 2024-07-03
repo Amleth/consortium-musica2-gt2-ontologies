@@ -22,16 +22,20 @@ Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des 
    - Tous les éléments
    - _sourceDesc_ Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique
       
-- _workList_ : pas de renvoi au modèle FRBR, ce qui ne nous arrange pas... **il faut donc déployer le modèle FRBR à cet endroit**
+- _workList_ : selon les _guidelines_ MEI, il n'y a pas de renvoi au modèle FRBR au sein de _workList_. Il faut donc déployer le modèle FRBR à cet endroit.
    - _expressionList_ : il s'agit de nommer et détailler les différentes expressions. Nous avons fait le choix de nommer l'expression de tradition directe _expression 0_. Les expressions indirectes se déploient ensuite avec des chiffres (1,2 _etc_) ou bien des noms en toutes lettres.
-   - <manifestationList> dans <workList> ? Ainsi que les <itemList> / **_manifestation 0 est l'autographe_** si on a pas l'autographe on parle       **d'omega** issu de _stemma caudicum_ (arbre généalogique qui décrit la tradition) ; si on a pas l'autographe on laisse manifestation 0          vide, idéalement le fichier MEI devrait remplacer manifestation 0 (omega)
+   - _manifestationList_ : de manière similaire à _expressionList_, nous nommons le manuscrit autographe (ou l'_omega_ issu du _stemma codicum_ si l'on ne possède pas l'autographe) _manifestation 0_.
    - Pour chaque expression un <manifestationList>, pour chaque manifestation un <itemList>
       - Préciser que pour des manuscrits manifestation = item
    - Le fichier MEI que l'on créé est une autre manifestation de l'œuvre ; il faut aussi renseigner ce fichier en tant que MEI
-
 - Mettre des xmlID pour manifestation et item, cf manif 0 ; il faut que l'on trouve une manière de nommer les choses / un item ne peut pas être 0
-
 - Nomenclature ? Chacun s'organise, mais on essaie de respecter la tradition et la nomenclature
+
+
+
+
+
+
 
 
 L'important pour notre protocole est **l'interopérabilité** / faire communauté et permettre la vérification, par exemple dans le cas d'éditions critiques
