@@ -21,27 +21,21 @@ Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des 
 - _fileDesc_
    - Tous les éléments
 - _sourceDesc_ Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique. Selon les _guidelines_ MEI, il n'y a pas de renvoi au modèle FRBR au sein de _workList_. Il faut donc déployer le modèle FRBR à cet endroit.
-   - _expressionList_ : il s'agit de nommer et détailler les différentes expressions. Nous avons fait le choix de nommer l'expression de tradition directe _expression 0_. Les expressions indirectes se déploient ensuite avec des chiffres (1,2 _etc_) ou bien des noms en toutes lettres.
+   - _expressionList_ : il s'agit de nommer et détailler les différentes expressions, cétape correspondant à notre protocole à la _recesio_ et donc à un discours commun aux théories de Lachmann et Bédier. Nous avons fait le choix de nommer l'expression de tradition directe _expression 0_. Les expressions indirectes se déploient ensuite avec des chiffres (1,2 _etc_) ou bien des noms en toutes lettres.
    - _manifestationList_ : de manière similaire à _expressionList_, nous nommons le manuscrit autographe (ou l'_omega_ issu du _stemma codicum_ si l'on ne possède pas l'autographe) _manifestation 0_. Pour chaque expression il convient d'utiliser une isntance de _manifestationList_ et pour chaque manifestation un _itemList_. Dans le cadre de manuscrits, la manifestation et l'item ne font qu'un. Par ailleurs, il n'y a pas, pour des raisons de catalogage évidentes, d'_item 0_ ; nous partons donc du principe que la dénomination des items fait appel au bon sens des chercheur·euse·s, de la tradition et des nomenclatures en usage.
    - Le fichier MEI que nous sommes en train de renseigner est par ailleurs une autre manifestation de l'œuvre, et doit par conséquent faire partie de la _manifestation_list_. Des xmlID seront utilisés pour chaque manifestation et item, afin d'assurer une inter-opérabilité maximale.
 
+Le principal atout de notre protocole est l'interopérabilité, couplé à une réelle exhaustivité. Bien que sa réalisation puisse être fastidieuse de par le nombre important d'éléments à renseigner, le protocole porte une réelle valeur philologique et ainsi parfaitement adapté dans le cadre de l'édition critique.
 
-
-
-
-
-
-
-
-L'important pour notre protocole est **l'interopérabilité** / faire communauté et permettre la vérification, par exemple dans le cas d'éditions critiques
-**L'expression dans notre protocole correspond à la _recensio_ : discours commun aux deux théories**
-- Expression origniale : tradition directe
-- Parodies, transcriptions, citations etc : tradition indirecte
+/ faire communauté et permettre la vérification, par exemple dans le cas d'éditions critiques
 
 
 - Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique".
 
 - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
+
+
+
 
 **Documents fils**
 
@@ -49,6 +43,8 @@ L'important pour notre protocole est **l'interopérabilité** / faire communaut�
 --> exemple de Sophie : une expression, deux manifestations, deux items.
 
    Il s'agira donc de rentrer dans le détail de l'organisation MEI/FRBR de expressionList, manifestationList et itemList => un document fils pour chaque de ce trois 'chapitres'.
+
+   - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
 
  - - -
 
