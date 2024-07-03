@@ -22,8 +22,8 @@ Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des 
    - Tous les éléments
    - _sourceDesc_ Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique
       
-- <workList> : pas de renvoi au modèle FRBR, ce qui ne nous arrange pas... **il faut donc déployer le modèle FRBR à cet endroit**
-   - <expressionList> on peut nommer les différentes expressions : il y aura **_une expression 0_** qui sera le point de départ (expression            directe) tandis que l'expression indirecte se déploie avec des chiffres (1,2 etc)
+- _workList_ : pas de renvoi au modèle FRBR, ce qui ne nous arrange pas... **il faut donc déployer le modèle FRBR à cet endroit**
+   - _expressionList_ : il s'agit de nommer et détailler les différentes expressions. Nous avons fait le choix de nommer l'expression de tradition directe _expression 0_. Les expressions indirectes se déploient ensuite avec des chiffres (1,2 _etc_) ou bien des noms en toutes lettres.
    - <manifestationList> dans <workList> ? Ainsi que les <itemList> / **_manifestation 0 est l'autographe_** si on a pas l'autographe on parle       **d'omega** issu de _stemma caudicum_ (arbre généalogique qui décrit la tradition) ; si on a pas l'autographe on laisse manifestation 0          vide, idéalement le fichier MEI devrait remplacer manifestation 0 (omega)
    - Pour chaque expression un <manifestationList>, pour chaque manifestation un <itemList>
       - Préciser que pour des manuscrits manifestation = item
