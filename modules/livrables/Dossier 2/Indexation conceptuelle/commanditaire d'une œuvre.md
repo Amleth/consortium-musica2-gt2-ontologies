@@ -10,7 +10,7 @@ De quelle manière peut-on révéler l'aspect conséquentiel de l'œuvre suite �
 
 ## c. Contextualisation technique
 
-Le thesaurus Getty AAT nous permet de typer l'action de commande, tandis que l'institution est inscrite dans un champ spatio-temporel. La date de commande de l'œuvre est ainsi, ainsi que sa date de finalisation. 
+Le thesaurus Getty AAT nous permet de typer l'action de commande, tandis que l'institution est inscrite dans un champ spatio-temporel. La date de commande de l'œuvre est ainsi indiquée, ainsi que sa date de finalisation (date de rendu de la partition au commanditaire). 
 
 ## d. Proposition Cidoc-CRM
 
