@@ -10,7 +10,7 @@ Comment exprimer la dédicace, mention textuelle présente au sein de la partiti
 
 ## c. Contextualisation technique
 
-Nous ferons de nouveau appel au thesauras Getty Aat afin de typer les différents éléments du graphe Cidoc-CRM.
+Le thesaurus Getty AAT est à nouveau utilisé afin de typer les différentes activités mais aussi statuts du graphe Cidoc-CRM. Nous pourrons également ajouter des URI pour un niveau de précision accru
 
 ## d. Proposition Cidoc-CRM
 
@@ -22,7 +22,7 @@ M(crm:F27_work_creation) --> |crm:P9_consists_of| A(crm:F27_work_creation)
 M(crm:F27_work_creation) --> |crm:P9_consists_of| G(crm:F27_work_creation)
 
 C(crm:E7_activity) --> |crm:P2_has_type| O(crm:E55_type<br>Dedication<br>aat:300026114)
-C(crm:E7_activity) --> |crm:P14_carried_out_by| L(crm:E21_person<br>Compositeur<br>aat:300025671)
+C(crm:E7_activity) --> |crm:P14_carried_out_by| L(crm:E21_person<br>Compositeur<br>aat:300025671<br>URI)
 
 A(crm:F27_work_creation) --> |crm:P14_carried_out_by| L(crm:E21_person<br>Compositeur<br>aat:300025671)
 A(crm:F27_work_creation) --> |lrm:R16_created| B(crm:F1_work)
