@@ -6,7 +6,11 @@ L'appartenance à un groupe - qu'il soit publiquement identifié (société sava
 
 ## b. Problématisation
 
+De quelle manière peut-on matérialiser l'appartenance à un groupe afin de témoigner d'une rencontre au sein d'un même cercle ?
+
 ## c. Contextualisation technique
+
+Nous utilisons un E74_group devant nécessairement être typé, si possible à l'aide d'un thésaurus, afin de représenter la fonction / valeur du groupe. 
 
 ## d. Proposition Cidoc-CRM
 
@@ -15,7 +19,7 @@ graph TD;
 
 A(crm:E21_person<br>John_Doe) -->|crm:P143_joined| B(crm:E85_joining<br>Groupe)
 B(crm:E85_joining) --> |P144_joined_with| G(crm:E74_group)
-G(crm:E74_group) -->|crm:P2_has_type| C(crm:E55_type<br>Société Savante)
+G(crm:E74_group) -->|crm:P2_has_type| C(crm:E55_type<br>Société Savante<br>aat:300026019)
 G(crm:E74_group) --> |crm:P107_has_current_or_former_member| A(crm:E21_person<br>John_Doe)
 
 
