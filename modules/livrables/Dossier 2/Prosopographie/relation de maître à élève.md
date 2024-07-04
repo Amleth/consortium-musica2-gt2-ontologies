@@ -6,6 +6,8 @@ Nous avons besoin de représenter la situation pédagogique d'apprentissage de d
 
 ## b. Problématisation
 
+De quelle manière peut-on exprimer une relation de maître à élève des deux points de vue, ainsi que son inscription dans différents contextes ?
+
 ## c. Contextualisation technique
 
 ## d. Proposition Cidoc-CRM
