@@ -6,7 +6,7 @@ L'acte de transcription musicale implique un certain nombre d'entités qu'il con
 
 ## b. Problématisation
 
-
+De quelle manière
 
 ## c. Contextualisation technique
 
