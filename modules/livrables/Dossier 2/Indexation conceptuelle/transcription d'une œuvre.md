@@ -2,11 +2,15 @@
 
 ## a. Besoins musicologiques
 
-L'acte de transcription musicale implique un certain nombre d'entités qu'il convient d'identifier avec précision dans le cadre de l'indexation conceptuelle. Le compositeur et le transcripteur doivent être clairement nommés et identifiés, si possible à l'aide d'une URI
+L'acte de transcription musicale implique un certain nombre d'entités qu'il convient d'identifier avec précision dans le cadre de l'indexation conceptuelle.
 
 ## b. Problématisation
 
+
+
 ## c. Contextualisation technique
+
+Le compositeur et le transcripteur doivent être clairement nommés et identifiés, si possible à l'aide d'une URI, et les activités de transcription et de composition sont typées à l'aide du Thésaurus Getty AAT.
 
 ## d. Proposition Cidoc-CRM
 
