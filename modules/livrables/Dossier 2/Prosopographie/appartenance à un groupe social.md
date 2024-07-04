@@ -2,6 +2,8 @@
 
 ## a. Besoins musicologiques
 
+L'appartenance à un groupe - qu'il soit publiquement identifié (société savante) - ou bien lié à l'association de diverses personnalités (par exemple, le "Groupe des six". 
+
 ## b. Problématisation
 
 ## c. Contextualisation technique
