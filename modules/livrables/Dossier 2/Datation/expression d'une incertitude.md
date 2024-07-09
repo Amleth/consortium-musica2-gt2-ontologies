@@ -6,7 +6,7 @@ Le chercheur en sciences humaines doit pouvoir exprimer une incertitude avec sou
 
 ## b. Problématisation
 
-Quels sont les outils permettant l'expression de l'incertitude entourant une datation en Cidoc-CRM ?
+Quels sont les outils permettant l'expression de l'incertitude entourant une datation en Cidoc-CRM ? On constate par exemple que le terme circa est régulièrement employé, malgré son manque de précision ; il convient donc de trouver 
 
 ## c. Contextualisation technique
 
