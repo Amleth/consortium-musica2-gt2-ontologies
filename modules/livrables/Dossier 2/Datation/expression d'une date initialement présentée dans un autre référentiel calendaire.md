@@ -12,7 +12,7 @@ De quelle manière exprimer de manière compréhensible une date originellement 
 
 Les ateliers menés auprès de musicologues nous ont permis d'orienter les résultats vers une nécessaire uniformisation des dates au format ISO 8601. Le chercheur est responsable de la transposition d'un référentiel à l'autre, et peut, s'il le souhaite, faire part d'une incertitude par l'usage d'un E13 Attribute Assignement.
 
-## d. Proposition Cidoc-CRM 
+## d. Proposition CIDOC CRM 
 
 ```mermaid
 graph TD;
