@@ -8,7 +8,7 @@ Les implications de la définition du temps ont été clairement soulignés par 
 
 ## b. Problématisation
 
-Comment exprimer une date, dans un référentiel normé et informatiquement précis ? On constate par exemple que le terme _circa_ est régulièrement employé, malgré son manque de précision. Nous devons également présenter une date calculable par la machine (c'est-à-dire exprimable en ISO 8601)afin de l'intégrer dans une représentation chronologique calculée des données. 
+Comment exprimer une date, dans un référentiel normé et informatiquement précis ? Nous devons également présenter une date calculable par la machine (c'est-à-dire exprimable en ISO 8601)afin de l'intégrer dans une représentation chronologique calculée des données. 
 
 ## c. Contextualisation technique
 
