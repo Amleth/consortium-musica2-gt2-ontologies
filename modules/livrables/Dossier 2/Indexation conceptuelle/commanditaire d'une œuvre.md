@@ -6,7 +6,7 @@ Nous avons besoin de modéliser la relation liant le commanditaire d'une œuvre 
 
 ## b. Problématisation 
  
-De quelle manière peut-on révéler l'aspect conséquentiel de l'œuvre suite à l'action du commanditaire et au passage de la commande ?
+De quelle manière peut-on révéler l'aspect conséquentiel de l'œuvre - son écriture - suite à l'action du commanditaire et au passage de la commande ?
 
 ## c. Contextualisation technique
 
