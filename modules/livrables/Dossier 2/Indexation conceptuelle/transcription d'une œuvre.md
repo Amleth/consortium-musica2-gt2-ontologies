@@ -18,8 +18,8 @@ Le compositeur et le transcripteur doivent être clairement nommés et identifi�
 ```mermaid
 graph TD;
 
-H[crm:F27_work_creation] --> |crm:P9_consists_of| A[crm:E7_activity]
-H[crm:F27_work_creation] --> |crm:P9_consists_of| D[crm:F27_work_creation]
+H[crm:F28_Expression_Creation] --> |crm:P9_consists_of| A[crm:F28_Expression_Creation]
+H[crm:F28_Expression_Creation] --> |crm:P9_consists_of| D[crm:F28_Expression_Creation]
 
 A[crm:E7_activity] --> |crm:p2_has_type| B[crm:E55_type<br>Transcription<br>aat:300404333]
 A[crm:E7_activity] --> |crm:p14_carried_out_by| C[crm:E21_person<br>John Doe<br>URI]
@@ -28,7 +28,7 @@ A[crm:E7_activity] --> |crm:p4_has_time_span| I(crm:E52_time_span<br>Date ISO 86
 
 E[crm:E7_activity] --> |crm:p14_carried_out_by| F[crm:E21_person<br>Jane Doe<br>URI]
 E[crm:E7_activity] --> |crm:p2_has_type| G[crm:E55_type<br>Composition<br>aat:300417577]
-D[crm:F27_work_creation]  --> |crm:P9_consists_of| E[crm:E7_activity]
+D[crm:F28_Expression_Creation]  --> |crm:P9_consists_of| E[crm:E7_activity]
 
 ```
 
