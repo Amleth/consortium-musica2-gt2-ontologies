@@ -18,7 +18,7 @@ Le compositeur et le transcripteur doivent être clairement nommés et identifi�
 ```mermaid
 graph TD;
 
-A[crm:F28_Expression_Creation] --> |lrm:R76_is_derivative_of| E[crm:F28_Expression_Creation]
+N(F2_expression) --> |lrm:R76_is_derivative_of| M(F2_expression)
 
 A[crm:F28_Expression_Creation] --> |crm:R17_created| N(F2_expression)
 A[crm:F28_Expression_Creation] --> |crm:p2_has_type| B[crm:E55_type<br>Transcription<br>aat:300404333]
