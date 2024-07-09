@@ -30,7 +30,7 @@ A(crm:F27_work_creation) --> |crm:P4_has_time_span| J(crm:E52_time_span<br>Date 
 G(crm:F30_Manifestation_Creation) --> |lrm:R24_created| E(crm:F3_Manifestation) 
 E(crm:F3_Manifestation) --> |crm:P165_incorporates| H(crm:E34_inscription)
 H(crm:E34_inscription) --> |crm:p2_has_type| F(crm:E55_type<br>Dedicatee<br>aat:300121765)
-H(crm:E34_inscription) --|crm:P190_has_symoblic_content| I(À Madame la Marquise)
+H(crm:E34_inscription) --> |crm:P190_has_symoblic_content| I(À Madame la Marquise)
 
 ```
 
