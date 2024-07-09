@@ -1,5 +1,7 @@
 # Relation de maître à élève
 
+**_Faire une autre fiche cf situation pédago avec une classe_**
+
 ## a. Besoins musicologiques
 
 Nous avons besoin de représenter la situation pédagogique d'apprentissage de deux points de vue ; autant de l'apprenant que de l'enseignant. Il peut également être nécessaire de situer cette situation dans un espace-temps donné, afin de la relier à des événements, ou bien à une institution si celle-ci s'est déroulée dans ce cadre précis. 
