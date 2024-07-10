@@ -15,6 +15,8 @@ Nous faisons usage du terme _Subject headings_, issu du Getty AAT. Celui-ci perm
 graph TD;
 
 A(crm:E28_conceptual_object) --> |crm:P2_has_type| B(crm:E55_type<br>Subject headings<br>300265269)
-A(crm:E28_conceptual_object) --> |crm:P140_assigned_attribute_to| C(crm:E13)
+C(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E28_conceptual_object)
+C(crm:E13_attribute_assignement) --> |crm:P141_assigned|
+C(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type|
 
 ```
