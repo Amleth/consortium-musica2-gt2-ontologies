@@ -15,7 +15,7 @@ Afin d'indexer une personne, nous avons dans un premier temps besoin d'informati
 ```mermaid
 graph TD;
 
-A(crm:E21_person) --> |crm:P98_brought_into_life| B(crm:E67_birth)
+A(crm:E21_person<br>John Doe) --> |crm:P98_brought_into_life| B(crm:E67_birth)
 B(crm:E67_birth) --> |crm:P4_has_time_span| C(crm:E52_time_span<br>Date ISO 8601)
 
 U[crm:E85_joining] --> |crm:P144_joined_with| S(crm:E74_group)
@@ -29,6 +29,8 @@ A(crm:E21_person) --> |crm:P100_was_death_of| D(crm:E69_death)
 S(crm:E74_group) --> |crm:P2_has_type| T(crm:E55_type<br>Direction)
 D(crm:E69_death) --> |crm:P4_has_time_span| E(crm:E52_time_span<br>Date ISO 8601)
 
-
+T(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E21_person<br>John Doe)
+T(crm:E13_attribute_assignement) --> |crm:P141_assigned| C(crm:E52_time_span<br>Date ISO 8601)
+T(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| U(crm:P4_has_time_span)
 
 ```
