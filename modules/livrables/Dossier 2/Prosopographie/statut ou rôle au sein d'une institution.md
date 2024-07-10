@@ -35,11 +35,3 @@ U[crm:E85_joining] -->|crm:P143_joined| K(crm:E21_person<br>John Doe)
 
 
 
-
-
-
-
-
-
-Aussi possible avec des E74 : sous-groupes 
-
