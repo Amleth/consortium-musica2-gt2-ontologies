@@ -35,11 +35,12 @@ D(crm:E69_death) --> |crm:P4_has_time_span| E(crm:E52_time_span<br>Date ISO 8601
 ```mermaid
 graph TD;
 
+T(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| U(crm:P4_has_time_span)
 T(crm:E13_attribute_assignement) --> |crm:P141_assigned| C(crm:E52_time_span<br>Date ISO 8601)
 A(crm:E21_person<br>John Doe) --> |crm:P98_brought_into_life| B(crm:E67_birth)
 B(crm:E67_birth) --> |crm:P4_has_time_span| C(crm:E52_time_span<br>Date ISO 8601)
 T(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E21_person<br>John Doe)
-T(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| U(crm:P4_has_time_span)
+
 A(crm:E21_person) --> |crm:P100_was_death_of| D(crm:E69_death)
 D(crm:E69_death) --> |crm:P4_has_time_span| E(crm:E52_time_span<br>Date ISO 8601)
 
