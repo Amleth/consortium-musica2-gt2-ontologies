@@ -10,7 +10,7 @@ Comment exprimer la dédicace, mention textuelle présente au sein de la partiti
 
 ## c. Contextualisation technique
 
-Le thesaurus Getty AAT est à nouveau utilisé afin de typer les différentes activités mais aussi statuts du graphe Cidoc-CRM. Dans le cadre d'un cas concret, nous pourrons également ajouter des URI pour un niveau de précision accru. Nous faisons également appel au modèle FRBR en mettant en exergue la manifestation sur laquelle apparait la dédicace. **P165 ma source incorpore un fragment qui a un type**
+Le thesaurus Getty AAT est à nouveau utilisé afin de typer les différentes activités mais aussi statuts du graphe Cidoc-CRM. Dans le cadre d'un cas concret, nous pourrons également ajouter des URI pour un niveau de précision accru. Nous faisons également appel au modèle FRBR en mettant en exergue la manifestation sur laquelle apparait la dédicace, représentée par l'entité 'E34_inscription' qui témoigne de la précense de la référence sur la source.
 
 ## d. Proposition Cidoc-CRM
 
