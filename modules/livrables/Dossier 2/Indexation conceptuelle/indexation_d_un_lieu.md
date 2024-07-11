@@ -22,7 +22,7 @@ B(crm:E42_identifier) --> |crm:P2_has_type| X(crm:E55_type<br>adresse<br>aat:300
 B(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| Y(...)
 
 C(crm:E74_group<br>Institution<br>aat:300026004) --> |crm:P74_has_current_or_former_residence| A(crm:E53_place<br>Bibliothèque_Nationale_de_France)
-D(crm:P190_has_symbolic_content<br>Quai François Mauriac, 75706, Paris) --> |crm:P2_has_type| E(crm:E55_type<br>adresse<br>aat:300386983)
+
 
 H(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E53_place<br>Bibliothèque_Nationale_de_France) 
 H(crm:E13_attribute_assignement) --> |crm:P141_assigned| I(crm:E53_place<br>Opéra de Paris)
