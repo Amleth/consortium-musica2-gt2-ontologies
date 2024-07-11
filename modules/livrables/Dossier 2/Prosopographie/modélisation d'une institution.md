@@ -19,8 +19,9 @@ graph TD;
 
 A(crm:E74_group) -->|crm:P2_has_type| B(crm:E55_type<br>institution<br>aat:300026004)
 A(crm:E74_group) -->|crm:P74_has_current_or_former_residence| C(crm:E53_place<br>Opéra Comique)
-C(crm:E53_place<br>Opéra Comique) --> |crm:P1_is_identified_by| M(crm:E42_identifier) 
-M(crm:E42_identifier) --> |crm:P2_has_type| N(crm:crm:E55_type<br>adresse<br>aat:300386983)
+C(crm:E53_place<br>Opéra Comique) --> |crm:P1_is_identified_by| M(crm:E42_identifier)
+C(crm:E53_place<br>Opéra Comique) -->|crm:P168_place_is_defined_by| S(crm:E94_space_primitive<br>48.8912963,2.3917211)
+M(crm:E42_identifier) --> |crm:P2_has_type| N(crm:E55_type<br>adresse<br>aat:300386983)
 M(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| O(1 Pl. Boieldieu, 75002 Paris<br>geonames:11983711)
 
 G(crm:E66_formation)  -->|crm:P95_has_formed| A(crm:E74_group)
