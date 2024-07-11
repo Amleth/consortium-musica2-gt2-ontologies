@@ -41,8 +41,8 @@ F(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| H(48.8618261,2.3471319,
 
 
 
-B(E7_activity<br>Fréquentation 1&2) --->|crm:P7_took_place_at| M(E53_place)
-D(E7_activity<br>Fréquentation 1&3) --->|crm:P7_took_place_at| M(E53_place)
+B(E7_activity<br>Fréquentation 1&2) -->|crm:P7_took_place_at| M(E53_place)
+D(E7_activity<br>Fréquentation 1&3) -->|crm:P7_took_place_at| M(E53_place)
 O(E7_activity<br>1 entremet 2 et 3) --> |crm:P7_took_place_at| M(E53_place)
 
 
