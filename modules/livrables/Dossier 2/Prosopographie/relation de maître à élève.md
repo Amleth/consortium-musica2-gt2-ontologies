@@ -31,8 +31,6 @@ I(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| B[crm:E21_
 I(crm:E13_attribute_assignement) --> |crm:P141_assigned| A[crm:E7_Activity]
 I(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| (crm:P9_consists_of)
 
-****
-
 ```
 
 
