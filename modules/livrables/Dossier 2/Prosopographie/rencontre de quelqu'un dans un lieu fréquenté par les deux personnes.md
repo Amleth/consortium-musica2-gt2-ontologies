@@ -12,7 +12,7 @@
 graph TD;
 
 K(crm:E7_activity<br>rencontre) --->|crm:P7_took_place_at| I(crm:E53_place)
-K(crm:E7_activity<br>recontre) --> |crm:P2_has_type| K(crm:E55_type<br>aat:300054788)
+K(crm:E7_activity<br>recontre) --> |crm:P2_has_type| L(crm:E55_type<br>aat:300054788)
  
 K(crm:E7_activity) --> |crm:p4_has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| E("Date ISO 8601")
