@@ -30,8 +30,8 @@ O(E7_activity<br>1 entremet 2 et 3) -->|crm:P11_had_participant| E("crm:E21_Pers
 graph TD;
 
 A(E7_activity<br>Fréquentation 1&2) -->|crm:P7_took_place_at| B(E53_place<br>IRCAM)
-C(E7_activity<br>Fréquentation 1&3) -->|crm:P7_took_place_at| B(E53_place<br>IRCAM)
 E(E7_activity<br>1 entremet 2 et 3) --> |crm:P7_took_place_at| B(E53_place<br>IRCAM)
+C(E7_activity<br>Fréquentation 1&3) -->|crm:P7_took_place_at| B(E53_place<br>IRCAM)
 
 B(E53_place<br>IRCAM) --> |crm:P1_is_identified_by| F(crm:E42_identifier)
 F(crm:E42_identifier) --> |crm:P2_has_type| G(crm:E55_type<br>adresse<br>aat:300386983)
