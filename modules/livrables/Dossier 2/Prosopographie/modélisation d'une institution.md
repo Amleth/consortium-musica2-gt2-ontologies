@@ -18,7 +18,11 @@ Le thésaurus Getty AAT permet de caractériser la typologie "institution" à l'
 graph TD;
 
 A(crm:E74_group) -->|crm:P2_has_type| B(crm:E55_type<br>institution<br>aat:300026004)
-A(crm:E74_group) -->|crm:P74_has_current_or_former_residence| C(crm:E53_place<br>geonames)
+A(crm:E74_group) -->|crm:P74_has_current_or_former_residence| C(crm:E53_place<br>Opéra Comique)
+C(crm:E53_place<br>Opéra Comique) --> |crm:P1_is_identified_by| G(crm:E42_identifier) 
+G(crm:E42_identifier) --> |crm:P2_has_type| H(crm:crm:E55_type<br>adresse<br>aat:300386983)
+G(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| I(1 Pl. Boieldieu, 75002 Paris<br>geonames:11983711)
+
 G(crm:E66_formation)  -->|crm:P95_has_formed| A(crm:E74_group)
 G(crm:E66_formation) -->|crm:P4_has_time_span| E(crm:E52_time_span)
 E(crm:E52_time_span) -->|crm:P82a_begin_of_begin| F(Date_ISO_8601)
