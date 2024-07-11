@@ -27,7 +27,7 @@ A[crm:E7_activity] --> |crm:P2_has_type| C[crm:E55_type<br>Enseignement]
 D[crm:E7_Activity] --> |crm:P14_carried_out_by| E[crm:E21_person<br>Jane Doe]
 D[crm:E7_activity] --> |crm:P2_has_type| G[crm:E55_type<br>Apprentissage]
 
-
+I(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| B[crm:E21_person<br>John Doe]
 
 ```
 
