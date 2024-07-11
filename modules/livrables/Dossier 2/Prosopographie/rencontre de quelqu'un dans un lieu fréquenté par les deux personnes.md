@@ -14,6 +14,7 @@ graph TD;
 K(crm:E7_activity<br>rencontre) --->|crm:P7_took_place_at| M(crm:E53_place<br>Opéra de Paris)
 M(crm:E53_place<br>Opéra de Paris) --> |crm:P168_is_defined_by| N(crm:E94_space_primitive
 48.866667, 2.333333)
+M(crm:E53_place<br>Opéra de Paris) --> |P1_is_identified_by| O(crm:E42_Identifier)
 O(crm:E42_Identifier) --> |crm:P2_has_type| P(crm:E55_type<br>adresse<br>aat:300386983)
 O(crm:E42_Identifier) --> |crm:P190_has_sympbolic_value| Q(8, rue Scribe, 75009 Paris, FR)
 K(crm:E7_activity<br>recontre) --> |crm:P2_has_type| L(crm:E55_type<br>aat:300054788)
