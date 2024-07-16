@@ -10,7 +10,7 @@ De quelle manière exprimer de manière compréhensible une date originellement 
 
 ## c. Contextualisation technique
 
-Les ateliers menés auprès de musicologues nous ont permis d'orienter les résultats vers une nécessaire uniformisation des dates au format ISO 8601. Le chercheur est responsable de la transposition d'un référentiel à l'autre, et peut, s'il le souhaite, faire part d'un commentaire précis par l'usage d'un 'E13_Attribute_Assignement'. 
+Les ateliers menés auprès de musicologues nous ont permis d'orienter les résultats vers une nécessaire uniformisation des dates au format ISO 8601. Le chercheur peut, s'il le souhaite, faire part d'un commentaire précis par l'usage d'un 'E13_Attribute_Assignement' ; dans cet exemple, le commentaire signale une attention particulière à accorder à la date de fin la plus tardive.
 
 ## d. Proposition CIDOC CRM 
 
