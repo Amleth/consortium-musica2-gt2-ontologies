@@ -14,8 +14,8 @@ graph TD;
 P(crm:E85_joining) --> |crm:P144_joined_with| Q(crm:E74:group)
 Q(crm:E74:group) -->|crm:P2_has_type| R(crm:E55_type<br>institution<br>aat:300026004)
 P(crm:E85_joining) --> |crm:P143_joined| A("crm:E21_Person<br>John Doe")
-Q(crm:E74:group) --> |crm:P107_has_current_or_former_member| R(crm:E74:group)
-R(crm:E74:group) --> |crm:P2_has_type| S(crm:E55_type<br>Direction<br>aat:300404157)
+Q(crm:E74:group) --> |crm:P107_has_current_or_former_member| X(crm:E74:group)
+X(crm:E74:group) --> |crm:P2_has_type| Y(crm:E55_type<br>Direction<br>aat:300404157)
 
 B(E7_activity) -->|crm:P14_carried_out_by| A("crm:E21_Person<br>John Doe")
 B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
