@@ -43,7 +43,8 @@ D(E7_activity<br>Fréquentation 1&3) --> |crm:p4_has_time_span| R(crm:E52_time_s
 
 K(E53_place<br>IRCAM) --> |crm:P1_is_identified_by| L(crm:E42_identifier)
 L(crm:E42_identifier) --> |crm:P2_has_type| M(crm:E55_type<br>adresse<br>aat:300386983)
-L(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| N(48.8618261,2.3471319,17)
+L(crm:E42_identifier) --> |crm:P190_has_symbolic_value| (1 Place Igor Stravinsky, 75004 Paris)
+L(crm:E42_identifier) --> |crm:P168_is_defined_by| N(crm:E94_space_primitive<br>48.8618261,2.3471319,17)
 
 ```
 
