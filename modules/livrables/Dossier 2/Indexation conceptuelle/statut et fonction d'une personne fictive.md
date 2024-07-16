@@ -18,7 +18,12 @@ S(crm:E74_group) --> |crm:P2_has_type| T(crm:E55_type<br>Direction)
 U[crm:E85_joining] -->|crm:P143_joined| K(crm:E28_conceptual_object<br>John Doe)
 U[crm:E85_joining] -->|crm:P143_joined| A(crm:E21_person<br>John Doe)
 
-K(crm:E28_conceptual_object<br>John Doe) --> |crm:P2_has_type| C(crm:E55_type<br>protagonist<br>aat:300410266)
+K(crm:E28_conceptual_object<br>John Doe) --> |crm:P2_has_type| 
 A(crm:E21_person<br>John Doe) --> |crm:P2_has_type| C(crm:E55_type<br>protagonist<br>aat:300410266)
+
+U(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| K(crm:E28_conceptual_object<br>John Doe)
+U(crm:E13_attribute_assignement) --> |crm:P141_assigned| C(crm:E55_type<br>protagonist<br>aat:300410266)
+U(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| V(crm:P2_has_type)
+U(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| W(crm:E21_person<br>John Doe)
 
 ```
