@@ -21,9 +21,7 @@ K(crm:E7_activity<br>recontre) --> |crm:P2_has_type| L(crm:E55_type<br>Rencontre
  
 K(crm:E7_activity) --> |crm:p4_has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| E("Date ISO 8601")
-D(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| F("Date ISO 8601")
-D(crm:E52_time_span) --> |crm:p81b_begin_of_the_end|G("Date ISO 8601")
-D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| H("Date ISO 8601")
+D(crm:E52_time_span) --> |crm:p82b_end_of_the_end| E("Date ISO 8601")
 
 K(crm:E7_activity) -->|crm:P14_carried_out_by| A(crm:E21_Person<br>Jane Doe)
 K(crm:E7_activity) -->|crm:P14_carried_out_by| J(crm:E21_Person<br>John Doe)
