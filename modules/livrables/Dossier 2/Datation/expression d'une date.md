@@ -18,7 +18,7 @@ La meilleure manière d'exprimer une date est de la définir par le biais de deu
  - Commence avant la période de recherche et se termine en son sein
  - Commence pendant la période de recherche et se termine après
 
-Dans le cas d'une date n'apparaîssant pas dans la source, les intervalles saisis par les chercheurs sont des reconstructions qui doivent être argumentées par un champ permettant d'exprimer un degré de certitude. Un vocabulaire contrôlé proposant des paliers d'expression de la certitude doit être proposé, et partagé au sein du Consortium Musica2.
+Dans le cas d'une date n'apparaîssant pas dans la source, les intervalles saisis par les chercheurs sont des reconstructions qui doivent être argumentées par un champ permettant d'exprimer un degré de certitude. 
 
 Le système doit enregistrer chaque date soumise par les chercheurs comme des valeurs signées et datées, en ne considérant pas la valeur d'un champ date comme une donnée monolithique, mais comme un succession de contributions contextualisées, un peu à la manière d'un cahier de laboratoire.
 
