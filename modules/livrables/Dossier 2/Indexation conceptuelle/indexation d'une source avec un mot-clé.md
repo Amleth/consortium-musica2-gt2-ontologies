@@ -10,7 +10,7 @@ De quelle manière peut-on indexer une source à l'aide d'un mot-clé ?
 
 ## c. Contextualisation technique
 
-Nous utilisons ici le 'E:13_attribute_assignement' afin d'attribuer un mot clé à une source.
+Nous utilisons ici le 'E:13_attribute_assignement' afin d'attribuer un mot clé à une source. Le concept de "mot-clé" est lui-même typé à l'aide du Getty AAT, tandis que les mots-clés eux-mêmes sont piochés au sein de ce thésaurus.
 
 ## d. Proposition Cidoc-CRM
 
