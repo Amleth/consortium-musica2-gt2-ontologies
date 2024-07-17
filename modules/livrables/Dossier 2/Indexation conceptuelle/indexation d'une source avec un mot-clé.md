@@ -6,7 +6,11 @@ Les sources historiques musicologiques sont souvent identifiés à l'aide de cri
 
 ## b. Problématisation
 
+De quelle manière peut-on indexer une source à l'aide d'un mot-clé ?
+
 ## c. Contextualisation technique
+
+Nous utilisons ici le 'E:13_attribute_assignement' afin d'attribuer un mot clé à une source.
 
 ## d. Proposition Cidoc-CRM
 
