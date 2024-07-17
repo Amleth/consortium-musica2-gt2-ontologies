@@ -2,7 +2,7 @@
 
 ## a. Besoins musicologiques
 
-Les sources historiques musicologiques sont souvent identifiés à l'aide de critères spécialisés liés à des notions théoriques, esthétiques ou encore 
+Les sources historiques musicologiques sont souvent identifiés à l'aide de critères spécialisés liés à des notions théoriques ou esthétiques, en plus des informations de temps et d'espace. Des mots-clés sont alors définis par la personne en charge de l'indexation et appliqués à différentes sources afin de les typer. Il est donc nécessaire de pouvoir modéliser l'indexation d'une source à l'aide d'un mot clé issu d'un thésaurus.
 
 ## b. Problématisation
 
