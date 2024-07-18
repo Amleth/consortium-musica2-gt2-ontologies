@@ -17,7 +17,8 @@ L'appui sur les normes FRBR nous parait central, afin de combler une lacune dans
 Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des _guidelines_ MEI, afin d'en faciliter l'approche. Notons que des exemples concrets sont joints au sein du _repository_, ainsi qu'un modèle vierge qui pourra être copié et rempli au sein des headers des utilisateurs, pour une interopérabilité maximale. 
 
 - _meiHead_
-   - **Marco je te laisse compléter**
+   - Le Mei Header est le lieu deputé pour accueillir toutes les données concernant les exemplaires sur lesquels se base l'édition critique. D'un point de vue technique il s'agit de renseigner les infos concernanat la _recensio_, autrement dit la description complète des sources recoltées. La _recensio_ s'articule normalement en tradition directe (celle de la "expression" principale de l'œuvre) et tradition indirecte (celle qui prend en compte toute autre "expression" : traductions, parodies, commentaires/gloses, _scholiae_, citations, etc.)
+     
 - _fileDesc_
    - **Idem**
 - _sourceDesc_ Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique. Selon les _guidelines_ MEI, il n'y a pas de renvoi au modèle FRBR au sein de _workList_. Il faut donc déployer le modèle FRBR à cet endroit.
