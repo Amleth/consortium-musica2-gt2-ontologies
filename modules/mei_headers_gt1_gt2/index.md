@@ -17,7 +17,13 @@ L'appui sur les normes FRBR nous parait central, afin de combler une lacune dans
 Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des _guidelines_ MEI, afin d'en faciliter l'approche. Notons que des exemples concrets sont joints au sein du _repository_, ainsi qu'un modèle vierge qui pourra être copié et rempli au sein des headers des utilisateurs, pour une interopérabilité maximale. 
 
 - _meiHead_
-   - Le Mei Header est le lieu deputé pour accueillir toutes les données concernant les exemplaires sur lesquels se base l'édition critique. D'un point de vue technique il s'agit de renseigner les infos concernanat la _recensio_, autrement dit la description complète des sources recoltées. La _recensio_ s'articule normalement en tradition directe (celle de la "expression" principale de l'œuvre) et tradition indirecte (celle qui prend en compte toute autre "expression" : traductions, parodies, commentaires/gloses, _scholiae_, citations, etc.)
+   - Le Mei Header est le lieu approprié pour accueillir toutes les données concernant les exemplaires sur lesquels se base l'édition critique. D'un point de vue technique il s'agit de renseigner les infos concernanat la _recensio_, autrement dit la description complète des sources recoltées. La _recensio_ s'articule normalement en tradition directe (celle de la "expression" principale de l'œuvre) et tradition indirecte (celle qui prend en compte toute autre "expression" : traductions, parodies, commentaires/gloses, _scholiae_, citations, etc.)
+
+**On utilise 0 lorsque l'on a accès à la source originale et oméga "⍵"  lorsque l'on n'y a pas accès**
+Faire un module pour l'usage du Cidoc-CRM / choisir un thésaurus ?
+**il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR**
+
+
      
 - _fileDesc_
    - **Idem**
