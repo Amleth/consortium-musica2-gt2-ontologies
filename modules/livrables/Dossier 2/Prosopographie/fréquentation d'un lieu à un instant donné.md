@@ -30,7 +30,7 @@ X(crm:E42_identifier) --> |crm:P2_has_type| Y(crm:E55_type<br>coordonnées géog
 B(E7_activity) --> |crm:P4_has_time_span| D(crm:E52_time_span<br>Date ISO 8601)
 B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
 
-U(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E21_Person<br>John Doe)
+U(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| R(crm:E93_presence)
 U(crm:E13_attribute_assignement) --> |crm:P141_assigned| D(crm:E52_time_span)
 U(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| S(crm:P164_is_temporally_specified_by)
 U(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| V(crm:E21_Person<br>Jane Doe)
