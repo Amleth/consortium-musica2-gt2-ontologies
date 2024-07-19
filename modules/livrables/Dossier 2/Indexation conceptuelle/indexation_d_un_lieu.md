@@ -26,12 +26,7 @@ B(crm:E42_identifier) --> |crm:P2_has_type| X(crm:E55_type<br>adresse<br>aat:300
 B(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| Y(«Quai François Mauriac, 75706 Paris»)
 
 
-C(crm:E74_group<br>Institution<br>aat:300026004<br>«Bibliothèque Nationale de France») --> |crm:P74_has_current_or_former_residence| A(crm:E53_place<br>Site Tolbiac)
-
+C(crm:E74_group<br>«Bibliothèque Nationale de France») --> |crm:P74_has_current_or_former_residence| A(crm:E53_place<br>Site Tolbiac)
+C(crm:E74_group<br>«Bibliothèque Nationale de France») --> |crm:P2_has_type| H(crm:E55_type<br>Institution<br>aat:300026004)
 
 ```
-
-H(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E53_place<br>Site Tolbiac) 
-H(crm:E13_attribute_assignement) --> |crm:P141_assigned| C(crm:E74_group<br>Institution<br>aat:300026004)
-H(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| K(crm:E55_type<br>adresse<br>aat:300386983)
-H(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| J(crm:E21_person<br>John Doe)
