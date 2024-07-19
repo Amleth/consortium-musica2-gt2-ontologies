@@ -26,7 +26,7 @@ X(crm:E42_identifier) --> |crm:P2_has_type| Y(crm:E55_type<br>coordonnées géog
 
 
 U(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| R(crm:E93_presence)
-U(crm:E13_attribute_assignement) --> |crm:P141_assigned| D(crm:E52_time_span)
+U(crm:E13_attribute_assignement) --> |crm:P141_assigned| D(crm:E52_time_span<br>«30 Mars 1904»)
 U(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| S(crm:P164_is_temporally_specified_by)
 U(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| V(crm:E21_Person<br>Jane Doe)
 
