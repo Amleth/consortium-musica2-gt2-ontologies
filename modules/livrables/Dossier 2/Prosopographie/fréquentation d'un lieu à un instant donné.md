@@ -41,7 +41,6 @@ U(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| V(crm:E21_Person<b
 
 R(crm:E93_presence) --> |crm:P195_was_a_presence_of| A(crm:E21_Person<br>John Doe)
 R(crm:E93_presence) --> |crm:P167_was_within| I(E53_place<br>Cathédrale Notre Dame de Paris)
-R(crm:E93_presence) --> |crm:P164_is_temporally_specified_by| D(crm:E52_time_span)
 
 ```
 
