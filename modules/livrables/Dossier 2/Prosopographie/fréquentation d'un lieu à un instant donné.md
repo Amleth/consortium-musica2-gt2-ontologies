@@ -27,12 +27,8 @@ I(E53_place<br>Cathédrale Notre Dame de Paris) --> |crm:P1_is_identified_by| X(
 X(crm:E42_identifier) --> |crm:P168_is_defined_by| L(crm:E94_space_primitive<br>48.8471097, 2.3590381)
 X(crm:E42_identifier) --> |crm:P2_has_type| Y(crm:E55_type<br>coordonnées géographiques<br>aat:300387569)
 
-B(E7_activity) --> |crm:P4_has_time_span| D(crm:E52_time_span)
+B(E7_activity) --> |crm:P4_has_time_span| D(crm:E52_time_span<br>Date ISO 8601)
 B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
-D(crm:E52_time_span) --> |crm:P82a_begin_of_the_begin| E("Date ISO 8601")
-D(crm:E52_time_span) --> |crm:P81a_end_of_the_begin| F("Date ISO 8601")
-D(crm:E52_time_span) --> |crm:P81b_begin_of_the_end|G("Date ISO 8601")
-D(crm:E52_time_span) --> |crm:P82b_end_of_the_end| H("Date ISO 8601")
 
 U(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E21_Person<br>John Doe)
 U(crm:E13_attribute_assignement) --> |crm:P141_assigned| D(crm:E52_time_span)
