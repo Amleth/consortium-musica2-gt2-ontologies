@@ -19,13 +19,13 @@ graph TD;
 
 A(crm:E53_place<br>Bibliothèque_Nationale_de_France) --> |crm:P1_is_identified_by| B(crm:E42_identifier)
 B(crm:E42_identifier) --> |crm:P2_has_type| X(crm:E55_type<br>adresse<br>aat:300386983)
-B(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| Y(Quai François Mauriac, 75706 Paris)
+B(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| Y(«Quai François Mauriac, 75706 Paris»)
 B(crm:E42_identifier) --> |crm:P168_is_defined_by| Z(crm:E94_space_primitive<br>48.8493676,2.3366315,14)
 
 C(crm:E74_group<br>Institution<br>aat:300026004) --> |crm:P74_has_current_or_former_residence| A(crm:E53_place<br>Bibliothèque_Nationale_de_France)
 
 
-H(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E53_place<br>Bibliothèque_Nationale_de_France) 
+H(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E53_place<br>«Bibliothèque Nationale de France») 
 H(crm:E13_attribute_assignement) --> |crm:P141_assigned| C(crm:E74_group<br>Institution<br>aat:300026004)
 H(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| K(crm:E55_type<br>adresse<br>aat:300386983)
 H(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| J(crm:E21_person<br>John Doe)
