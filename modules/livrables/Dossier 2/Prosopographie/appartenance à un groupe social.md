@@ -24,8 +24,8 @@ G(crm:E74_group) --> |crm:P107_has_current_or_former_member| A(crm:E21_person<br
 
 
 B(crm:E85_joining) --> |crmP4:has_time_span| D(crm:E52_time_span)
-D(crm:E52_time_span) --> |crmP82a:begin_of_the_begin| E(Date ISO 8601)
-D(crm:E52_time_span) --> |crmP82b:end_of_the_end| E(Date ISO 8601)
+D(crm:E52_time_span) --> |crmP82a:begin_of_the_begin| E(Date 1 ISO 8601)
+D(crm:E52_time_span) --> |crmP82b:end_of_the_end| H(Date 2 ISO 8601)
 D(crm:E52_time_span) --->|crm:P2_has_type| F(crm:E55_type<br>Date d'entrée)
 
 ```
