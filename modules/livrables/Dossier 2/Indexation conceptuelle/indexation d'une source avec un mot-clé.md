@@ -18,7 +18,7 @@ Nous utilisons ici le 'E13_attribute_assignement' afin d'attribuer un mot clÃ© Ã
 graph TD;
 
 D(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E73_information_object)
-D(crm:E13_attribute_assignement) --> |crm:P141_assigned| B(crm:E62_string<br>Symphonie)
+D(crm:E13_attribute_assignement) --> |crm:P141_assigned| B(crm:E62_string<br>Symphonie<br>aat:300400547)
 D(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| C(crm:E55_type<br>keyword<br>aat:300311841)
 D(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| F(crm:E21_person<br>John Doe)
 
