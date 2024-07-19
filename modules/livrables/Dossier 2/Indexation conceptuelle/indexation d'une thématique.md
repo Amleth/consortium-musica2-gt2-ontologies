@@ -17,7 +17,7 @@ Nous utilisons ici le 'E13_attribute_assignement' afin d'attribuer une thématiq
 graph TD;
 
 D(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| A(crm:E28_conceptual_object)
-D(crm:E13_attribute_assignement) --> |crm:P141_assigned| B(\"Symphonies de Mahler\")
+D(crm:E13_attribute_assignement) --> |crm:P141_assigned| B(Symphonies de Mahler)
 D(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| C(crm:E55_type<br>Subject headings<br>300265269)
 D(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| F(crm:E21_person<br>John Doe)
 
