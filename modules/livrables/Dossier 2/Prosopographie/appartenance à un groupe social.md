@@ -12,6 +12,8 @@ De quelle manière peut-on matérialiser l'appartenance à un groupe afin de té
 
 Nous utilisons un E74_group devant nécessairement être typé, si possible à l'aide d'un thésaurus, afin de représenter la fonction / valeur du groupe. La date d'entrée au sein du groupe est également indiquée ; à noter que si celle-ci est incertaine, il convient d'utiliser un E13_attribute_assignement pour préciser le raisonnement.
 
+**P107 est plus pauvre qu'utiliser un E85 voir la notion de shortcut en Cidoc-CRM** 
+
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
