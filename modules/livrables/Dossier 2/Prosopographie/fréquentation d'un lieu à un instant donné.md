@@ -27,8 +27,6 @@ I(E53_place<br>Cathédrale Notre Dame de Paris) --> |crm:P1_is_identified_by| X(
 X(crm:E42_identifier) --> |crm:P168_is_defined_by| L(crm:E94_space_primitive<br>48.8471097, 2.3590381)
 X(crm:E42_identifier) --> |crm:P2_has_type| Y(crm:E55_type<br>coordonnées géographiques<br>aat:300387569)
 
-B(E7_activity) --> |crm:P4_has_time_span| D(crm:E52_time_span<br>Date ISO 8601)
-B(E7_activity) -->|crm:P2_has_type| C(E55_type<br>Fréquentation)
 
 U(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| R(crm:E93_presence)
 U(crm:E13_attribute_assignement) --> |crm:P141_assigned| D(crm:E52_time_span)
