@@ -20,10 +20,11 @@ graph TD;
 
 
 B(E7_activity) -->|crm:P7_took_place_at| I(E53_place<br>Cathédrale Notre Dame de Paris)
-I(E53_place<br>Cathédrale Notre Dame de Paris) --> |crm:P168_is_defined_by| L(crm:E94_space_primitive<br>48.8471097, 2.3590381)
 I(E53_place<br>Cathédrale Notre Dame de Paris) --> |crm:P1_is_identified_by| M(crm:E42_identifier)
 M(crm:E42_identifier) --> |crm:P2_has_type| K(crm:E55_type<br>adresse<br>aat:300386983)
 M(crm:E42_identifier) --> |crm:P190_has_symbolic_content| N(6 Parvis Notre-Dame - Place Jean-Paul II, 75004 Paris<br>geonames:6269274)
+I(E53_place<br>Cathédrale Notre Dame de Paris) --> |crm:P1_is_identified_by| X(crm:E42_identifier)
+X(crm:E42_identifier) --> |crm:P168_is_defined_by| L(crm:E94_space_primitive<br>48.8471097, 2.3590381)
 
 B(E7_activity) --> |crm:P4_has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crm:P82a_begin_of_the_begin| E("Date ISO 8601")
