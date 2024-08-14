@@ -20,7 +20,7 @@ S(crm:E74_group) --> |crm:P2_has_type| T(crm:E55_type<br>Direction<br>aat:300404
 U[crm:E85_joining] -->|crm:P143_joined| K(crm:E89_propositionnal_object<br>crm:E21_person<br>«J. Jonah Jameson»)
 
 R(crm:E13_attribute_assignement) --> |crm:P140_assigned_attribute_to| K(crm:E89_propositionnal_object<br>crm:E21_person<br>«J. Jonah Jameson»)
-R(crm:E13_attribute_assignement) --> |crm:P141_assigned| C(crm:E55_type<br>protagonist<br>???)
+R(crm:E13_attribute_assignement) --> |crm:P141_assigned| C(crm:E55_type<br>protagonist<br>aat:300410266)
 R(crm:E13_attribute_assignement) --> |crm:P177_assigned_property_of_type| V(crm:P2_has_type)
 R(crm:E13_attribute_assignement) --> |crm:P14_carried_out_by| W(crm:E21_person<br>John Doe)
 
