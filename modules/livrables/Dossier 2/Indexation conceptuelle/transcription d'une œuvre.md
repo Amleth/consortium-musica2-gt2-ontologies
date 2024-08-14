@@ -10,14 +10,13 @@ De quelle manière peut-on exprimer l'action de transcription d'une œuvre exist
 
 ## c. Contextualisation technique
 
-Le compositeur et le transcripteur doivent être clairement nommés et identifiés, si possible à l'aide d'une URI, et les activités de transcription et de composition sont typées à l'aide du Thésaurus Getty AAT. Nous datons également l'action de transcription. 
+Nous nous appuyons sur le modèle FRBR pour caractériser l'œuvre ; dans le cadre d'une transcription, le niveau auquel nous nous intéressons est celui de l'expression et est intégré dans le graphe par l'usage de 'F2_expression', portées par des personnes 'E21_person' - clairement nommées et identifiées, si possible à l'aide d'une URI- , tandis que les actions de transcription et de composition sont typées à l'aide du Thésaurus Getty AAT. Celles-ci résultent en des 'F28_Expression_Creation'.
 
 ## d. Proposition Cidoc-CRM
 
 
 ```mermaid
 graph TD;
-
 
 E[crm:F28_Expression_Creation] --> |crm:p2_has_type| G[crm:E55_type<br>Composition<br>aat:300417577]
 E[crm:F28_Expression_Creation] --> |crm:p14_carried_out_by| F[crm:E21_person<br>Jane Doe<br>URI]
