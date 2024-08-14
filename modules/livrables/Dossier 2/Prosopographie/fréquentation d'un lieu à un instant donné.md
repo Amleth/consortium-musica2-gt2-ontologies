@@ -10,7 +10,7 @@ Comment peut-on exprimer la présence d'une personne physique dans un lieu donn�
 
 ## c. Contextualisation technique
 
-L'utilisation d'un 'E13_attribute_assignement' permet l'expression de l'incertitude quant à la présence ('E93_presence') d'une personne à un lieu et un endroit donnés. Nous utilisons à nouveau notre protocole complet d'identification d'un lieu par ses coordonnées GPS ('E94_space_primitive') ainsi que par son adresse, complétée par un identifiant _geonames_, tandis que les deux 'E42_identifier' sont typées par des entrées du thésaurus Getty AAT.
+L'utilisation d'un 'E13_attribute_assignement' permet l'expression de l'incertitude quant à la présence ('E93_presence') d'une personne à un lieu et un endroit donnés. Nous utilisons à nouveau notre protocole complet d'identification d'un lieu par ses coordonnées GPS ('E94_space_primitive') ainsi que par son adresse, complétée par un identifiant _geonames_, tandis que les deux 'E42_identifier' sont typés par des entrées du thésaurus Getty AAT.
 
 ## d. Proposition Cidoc-CRM
 
