@@ -25,8 +25,8 @@ F(crm:E42_Identifier) --> |crm:P190_has_symbolic_content| G(58 rue de Richelieu,
 F(crm:E42_Identifier) --> |crm:P2_has_type| H(crm:E55_has_type<br>adresse<br>aat:300386983)
 
 D(crm:E53_place<br>Société Française de Musicologie) --> |crm:P1_is_identified_by| G(crm:E42_Identifier)
-G(crm:E42_Identifier) --> |crm:P168_is_defined_by| E(crm:E94_space_primitive<br>48.8680388, 2.3356072)
-G(crm:E42_Identifier) --> |crm:P2_has_type| H(crm:E55_type<br>coordonnées géographiques<br>aat:300387569)
+M(crm:E42_Identifier) --> |crm:P168_is_defined_by| E(crm:E94_space_primitive<br>48.8680388, 2.3356072)
+M(crm:E42_Identifier) --> |crm:P2_has_type| N(crm:E55_type<br>coordonnées géographiques<br>aat:300387569)
 
 
 ```
