@@ -6,7 +6,7 @@ Lors du processus d'indexation conceptuelle, il est nécessaire de distinguer le
 
 ## b. Problématisation 
 
-Comment modéliser un lieu tout en faisant apparaître l'institution à laquelle il se rattache, mais aussi son adresse, voire ses différentes adresses ?
+Comment modéliser un lieu tout en faisant apparaître l'institution à laquelle il se rattache, mais aussi son adresse ?
 
 ## c. Contextualisation technique
 
