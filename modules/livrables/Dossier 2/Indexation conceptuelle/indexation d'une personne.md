@@ -10,6 +10,8 @@ Afin d'indexer une personne, nous avons dans un premier temps besoin d'informati
 
 ## c. Contextualisation technique
 
+On exprime en premier lieu l'existence d'une personne par ses dates de naissance 'E67_birth' et de mort 'crm:E69_death', avant de typer différentes entités liés à son inscription dans divers groupes au fil de sa vie.
+
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
