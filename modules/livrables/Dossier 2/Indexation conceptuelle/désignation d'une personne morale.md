@@ -10,6 +10,8 @@ De quelle manière peut-on indiquer les caractéristiques principales d'une pers
 
 ## c. Contextualisation technique
 
+Nous faisons ici usage de l'entité 'E66_formation', dont l'usage permet de témoigner de la création d'un 'E74_group'. Nous utilisons à nouveau notre protocole de datation ainsi que des entrées du thésaurus Getty AAT afin de typer les concepts d'_institution_, d'_adresse_ ou encore de _coordonnées géographiques_.
+
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
