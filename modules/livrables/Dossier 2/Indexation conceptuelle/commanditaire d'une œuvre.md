@@ -30,8 +30,9 @@ C(crm:E7_activity) --> |crm:P14_carried_out_by| E(crm:E74_group)
 C(crm:E7_activity) --> |crm:P4_has_time_span| K(crm:E52_time_span<br>Date ISO 8601)
 E(crm:E74_group) -->|crm:P2_has_type| F(crm:E55_type<br>institution<br>aat:300026004)
 E(crm:E74_group) --> |crm:P74_has_current_or_former_residence| I(crm:E53_place<br>Opéra de Paris)
-I(crm:E53_place<br>Opéra de Paris) --> |crm:P168_is_defined_by| G(crm:E94_space_primitive
-48.866667, 2.333333)
+I(crm:E53_place<br>Opéra de Paris) --> |crm:P1_is_identified_by| V(crm:E42_Identifier)
+V(crm:E42_Identifier) --> |crm:P168_is_defined_by| G(crm:E94_space_primitive<br>48.866667, 2.333333)
+V(crm:E42_Identifier) --> |crm:P2_has_type| T(crm:E55_type<br>acrm:E55_type<br>coordonnées géographiques<br>aat:300387569)
 
 I(crm:E53_place<br>Opéra de Paris) --> |crm:P1_is_identified_by| S(crm:E42_Identifier<br>Quai François Mauriac, 75706 Paris)
 S(crm:E42_Identifier) --> |crm:P2_has_type| T(crm:E55_type<br>adresse<br>aat:300386983)
