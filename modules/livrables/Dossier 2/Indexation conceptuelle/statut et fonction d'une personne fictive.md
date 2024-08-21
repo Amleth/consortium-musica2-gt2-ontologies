@@ -2,6 +2,8 @@
 
 ## a. Besoins musicologiques
 
+Lorsque dans certains récits - notamment mythologiques - certaines personnes sont évoquées et que leur existence réelle ne peut être prouvée, il est nécessaire de leur attribuer des caractéristiques les différenciant de personnes réelles.
+
 ## b. Problématisation
 
 ## c. Contextualisation technique
