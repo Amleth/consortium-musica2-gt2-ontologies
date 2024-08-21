@@ -6,7 +6,7 @@ Lorsque dans certains récits - notamment mythologiques - certaines personnes so
 
 ## b. Problématisation
 
-
+De quelle manière peut-on préciser le caractère fictif d'une personne ? 
 
 ## c. Contextualisation technique
 
