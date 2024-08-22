@@ -1,5 +1,7 @@
 # Fréquentation d'une institution
 
+Il est souvent nécessaire de témoigner de la présence d'une personne au sein d'une institution, en détaillant s'il s'agit d'un simple passage ou bien d'une inscription réelle au sein de celle-ci. Nous avons donc besoin d'informations spatio-temporelles, mais aussi de typer les statuts et/ou fonctions des personnes concernées, tout en se référant à des ressources existantes telles que des thésaurus.
+
 ## a. Besoins musicologiques
 
 ## b. Problématisation
