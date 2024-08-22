@@ -10,7 +10,7 @@ De quelle manière peut-on matérialiser l'appartenance à un groupe afin de té
 
 ## c. Contextualisation technique
 
-Nous utilisons un 'E74_group' devant nécessairement être typé, ici à l'aide du thésaurus Getty AAT, afin de représenter la fonction / valeur du groupe. La date d'entrée au sein du groupe est également indiquée ; à noter que si celle-ci est incertaine, il convient d'utiliser un E13_attribute_assignement pour préciser le raisonnement.
+Nous utilisons un 'E74_group' lié à la personne concernée par un 'E85_joining'. Le 'E74_group' doit nécessairement être typé, ici à l'aide du thésaurus Getty AAT, afin de représenter la fonction / valeur du groupe. La date d'entrée au sein du groupe est également indiquée ; à noter que si celle-ci est incertaine, il convient d'utiliser un 'E13_attribute_assignement' pour préciser le raisonnement derrière l'attribution de cette date.
 
 **P107 est plus pauvre qu'utiliser un E85 voir la notion de shortcut en Cidoc-CRM** 
 
