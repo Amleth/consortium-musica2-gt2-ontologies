@@ -10,6 +10,8 @@ Comment modéliser la présence d'une personne au sein d'une institution ? Quels
 
 ## c. Contextualisation technique
 
+Nous croisons ici l'usage de trois de nos protocoles ; sur les dates, les lieux et les statuts et fonctions. La mise en relation de ces derniers avec un 'E21_Person' permet de tisser des liens complémentaires entre l'individu et l'institution.
+
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
