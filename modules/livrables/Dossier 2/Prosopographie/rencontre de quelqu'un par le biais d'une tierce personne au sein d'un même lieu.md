@@ -2,6 +2,8 @@
 
 ## a. Besoins musicologiques
 
+De manière similaire à l'exemple précédent, le lien entre deux personnes peut naître de la rencontre d'une tierce personne qui va introduire les deux premières, facilité par la fréquentation commune d'un lieu. En ce sens, il est nécessaire de pouvoir modéliser la présence des trois personnes au même endroit mais aussi au même moment, afin de témoigner de leur rencontre, ainsi que l'action d'entremettage portée par la troisième personne.
+
 ## b. Problématisation
 
 ## c. Contextualisation technique
