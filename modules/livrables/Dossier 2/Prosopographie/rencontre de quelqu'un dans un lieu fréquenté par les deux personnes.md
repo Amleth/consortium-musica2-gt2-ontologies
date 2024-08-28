@@ -1,6 +1,8 @@
-# rencontre de quelqu'un dans un lieu fréquenté par les deux personnes
+# Rencontre de quelqu'un dans un lieu fréquenté par les deux personnes
 
 ## a. Besoins musicologiques
+
+Le lien entre deux personnes peut être établi à travers la fréquentation commune d'un lieu. En ce sens, il est nécessaire de pouvoir modéliser la présence des deux personnes au même endroit mais aussi au même moment, afin de témoigner de leur rencontre.
 
 ## b. Problématisation
 
