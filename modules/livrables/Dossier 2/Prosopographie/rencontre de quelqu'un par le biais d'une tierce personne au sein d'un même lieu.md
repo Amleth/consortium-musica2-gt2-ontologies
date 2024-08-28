@@ -6,7 +6,11 @@ De manière similaire à l'exemple précédent, le lien entre deux personnes peu
 
 ## b. Problématisation
 
+Comment exprimer le fait que deux personnes soient présentées l'une à l'autre par le biais d'une troisième, toutes trois ayant fréquentées le même lieu ?
+
 ## c. Contextualisation technique
+
+Pour une raison de clarté de lecture, nous faisons le choix de présenter deux graphes distincts. Le premier, par l'usage de 'E7_activity' reliés à trois personnes montre les liens existants entre celles-ci. 
 
 ## d. Proposition Cidoc-CRM
 
