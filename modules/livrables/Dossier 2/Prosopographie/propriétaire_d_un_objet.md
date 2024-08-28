@@ -2,7 +2,7 @@
 
 ## a. Besoins musicologiques
 
-
+Dans le cadre d'études organologiques, il peut être intéressant de témoigner l'appartenance d'un instrument à une personne donnée.
 
 ## b. Problématisation
 
