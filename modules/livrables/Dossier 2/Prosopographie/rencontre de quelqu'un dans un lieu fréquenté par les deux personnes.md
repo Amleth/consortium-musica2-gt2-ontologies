@@ -6,7 +6,11 @@ Le lien entre deux personnes peut être établi à travers la fréquentation com
 
 ## b. Problématisation
 
+Comment exprime-t'on la présence simultanée de deux personnes au sein d'un même lieu, et le fait qu'elles se rencontrent ?
+
 ## c. Contextualisation technique
+
+Nous utilsons un 'E7_activity' pour désigner l'action de rencontre, ensuite typée à l'aide d'une entrée du Getty AAT. Cette rencontre est enrichée d'une date, marquant la simultanéité de la présence des deux personnes, et des informations concernant le lieu.
 
 ## d. Proposition Cidoc-CRM
 
