@@ -12,6 +12,8 @@ De quelle manière peut-on exprimer une relation de maître à élève des deux 
 
 ## c. Contextualisation technique
 
+Cet exemple fait usage d'un certain nombre de 'E7_activity' permettant de définir de manière précise les différentes étapes d'une situation pédagogique : l'apprentissage, l'enseignement, et la situation pédagogique en elle-même.
+
 ## d. Proposition Cidoc-CRM
 
 ```mermaid
