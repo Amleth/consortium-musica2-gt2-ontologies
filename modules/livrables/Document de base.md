@@ -16,17 +16,7 @@ Nous avons également souhaité valoriser les ressources du Consortium Musica2 �
 
 Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre à jour de manière régulière, en conséquence de nos réfléxions tout autant que d'avancées dans les solutions de modélisation. L'achitecture des livrables suit une logique claire : chaque est consacrée à un cas, dont nous présentons les enjeux musicologiques, historiographiques, _etc_. Ce cas est ensuite problématisé et présenté sous forme de graphe Cidoc-CRM, tandis qu'un texte explicite notre stratégie pour la modélisation. Le guide est vivant et est voué à évoluer, une nouvelle fiche sera créée à chaque nouveau cas.
 
-Les livrables sont divisés en trois grandes parties : la première d'entre consiste en ce document, présentant nos réflexions et les grands cas généraux derrière notre travail.
-
-Il faut une partie A : postulats, grands cas généraux (esprit des E13 par exemple)
-Dans la partie A, rendre adressable les réfléxions théoriques identifiées / utiliser un glossaire (cf annotation interprétative par exemple)
-Nombreux éléments à mettre dans le glossaire, notamment analytiques
-Tandis que pour la fiche calendrier (exemple) les connaissances internes à celles-ci ne risquent pas de déborder dans d'autres fiches
-
-Dossier livrables :
-**Premier dossier** : texte à caractère analytique / argumenté
-**Second dossier** : _des sous-dossiers thématiques pour commencer_ : autant de fichiers markdown que de questions, titrés selon la question
-**Troisième dossier** : autant de fichers markdown qu'il y a de mots dans le glossaire
+Les livrables sont divisés en trois grandes parties : la première d'entre consiste en ce document, présentant nos réflexions et les grands cas généraux derrière notre travail. La seconde partie sera constituée d'un dossier comprenant l'intégralité des fiches exemples. Enfin, le troisième pan de notre travail sera un glossaire permettant de préciser des termes techniques importants.
 
 ## 1. Datation : 
 ### a. Besoins musicologiques
