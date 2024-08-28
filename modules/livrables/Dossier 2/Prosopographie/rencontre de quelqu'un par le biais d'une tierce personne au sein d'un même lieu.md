@@ -10,7 +10,7 @@ Comment exprimer le fait que deux personnes soient présentées l'une à l'autre
 
 ## c. Contextualisation technique
 
-Pour une raison de clarté de lecture, nous faisons le choix de présenter deux graphes distincts. Le premier, par l'usage de 'E7_activity' reliés à trois personnes montre les liens existants entre celles-ci. 
+Pour une raison de clarté de lecture, nous faisons le choix de présenter deux graphes distincts. Le premier, par l'usage de 'E7_activity' reliés à trois personnes montre les liens existants entre celles-ci. Le second graphe nous permet d'exprimer les informations liées au lieu ainsi qu'aux moments où les acitivités se sont déroulées.
 
 ## d. Proposition Cidoc-CRM
 
@@ -32,7 +32,6 @@ D(E7_activity<br>Fréquentation 1&3) -->|crm:P11_had_participant| A("crm:E21_Per
 D(E7_activity<br>Fréquentation 1&3) -->|crm:P11_had_participant| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
 O(E7_activity<br>1 entremet 2 et 3) -->|crm:P11_had_participant| E("crm:E21_Person<br>Personne 3 👩🏻‍🦰")
 D(E7_activity<br>Fréquentation 1&3) -->|crm:P2_has_type| G(E55_type<br>Fréquentation)
-
 
 ```
 
