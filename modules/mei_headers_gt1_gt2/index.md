@@ -33,11 +33,13 @@ Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des 
 
 Le principal atout de notre protocole est l'interopérabilité, couplé à une réelle exhaustivité. Bien que sa réalisation puisse être fastidieuse de par le nombre important d'éléments à renseigner, le protocole porte une réelle valeur philologique et ainsi parfaitement adapté dans le cadre de l'édition critique, mais aussi au partage de fichiers au sein de la communauté internationale MEI.
 
-**Faire un diagramme / en reparler avec Thomas**
+**Faire un diagramme / en reparler avec Thomas et Marco**
 
-**- Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique".**
+## 3. Pour conclure
 
-## 3. Modules
+Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique"
+
+## 4. Modules
 
 _3. 1. Éclairer les approches de la _recensio__
   
