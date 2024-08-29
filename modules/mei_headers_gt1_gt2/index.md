@@ -41,7 +41,7 @@ Paragraphe final pour maintenir la section _source_desc_ auprès de la communaut
 
 ## 4. Modules
 
-_3. 1. Éclairer les approches de la _recensio__
+_4. 1. Éclairer les approches de la _recensio__
   
 tradition directe (tous les exemplaires liés directement au texte, cad tous les exemplaires qui transmettent le texte tel qu'il est) ou indirecte (exemplaires qui témoignent d'une tradition en parallèle : les traductions, des textes qui font référence et qui citent, les commentaires, les parodies, etc... / utile lorsqu'un texte est corrompu, car fenêtre sur un moment historique précis où le texte n'était pas corrompu) ? La tradition inderecte correspond à notre _expression_list_
 --> exemple de Sophie : une expression, deux manifestations, deux items.
@@ -50,7 +50,7 @@ tradition directe (tous les exemplaires liés directement au texte, cad tous les
 
    - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
 
-_3. 2. Usage du Cidoc-CRM_
+_4. 2. Usage du Cidoc-CRM_
    
 choisir un thésaurus ?
 **il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR**
