@@ -20,11 +20,7 @@ Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des 
    - Le Mei Header est le lieu approprié pour accueillir toutes les données concernant les sources sur lesquels se base l'édition critique. D'un point de vue technique il s'agit de renseigner les infos concernanat la _recensio_, autrement dit la description complète des sources recoltées. La _recensio_ s'articule normalement en tradition directe (celle de la "expression" principale de l'œuvre) et tradition indirecte (celle qui prend en compte toute autre "expression" : traductions, parodies, commentaires/gloses, _scholiae_, citations, etc.)
 
 **On utilise 0 lorsque l'on a accès à la source originale et oméga "⍵"  lorsque l'on n'y a pas accès**
-Faire un module pour l'usage du Cidoc-CRM / choisir un thésaurus ?
-**il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR**
 
-
-     
 - _fileDesc_
    - **Idem**
 - _sourceDesc_ Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique. Selon les _guidelines_ MEI, il n'y a pas de renvoi au modèle FRBR au sein de _workList_. Il faut donc déployer le modèle FRBR à cet endroit.
@@ -41,14 +37,28 @@ Le principal atout de notre protocole est l'interopérabilité, couplé à une r
 
 **- Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique".**
 
-**Documents fils**
+## 3. Modules
 
-1. Document qui éclaire les deux approches de la _recensio_ : tradition directe (tous les exemplaires liés directement au texte, cad tous les exemplaires qui transmettent le texte tel qu'il est) ou indirecte (exemplaires qui témoignent d'une tradition en parallèle : les traductions, des textes qui font référence et qui citent, les commentaires, les parodies, etc... / utile lorsqu'un texte est corrompu, car fenêtre sur un moment historique précis où le texte n'était pas corrompu) ? La tradition inderecte correspond à notre _expression_list_
+_3. 1. Éclairer les approches de la _recensio__
+  
+tradition directe (tous les exemplaires liés directement au texte, cad tous les exemplaires qui transmettent le texte tel qu'il est) ou indirecte (exemplaires qui témoignent d'une tradition en parallèle : les traductions, des textes qui font référence et qui citent, les commentaires, les parodies, etc... / utile lorsqu'un texte est corrompu, car fenêtre sur un moment historique précis où le texte n'était pas corrompu) ? La tradition inderecte correspond à notre _expression_list_
 --> exemple de Sophie : une expression, deux manifestations, deux items.
 
-   Il s'agira donc de rentrer dans le détail de l'organisation MEI/FRBR de expressionList, manifestationList et itemList => un document fils pour chaque de ce trois 'chapitres'.
+  Il s'agira donc de rentrer dans le détail de l'organisation MEI/FRBR de expressionList, manifestationList et itemList => un document fils pour chaque de ce trois 'chapitres'.
 
    - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
+
+_3. 2. Usage du Cidoc-CRM_
+   
+choisir un thésaurus ?
+**il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR**
+
+ 
+
+
+
+
+
 
  - - -
 
