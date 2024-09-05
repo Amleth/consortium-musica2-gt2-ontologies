@@ -25,6 +25,7 @@ K(crm:E7_activity<br>recontre) --> |crm:P2_has_type| L(crm:E55_type<br>Rencontre
 M(crm:E53_place<br>Opéra de Paris) --> |P1_is_identified_by| R(crm:E42_Identifier)
 R(crm:E42_identifier) --> |crm:P190_has_sympbolic_value| S(crm:E94_space_primitive<br>48.8719697,2.3290265)
 R(crm:E42_identifier) --> |crm:P2_has_type| T(crm:E55_type<br>coordonnées géographiques<br>aat:300387569)
+M(crm:E53_place<br>Opéra de Paris) --> |crm:P168_place_is_defined_by| S(crm:E94_space_primitive<br>48.8719697,2.3290265)
  
 K(crm:E7_activity) --> |crm:p4_has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| E("Date ISO 8601")
