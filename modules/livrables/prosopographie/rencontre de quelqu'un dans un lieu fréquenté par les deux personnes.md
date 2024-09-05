@@ -10,7 +10,7 @@ Comment exprime-t'on la présence simultanée de deux personnes au sein d'un mê
 
 ## c. Contextualisation technique
 
-Nous utilsons un 'E7_activity' pour désigner l'action de rencontre, ensuite typée à l'aide d'une entrée du Getty AAT. Cette rencontre est enrichie d'une date, marquant la simultanéité de la présence des deux personnes, et des informations concernant le lieu.
+Nous utilsons un ```E7_activity``` pour désigner l'action de rencontre, ensuite typée à l'aide d'une entrée du Getty AAT. Cette rencontre est enrichie d'une date, marquant la simultanéité de la présence des deux personnes, et des informations concernant le lieu.
 
 ## d. Proposition Cidoc-CRM
 
