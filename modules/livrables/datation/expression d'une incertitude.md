@@ -21,16 +21,16 @@ graph TD;
 
 
 
-I(crm:E67_birth) --> |crm:p98_brought_into_life| H(crm:E21_person<br>John Doe)
-G(crm:E13_attribute_assignement) -->|crm:p141_assigned| B(crm:E52_time_span)
-G(crm:E13_attribute_assignement) -->|crm:p177_assigned_property_of_type| K(crm:p4_has_time_span)
-G(crm:E13_attribute_assignement)  --> |crm:p140_assigned_attribute_to| I(crm:E67_birth)
+I(crm:E67_birth) --> |crm:P98_brought_into_life| H(crm:E21_Person<br>John Doe)
+G(crm:E13_Attribute_Assignement) -->|crm:p141_Assigned| B(crm:E52_Time-Span)
+G(crm:E13_Attribute_Assignement) -->|crm:p177_Assigned_property_of_type| K(crm:P4_has_time-span)
+G(crm:E13_Attribute_Assignement)  --> |crm:p140_Assigned_attribute_to| I(crm:E67_Birth)
 
-G(crm:E13_attribute_assignement) --> |crm:p14_carried_out_by| L(crm:E21_person<br>Chercheur)
+G(crm:E13_Attribute_Assignement) --> |crm:P14_carried_out_by| L(crm:E21_Person<br>Chercheur)
 
-B(crm:E52_time_span) --> |crm:p82a_begin_of_the_begin| C("Date ISO 8601")
-B(crm:E52_time_span) --> |crm:p81a_end_of_the_begin| D("Date ISO 8601")
-B(crm:E52_time_span) --> |crm:p81b_begin_of_the_end| E("Date ISO 8601")
-B(crm:E52_time_span) --> |crm:p82b_end_of_the_end| F("Date ISO 8601")
+B(crm:E52_Time-Span) --> |crm:P82a_begin_of_the_begin| C("Date ISO 8601")
+B(crm:E52_Time-Span) --> |crm:P81a_end_of_the_begin| D("Date ISO 8601")
+B(crm:E52_Time-Span) --> |crm:P81b_begin_of_the_end| E("Date ISO 8601")
+B(crm:E52_Time-Span) --> |crm:P82b_end_of_the_end| F("Date ISO 8601")
 
 ```
