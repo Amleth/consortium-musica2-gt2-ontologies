@@ -10,7 +10,7 @@ Quels sont les outils permettant l'expression de l'incertitude entourant une dat
 
 ## c. Contextualisation technique
 
-Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une interprétation, aussi minime soit-elle. Il convient ensuite au chercheur de se référer aux thésaurus et sources nécessaires afin de compléter sa proposition. Un vocabulaire contrôlé proposant des paliers d'expression de la certitude doit être proposé, et partagé au sein du Consortium Musica2.
+Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une interprétation, aussi minime soit-elle. 
 
 ## d. Proposition CIDOC CRM
 
