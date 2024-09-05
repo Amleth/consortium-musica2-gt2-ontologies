@@ -4,7 +4,7 @@ Au-delà des mots-clés abordés ci-avant, les sources historiques musicologique
 
 ## b. Problématisation
 
-De quelle manière peut-on indexer une source à l'aide d'ue thématique ?
+De quelle manière peut-on indexer une source à l'aide d'une thématique ?
 
 ## c. Contextualisation technique
 
