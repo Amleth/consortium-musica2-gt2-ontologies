@@ -6,11 +6,11 @@ Le chercheur en sciences humaines doit pouvoir exprimer une incertitude avec sou
 
 ## b. Problématisation
 
-Quels sont les outils permettant l'expression de l'incertitude entourant une datation en Cidoc-CRM ? On constate par exemple que le terme _circa_ est régulièrement employé, malgré son manque de précision ; il convient donc de trouver une solution pour exprimer le doute et les propositions de divers chercheurs. 
+Quels sont les outils permettant l'expression de l'incertitude entourant une datation en CIDOC CRM ? On constate par exemple que le terme _circa_ est régulièrement employé, malgré son manque de précision ; il convient donc de trouver une solution pour exprimer le doute et les propositions de divers chercheurs. 
 
 ## c. Contextualisation technique
 
-Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une interprétation, aussi minime soit-elle. Il convient ensuite au chercheur de se référer aux thésaurus et sources nécessaires afin de compléter sa proposition. **reprendre tout ce que Thomas a dit** Un vocabulaire contrôlé proposant des paliers d'expression de la certitude doit être proposé, et partagé au sein du Consortium Musica2.
+Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une interprétation, aussi minime soit-elle. Il convient ensuite au chercheur de se référer aux thésaurus et sources nécessaires afin de compléter sa proposition. Un vocabulaire contrôlé proposant des paliers d'expression de la certitude doit être proposé, et partagé au sein du Consortium Musica2.
 
 ## d. Proposition CIDOC CRM
 
