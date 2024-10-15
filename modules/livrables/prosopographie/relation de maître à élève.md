@@ -1,20 +1,20 @@
-# Relation de maître à élève
+## Relation de maître à élève
 
 **_Faire une autre fiche cf situation pédago avec une classe_**
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 Nous avons besoin de représenter la situation pédagogique d'apprentissage de deux points de vue ; autant de l'apprenant que de l'enseignant. Il peut également être nécessaire de situer cette situation dans un espace-temps donné, afin de la relier à des événements, ou bien à une institution si celle-ci s'est déroulée dans ce cadre précis. 
 
-## b. Problématisation
+### b. Problématisation
 
 De quelle manière peut-on exprimer une relation de maître à élève des deux points de vue, ainsi que son inscription dans différents contextes ?
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 Cet exemple fait usage d'un certain nombre de 'E7_activity' permettant de définir de manière précise les différentes étapes d'une situation pédagogique : l'apprentissage, l'enseignement, et la situation pédagogique en elle-même. Ces activités sont typées à l'aide du thésaurus Getty AAT afin de permettre une meilleure interopérabilité.
 
-## d. Proposition CIDOC CRM
+### d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;
