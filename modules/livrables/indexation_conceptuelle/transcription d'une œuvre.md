@@ -12,7 +12,7 @@ De quelle manière peut-on exprimer l'action de transcription d'une œuvre exist
 
 Nous nous appuyons sur le modèle FRBR pour caractériser l'œuvre ; dans le cadre d'une transcription, le niveau auquel nous nous intéressons est celui de l'expression et est intégré dans le graphe par l'usage de 'F2_expression', portées par des personnes 'E21_person' - clairement nommées et identifiées, si possible à l'aide d'une URI- , tandis que les actions de transcription et de composition sont typées à l'aide du Thésaurus Getty AAT. Celles-ci résultent en des 'F28_Expression_Creation'.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 
 ```mermaid

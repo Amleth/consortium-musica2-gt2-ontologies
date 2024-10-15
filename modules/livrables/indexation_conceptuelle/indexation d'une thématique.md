@@ -10,7 +10,7 @@ De quelle manière peut-on indexer une source à l'aide d'une thématique ?
 
 Nous utilisons ici le 'E13_attribute_assignement' afin d'attribuer une thématique à une source. Nous faisons usage du terme _Subject headings_, issu du Getty AAT. Celui-ci permet d'exprimer des thématiques complexes, puisqu'il "combine ensemble plusieurs concepts uniques en une seule séquence de mots". Les thématiques, portées par un 'E62_string' sont également tirées du Getty AAT.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 
 ```mermaid

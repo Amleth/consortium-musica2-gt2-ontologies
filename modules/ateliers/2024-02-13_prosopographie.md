@@ -177,10 +177,10 @@ On se pose la question de la possibilité de modéliser :
 - Lien vers l'atelier datation, la notion d'incertitude est absolument primordiale.
 - Pour les informations de lieu, il est important de contextualiser au maximum avec l'institution rattachée (le cas échéant).
 - Comment indiquer les lieux avec précision ? Nécessité d'alignement des référentiels, de manière similaire à la datation.
-- Dans le cadre de l'usage du Cidoc-CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
+- Dans le cadre de l'usage du CIDOC CRM, besoin constant de E13 afin d'éclaircir la lecture des informations notées.
 - Réponses des participants à ces questions, exemples et cas concrets utiles.
 
-## Exemples de modélisations prosopographiques à l'aide de l'ontologie Cidoc-CRM :
+## Exemples de modélisations prosopographiques à l'aide de l'ontologie CIDOC CRM :
 
 ### - Quelqu'un a fréquenté un lieu :
   

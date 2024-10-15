@@ -16,7 +16,7 @@ Deux 'E42_identifier' sont reliés au 'E53_place'. Le premier d'entre eux signal
 
 Les deux axes choisis se complètent et permettent de typer tout autant des lieux anciens, n'existant plus désormais ou bien ayant changé de localisation, qu'un site précis au sein d'un lieu en comportant plusieurs, comme c'est le cas pour la Bibliothèque Nationale de France.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;

@@ -12,7 +12,7 @@ Comment exprimer le fait qu'une personne soit propriétaire d'un objet ?
 
 Nous utilisons ici un 'E13_attribute_assignement' pour commenter l'acquisition d'un objet physique 'E19_Physical_Object'. L'action d'acquisition est une activité 'E7_activity' typée à l'aide d'une entrée du Getty AAT.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;

@@ -50,7 +50,7 @@ tradition directe (tous les exemplaires liés directement au texte, cad tous les
 
    - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
 
-_4. 2. Usage du Cidoc-CRM_
+_4. 2. Usage du CIDOC CRM_
    
 choisir un thésaurus ?
 **il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR**

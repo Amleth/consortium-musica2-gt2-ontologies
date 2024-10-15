@@ -12,7 +12,7 @@ Comment représenter l'existence d'une institution, son domaine de rattachement 
 
 Le thésaurus Getty AAT permet de caractériser la typologie "institution" à l'aide d'un vocabulaire contrôlé, dont la définition est la suivante : "[nous traduisons] Organisations, associations ou établissements formellement structurés afin de promouvoir un objectif public ou privé spécifique, généralement un objectif religieux, caritatif ou éducatif." En partant de ce postulat, nous exprimons ensuite les caractéristiques principales de l'institution d'après les protocoles auparavant présentés : lieu où elle se trouve, date de création, _etc_.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;

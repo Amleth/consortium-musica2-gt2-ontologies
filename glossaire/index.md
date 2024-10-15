@@ -114,11 +114,11 @@ Ted Nelson (inventeur de l'hypertexte) : *« HTML is precisely what we were tr
   - Modèle de données contenant des concepts et relations permettant de modéliser un ensemble de connaissances dans un domaine donné.
   - Spécification formelle et explicite d’une conceptualisation partagée.
 
-### 🏷️ CIDOC-CRM
+### 🏷️ CIDOC CRM
 
 - Émanation de l'ICOM (International Council of Museums)
 - Ontologie pour la représentation du patrimoine matériel et immatériel de l'humanité, et des connaissances produites à son endroit.
-- Opinion : L'infrastructure technique et informationnelle du Web sémantique conjuguée à la communauté internationale CIDOC-CRM constituent une des meilleures réponses socio-techniques possibles en 2023 pour s'assurer que les données scientifiques et patrimoniales seront encore lisibles dans 10 ou 20 ans.
+- Opinion : L'infrastructure technique et informationnelle du Web sémantique conjuguée à la communauté internationale CIDOC CRM constituent une des meilleures réponses socio-techniques possibles en 2023 pour s'assurer que les données scientifiques et patrimoniales seront encore lisibles dans 10 ou 20 ans.
 
 ### 🏷️ SPARQL, SPARQL endpoint
 

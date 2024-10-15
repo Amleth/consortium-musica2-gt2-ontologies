@@ -6,5 +6,5 @@
 
 ## c. Contextualisation technique
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 

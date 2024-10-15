@@ -22,7 +22,7 @@ Dans le cas d'une date n'apparaîssant pas dans la source, les intervalles saisi
 
 Le système doit enregistrer chaque date soumise par les chercheurs comme des valeurs signées et datées, en ne considérant pas la valeur d'un champ date comme une donnée monolithique, mais comme un succession de contributions contextualisées, un peu à la manière d'un cahier de laboratoire.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;

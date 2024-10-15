@@ -14,7 +14,7 @@ De quelle manière peut-on exprimer une relation de maître à élève des deux 
 
 Cet exemple fait usage d'un certain nombre de 'E7_activity' permettant de définir de manière précise les différentes étapes d'une situation pédagogique : l'apprentissage, l'enseignement, et la situation pédagogique en elle-même. Ces activités sont typées à l'aide du thésaurus Getty AAT afin de permettre une meilleure interopérabilité.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;

@@ -12,7 +12,7 @@ Comment exprimer le fait que deux personnes soient présentées l'une à l'autre
 
 Pour une raison de clarté de lecture, nous faisons le choix de présenter deux graphes distincts. Le premier, par l'usage de 'E7_activity' reliés à trois personnes montre les liens existants entre celles-ci. Le second graphe nous permet d'exprimer les informations liées au lieu ainsi qu'aux moments où les acitivités se sont déroulées.
 
-## d. Proposition Cidoc-CRM
+## d. Proposition CIDOC CRM
 
 ### - Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
 
