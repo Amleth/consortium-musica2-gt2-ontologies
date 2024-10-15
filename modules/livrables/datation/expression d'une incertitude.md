@@ -1,18 +1,18 @@
-# Expression d'une incertitude
+## Expression d'une incertitude
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 Le chercheur en sciences humaines doit pouvoir exprimer une incertitude avec souplesse, afin de transmettre avec justesse l'information scientifique, tout en étant conscient de la nécessité informatique d'une date précise exprimée dans un format référence. Il faut ainsi fournir une méthode permettant l'expression de divers doutes, besoins, _etc_. Par exemple, dans les répertoires les plus anciens, l'exactitude des dates est souvent difficile à établir, voire contestée. Les propositions de datation doivent donc être argumentées et justifiées.
 
-## b. Problématisation
+### b. Problématisation
 
 On constate que le terme _circa_ est régulièrement employé, malgré son manque de précision ; il convient donc de trouver une solution technique pour exprimer le doute et les propositions de divers chercheurs sans pour autant les réduire.
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les choix de datation, car toute attribution de date repose sur une interprétation, aussi minime soit-elle. 
 
-## d. Proposition CIDOC CRM
+### d. Proposition CIDOC CRM
 
 
 ```mermaid
