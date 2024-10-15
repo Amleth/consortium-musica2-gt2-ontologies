@@ -1,10 +1,12 @@
-**a. Besoins musicologiques**
+## Conservation des œuvres contemporaines
 
-**b. Problématisation**
+### **a. Besoins musicologiques**
 
-**c. Contextualisation technique**
+### **b. Problématisation**
 
-**d. Proposition CIDOC CRM**
+### **c. Contextualisation technique**
+
+### **d. Proposition CIDOC CRM**
 
 ```mermaid
 graph TD;
