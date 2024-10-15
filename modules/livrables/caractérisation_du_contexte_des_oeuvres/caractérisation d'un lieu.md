@@ -1,4 +1,4 @@
-# Indexation d'un lieu 
+# Caractérisation d'un lieu 
 
 ## a. Besoins musicologiques
 

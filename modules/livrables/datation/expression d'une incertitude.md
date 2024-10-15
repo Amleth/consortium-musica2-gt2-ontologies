@@ -18,9 +18,6 @@ Plusieurs instances de `crm:E13_Attribute_Assignment` viennent justifier les cho
 ```mermaid
 graph TD;
 
-
-
-
 I(crm:E67_birth) --> |crm:P98_brought_into_life| H(crm:E21_Person<br>John Doe)
 G(crm:E13_Attribute_Assignement) -->|crm:p141_Assigned| B(crm:E52_Time-Span)
 G(crm:E13_Attribute_Assignement) -->|crm:p177_Assigned_property_of_type| K(crm:P4_has_time-span)

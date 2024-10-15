@@ -1,4 +1,4 @@
-# Désignation d'une personne morale
+# Caractérisation d'une personne morale
 
 ## a. Besoins musicologiques
 
