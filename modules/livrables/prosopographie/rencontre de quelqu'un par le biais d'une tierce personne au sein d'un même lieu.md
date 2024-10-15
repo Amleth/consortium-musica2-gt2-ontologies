@@ -1,20 +1,18 @@
-# Rencontre de quelqu'un par le biais d'une tierce personne au sein d'un même lieu
+## Rencontre de quelqu'un par le biais d'une tierce personne au sein d'un même lieu
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 De manière similaire à l'exemple précédent, le lien entre deux personnes peut naître de la rencontre d'une tierce personne qui va introduire les deux premières, facilité par la fréquentation commune d'un lieu. En ce sens, il est nécessaire de pouvoir modéliser la présence des trois personnes au même endroit mais aussi au même moment, afin de témoigner de leur rencontre, ainsi que l'action d'entremettage portée par la troisième personne.
 
-## b. Problématisation
+### b. Problématisation
 
 Comment exprimer le fait que deux personnes soient présentées l'une à l'autre par le biais d'une troisième, toutes trois ayant fréquentées le même lieu ?
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 Pour une raison de clarté de lecture, nous faisons le choix de présenter deux graphes distincts. Le premier, par l'usage de 'E7_activity' reliés à trois personnes montre les liens existants entre celles-ci. Le second graphe nous permet d'exprimer les informations liées au lieu ainsi qu'aux moments où les acitivités se sont déroulées.
 
-## d. Proposition CIDOC CRM
-
-### - Quelqu'un a rencontré quelqu'un par le biais d'une tierce personne au sein d'un même lieu :
+### d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;
