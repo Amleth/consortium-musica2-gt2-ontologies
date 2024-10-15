@@ -1,6 +1,6 @@
 # Introduction au guide de modélisation en CIDOC CRM du Consortium Musica2
 
-## Approche méthdologique adoptée par le GT2 ## 
+## Approche méthodologique adoptée par le GT2 ## 
 
 Dans le cadre du Consortium Musica2, le groupe de travail n°2 "Ontologies et thésaurii" - constitué de Théodora Psychoyou, Achille Davy-Rigaux, Thomas Bottini et Augustin Braud - a souhaité instaurer une dynamique collective durant l'année 2023-2024 en organisant des ateliers dédiés à différentes problématiques musicologiques traitées au prisme des outils ontologiques et plus particulièrement à l'aide du CIDOC CRM. Ces ateliers ont permis de fédérer avec régularité une communauté scientifique nationale autour de questions communes à tout musicologue : expression des dates, _thesaurii_, indexaction conceptuelle, _etc_. De ces points de focus ont rejailli des besoins, des doutes, mais aussi des consensus nous permettant de formaliser des pratiques musicologiques correctes par le croisement d'expériences variées. Nous avons alors fait le choix de présenter ce livrable en axes plus ou moins similaires à ceux de nos ateliers, tout en gardant à l'esprit l'aspect _work-in-progress_ d'un tel travail. 
 
