@@ -1,18 +1,18 @@
-# Caractérisation d'une personne
+## Caractérisation d'une personne
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 **_éléments pour la description d'une personne_**
 
 Afin d'indexer une personne, nous avons dans un premier temps besoin d'informations biographiques basiques liées aux dates de naissance et de mort de l'individu. Nous pourrons, le cas échéant, exprimer de manière idoine aux exemples présents au sein du module _datation_ diverses incertitudes où des inscriptions dans des référentiels calendaires plus rares. La fonction et/ou le statut occupé par la personne sont également des éléments nous permettant d'indexer. 
 
-## b. Problématisation
+### b. Problématisation
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 On exprime en premier lieu l'existence d'une personne par ses dates de naissance 'E67_birth' et de mort 'crm:E69_death', avant de typer différentes entités liés à son inscription dans divers groupes au fil de sa vie. L'usage de 'E13_attribute_assignement' permet de commenter et témoigner des incertitudes vis-à-vis de certaines informations.
 
-## d. Proposition CIDOC CRM
+### d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;
