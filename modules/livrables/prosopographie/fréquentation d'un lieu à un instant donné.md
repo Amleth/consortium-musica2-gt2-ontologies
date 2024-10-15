@@ -1,18 +1,18 @@
-# Fréquentation d'un lieu à un instant donné
+## Fréquentation d'un lieu à un instant donné
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 Les chercheurs ont besoin de témoigner de manière normée de la présence d'une ou plusieurs personnes au sein d'un espace-temps normé, avec une date précise exprimée dans un format référence. 
 
-## b. Problématisation
+### b. Problématisation
  
 Comment peut-on exprimer la présence d'une personne physique dans un lieu donné, au sein d'une période de temps définie par le chercheur ? Nous ne nous posons pas encore la question des outils de modélisation pour la définition de la personne dans le cadre de cet exemple, mais son rôle et son statut peuvent être précisés.
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 L'utilisation d'un 'E13_attribute_assignement' permet l'expression de l'incertitude quant à la présence ('E93_presence') d'une personne à un lieu et un endroit donnés. Nous utilisons à nouveau notre protocole complet d'identification d'un lieu par ses coordonnées GPS ('E94_space_primitive') ainsi que par son adresse, complétée par un identifiant _geonames_, tandis que les deux 'E42_identifier' sont typés par des entrées du thésaurus Getty AAT.
 
-## d. Proposition CIDOC CRM
+### d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;
