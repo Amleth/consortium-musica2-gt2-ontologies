@@ -1,18 +1,18 @@
-# Caractérisation d'une personne morale
+## Caractérisation d'une personne morale
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 Une personne morale est, par définition, une entité regroupant divers individus regroupés sous un statut juridique, œuvrant de manière commune. Afin d'indexer une personne morale, il convient de signaler plusieurs éléments majeurs : les différentes personnes le composant, le statut juridique, la date de création de l'entité, le lieu éventuel où son bureau est établi, _etc._
 
-## b. Problématisation
+### b. Problématisation
 
 De quelle manière peut-on indiquer les caractéristiques principales d'une personne morale et les modéliser ?
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 Nous faisons ici usage de l'entité 'E66_formation', qui permet de témoigner de la création d'un 'E74_group'. Nous utilisons à nouveau notre protocole de datation ainsi que des entrées du thésaurus Getty AAT afin de typer les concepts d'_institution_, d'_adresse_ ou encore de _coordonnées géographiques_.
 
-## d. Proposition CIDOC CRM
+### d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;
