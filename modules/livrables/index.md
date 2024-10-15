@@ -1,6 +1,6 @@
-# Introduction au guide de modélisation en CIDOC CRM du Consortium Musica2 (GT2)
+# Introduction au guide de modélisation en CIDOC CRM du Consortium Musica2
 
-
+## Approche méthdologique adoptée par le GT2 ## 
 
 Dans le cadre du Consortium Musica2, le groupe de travail n°2 "Ontologies et thésaurii" - constitué de Théodora Psychoyou, Achille Davy-Rigaux, Thomas Bottini et Augustin Braud - a souhaité instaurer une dynamique collective durant l'année 2023-2024 en organisant des ateliers dédiés à différentes problématiques musicologiques traitées au prisme des outils ontologiques et plus particulièrement à l'aide du CIDOC CRM. Ces ateliers ont permis de fédérer avec régularité une communauté scientifique nationale autour de questions communes à tout musicologue : expression des dates, _thesaurii_, indexaction conceptuelle, _etc_. De ces points de focus ont rejailli des besoins, des doutes, mais aussi des consensus nous permettant de formaliser des pratiques musicologiques correctes par le croisement d'expériences variées. Nous avons alors fait le choix de présenter ce livrable en axes plus ou moins similaires à ceux de nos ateliers, tout en gardant à l'esprit l'aspect _work-in-progress_ d'un tel travail. 
 
@@ -16,6 +16,4 @@ Nous avons également souhaité valoriser les ressources du Consortium Musica2 �
 
 Nous envisageons en effet de laisser cette archive GitHub ouverte et la mettre à jour de manière régulière, en conséquence de nos réfléxions tout autant que d'avancées dans les solutions de modélisation. L'achitecture des livrables suit une logique claire : chaque est consacrée à un cas, dont nous présentons les enjeux musicologiques, historiographiques, _etc_. Ce cas est ensuite problématisé et présenté sous forme de graphe CIDOC CRM, tandis qu'un texte explicite notre stratégie pour la modélisation. Le guide est vivant et est voué à évoluer, une nouvelle fiche sera créée à chaque nouveau cas.
 
-Les livrables sont divisés en trois grandes parties : la première d'entre consiste en ce document, présentant nos réflexions et les grands cas généraux derrière notre travail. La seconde partie sera constituée d'un dossier comprenant l'intégralité des fiches exemples. Enfin, le troisième pan de notre travail sera un glossaire permettant de préciser des termes techniques importants.
-
-## Les principes de base du CIDOC CRM##
+## Les principes de base du CIDOC CRM ##
