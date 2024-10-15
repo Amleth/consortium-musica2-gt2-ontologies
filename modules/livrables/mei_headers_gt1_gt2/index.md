@@ -1,4 +1,6 @@
-## 1. Présentation générale de l'approche méthodologique
+## MEI Headers
+
+### 1. Présentation générale de l'approche méthodologique
 
 Ce document vise à proposer un protocole détaillé de renseignement des métadonnées au sein des headers MEI dans le cas d'éditions critiques sous format numérique. Notre objectif est d'établir une sorte de guide spécifique pour les éditions critiques en MEI et de préciser où placer les informations philologiquement nécessaires, en proposant des choix réflechis au détriment de la liberté habituellement accordée à l'encodeur par le lignes guides MEI. Fixer des paramètres partagés et réconnus par la communauté musicologique permettra de créer de fichiers MEI qui pourront être contrôlés, vérifiés et échangés au profit de la transparence scientifique et de l'interopérabilité. Pour ce faire, le modèle FRBR appliqué à l'encodage MEI sera privilégié et suivi d'une manière ponctuelle. 
 
@@ -10,7 +12,7 @@ Bien que ces deux modèles soient les plus importants, il existe également une 
 
 Dans le cadre de la présentation de notre protocole de renseignement des métadonnées au sein des headers MEI pour l'établissement d'éditions critiques, nous prenons donc comme point d'appui la partie sur laquelle toutes les méthodes semblent converger : celle de la _recensio_, qui nous offre ainsi un socle pour entrevoir les éléments à renseigner dans le header MEI, en suivant les entités FRBR.
 
-## 2. Approche des GT1 et GT2 pour la complétion des headers MEI
+### 2. Approche des GT1 et GT2 pour la complétion des headers MEI
 
 L'appui sur les normes FRBR nous parait central, afin de rendre interopérables les éditions critiques encodées en MEI : la tendance de laisser le maximum de liberté à l'encodeur pour le renseignement des métadonnées dans le header Mei mine l'interopérabilité des fichiers MEI ainsi produits, résultats de la sensibilité de chaque encodeur et de son interprétation personnelle. La création de fichiers MEI hétéroclites empêche également la trasparence scientifique qui se doit à une édition critique, dont la précision du travail fait en amont de la _restitutio textus_ doit toujours être vérifiable et immédiatement repérable. D'où l'urgence de fixer un protocole de saisie partagé par la communauté scientifique. Dans ce cadre, les normes FRBR proposées par le biais de la MEI, qui à partir de l‘œuvre s'articulent en listes des expressions, des manifestations puis des items, correspondent précisement à la _recensio_ la plus complète possible, ce qui est la premesse méthodologique de chaque édition critique : le header MEI doit donc suivre l'arborescence FRBR et être renseigné de la manière la plus rigoureuse possible. Dans notre protocole, il est fortement recommandé de se tenir au principe de la redondance : toutes les informations nécessaires doivent être renseignées à chaque niveau du modèle FRBR. Il est ainsi probable que des métadonnées soient régulièrement répétées, par exemple le nom du compositeur ou le titre de l’œuvre.
 
@@ -35,11 +37,11 @@ Le principal atout de notre protocole est l'interopérabilité, couplé à une r
 
 **Faire un diagramme / en reparler avec Thomas et Marco**
 
-## 3. Pour conclure
+### 3. Pour conclure
 
 Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique"
 
-## 4. Modules
+### 4. Modules
 
 _4. 1. Éclairer les approches de la _recensio__
   
