@@ -1,18 +1,18 @@
-# Indexation d'une source avec un mot-clé
+## Indexation d'une source avec un mot-clé
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 Les sources historiques musicologiques sont souvent identifiés à l'aide de critères spécialisés liés à des notions théoriques ou esthétiques, en plus des informations de temps et d'espace. Des mots-clés sont alors définis par la personne en charge de l'indexation et appliqués à différentes sources afin de les typer. Il est donc nécessaire de pouvoir modéliser l'indexation d'une source à l'aide d'un mot clé issu d'un thésaurus.
 
-## b. Problématisation
+### b. Problématisation
 
 De quelle manière peut-on indexer une source à l'aide d'un mot-clé ?
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 Nous utilisons ici le 'E13_attribute_assignement' afin d'attribuer un mot clé à une source. Le concept de "mot-clé" porté par un 'E62_string' est lui-même typé à l'aide du Getty AAT, tandis que les mots-clés eux-mêmes sont également piochés au sein de ce thésaurus.
 
-## d. Proposition CIDOC CRM
+### d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;
