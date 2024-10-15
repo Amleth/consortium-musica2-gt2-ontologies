@@ -1,20 +1,20 @@
-# Statut et fonction d'une personne fictive
+## Statut et fonction d'une personne fictive
 
-## a. Besoins musicologiques
+### a. Besoins musicologiques
 
 Lorsque dans certains récits - notamment mythologiques - certaines personnes sont évoquées et que leur existence réelle ne peut être prouvée, il est nécessaire de leur attribuer des caractéristiques les différenciant de personnes réelles. Par exemple, le personnage (fictif) incarné par un chanteur (personne réelle) au sein d'un Opéra. Il convient ensuite de détailler différents attributs du rôle vis-à-vis de l'univers dans lequel il s'inscrit.
 
-## b. Problématisation
+### b. Problématisation
 
 De quelle manière peut-on préciser le caractère fictif d'une personne ? 
 
-## c. Contextualisation technique
+### c. Contextualisation technique
 
 Afin de préciser le caractère fictif d'une personne, nous prenons le parti d'utiliser un 'E13_attribute_assignement' auquel est assigné - à l'aide de la propriété ```crm:P141_assigned``` - un ```crm:E55_type "protagonist"``` référencé au sein du thésaurus Getty AAT. 
 
 Pour exprimer le statut et/ou la fonction d'une personne au sein d'une institution, nous reprenons notre protocole détaillé dans la fiche _Statut ou fonction d'une personne réelle_. Nous exprimons la fonction d'une personne par l'usage de deux ```crm:E74_group``` ; le premier d'entre eux correspond à la structure qui accueille la personne et le second, inclus dans le premier, détaille la fonction occupée. Il est posssible de raffiner encore plus le processus par l'usage de ```crm:E74_group``` supplémentaires, jusqu'à arriver au niveau de précision attendu. Les concepts adjacents aux ```crm:E74_group``` sont typés à l'aide du Getty AAT pour assurer une interopérabilité maximale.
 
-## d. Proposition CIDOC CRM
+### d. Proposition CIDOC CRM
 
 ```mermaid
 graph TD;
