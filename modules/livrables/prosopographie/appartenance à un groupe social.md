@@ -38,9 +38,13 @@ _Groupe informel_
 ```mermaid
 graph TD;
 
+
 A(crm:E21_person<br>John_Doe) -->|crm:P143_joined| B(crm:E85_joining<br>Groupe)
 B(crm:E85_joining) --> |P144_joined_with| G(crm:E74_group)
 G(crm:E74_group) --> |crm:P107_has_current_or_former_member| A(crm:E21_person<br>John_Doe)
+G(crm:E74_group) --> |crm:P107_has_current_or_former_member| H(crm:E21_person<br>Jane_Doe)
+G(crm:E74_group) --> |crm:P107_has_current_or_former_member| I(crm:E21_person<br>Jean_Doe)
+G(crm:E74_group) --> |crm:P107_has_current_or_former_member| J(crm:E21_person<br>Jeanne_Doe)
 
 B(crm:E85_joining) --> |crmP4:has_time_span| D(crm:E52_time_span)
 D(crm:E52_time_span) --> |crmP82a:begin_of_the_begin| E(Date 1 ISO 8601)
@@ -48,10 +52,6 @@ D(crm:E52_time_span) --> |crmP81a:end_of_the_begin| I(Date 2 ISO 8601)
 D(crm:E52_time_span) --> |crmP81b:begin_of_the_end| J(Date 3 ISO 8601)
 D(crm:E52_time_span) --> |crmP82b:end_of_the_end| H(Date 4 ISO 8601)
 
-N(crm:E13_Attribute_Assignement) -->|crm:p141_Assigned| M(crm:E74_group)
-N(crm:E13_Attribute_Assignement) -->|crm:p177_Assigned_property_of_type| L(crm:P107_has_current_or_former_member)
-N(crm:E13_Attribute_Assignement) --> |crm:p140_Assigned_attribute_to| G(crm:E74_group)
-N(crm:E13_Attribute_Assignement) --> |crm:P14_carried_out_by| O(crm:E21_Person<br>Chercheur)
 
 ```
 
