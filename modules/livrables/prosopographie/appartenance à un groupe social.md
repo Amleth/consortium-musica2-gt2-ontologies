@@ -40,8 +40,12 @@ graph TD;
 
 A(crm:E21_person<br>John_Doe) -->|crm:P143_joined| B(crm:E85_joining<br>Groupe)
 B(crm:E85_joining) --> |P144_joined_with| G(crm:E74_group)
-G(crm:E74_group) -->|crm:P2_has_type| C(crm:E55_type<br>Société Savante<br>aat:300026019)
 G(crm:E74_group) --> |crm:P107_has_current_or_former_member| A(crm:E21_person<br>John_Doe)
+
+H(crm:E13_Attribute_Assignement) -->|crm:p141_Assigned| M(crm:E74_group)
+H(crm:E13_Attribute_Assignement) -->|crm:p177_Assigned_property_of_type| L|crm:P107_has_current_or_former_member|
+H(crm:E13_Attribute_Assignement)  --> |crm:p140_Assigned_attribute_to| G(crm:E74_group)
+G(crm:E13_Attribute_Assignement) --> |crm:P14_carried_out_by| M(crm:E21_Person<br>Chercheur)
 
 
 B(crm:E85_joining) --> |crmP4:has_time_span| D(crm:E52_time_span)
