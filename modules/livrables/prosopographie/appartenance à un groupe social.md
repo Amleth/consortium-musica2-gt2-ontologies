@@ -51,7 +51,7 @@ D(crm:E52_time_span) --> |crmP82b:end_of_the_end| H(Date 4 ISO 8601)
 N(crm:E13_Attribute_Assignement) -->|crm:p141_Assigned| M(crm:E74_group)
 N(crm:E13_Attribute_Assignement) -->|crm:p177_Assigned_property_of_type| L(crm:P107_has_current_or_former_member)
 N(crm:E13_Attribute_Assignement) --> |crm:p140_Assigned_attribute_to| G(crm:E74_group)
-N(crm:E13_Attribute_Assignement) --> |crm:P14_carried_out_by| M(crm:E21_Person<br>Chercheur)
+N(crm:E13_Attribute_Assignement) --> |crm:P14_carried_out_by| O(crm:E21_Person<br>Chercheur)
 
 ```
 
