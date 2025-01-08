@@ -8,7 +8,7 @@ Afin de caractériser une personne, nous avons dans un premier temps besoin d'in
 
 ### b. Problématisation
 
-Quels sont les éléments permettant de caractériser une personne et de l'inscrire dans divers référentiels ? Comment signaler une incertitude vis-à-vis d'une information ?
+Quels sont les éléments permettant de caractériser une personne tout en la mettant en relation avec diverses données (dates, institutions, _etc_) ? Comment signaler une incertitude vis-à-vis d'une information ?
 
 ### c. Contextualisation technique
 
