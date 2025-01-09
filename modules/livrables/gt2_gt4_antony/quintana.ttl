@@ -1,0 +1,82 @@
+# TODO : associer l'archive à une pièce
+# TODO : associer l'archive à une performance
+# TODO : exprimer que l'utilisateur authentifié qui fait le dépôt est le signataire du dépôt
+# TODO : exprimer les droits d'une personne sur une archive
+
+@prefix antony: <http://www.cnsmdp.fr/antony/id/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iremusdata: <http://data-iremus.huma-num.fr/id/> .
+@prefix iremusgraphs: <http://data-iremus.huma-num.fr/graph/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sherlockns: <http://data-iremus.huma-num.fr/ns/sherlock#> .
+
+################################################################################
+# DONNÉES
+################################################################################
+
+# L'archive
+
+antony:nebuloritmia_archive
+    rdf:type crm:E73_Information_Object ;
+    crm:P1_is_identified_by "Quintana.zip" ;
+    crm:P148_has_component antony:poster ;
+    crm:P148_has_component antony:main-patch1 ;
+    .
+
+antony:poster
+    rdf:type crm:E73_Information_Object ;
+    crm:P2_has_type antony:fiche_synthétique ;
+    crm:P1_is_identified_by antony:poster_nom_fichier ;
+    .
+
+antony:poster_nom_fichier
+    rdf:type crm:E42_Identifier ;
+    crm:P2_has_type antony:nom_de_fichier ;
+    crm:P190_has_symbolic_content "poster1.jpg" ;
+    .
+
+antony:main-patch1
+    rdf:type crm:E73_Information_Object ;
+    crm:P1_is_identified_by antony:main-patch1_nom_fichier ;
+    crm:P2_has_type antony:patch_max ;
+    sherlockns:version "7.3.5" ;
+    sherlockns:architecture "x64" ;
+    .
+
+antony:main-patch1_nom_fichier
+    rdf:type crm:E42_Identifier ;
+    crm:P2_has_type antony:nom_de_fichier ;
+    crm:P190_has_symbolic_content "MaxQuintana/z_Patches_NebuloRitmia(19-fev-2020)/00_Main-patch-1.maxpat" ;
+    .
+
+################################################################################
+# THÉSAURUS
+################################################################################
+
+antony:fiche_synthétique
+    rdf:type skos:Concept ;
+    skos:prefLabel "Fiche synthétique"@fr ;
+    skos:inScheme antony:thésaurus_types_items ;
+    .
+
+antony:patch_max
+    rdf:type skos:Concept ;
+    skos:prefLabel "Patch Max"@fr ;
+    skos:inScheme antony:thésaurus_types_items ;
+    .
+
+antony:thésaurus_types_items
+    rdf:type skos:ConceptScheme ;
+    dcterms:title "Thésaurus des types d'items numériques Antony"@fr ;
+    skos:hasTopConcept antony:fiche_synthétique ;
+    skos:hasTopConcept antony:patch_max ;
+    .
+
+antony:nom_de_fichier
+    rdf:type skos:Concept ;
+    skos:prefLabel "Nom de fichier"@fr ;
+    .
