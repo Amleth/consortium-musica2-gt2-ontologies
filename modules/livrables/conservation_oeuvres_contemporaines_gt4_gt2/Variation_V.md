@@ -2,7 +2,7 @@
 
 ### **a. Besoins musicologiques**
 
-À la suite d'un atelier partagé avec le GT4 du Consortium Musica2, il nous a semblé important de modéliser une œuvre contemporaine dont la définition exacte ne fasse pas encore l'unanimité au sein de la communauté scientifique, afin de mettre en exergue l'incertitude entourant les notions de _co-authorship_ issue d'une collaboration pluri-disciplinaire. Nous pouvons ici démontrer l'expressivité de l'ontologie CIDOC CRM pour représenter des objets complexes.
+À la suite d'un atelier partagé avec le GT4 du Consortium Musica2, il nous a semblé important de modéliser une œuvre contemporaine dont la définition exacte ne fasse pas encore l'unanimité au sein de la communauté scientifique, afin de mettre en exergue l'incertitude entourant les notions de _co-authorship_ issue d'une collaboration pluri-disciplinaire. Nous pouvons ici démontrer l'expressivité de l'ontologie CIDOC CRM pour représenter des objets complexes, tels que _Variations V_ (1964), dont l'effectif annoncé - pour interprètes avec cellules photoélectrique et un minimum de treize sources sonores amplifiées - est déjà révélateur d'une approche singulière de l'écriture. La pièce brouille les frontières entre composition et performance, puisque les deux temps de l'œuvre sont interconnectés pour lui donner une existence propre.
 
 ### **b. Problématisation**
 
