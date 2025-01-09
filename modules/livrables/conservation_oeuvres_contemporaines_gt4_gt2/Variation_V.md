@@ -2,6 +2,8 @@
 
 ### **a. Besoins musicologiques**
 
+À la suite d'un atelier partagé avec le GT4 du Consortium Musica2, il nous a semblé important de modéliser une œuvre contemporaine dont la définition exacte ne fait pas encore l'unanimité au sein de la communauté scientifique. 
+
 ### **b. Problématisation**
 
 ### **c. Contextualisation technique**
