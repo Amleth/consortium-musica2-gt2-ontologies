@@ -23,6 +23,7 @@
 antony:nebuloritmia_archive
     rdf:type crm:E73_Information_Object ;
     crm:P1_is_identified_by "Quintana.zip" ;
+    crm:P2_has_type antony:archive ;
     crm:P148_has_component antony:poster ;
     crm:P148_has_component antony:main-patch1 ;
     .
@@ -53,6 +54,39 @@ antony:main-patch1_nom_fichier
     crm:P190_has_symbolic_content "MaxQuintana/z_Patches_NebuloRitmia(19-fev-2020)/00_Main-patch-1.maxpat" ;
     .
 
+# Version
+
+antony:version2
+    rdf:type crm:E29_Design_or_Procedure ;
+    crm:P1_is_identified_by "Version 2 de Nebuloritmia" ;
+    crm:P2_has_type antony:version ;
+    crm:P148_has_component antony:nebuloritmia_archive ; # il peut y en avoir plusieurs
+    .
+
+# Performance
+
+antony:performance2
+    rdf:type lrmoo:F31_Performance ;
+    crm:P7_took_place_at antony:amuse ;
+    crm:P4_has_time-span [
+        rdf:type crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin "2021-02-08" ;
+        crm:P82b_end_of_the_end "2021-02-08" ;
+    ] ;
+    .
+
+antony:amuse
+    rdf:type crm:E53_Place ;
+    crm:P1_is_identified_by "Auditorium de la maison de l'université de Saint-Étienne" ;
+    crm:P171_at_some_place_within "45,42473° N, 4,39264° E" ;
+    crm:P89_falls_within antony:se ;
+    .
+
+antony:se
+    rdf:type crm:E53_Place ;
+    crm:P1_is_identified_by "Saint-Étienne" ;
+    .
+
 ################################################################################
 # THÉSAURUS
 ################################################################################
@@ -69,14 +103,26 @@ antony:patch_max
     skos:inScheme antony:thésaurus_types_items ;
     .
 
+antony:archive
+    rdf:type skos:Concept ;
+    skos:prefLabel "Archive"@fr ;
+    skos:inScheme antony:thésaurus_types_items ;
+    .
+
 antony:thésaurus_types_items
     rdf:type skos:ConceptScheme ;
     dcterms:title "Thésaurus des types d'items numériques Antony"@fr ;
     skos:hasTopConcept antony:fiche_synthétique ;
     skos:hasTopConcept antony:patch_max ;
+    skos:hasTopConcept antony:archive ;
     .
 
 antony:nom_de_fichier
     rdf:type skos:Concept ;
     skos:prefLabel "Nom de fichier"@fr ;
+    .
+
+antony:version
+    rdf:type skos:Concept ;
+    skos:prefLabel "Version"@fr ;
     .
