@@ -46,14 +46,19 @@ Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines 
 ###### Renseignement d'un ou plusieurs compositeurs
 
 Clé HUMDRUM : COM
+
 Définition : Indique le nom du compositeur de l'œuvre.
+
 Chapitre des Guidelines : 3.6 Work Description
+
 Balise : <composer>
+
 Autre option : <persName role="creator">
+
 Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI, et non une oeuvre tierce. À noter aussi que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation. (Citer ici des exemples). Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
 
-
 Exemple : 
+```
 <workList xml:id=""..."">
    <work xml:id=""..."">
       <composer xml:id=""..."">
@@ -61,6 +66,7 @@ Exemple :
       </composer>
    </work>
 </workList>
+```
 
 Dans le cas de plusieurs compositeurs, recourir à une numération dans le cadre de role ou de l'xml id. Ex :
 
