@@ -53,9 +53,9 @@ Chapitre des Guidelines : 3.6 Work Description
 
 Balise : `<composer>`
 
-Autre option : <persName role="creator">
+Autre option : `<persName role="creator">`
 
-Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI, et non une oeuvre tierce. À noter aussi que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation. (Citer ici des exemples). Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
+Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. À noter également que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation. (Citer ici des exemples). Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
 
 Exemple : 
 ```
@@ -180,9 +180,9 @@ Clé HUMDRUM : CNT
 
 Définition : Indique la nationalité du compositeur.
 
-Chapitre des Guidelines : -
+Chapitre des Guidelines : 3.6 Work Description
 
-Balise : `<annot>` avec l'attribut @label
+Balise : `<annot>` 
 
 Recommandations : Peut être omis si le compositeur est référencé avec une URI externe.
 
@@ -226,6 +226,31 @@ Exemple :
    </work>
 </workList>
 ```
+### Nom du librettiste
+
+Clé HUMDRUM : LIB
+
+Définition : Indique le nom du librettiste de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise : `<librettist>`
+
+Autre option : `<persName role="librettist">`
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <librettist>
+         <persName auth.uri=""...""></persName>
+      </librettist>   
+   </work>
+</workList>
+```
+
+### Nom de l'arrangeur 
+
 
 
 #### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
