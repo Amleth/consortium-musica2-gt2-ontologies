@@ -68,13 +68,12 @@ Dans le cas de plusieurs compositeurs, recourir à une numération dans le cadre
 
 ###### Compositeur attribué
 
-Clé HUMDRUM : COA
-Définition : Désigne un compositeur attribué sur la base de preuves internes, externes ou par conjecture.
-Chapitre des Guidelines : 3.6 Work Description
-Balise : <composer evidence="..." >
-Autre option : <persName>
-Recommandations :
-La provenance de l’attribution doit être précisée à l'aide de l'attribut @evidence et des valeurs suivantes="internal, external, conjecture".
+Clé HUMDRUM : COA  
+Définition : Désigne un compositeur attribué sur la base de preuves internes, externes ou par conjecture.  
+Chapitre des Guidelines : 3.6 Work Description  
+Balise : <composer evidence="..." >  
+Autre option : <persName>  
+Recommandations : La provenance de l’attribution doit être précisée à l'aide de l'attribut @evidence et des valeurs suivantes="internal, external, conjecture".  
 
 Exemple :
 <workList xml:id=""..."">
