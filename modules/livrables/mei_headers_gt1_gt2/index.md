@@ -27,23 +27,23 @@ Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines 
 - _meiHead_
    - Le Mei Header est le lieu approprié pour accueillir toutes les métadonnées concernant les sources sur lesquels se base l'édition critique. D'un point de vue technique il s'agit de procéder avec une _recensio_ complète, qui regroupe toutes les sources de la tradition directe (celle de la "expression" principale de l'œuvre) et tradition indirecte (celle qui prend en compte toute autre "expression" : traductions, parodies, commentaires/gloses, _scholiae_, citations, etc.)
 
-#### Common Metadata Concepts (3.3) - Concepts sur les métadonnées communes - (optionnel finalement, un peu redondant) 
+## Common Metadata Concepts (3.3) - Concepts sur les métadonnées communes - (optionnel finalement, un peu redondant) 
 
-#### Information about an MEI file (3.4) - Informations sur un fichier MEI
+## Information about an MEI file (3.4) - Informations sur un fichier MEI
 
-##### File description 
+### File description 
 
-##### Edition Statement
+### Edition Statement
 
-##### Revision Description
+### Revision Description
 
-#### Functional Requirements for Bibliographic Records (3.5) - FRBR
+## Functional Requirements for Bibliographic Records (3.5) - FRBR
 
-#### Work Description (3.6) - Description de l'oeuvre
+## Work Description (3.6) - Description de l'oeuvre
 
-##### Work Identification
+### Work Identification
 
-###### Renseignement d'un ou plusieurs compositeurs
+#### Renseignement d'un ou plusieurs compositeurs
 
 Clé HUMDRUM : COM
 
@@ -51,7 +51,7 @@ Définition : Indique le nom du compositeur de l'œuvre.
 
 Chapitre des Guidelines : 3.6 Work Description
 
-Balise : <composer>
+Balise : `<composer>`
 
 Autre option : <persName role="creator">
 
@@ -70,18 +70,24 @@ Exemple :
 
 Dans le cas de plusieurs compositeurs, recourir à une numération dans le cadre de role ou de l'xml id. Ex :
 
-<persName role="creator1"> 
+`<persName role="creator1">`
 
-###### Compositeur attribué
+#### Compositeur attribué
 
-Clé HUMDRUM : COA  
+Clé HUMDRUM : COA 
+
 Définition : Désigne un compositeur attribué sur la base de preuves internes, externes ou par conjecture.  
+
 Chapitre des Guidelines : 3.6 Work Description  
-Balise : <composer evidence="..." >  
-Autre option : <persName>  
+
+Balise : `<composer evidence="...">` 
+
+Autre option : `<persName>`
+
 Recommandations : La provenance de l’attribution doit être précisée à l'aide de l'attribut @evidence et des valeurs suivantes="internal, external, conjecture".  
 
 Exemple :
+```
 <workList xml:id=""..."">
    <work xml:id=""..."">
       <composer xml:id=""..."" evidence=""..."" (internal, external or conjecture)>
@@ -89,18 +95,25 @@ Exemple :
       </composer>
    </work>
 </workList>
+```
 
-###### Compositeur soupçonné
+#### Compositeur soupçonné
 
 Clé : COS
+
 Définition : Désigne un compositeur soupçonné avec un niveau de certitude.
+
 Chapitre des Guidelines : 3.6 Work Description
-Balise : <composer>
-Autre option : <persName>
+
+Balise : `<composer>`
+
+Autre option : `<persName>`
+
 Recommandations : Il est conseillé d’utiliser l’attribut @cert pour indiquer le degré de certitude. Les valeurs autorisées sont : high, 
 medium, low ou unknown.
 
 Exemple:
+```
 <workList xml:id="...">
    <work xml:id="...">
       <composer xml:id="..." cert="low">
@@ -108,18 +121,24 @@ Exemple:
       </composer>
    </work>
 </workList>
+```
 
-##### Alias ou pseudonyme du compositeur
+### Alias ou pseudonyme du compositeur
 
 Clé : COL
+
 Définition : Indique un alias ou pseudonyme d’un compositeur.
+
 Chapitre des Guidelines : 3.6 Work Description
-Balise : <persName> et <foreName>
-Autre option : <foreName> et <famName>
+
+Balise : `<persName>` et `<foreName>`
+
+Autre option : `<foreName>` et `<famName>`
+
 Recommandations : Peut être utilisé pour les noms d’emprunt, les noms de plume ou les pseudonymes historiques. Il est à noter que d'autres balises peuvent couvrir des sens de nomination plus fins : famName, genName, addName, genName, nameLink, et roleName. Leur gestion est sensiblement identique à celle de <foreName>.
 
 Exemple :
-
+```
 <workList xml:id="...">
    <work xml:id="...">
       <composer xml:id="...">
@@ -130,6 +149,83 @@ Exemple :
       </composer>
    </work>
 </workList>
+```
+
+### Dates de naissance et de décès du compositeur
+
+Clé HUMDRUM : CDT
+
+Définition : Indique les dates de naissance et de décès du compositeur.
+
+Chapitre des Guidelines : -
+
+Balise : `<persName>` avec les attributs @startdate et @enddate.
+
+Recommandations : Peut être omis si le compositeur est référencé avec une URI externe.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="...">
+          <persName startdate="1685" enddate="1750" auth.uri="http://...">Nom du compositeur</persName>
+      </composer>
+   </work>
+</workList>
+```
+
+### Nationalité du compositeur
+
+Clé HUMDRUM : CNT
+
+Définition : Indique la nationalité du compositeur.
+
+Chapitre des Guidelines : -
+
+Balise : `<annot>` avec l'attribut @label
+
+Recommandations : Peut être omis si le compositeur est référencé avec une URI externe.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="...">
+          <persName auth.uri="http://...">Nom du compositeur</persName>
+          <annot label="nationality">Français</annot>
+      </composer>
+   </work>
+</workList>
+```
+
+### Lieu de naissance et de décès d'un compositeur
+
+Clé HUMDRUM : CBL et CDL
+
+Définition : Indique le lieu de naissance et de décès d'un compositeur.
+
+Chapitre des Guidelines : -
+
+Balise : `<persName>` et `<date>` avec les attributs @startdate et @enddate.
+
+Recommandations : Peut être omis si le compositeur est référencé avec un URI externe. Il est conseillé d'utiliser un URI, via @auth.uri, pour préciser le lieu. Nous préconisons l'usage d'un URI GeoNames.  
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <composer xml:id=""..."">
+          <persName auth.uri=""http://..."">...</persName>
+          <date stardate=""..."">
+             <country auth.uri="...">XXX</country>
+          </date>
+          <date enddate=""..."">
+             <country>XXX</country>
+         </date>     
+      </composer>
+   </work>
+</workList>
+```
 
 
 #### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
