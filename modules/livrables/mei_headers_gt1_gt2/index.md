@@ -2,7 +2,9 @@
 
 ### 1. Présentation générale de l'approche méthodologique
 
-Ce document vise à proposer un protocole détaillé de renseignement des métadonnées au sein des headers MEI dans le cas d'éditions critiques sous format numérique. Notre objectif est d'établir une sorte de guide spécifique pour les éditions critiques en MEI et de préciser où placer les informations philologiquement nécessaires, en proposant des choix réflechis au détriment de la liberté habituellement accordée à l'encodeur par le lignes guides MEI. Fixer des paramètres partagés et réconnus par la communauté musicologique permettra de créer de fichiers MEI qui pourront être contrôlés, vérifiés et échangés au profit de la transparence scientifique et de l'interopérabilité. Pour ce faire, le modèle FRBR appliqué à l'encodage MEI sera privilégié et suivi d'une manière ponctuelle. 
+Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, vise à proposer un protocole détaillé de renseignement des métadonnées au sein des headers MEI dans le cadre des éditions critiques sous format numérique. L’objectif est d'établir un guide dédié aux éditions critiques encodées en MEI (Music Encoding Initiative) et de préciser où disposer les informations éditoriales et philologiques nécessaires, en proposant des choix réfléchis au détriment de la liberté habituellement accordée à l'encodeur par les guidelines MEI. Fixer des paramètres partagés et reconnus par la communauté musicologique permettra de créer des fichiers MEI qui pourront être contrôlés, vérifiés et échangés au profit de la transparence scientifique et de l'interopérabilité. Pour ce faire, le modèle FRBR appliqué à l'encodage MEI sera privilégié et suivi à l’occasion.
+
+### Partie plus tardive
 
 Les besoins de l'édition critique textuelle se sont historiquement structurés à partir de deux modèles philologiques principaux. Le premier d'entre eux, que l'on doit à l'allemand Karl Lachmann (1793 - 1851), s'articule en cinq points, en débutant par la _recensio_, soit l'identification des sources et l'étude de la tradition. La _recensio_ consiste en deux étapes, la première desquelles s'occupe de différencier les sources de la « tradition directe » - tous les exemplaires qui transmettent l'œuvre en question - et les sources de la « tradition indirecte » – les traductions, citations, commentaires et parodies. Une fois cette première étape terminée, la seconde étape de la _recensio_ peut s'effectuer afin de procéder au dépouillement des toutes les sources recoltées et au recensement détaillé proprement dit. Le troisième point de la méthode est la _collatio_, qui consiste en la compairaison systématique des variantes et des erreurs attestés dans les sources, avant de démarer une étape plus critique, l'_eliminatio codicum descriptorum_, qui consiste à éliminer les exemplaires qui sont la copie exacte d'autres exemplaires conservés, afin de constituer un corpus cohérent et propice au _stemma codicum_, la dernière étape du processus consistant en la détermination de la relation entre les sources. Cette dernière étape permet l'établissement d'un arbre généalogique des sources représentant la tradition d'une œuvre.
 
@@ -14,12 +16,120 @@ Dans le cadre de la présentation de notre protocole de renseignement des métad
 
 ### 2. Approche des GT1 et GT2 pour la complétion des headers MEI
 
-L'appui sur les normes FRBR nous parait central, afin de rendre interopérables les éditions critiques encodées en MEI : la tendance de laisser le maximum de liberté à l'encodeur pour le renseignement des métadonnées dans le header Mei mine l'interopérabilité des fichiers MEI ainsi produits, résultats de la sensibilité de chaque encodeur et de son interprétation personnelle. La création de fichiers MEI hétéroclites empêche également la trasparence scientifique qui se doit à une édition critique, dont la précision du travail fait en amont de la _restitutio textus_ doit toujours être vérifiable et immédiatement repérable. D'où l'urgence de fixer un protocole de saisie partagé par la communauté scientifique. Dans ce cadre, les normes FRBR proposées par le biais de la MEI, qui à partir de l‘œuvre s'articulent en listes des expressions, des manifestations puis des items, correspondent précisement à la _recensio_ la plus complète possible, ce qui est la premesse méthodologique de chaque édition critique : le header MEI doit donc suivre l'arborescence FRBR et être renseigné de la manière la plus rigoureuse possible. Dans notre protocole, il est fortement recommandé de se tenir au principe de la redondance : toutes les informations nécessaires doivent être renseignées à chaque niveau du modèle FRBR. Il est ainsi probable que des métadonnées soient régulièrement répétées, par exemple le nom du compositeur ou le titre de l’œuvre.
+L’interopérabilité des éditions critiques encodées en MEI repose sur l’adoption de normes partagées qui garantissent la cohérence et la compatibilité des fichiers produits. Actuellement, la grande liberté laissée aux encodeurs pour le renseignement des métadonnées dans le header MEI nuit à cette interopérabilité, en raison des choix individuels et des interprétations subjectives qui en résultent. Une telle hétérogénéité complique non seulement l’échange et l’exploitation des données, mais compromet également la transparence scientifique, un impératif fondamental des éditions critiques. C'est pourquoi nous proposons ici de proposer des alternatives d'encodage en FRBR ainsi que, le cas échéants, des alignements avec les clés de métadonnées HUMDRUM. 
 
-Nous détaillons ci-dessous notre protocole en prenant appui sur le modèle des _guidelines_ MEI, afin d'en faciliter l'approche. Notons que des exemples concrets sont joints au sein du _repository_, ainsi qu'un modèle vierge qui pourra être copié et rempli au sein des headers des utilisateurs, pour une interopérabilité maximale. 
+### Pareil ici, trop philologique, à voir plus tard
+La création de fichiers MEI hétéroclites empêche également la trasparence scientifique qui se doit à une édition critique, dont la précision du travail fait en amont de la _restitutio textus_ doit toujours être vérifiable et immédiatement repérable. D'où l'urgence de fixer un protocole de saisie partagé par la communauté scientifique. Dans ce cadre, les normes FRBR proposées par le biais de la MEI, qui à partir de l‘œuvre s'articulent en listes des expressions, des manifestations puis des items, correspondent précisement à la _recensio_ la plus complète possible, ce qui est la premesse méthodologique de chaque édition critique : le header MEI doit donc suivre l'arborescence FRBR et être renseigné de la manière la plus rigoureuse possible. Dans notre protocole, il est fortement recommandé de se tenir au principe de la redondance : toutes les informations nécessaires doivent être renseignées à chaque niveau du modèle FRBR. Il est ainsi probable que des métadonnées soient régulièrement répétées, par exemple le nom du compositeur ou le titre de l’œuvre.
 
+Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines MEI afin d’en faciliter l’adoption et la mise en œuvre. Pour illustrer concrètement ces recommandations, des exemples détaillés sont intégrés au repository, accompagnés d’un modèle vierge prêt à l’emploi. 
+
+### Je propose de ne pas introduire le meiHead, on perfectionne les choses mais on ne traduit pas les guidelines
 - _meiHead_
    - Le Mei Header est le lieu approprié pour accueillir toutes les métadonnées concernant les sources sur lesquels se base l'édition critique. D'un point de vue technique il s'agit de procéder avec une _recensio_ complète, qui regroupe toutes les sources de la tradition directe (celle de la "expression" principale de l'œuvre) et tradition indirecte (celle qui prend en compte toute autre "expression" : traductions, parodies, commentaires/gloses, _scholiae_, citations, etc.)
+
+#### Common Metadata Concepts (3.3) - Concepts sur les métadonnées communes - (optionnel finalement, un peu redondant) 
+
+#### Information about an MEI file (3.4) - Informations sur un fichier MEI
+
+##### File description 
+
+##### Edition Statement
+
+##### Revision Description
+
+#### Functional Requirements for Bibliographic Records (3.5) - FRBR
+
+#### Work Description (3.6) - Description de l'oeuvre
+
+##### Work Identification
+
+###### Renseignement d'un ou plusieurs compositeurs
+
+Clé HUMDRUM : COM
+Définition : Indique le nom du compositeur de l'œuvre.
+Chapitre des Guidelines : 3.6 Work Description
+Balise : <composer>
+Autre option : <persName role="creator">
+Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI, et non une oeuvre tierce. À noter aussi que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation. (Citer ici des exemples). Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
+
+
+Exemple : 
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <composer xml:id=""..."">
+          <persName role=""creator"" (""composer"") auth.uri=""http://..."">...</persName>
+      </composer>
+   </work>
+</workList>
+
+Dans le cas de plusieurs compositeurs, recourir à une numération dans le cadre de role ou de l'xml id. Ex :
+
+<persName role="creator1"> 
+
+###### Compositeur attribué
+
+Clé HUMDRUM : COA
+Définition : Désigne un compositeur attribué sur la base de preuves internes, externes ou par conjecture.
+Chapitre des Guidelines : 3.6 Work Description
+Balise : <composer evidence="..." >
+Autre option : <persName>
+Recommandations :
+La provenance de l’attribution doit être précisée à l'aide de l'attribut @evidence et des valeurs suivantes="internal, external, conjecture".
+
+Exemple :
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <composer xml:id=""..."" evidence=""..."" (internal, external or conjecture)>
+          <persName auth.uri=""http://..."">...</persName>
+      </composer>
+   </work>
+</workList>
+
+###### Compositeur soupçonné
+
+Clé : COS
+Définition : Désigne un compositeur soupçonné avec un niveau de certitude.
+Chapitre des Guidelines : 3.6 Work Description
+Balise : <composer>
+Autre option : <persName>
+Recommandations : Il est conseillé d’utiliser l’attribut @cert pour indiquer le degré de certitude. Les valeurs autorisées sont : high, 
+medium, low ou unknown.
+
+Exemple:
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="..." cert="low">
+          <persName role="suspected creator" auth.uri="http://...">Nom soupçonné</persName>
+      </composer>
+   </work>
+</workList>
+
+##### Alias ou pseudonyme du compositeur
+
+Clé : COL
+Définition : Indique un alias ou pseudonyme d’un compositeur.
+Chapitre des Guidelines : 3.6 Work Description
+Balise : <persName> et <foreName>
+Autre option : <foreName> et <famName>
+Recommandations : Peut être utilisé pour les noms d’emprunt, les noms de plume ou les pseudonymes historiques. Il est à noter que d'autres balises peuvent couvrir des sens de nomination plus fins : famName, genName, addName, genName, nameLink, et roleName. Leur gestion est sensiblement identique à celle de <foreName>.
+
+Exemple :
+
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="...">
+          <persName role="creator" auth.uri="http://...">Nom réel</persName>
+          <persName>
+            <foreName>Alias</foreName>
+          </persName>  
+      </composer>
+   </work>
+</workList>
+
+
+#### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
+
+
 
 **On utilise 0 lorsque l'on est en presence de la source originale (normalement l'autographe de l'œuvre) et oméga "⍵" lorsque la source originale de l'œuvre ne nous est pas parvenue**
 
