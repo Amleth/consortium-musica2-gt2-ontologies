@@ -53,9 +53,11 @@ Chapitre des Guidelines : 3.6 Work Description
 
 Balise : `<composer>`
 
-Autre option : `<persName role="creator">`
+Autre option (conseillé) : `<persName role="creator"> ; `<persName role="composer"> 
 
-Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. À noter également que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation. (Citer ici des exemples). Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
+Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. À noter également que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation. Les guidelines MEI suggèrent les Marc relators, bien que la notion de compositeur soit floue (elle se confond en effet dans le sens de _creator_. Nous conseillons pour les fonctions musicales le vocabulaire Doremus https://data.doremus.org/vocabulary/function/. 
+
+Pour finir, nous préconisons de renseigner un URI caractérisant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici, préciser les référentiels). C'est pourquoi nous privilégeons toujours le recours à la balise <persName> permettant d'utiliser les attributs concernés @auth et @auth.uri (montrer dans l'exemple). 
 
 Exemple : 
 ```
@@ -248,12 +250,102 @@ Exemple :
    </work>
 </workList>
 ```
-
 ### Nom de l'arrangeur 
 
+Clé HUMDRUM : LAR
+
+Définition : Indique le nom de l'arrangeur de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise : `<arranger>`
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <arranger>
+         <persName auth.uri=""...""></persName>
+      </arranger>   
+   </work>
+</workList>
+```
+
+### Nom de l'orchestrateur
+
+Clé HUMDRUM : LOR
+
+Définition : Indique le nom de l'orchestrateur de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise : `<arranger>` et @role
+
+Recommendations : Suivant les guidelines MEI pour la balise <arranger>, il est seulement question du sens "commun" : celui qui transcrit la pièce pour une nomenclature musicale différente de l'originale. On peut donc préciser à l'aide de @role, mais "orchestrator" n'est pas dans le vocabulaire des Marc Relators conseillé dans les guidelines MEI. Nous conseillons donc à nouveau le recours au vocabulaire Doremus des fonctions : https://data.doremus.org/vocabulary/function/. 
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <arranger>
+         <persName role=""orchestrator"" auth.uri=""...""></persName>
+      </arranger>   
+   </work>
+</workList>
+```
+### Langue originale de l'oeuvre
+
+Clé HUMDRUM : TXO
+
+Définition : Indique la langue originale de l'oeuvre encodée. 
+
+Chapitre des Guidelines : -
+
+Balise : `<langUsage>` et `<language>`
+
+Recommendations : Nous recommandons d'ajouter en identifiant externe le code ISO de la langue concernée, surtout afin de préciser des nuances dialectales difficiles à renseigner avec concision.  
+
+Par ailleurs, si la langue originale est également celle conservée dans l'édition numérique, il semble que `<language>` seul permet de renseigner efficacement cette information. `<langUsage>` a surtout pour fonction de structurer différentes langues et leurs usages. 
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <langUsage>
+         <language auth.uri=""https://iso639-3.sil.org/code/fra"" uri=""ISO 639"">...</language>
+     </langUsage>          
+   </work>
+</workList>
+```
+### Langue adoptée pour l'encodage de l'oeuvre 
+
+Clé HUMDRUM : TXL
+
+Définition : Indique la langue utilisée afin d'encoder l'oeuvre dans l'édition numérique. Elle peut être identique à la langue originale ou différente dans le cas de traduction, de modernisation ou d'adaptation du texte. 
+
+Chapitre des Guidelines : -
+
+Balise : `<langUsage>` et `<language>`
+
+Recommendations : Nous recommandons d'ajouter en identifiant externe le code ISO de la langue concernée, surtout afin de préciser des nuances dialectales difficiles à renseigner avec concision.  
+
+En revanche, en cas de traduction au sein du fichier, il semble que la seule possibilité en MEI (en raison de l'absence de la balise `<ProfilDesc>` rencontrée en TEI) est de préciser à l'aide de l'attribut @type s'il est question de la langue originale ou de la traduction, cela toujours dans `<work>`, ou `<manifestation>` et `<expression>` (dans le cas du modèle FRBR). Il demeure important de cibler vers @xml:id dans <verse> à l'aide de @xml:lang. Voir l'usage dans le chapitre "3.6.6 Language Usage" des guidelines. Cependant, il y a quelque chose d'obscur à ce sujet. Ce n'est pas clair si l'élément `<LangUsage>` a pour objectif de représenter la/les langues de l'oeuvre ou celle(s) utilisée(s) dans la partie `<music>`. 
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <langUsage>
+         <language xml:id=""Lat"" type=""original"">...</language>
+         <language xml:id=""Fr"" type=""translation"">...</language>
+     </langUsage>          
+   </work>
+</workList>
+```
 
 
 #### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
+
 
 
 
