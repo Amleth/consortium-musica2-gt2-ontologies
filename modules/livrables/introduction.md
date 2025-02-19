@@ -12,22 +12,23 @@ Ainsi les bases de données de la musicologie contiennent-elles bien souvent des
 
 > *« Alors que le haut Moyen Âge ne connaissait que de modestes subdivisions du texte, reposant moins sur des signes spécifiques que sur des ornements (rehaussement des lettres initiales par la couleur, changements d’écriture, décorations diverses), on passe à un véritable système de techniques auxiliaires de la lecture et de la consultation du livre, destinées à identifier rapidement le passage que l’on recherche : rubrication, découpage en paragraphes, titres de chapitre, séparation du texte et du commentaire, sommaires, tables des concordances des termes, index et tables analytiques alphabétiques. »* (Guglielmo Cavallo & Roger Chartier, *Histoire de la lecture dans le monde occidental*, Points Histoire, 2001)
 
-Dans le champ des systèmes d'information Web, et notamment, comme nous allons le voir, des bases de données scientifiques publiées sur le Web, les enjeux techniques autour de l'adressabilité des sources se traduisent par des questions de mise à disposition en masse des sources numérisées accompagnées de la capacité à générer une [URL](https://fr.wikipedia.org/wiki/Uniform_Resource_Locator) pour chaque fragment qu'un chercheur ou qu'une chercheuse pourrait vouloir pointer ou annoter. Dans le périmètre technique des sources musicales ou textuelles encodées en XML (MEI et TEI), l'enjeu est de rendre les fragments XML [identifiés de manière unique de manière interne au sein des fichiers](https://www.w3.org/TR/2005/REC-xml-id-20050909/) adressables sur le Web via des URL. Pour ce qui concerne les images matricielles, le standard [IIIF](https://iiif.biblissima.fr/) réalise une adressabilité totale de n'importe quel fragment rectangulaire sous la forme d'URL.
+Dans le champ des systèmes d'information Web, et notamment, comme nous allons le voir, des bases de données scientifiques publiées sur le Web, les enjeux techniques autour de l'adressabilité des sources se traduisent par des questions de mise à disposition en masse des sources numérisées accompagnées de la capacité à générer une [URL](https://fr.wikipedia.org/wiki/Uniform_Resource_Locator) pour chaque fragment qu'un chercheur pourrait vouloir pointer ou annoter. Dans le périmètre technique des sources musicales ou textuelles encodées en XML (MEI et TEI), l'enjeu est de rendre les fragments XML [identifiés de manière unique de manière interne au sein des fichiers](https://www.w3.org/TR/2005/REC-xml-id-20050909/) adressables sur le Web via des URL. Pour ce qui concerne les images matricielles, le standard [IIIF](https://iiif.biblissima.fr/) réalise une adressabilité totale de n'importe quel fragment rectangulaire sous la forme d'URL.
 
 Ce sont l'accessibilité et l'adressabilité conjointe des fragments des sources et des données critiques qui s'y rapportent qui constituent la base d'un système d'information scientifique sur le Web.
 
-### Captation du travail critique sur les sources
+### Captation du travail critique sur les sources et du contexte scientifique
 
+Un des critères que l'on peut donner pour fonder le caractère scientifique d'une donnée — entendue ici comme le supplément critique qu'apporte le chercheur ou la chercheuse à la source — est que celle-ci doit être accompagnée d'informations qui contextualisent sa production, telles que :
 
+- **L'auteur et la date.** À l'instar d'une entrée dans un cahier de laboratoire, toute contribution scientifique doit être *signée* et *datée*.
+- **La teneur de l'opération critique exécutée.** Lorsqu'un organologue identifie un instrument de musique sur une peinture, il ne s'agit pas pour le concepteur de la base de données de stocker uniquement un lien entre le fragment d'image et l'identifiant du concept dénotant le type de l'instrument repéré, il faut également stocker le type du geste analytique réalisé, ici, « Identification visuelle d'instrument de musique » (par exemple). C'est la sémantique de l'opération critique qui donne du sens au lien existant entre le fragment de source annoté et le contenu de l'annotation ; autrement dit, quand deux éléments sont connectés (ici, un fragment de source et une annotation), encore faut-il spécifier à quel titre ils le sont.
+- **L'explicitation du contexte interprétatif.** Un travail de production de connaissances s'effectue dans un contexte scientifique explicite. Ainsi, il s'effectue dans la perspective de répondre à une question de recherche, le corpus sur lequel il porte a été constitué selon des critères explicites, il convoque des éléments théoriques et se réfère à des sources identifiables pour construire son argumentation, il s'accomplit dans un cadre socio-scientifique (projet, équipe, institution…), etc.
+- Et bien entendu, l'adressage fin du fragment de la source sur lequel elle porte (cf. *supra*).
+
+L'ensemble de ces éléments définissant le contexte interprétatif contribuent à rendre compréhensibles et réutilisables *ailleurs et plus tard* des données produites *ici et maintenant*.
 
 ### Structuration des connaissances utilisées pour analyser les sources
 
-
-### Captation du contexte interprétatif
-
-<!--
-corpus, critères interprétatifs, structure des projets collaboratifs, cahier de laboratoire
--->
 
 ### Pérennisation des données
 
