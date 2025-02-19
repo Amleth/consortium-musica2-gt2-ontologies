@@ -1,9 +1,3 @@
-<style>
-    div {
-        font-family: monospace;
-    }
-</style>
-
 # Introduction. Pourquoi et comment utiliser une ontologie dans la conception d'une base de données pour la musicologie ?
 
 ## Caractérisation d'une base de données pour la musicologie
@@ -37,7 +31,15 @@ L'ensemble de ces éléments définissant le contexte interprétatif contribuent
 
 ### Structuration des connaissances utilisées pour analyser les sources
 
+Les données avec lesquelles sont annotées 
 
+https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rentiel
+
+https://fr.wikipedia.org/wiki/Th%C3%A9saurus_documentaire
+
+https://fr.wikipedia.org/wiki/Simple_Knowledge_Organization_System
+
+https://fr.wikipedia.org/wiki/Ontologie_(informatique)
 
 ## Le Web sémantique comme milieu idéal pour la publication des données de la recherche
 
