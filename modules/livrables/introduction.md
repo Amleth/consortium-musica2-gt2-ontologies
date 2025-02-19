@@ -8,7 +8,7 @@ Avant de montrer en quoi les technologies et méthodologies du Web sémantique e
 
 La musicologie est une discipline qui étudie le contenu et le contexte de sources de natures très diverses : musique notée, textes théoriques, contenus iconographiques, informations consignées dans des registres, documents administratifs textuels, enregistrements sonores, vidéos, etc. Ces pratiques se prolongent naturellement en milieu numérique, et se conduisent actuellement autour d'objets tels que les fichier [XML MEI](https://music-encoding.org/), [XML TEI](https://tei-c.org/), fichier [images matricielles](https://fr.wikipedia.org/wiki/Image_matricielle), fichiers audio et/ou vidéo, données textuelles structurées (aux formats [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language), [SQL](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_relationnelle), [RDF](https://fr.wikipedia.org/wiki/Resource_Description_Framework), [JSON](https://fr.wikipedia.org/wiki/JavaScript_Object_Notation), etc.).
 
-Ainsi les bases de données de la musicologie contiennent-elles bien souvent des connaissances produites à propos des sources. Afin que ces données puissent faire sens, il faut que leur articulation aux sources soit précise. Pour exemples, une donnée d'analyse musicale devra renvoyer avec précision à l'observable qu'elle qualifie sur la partition (une note, un accord, une phrase, une cadence…), des données transcrivant et annotant une entrée dans un registre devront pointer précisément l'exemplaire, la page et la section auxquels elles se rapportent, une annotation portant sur un détail d'une image devrait pouvoir circonscrire précisément le fragment visuel concerné, etc. Nous nommons adressabilité la capacité technique d'un système d'information permettant d'identifier, de désigner sans ambiguïté et de rendre accessible (« adresser ») un fragment au sein d'un contenu. La possibilité de rendre adressable les fragments afin d'y articuler un commentaire critique constitue une des clef de voûte technique des mondes lettrés, et cette préoccupation cheville l'histoire des supports d'écriture :
+Ainsi les bases de données de la musicologie contiennent-elles bien souvent des connaissances produites à propos des sources. Afin que ces données puissent faire sens, il faut que leur articulation aux sources soit précise. Pour exemples, une donnée d'analyse musicale devra renvoyer avec précision à l'observable qu'elle qualifie sur la partition (une note, un accord, une phrase, une cadence, etc.), des données transcrivant et annotant une entrée dans un registre devront pointer précisément l'exemplaire, la page et la section auxquels elles se rapportent, une annotation portant sur un détail d'une image devrait pouvoir circonscrire précisément le fragment visuel concerné, etc. Nous nommons adressabilité la capacité technique d'un système d'information permettant d'identifier, de désigner sans ambiguïté et de rendre accessible (« adresser ») un fragment au sein d'un contenu. La possibilité de rendre adressable les fragments afin d'y articuler un commentaire critique constitue une des clef de voûte technique des mondes lettrés, et cette préoccupation cheville l'histoire des supports d'écriture :
 
 > *« Alors que le haut Moyen Âge ne connaissait que de modestes subdivisions du texte, reposant moins sur des signes spécifiques que sur des ornements (rehaussement des lettres initiales par la couleur, changements d’écriture, décorations diverses), on passe à un véritable système de techniques auxiliaires de la lecture et de la consultation du livre, destinées à identifier rapidement le passage que l’on recherche : rubrication, découpage en paragraphes, titres de chapitre, séparation du texte et du commentaire, sommaires, tables des concordances des termes, index et tables analytiques alphabétiques. »*
 > 
@@ -24,22 +24,18 @@ Un des critères que l'on peut donner pour fonder le caractère scientifique d'u
 
 - **L'auteur et la date.** À l'instar d'une entrée dans un cahier de laboratoire, toute contribution scientifique doit être *signée* et *datée*.
 - **La teneur de l'opération critique exécutée.** Lorsqu'un organologue identifie un instrument de musique sur une peinture, il ne s'agit pas pour le concepteur de la base de données de stocker uniquement un lien entre le fragment d'image et l'identifiant du concept dénotant le type de l'instrument repéré, il faut également stocker le type du geste analytique réalisé, ici, « Identification visuelle d'instrument de musique » (par exemple). C'est la sémantique de l'opération critique qui donne du sens au lien existant entre le fragment de source annoté et le contenu de l'annotation ; autrement dit, quand deux éléments sont connectés (ici, un fragment de source et une annotation), encore faut-il spécifier à quel titre ils le sont.
-- **L'explicitation du contexte interprétatif.** Un travail de production de connaissances s'effectue dans un contexte scientifique explicite. Ainsi, il s'effectue dans la perspective de répondre à une question de recherche, le corpus sur lequel il porte a été constitué selon des critères explicites, il convoque des éléments théoriques et se réfère à des sources identifiables pour construire son argumentation, il s'accomplit dans un cadre socio-scientifique (projet, équipe, institution…), etc.
+- **L'explicitation du contexte interprétatif.** Un travail de production de connaissances s'effectue dans un contexte scientifique explicite. Ainsi, il s'effectue dans la perspective de répondre à une question de recherche, le corpus sur lequel il porte a été constitué selon des critères explicites, il convoque des éléments théoriques et se réfère à des sources identifiables pour construire son argumentation, il s'accomplit dans un cadre socio-scientifique (projet, équipe, institution, etc.), etc.
 - Et bien entendu, l'adressage fin du fragment de la source sur lequel elle porte (cf. *supra*).
 
 L'ensemble de ces éléments définissant le contexte interprétatif contribuent à rendre compréhensibles et réutilisables *ailleurs et plus tard* des données produites *ici et maintenant*.
 
 ### Structuration des connaissances utilisées pour analyser les sources
 
-Les données avec lesquelles sont annotées les sources peuvent être de deux types : celles créées *ad-hoc* (par exemple, la transcription d'un passage lu sur une source ancienne)
+Les données avec lesquelles sont annotées les sources peuvent être soit créées *ad-hoc* (par exemple, la transcription d'un passage lu sur une source ancienne) soit être piochées dans des [référentiels](https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rentiel) existants (par exemple, un compositeur attribué à une partition manuscrite). Un référentiel « constitu[e] (…) un ensemble d’informations structurées (…) liée[s] à un champ de connaissance spécifique, en vue d'une application systématique ». Il peut s'agir de termes et de concepts réunis dans un [thésaurus](https://fr.wikipedia.org/wiki/Th%C3%A9saurus_documentaire), dont la fonction première est d'organiser le lexique d'un domaine via des relations de type « terme générique/terme spécifique » afin de fournir des ressources pour l'indexation thématique ou l'annotation conceptuelle de documents (tels que le [Getty AAT](https://www.getty.edu/research/tools/vocabularies/aat/), les [vocabulaires du Ministère de la Culture et de la Communication](http://data.culture.fr/thesaurus/page/vocabulaires), [Iconclass](https://iconclass.org/), [](), etc.).Dans le contexte du Web sémantique, on recourt à l'ontologie [SKOS](https://fr.wikipedia.org/wiki/Simple_Knowledge_Organization_System) pour exprimer les thésaurus et à des outils de gestion tels qu'[Opentheso](https://opentheso.huma-num.fr/). Il peut également s'agir de bases de données de personnes, lieux, œuvres, institutions, etc. (telles ques [VIAF](https://viaf.org/), [data.bnf.fr](https://data.bnf.fr/), [ISNI](https://isni.org/), [Geonames](https://www.geonames.org/), [Wikidata](https://www.wikidata.org/), [RISM](https://rism.online/)).
 
-https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rentiel
+Recourir à des référentiels établis, les enrichir, ou constituer de nouveaux référentiels sont des ressorts majeurs dans le partage et l'évolution des connaissances scientifiques. 
 
-https://fr.wikipedia.org/wiki/Th%C3%A9saurus_documentaire
-
-https://fr.wikipedia.org/wiki/Simple_Knowledge_Organization_System
-
-https://fr.wikipedia.org/wiki/Ontologie_(informatique)
+####TODO
 
 ## Le Web sémantique comme milieu idéal pour la publication des données de la recherche
 
@@ -118,6 +114,8 @@ et conceptuelle acquise informellement au fil des projets passés.
 ## Pourquoi utiliser une ontologie sémantique ?
 
 <!--
+https://fr.wikipedia.org/wiki/Ontologie_(informatique)
+
 ▪ Formalisation d’un modèle conceptuel pour un domaine identifié proposant
 des :
 ▪ Classes : types d’entités peuplant le domaine, possiblement organisées selon
