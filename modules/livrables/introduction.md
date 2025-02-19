@@ -1,3 +1,9 @@
+<style>
+    div {
+        font-family: monospace;
+    }
+</style>
+
 # Introduction. Pourquoi et comment utiliser une ontologie dans la conception d'une base de données pour la musicologie ?
 
 ## Caractérisation d'une base de données pour la musicologie
@@ -10,7 +16,9 @@ La musicologie est une discipline qui étudie le contenu et le contexte de sourc
 
 Ainsi les bases de données de la musicologie contiennent-elles bien souvent des connaissances produites à propos des sources. Afin que ces données puissent faire sens, il faut que leur articulation aux sources soit précise. Pour exemples, une donnée d'analyse musicale devra renvoyer avec précision à l'observable qu'elle qualifie sur la partition (une note, un accord, une phrase, une cadence…), des données transcrivant et annotant une entrée dans un registre devront pointer précisément l'exemplaire, la page et la section auxquels elles se rapportent, une annotation portant sur un détail d'une image devrait pouvoir circonscrire précisément le fragment visuel concerné, etc. Nous nommons adressabilité la capacité technique d'un système d'information permettant d'identifier, de désigner sans ambiguïté et de rendre accessible (« adresser ») un fragment au sein d'un contenu. La possibilité de rendre adressable les fragments afin d'y articuler un commentaire critique constitue une des clef de voûte technique des mondes lettrés, et cette préoccupation cheville l'histoire des supports d'écriture :
 
-> *« Alors que le haut Moyen Âge ne connaissait que de modestes subdivisions du texte, reposant moins sur des signes spécifiques que sur des ornements (rehaussement des lettres initiales par la couleur, changements d’écriture, décorations diverses), on passe à un véritable système de techniques auxiliaires de la lecture et de la consultation du livre, destinées à identifier rapidement le passage que l’on recherche : rubrication, découpage en paragraphes, titres de chapitre, séparation du texte et du commentaire, sommaires, tables des concordances des termes, index et tables analytiques alphabétiques. »* (Guglielmo Cavallo & Roger Chartier, *Histoire de la lecture dans le monde occidental*, Points Histoire, 2001)
+> *« Alors que le haut Moyen Âge ne connaissait que de modestes subdivisions du texte, reposant moins sur des signes spécifiques que sur des ornements (rehaussement des lettres initiales par la couleur, changements d’écriture, décorations diverses), on passe à un véritable système de techniques auxiliaires de la lecture et de la consultation du livre, destinées à identifier rapidement le passage que l’on recherche : rubrication, découpage en paragraphes, titres de chapitre, séparation du texte et du commentaire, sommaires, tables des concordances des termes, index et tables analytiques alphabétiques. »*
+> 
+> (Guglielmo Cavallo & Roger Chartier, *Histoire de la lecture dans le monde occidental*, Points Histoire, 2001)
 
 Dans le champ des systèmes d'information Web, et notamment, comme nous allons le voir, des bases de données scientifiques publiées sur le Web, les enjeux techniques autour de l'adressabilité des sources se traduisent par des questions de mise à disposition en masse des sources numérisées accompagnées de la capacité à générer une [URL](https://fr.wikipedia.org/wiki/Uniform_Resource_Locator) pour chaque fragment qu'un chercheur pourrait vouloir pointer ou annoter. Dans le périmètre technique des sources musicales ou textuelles encodées en XML (MEI et TEI), l'enjeu est de rendre les fragments XML [identifiés de manière unique de manière interne au sein des fichiers](https://www.w3.org/TR/2005/REC-xml-id-20050909/) adressables sur le Web via des URL. Pour ce qui concerne les images matricielles, le standard [IIIF](https://iiif.biblissima.fr/) réalise une adressabilité totale de n'importe quel fragment rectangulaire sous la forme d'URL.
 
@@ -30,13 +38,6 @@ L'ensemble de ces éléments définissant le contexte interprétatif contribuent
 ### Structuration des connaissances utilisées pour analyser les sources
 
 
-### Pérennisation des données
-
-<!--
-nouveau contexte socio-technique
-https://www.economie.gouv.fr/files/files/PDF/DP_LoiNumerique.pdf
-
--->
 
 ## Le Web sémantique comme milieu idéal pour la publication des données de la recherche
 
@@ -61,6 +62,15 @@ sémantique à questionner (F. Rastier). Paradigme inadéquat aux sciences de
 l’interprétation.
 
 « Wo aber Gefahr ist, wächst Das Rettende auch. »
+-->
+
+
+<!--
+### Pérennisation des données
+
+nouveau contexte socio-technique
+https://www.economie.gouv.fr/files/files/PDF/DP_LoiNumerique.pdf
+
 -->
 
 ## Problèmes identifiés lors de la conception d'une base de données pour la musicologie
