@@ -31,7 +31,7 @@ L'ensemble de ces éléments définissant le contexte interprétatif contribuent
 
 ### Structuration des connaissances utilisées pour analyser les sources
 
-Les données avec lesquelles sont annotées 
+Les données avec lesquelles sont annotées les sources peuvent être de deux types : celles créées *ad-hoc* (par exemple, la transcription d'un passage lu sur une source ancienne)
 
 https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rentiel
 
