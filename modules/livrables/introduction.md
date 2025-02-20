@@ -39,17 +39,23 @@ Recourir à des référentiels établis, les enrichir, ou constituer de nouveaux
 
 Le paysage « juridico-scientifio-socio-technique » a évolué depuis les premières heures des bases de données en musicologie. La [loi du 7 octobre 2016 pour une  République numérique](https://www.economie.gouv.fr/files/files/PDF/DP_LoiNumerique.pdf) établit le *« [l]ibre accès aux résultats des travaux de recherche publique »* afin de *« [l]ibérer l'innovation en faisant circuler les informations et les savoirs »*. Cette loi place les [principes FAIR](https://www.ccsd.cnrs.fr/principes-fair/) et les notion d'[Open Data](https://5stardata.info/fr/) et de [données ouvertes et liées](https://fr.wikipedia.org/wiki/Linked_open_data) au cœur des impératifs pratiques des projets de recherche (voir aussi la notion de [plan de gestion des données](https://doranum.fr/plan-gestion-donnees-dmp/)).
 
-Le milieu technique le plus efficient pour fonder techniquement ces objectifs est le *Web sémantique*. Le Web initial, [inventé par Tim Berners-Lee en 1991](https://fr.wikipedia.org/wiki/Histoire_d%27Internet), est un Web de documents liés obéissant au paradigme de la bibliothèque : chaque document — ou page Web — est accessible à une adresse (URL) donnée et est destiné à être lu par un humain (sa structure typodispositionnelle étant décrite en [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language)), l'ensemble des pages Web formant un réseau [hypertexte](https://fr.wikipedia.org/wiki/Hypertexte) (terme qui prédate le Web de 26 ans). Complémentairement, le Web sémantique obéit au paradigme de la base de données, et peut être vu comme la promesse d'une base de données à l'échelle du Web. L'unité de connaissance n'est plus la page Web, mais la donnée monadique exprimée sous la forme d'un triplet
+Le milieu technique le plus efficient pour fonder techniquement ces objectifs est le *Web sémantique*. Le Web initial, [inventé par Tim Berners-Lee en 1991](https://fr.wikipedia.org/wiki/Histoire_d%27Internet), est un Web de documents liés obéissant au paradigme de la bibliothèque : chaque document — ou page Web — est accessible à une adresse (URL) donnée et est destiné à être lu par un humain (sa structure typodispositionnelle étant décrite en [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language)), l'ensemble des pages Web formant un réseau [hypertexte](https://fr.wikipedia.org/wiki/Hypertexte) (terme qui prédate le Web de 26 ans). Complémentairement, le Web sémantique obéit au paradigme de la base de données, et peut être vu comme la promesse d'une base de données à l'échelle du Web. L'unité informationnelle n'est plus la page Web, mais la donnée, exprimée sous la forme d'un triplet sujet/prédicat/objet. Le sujet est ce sur quoi porte l'information, l'objet est l'information liée, et le prédicat établit la teneur du lien entre la donnée enrichie (le sujet) et l'enrichissement (l'objet). Par exemple, la connaissance « Camille Saint-Saëns est le créateur de l'œuvre pour piano *Feuillet d'album, opus 169* » peut se traduire par le triplet :
+
+    sujet : https://data.bnf.fr/fr/ark:/12148/cb139515641
+    prédicat : http://purl.org/dc/terms/creator
+    objet : https://data.bnf.fr/fr/ark:/12148/cb13899342r
+
+L'URL qui constitue le sujet de ce triplet représente l'œuvre intitulée *Feuillet d'album, opus 169* telle qu'elle est cataloguée sur [data.bnf.fr](https://data.bnf.fr/). L'URL qui constitue l'objet représente Camille Saint-Saëns tel qu'il est référencé sur le même site. L'URL qui constitue le prédicat dénote le concept de créateur au sens du vocabulaire générique [Dublin Core](https://fr.wikipedia.org/wiki/Dublin_Core), très commun dans le monde du Web sémantique (mais dont la simplicité n'en fait pas un bon candidat pour décrire des données scientifiques). Voici un autre exemple :
+
+    sujet : https://db.ridim.org/display.php?ridim_id=5193
+    prédicat : http://www.cidoc-crm.org/cidoc-crm/P138_represents
+    objet : http://www.mimo-db.eu/InstrumentsKeywords/3668
+
+Ce deuxième triplet exprime que la peinture dont le titre est *Potted pine tree and koto* telle qu'elle est cataloguée par le RIDIM *représente* un koto. Le concept de koto est ici pioché dans le thésaurus international des instruments de musique [MIMO](https://vocabulary.mimo-international.com/InstrumentsKeywords/). Remarquons également que la fixation du sens du verbe *représente* est confié à l'ontologie CIDOC CRM (ce sens est accessible en déréférençant sur l'URL représentant le prédicat).
+
+Ainsi, l'acte de production de connaissance est entièrement explicité : on sait avec précision ce dont on parle, ce qu'on en dit, et sous quelle modalité. Remarquons également que la connexion des triplets forme un graphe. La levée des ambiguïtés est assurée par le recours à des URL qui identifient les objets sur le Web. C'est d'ailleurs en cela que le Web sémantique est sémantique : le *sens* est partagé (à la fois celui des données, mais également celui des modalités qui les connectent via les prédicats). Pour cette raison, le Web sémantique constitue le milieu socio-technique idéal pour exprimer des données FAIR (cf. *supra*) pour l’expression et la diffusion des données de la recherche. Les graphes créés avec les technologies du Web sémantiques sont couramment désignés comme étant des « graphes de connaissances » (*knowledge graphs*). L'expression des triplets du Web sémantique est confiée à un langage de description, le [RDF](https://fr.wikipedia.org/wiki/Resource_Description_Framework).
 
 <!--
-▪ Toute information s’exprime sous la forme d’un triplet (sujet/prédicat/objet) dans
-un langage de description qui est le RDF.
-▪ La connexion de ces triplets RDF forme un graphe.
-▪ Chaque prédicat est également identifié par une URL.
-▪ C’est le milieu technique idéal pour des données FAIR, pour l’expression et la
-diffusion des données de la recherche (publication + nouveaux usages).
-
-
 DIfficultés à exprimer le contexte d'une assertion du fait de la réification. Donc peut adapté, pris tel quel, à exprimer des énoncés scientifiques.
 
 Un sens partagé à l’échelle mondiale ? Origines néopositivistes du Web
