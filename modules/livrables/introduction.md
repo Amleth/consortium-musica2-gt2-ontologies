@@ -41,15 +41,15 @@ Le paysage « juridico-scientifio-socio-technique » a évolué depuis les pre
 
 Le milieu technique le plus efficient pour fonder techniquement ces objectifs est le *Web sémantique*. Le Web initial, [inventé par Tim Berners-Lee en 1991](https://fr.wikipedia.org/wiki/Histoire_d%27Internet), est un Web de documents liés obéissant au paradigme de la bibliothèque : chaque document — ou page Web — est accessible à une adresse (URL) donnée et est destiné à être lu par un humain (sa structure typodispositionnelle étant décrite en [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language)), l'ensemble des pages Web formant un réseau [hypertexte](https://fr.wikipedia.org/wiki/Hypertexte) (terme qui prédate le Web de 26 ans). Complémentairement, le Web sémantique obéit au paradigme de la base de données, et peut être vu comme la promesse d'une base de données à l'échelle du Web. L'unité informationnelle n'est plus la page Web, mais la donnée, exprimée sous la forme d'un triplet sujet/prédicat/objet. Le sujet est ce sur quoi porte l'information, l'objet est l'information liée, et le prédicat établit la teneur du lien entre la donnée enrichie (le sujet) et l'enrichissement (l'objet). Par exemple, la connaissance « Camille Saint-Saëns est le créateur de l'œuvre pour piano *Feuillet d'album, opus 169* » peut se traduire par le triplet :
 
-    sujet : https://data.bnf.fr/fr/ark:/12148/cb139515641
+    sujet    : https://data.bnf.fr/fr/ark:/12148/cb139515641
     prédicat : http://purl.org/dc/terms/creator
-    objet : https://data.bnf.fr/fr/ark:/12148/cb13899342r
+    objet    : https://data.bnf.fr/fr/ark:/12148/cb13899342r
 
 L'URL qui constitue le sujet de ce triplet représente l'œuvre intitulée *Feuillet d'album, opus 169* telle qu'elle est cataloguée sur [data.bnf.fr](https://data.bnf.fr/). L'URL qui constitue l'objet représente Camille Saint-Saëns tel qu'il est référencé sur le même site. L'URL qui constitue le prédicat dénote le concept de créateur au sens du vocabulaire générique [Dublin Core](https://fr.wikipedia.org/wiki/Dublin_Core), très commun dans le monde du Web sémantique (mais dont la simplicité n'en fait pas un bon candidat pour décrire des données scientifiques). Voici un autre exemple :
 
-    sujet : https://db.ridim.org/display.php?ridim_id=5193
+    sujet    : https://db.ridim.org/display.php?ridim_id=5193
     prédicat : http://www.cidoc-crm.org/cidoc-crm/P138_represents
-    objet : http://www.mimo-db.eu/InstrumentsKeywords/3668
+    objet    : http://www.mimo-db.eu/InstrumentsKeywords/3668
 
 Ce deuxième triplet exprime que la peinture dont le titre est *Potted pine tree and koto* telle qu'elle est cataloguée par le RIDIM *représente* un koto. Le concept de koto est ici pioché dans le thésaurus international des instruments de musique [MIMO](https://vocabulary.mimo-international.com/InstrumentsKeywords/). Remarquons également que la fixation du sens du verbe *représente* est confié à l'ontologie CIDOC CRM (ce sens est accessible en déréférençant sur l'URL représentant le prédicat).
 
