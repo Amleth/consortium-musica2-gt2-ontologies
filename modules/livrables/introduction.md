@@ -31,11 +31,13 @@ L'ensemble de ces éléments définissant le contexte interprétatif contribuent
 
 ### Structuration et partage des connaissances utilisées pour analyser les sources
 
-Les données avec lesquelles sont annotées les sources peuvent être soit créées *ad-hoc* (par exemple, la transcription d'un passage lu sur une source ancienne) soit être piochées dans des [référentiels](https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rentiel) existants (par exemple, un compositeur attribué à une partition manuscrite). Un référentiel « constitu[e] (…) un ensemble d’informations structurées (…) liée[s] à un champ de connaissance spécifique, en vue d'une application systématique ». Il peut s'agir de termes et de concepts réunis dans un [thésaurus](https://fr.wikipedia.org/wiki/Th%C3%A9saurus_documentaire), dont la fonction première est d'organiser le lexique d'un domaine via des relations de type « terme générique/terme spécifique » afin de fournir des ressources pour l'indexation thématique ou l'annotation conceptuelle de documents (tels que le [Getty AAT](https://www.getty.edu/research/tools/vocabularies/aat/), les [vocabulaires du Ministère de la Culture et de la Communication](http://data.culture.fr/thesaurus/page/vocabulaires), [Iconclass](https://iconclass.org/), etc.).Dans le contexte du Web sémantique, on recourt à l'ontologie [SKOS](https://fr.wikipedia.org/wiki/Simple_Knowledge_Organization_System) pour exprimer les thésaurus et à des outils de gestion tels qu'[Opentheso](https://opentheso.huma-num.fr/). Il peut également s'agir de bases de données de personnes, lieux, œuvres, institutions, etc. (telles ques [VIAF](https://viaf.org/), [data.bnf.fr](https://data.bnf.fr/), [ISNI](https://isni.org/), [Geonames](https://www.geonames.org/), [Wikidata](https://www.wikidata.org/), [RISM](https://rism.online/)).
+Les données avec lesquelles sont annotées les sources peuvent être soit créées *ad-hoc* (par exemple, la transcription d'un passage lu sur une source ancienne) soit être piochées dans des [référentiels](https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rentiel) existants (par exemple, un compositeur attribué à une partition manuscrite). Un référentiel « constitu[e] (…) un ensemble d’informations structurées (…) liée[s] à un champ de connaissance spécifique, en vue d'une application systématique ». Il peut s'agir de termes et de concepts réunis dans un [thésaurus](https://fr.wikipedia.org/wiki/Th%C3%A9saurus_documentaire), dont la fonction première est d'organiser le lexique d'un domaine via des relations de type « terme générique/terme spécifique » afin de fournir des ressources pour l'indexation thématique ou l'annotation conceptuelle de documents (tels que le [Getty AAT](https://www.getty.edu/research/tools/vocabularies/aat/), les [vocabulaires du Ministère de la Culture et de la Communication](http://data.culture.fr/thesaurus/page/vocabulaires), [Iconclass](https://iconclass.org/), etc.). Dans le contexte du Web sémantique, on recourt à l'ontologie [SKOS](https://fr.wikipedia.org/wiki/Simple_Knowledge_Organization_System) pour exprimer les thésaurus et à des outils de gestion tels qu'[Opentheso](https://opentheso.huma-num.fr/). Il peut également s'agir de bases de données de personnes, lieux, œuvres, institutions, etc. (telles ques [VIAF](https://viaf.org/), [data.bnf.fr](https://data.bnf.fr/), [ISNI](https://isni.org/), [Geonames](https://www.geonames.org/), [Wikidata](https://www.wikidata.org/), [RISM](https://rism.online/)).
 
-Recourir à des référentiels établis, les enrichir, ou constituer de nouveaux référentiels sont des ressorts majeurs dans le partage et l'évolution des données scientifiques sur le Web. Concrètement, pointer vers des URL telles que [https://data.bnf.fr/fr/ark:/12148/cb13899342r](), [https://catalogue.bnf.fr/ark:/12148/cb13899342r](), [https://viaf.org/en/viaf/7575200]() ou [https://www.wikidata.org/wiki/Q150445]() plutôt que d'écrire *« Camille Saint-Saëns »* dans la base de données offre un certain nombre d'avantages pratiques et méthodologiques : désambiguïsation, possibilité d'une automatisation de la récupération des données déjà collectées par les institutions (catalogue des œuvres, formes rejetées du nom, dates, éléments biographiques, etc.) si une [API](https://fr.wikipedia.org/wiki/Interface_de_programmation) publique existe, alignement entre les bases scientifiques, etc. Chacun de ces apports repose sur la mise en œuvre technique de la notion d'adressabilité des données des référentiels via des URL publiques.
+Recourir à des référentiels établis, les enrichir, ou constituer de nouveaux référentiels sont des ressorts majeurs dans le partage et l'évolution des données scientifiques sur le Web. Concrètement, pointer vers des URL telles que [data.bnf.fr/fr/ark:/12148/cb13899342r](https://data.bnf.fr/fr/ark:/12148/cb13899342r), [catalogue.bnf.fr/ark:/12148/cb13899342r](https://catalogue.bnf.fr/ark:/12148/cb13899342r), [viaf.org/en/viaf/7575200](https://viaf.org/en/viaf/7575200) ou [www.wikidata.org/wiki/Q150445](https://www.wikidata.org/wiki/Q150445) plutôt que d'écrire *« Camille Saint-Saëns »* dans la base de données offre un certain nombre d'avantages pratiques et méthodologiques : désambiguïsation, possibilité d'une automatisation de la récupération des données déjà collectées par les institutions (catalogue des œuvres, formes rejetées du nom, dates, éléments biographiques, etc.) si une [API](https://fr.wikipedia.org/wiki/Interface_de_programmation) publique existe, alignement entre les bases scientifiques, etc. Chacun de ces apports repose sur la mise en œuvre technique de la notion d'adressabilité des données des référentiels via des URL publiques.
 
 ## Le Web sémantique comme milieu idéal pour la publication des données de la recherche
+
+
 
 <!--
 Notion de triplet.
@@ -208,3 +210,20 @@ The Departure :
 670 un peu plus que E
 730 un peu moins que F#
 -->
+
+<style>
+    * {
+        cursor: default;
+        font-family: monospace;
+        font-size: 95%;
+    }
+
+    a {
+        color: aquamarine;
+    }
+
+    a:hover {
+        color: deeppink;
+        text-decoration: none;
+    }
+</style>
