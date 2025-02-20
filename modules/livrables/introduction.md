@@ -59,6 +59,8 @@ Enfin, il est important de souligner que l'ambition philosophique sous-jacente a
 
 ## Problèmes identifiés lors de la conception d'une base de données pour la musicologie
 
+Nous avons 
+
 <!--
  L’époque est au FAIR et au LOD. Afin que l’ouverture des données de la
 recherche, leur interopérabilité et leur mise en relation avec des sources de
