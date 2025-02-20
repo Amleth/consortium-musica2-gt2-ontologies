@@ -37,14 +37,11 @@ Recourir à des référentiels établis, les enrichir, ou constituer de nouveaux
 
 ## Le Web sémantique comme milieu idéal pour la publication des données de la recherche
 
+Le paysage « juridico-scientifio-socio-technique » a évolué depuis les premières heures des bases de données en musicologie. La [loi du 7 octobre 2016 pour une  République numérique](https://www.economie.gouv.fr/files/files/PDF/DP_LoiNumerique.pdf) établit le *« [l]ibre accès aux résultats des travaux de recherche publique »* afin de *« [l]ibérer l'innovation en faisant circuler les informations et les savoirs »*. Cette loi place les [principes FAIR](https://www.ccsd.cnrs.fr/principes-fair/) et les notion d'[Open Data](https://5stardata.info/fr/) et de [données ouvertes et liées](https://fr.wikipedia.org/wiki/Linked_open_data) au cœur des impératifs pratiques des projets de recherche (voir aussi la notion de [plan de gestion des données](https://doranum.fr/plan-gestion-donnees-dmp/)).
 
+Le milieu technique le plus efficient pour fonder techniquement ces objectifs est le *Web sémantique*. Le Web initial, [inventé par Tim Berners-Lee en 1991](https://fr.wikipedia.org/wiki/Histoire_d%27Internet), est un Web de documents liés obéissant au paradigme de la bibliothèque : chaque document — ou page Web — est accessible à une adresse (URL) donnée et est destiné à être lu par un humain (sa structure typodispositionnelle étant décrite en [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language)), l'ensemble des pages Web formant un réseau [hypertexte](https://fr.wikipedia.org/wiki/Hypertexte) (terme qui prédate le Web de 26 ans). Complémentairement, le Web sémantique obéit au paradigme de la base de données, et peut être vu comme la promesse d'une base de données à l'échelle du Web. L'unité de connaissance n'est plus la page Web, mais la donnée monadique exprimée sous la forme d'un triplet
 
 <!--
-Notion de triplet.
-
-Promesse d’une base de données à l’échelle du Web. Le Web initial (Tim Berners
-Lee, 1991) était un Web de documents liés (hypertexte), le Web sémantique est
-un Web de données liées, chacune étant identifiée par une URI.
 ▪ Toute information s’exprime sous la forme d’un triplet (sujet/prédicat/objet) dans
 un langage de description qui est le RDF.
 ▪ La connexion de ces triplets RDF forme un graphe.
@@ -63,13 +60,6 @@ l’interprétation.
 -->
 
 
-<!--
-### Pérennisation des données
-
-nouveau contexte socio-technique
-https://www.economie.gouv.fr/files/files/PDF/DP_LoiNumerique.pdf
-
--->
 
 ## Problèmes identifiés lors de la conception d'une base de données pour la musicologie
 
