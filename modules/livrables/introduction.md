@@ -53,19 +53,9 @@ L'URL qui constitue le sujet de ce triplet représente l'œuvre intitulée *Feui
 
 Ce deuxième triplet exprime que la peinture dont le titre est *Potted pine tree and koto* telle qu'elle est cataloguée par le RIDIM *représente* un koto. Le concept de koto est ici pioché dans le thésaurus international des instruments de musique [MIMO](https://vocabulary.mimo-international.com/InstrumentsKeywords/). Remarquons également que la fixation du sens du verbe *représente* est confié à l'ontologie CIDOC CRM (ce sens est accessible en déréférençant sur l'URL représentant le prédicat).
 
-Ainsi, l'acte de production de connaissance est entièrement explicité : on sait avec précision ce dont on parle, ce qu'on en dit, et sous quelle modalité. Remarquons également que la connexion des triplets forme un graphe. La levée des ambiguïtés est assurée par le recours à des URL qui identifient les objets sur le Web. C'est d'ailleurs en cela que le Web sémantique est sémantique : le *sens* est partagé (à la fois celui des données, mais également celui des modalités qui les connectent via les prédicats). Pour cette raison, le Web sémantique constitue le milieu socio-technique idéal pour exprimer des données FAIR (cf. *supra*) pour l’expression et la diffusion des données de la recherche. Les graphes créés avec les technologies du Web sémantiques sont couramment désignés comme étant des « graphes de connaissances » (*knowledge graphs*). L'expression des triplets du Web sémantique est confiée à un langage de description, le [RDF](https://fr.wikipedia.org/wiki/Resource_Description_Framework).
+Ainsi, l'acte de production de connaissance est entièrement explicité : on sait avec précision ce dont on parle, ce qu'on en dit, et sous quelle modalité. Remarquons également que la connexion des triplets forme un graphe. La levée des ambiguïtés est assurée par le recours à des URL qui identifient les objets sur le Web. C'est d'ailleurs en cela que le Web sémantique est sémantique : le *sens* est partagé (à la fois celui des données, mais également celui des modalités qui les connectent via les prédicats). Pour cette raison, le Web sémantique constitue le milieu socio-technique idéal pour exprimer des données FAIR (cf. *supra*) pour l’expression et la diffusion des données de la recherche. Les graphes créés avec les technologies du Web sémantiques sont couramment désignés comme étant des « graphes de connaissances » (*knowledge graphs*). L'expression des triplets du Web sémantique est confiée à un langage de description, le [RDF](https://w3c.github.io/rdf-primer/spec/#section-IRI).
 
-<!--
-DIfficultés à exprimer le contexte d'une assertion du fait de la réification. Donc peut adapté, pris tel quel, à exprimer des énoncés scientifiques.
-
-Un sens partagé à l’échelle mondiale ? Origines néopositivistes du Web
-sémantique à questionner (F. Rastier). Paradigme inadéquat aux sciences de
-l’interprétation.
-
-« Wo aber Gefahr ist, wächst Das Rettende auch. »
--->
-
-
+Enfin, il est important de souligner que l'ambition philosophique sous-jacente au Web sémantique était de proposer un sens partagé à l'échelle mondiale, ce qui fleurte avec une posture néopositiviste nord-américaine. Cet arrière-plan a pu faire dire à des intellectuels comme le sémanticien François Rastier que le Web sémantique était très inadéquat à l'expression des productions des sciences de l'interprétation. Nous pensons toutefois qu'il ne faut aucunement « jeter le bébé avec l'eau du bain », car les technologies du Web sémantique peuvent être convoquées avec une portée plus raisonnable, dans une démarche *bottom-up* et non *top-down*, où ce qui serait visé ne serait pas un sens universel mais un sens partagé dans une communauté interprétative précise (en ce qui nous concerne, celle des musicologues francophones).
 
 ## Problèmes identifiés lors de la conception d'une base de données pour la musicologie
 
