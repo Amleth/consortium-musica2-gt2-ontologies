@@ -7,3 +7,9 @@
 5. Comment lier les données et les termes/concepts des thésaurus ?
 6. Exemples de la communauté.
 7. Identification des thésaurus qui pourraient être construits collectivement dans la communauté Musica2.
+  - Antony : dispositifs électroniques hardware et software (https://opentheso.huma-num.fr/?idt=th811)
+  - Antony : techniques de synthèse et de traitement
+  - CMBV : musique d'Ancien régime, musique du Moyen Âge, musique baroque : genres, instruments, institutions de musique (liens avec ReFAR), référentiels de personnes (ReFAR, Prosocour), compositeurs et artistes.
+  - Professions liées au spectacle (19ème siècle), de manière plus générale, pas uniquement les spectacles de musique.
+  - Antony : rôles (https://opentheso.huma-num.fr/?idt=th827)
+  - Antony : types d’items (simulation, documentation, …) (https://opentheso.huma-num.fr/?idt=th829)
