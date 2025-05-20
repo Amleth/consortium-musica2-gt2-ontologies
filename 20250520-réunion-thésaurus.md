@@ -14,4 +14,4 @@
   - Antony : rôles (https://opentheso.huma-num.fr/?idt=th827)
   - Antony : types d’items (simulation, documentation, …) (https://opentheso.huma-num.fr/?idt=th829)
   - CMBV : types de sources et de supports (partition d'orchestre, parties séparées, tout ce qui décrit la musique notée ou enregistrée)
-  - Radio France : veille technologique pour mettre à jour les lieux de production et les studios, au-delà des outils en eux-mêmes, il faudrait un thésaurus des fonctions de création sonore : sources, traitements, etc. Les usages des outils. Et les usages détournés dans les processus de création.
+  - Radio France : veille technologique pour mettre à jour les lieux de production et les studios, au-delà des outils en eux-mêmes, il faudrait un thésaurus des fonctions de création sonore : sources, traitements, etc. Les usages des outils. En création contemporaine : les usages détournés dans les processus de création.
