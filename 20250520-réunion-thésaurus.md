@@ -13,3 +13,4 @@
   - Professions liées au spectacle (19ème siècle), de manière plus générale, pas uniquement les spectacles de musique.
   - Antony : rôles (https://opentheso.huma-num.fr/?idt=th827)
   - Antony : types d’items (simulation, documentation, …) (https://opentheso.huma-num.fr/?idt=th829)
+  - CMBV : types de sources et de supports (partition d'orchestre, parties séparées, tout ce qui décrit la musique notée ou enregistrée)
