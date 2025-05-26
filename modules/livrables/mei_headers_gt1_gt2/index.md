@@ -379,6 +379,59 @@ Exemple :
    </work>
 </workList>
 ```
+### Traducteur du texte
+
+Clé HUMDRUM : TRN
+
+Définition : Indique, le cas échéant, l'identité de la personne responsable de la traduction de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise (dans le cas d'un traducteur historique, propre à l'oeuvre encodée) : `<contributor>/<persName>`
+
+Autre option (dans le cas d'un traducteur ad hoc, pour l'édition numérique ou l'édition moderne utilisée comme source) : '<respStmt>/<persName>`
+
+Recommandations : Renseigner la personne responsable de la traduction d'une oeuvre dépend avant tout du statut de cette dernière. S'il s'agit d'un traducteur historique (dans le cas où la traduction est une manifestation de l'oeuvre), celui-ci est renseigné comme un <contributor> au sein de <workList>. Sa fonction précise est indiquée à l'aide de @role="translator" - le terme "translator" fait partie des Marc Relators ainsi que du vocabulaire des fonctions de Doremus. L'identifiant du traducteur (@xml:id) doit être ajouté dans la définition de la langue <language>.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <contributor>
+         <persName xml:id="T1" role="translator" auth.uri="...">XXX</persName>
+      </contributor>   
+      <langUsage>
+         <language xml:id="Lat" type="original">Latin</language>
+         <language xml:id="Fr" resp="T1" type="translation">French</language>
+     </langUsage>          
+   </work>
+</workList>
+```
+Recommandations : Si, à l'inverse, il s'agit d'un traducteur ad hoc dont la traduction n'a qu'une valeur éditoriale, il est préférable de renseigner son identité dans <fileDesc>, avec l'ensemble des personnes disposant d'une responsabilité éditoriale. Le fonctionnement reste cependant le même que précédemment, dans la mesure où l'identifiant du traducteur doit à nouveau être indiqué dans la définition de la langue concernée (dans <workList>), via @resp. 
+
+Il est à noter que bien localiser la place du traducteur et de renseigner son identifiant dans <language> pallie l'absence de différence explicite en MEI entre un texte traduit constitutif de l'oeuvre (traduction historique) et un texte traduit pour les besoins de l'édition (traduction éditoriale). 
+
+Exemple :
+```
+<fileDesc xml:id="...">
+   <titleStmt xml:id="...">
+       <respStmt xml:id="...">
+          <persName xml:id="VV" role="translator" auth.uri="http://...">...</persName>
+       </respStmt>
+   </titleStmt>
+</fileDesc>
+
+-------# plus bas
+
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="..." type="original">...</language>
+         <language xml:id="Fr" resp="VV" type="translation">...</language>
+     </langUsage>          
+   </work>
+</workList>
+```
 
 #### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
 
