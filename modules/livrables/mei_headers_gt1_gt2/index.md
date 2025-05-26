@@ -99,7 +99,7 @@ Exemple :
 
 #### Compositeur soupçonné
 
-Clé : COS
+Clé HUMDRUM : COS
 
 Définition : Désigne un compositeur soupçonné avec un niveau de certitude.
 
@@ -125,7 +125,7 @@ Exemple:
 
 #### Alias ou pseudonyme du compositeur
 
-Clé : COL
+Clé HUMDRUM : COL
 
 Définition : Indique un alias ou pseudonyme d’un compositeur.
 
@@ -441,13 +441,15 @@ Définition : Titre de l'oeuvre encodée.
 
 Chapitre des Guidelines : 3.6 Work Description
 
-Balise :<title>
+Balise :`<title>`
 
 Autre option : -
 
-Recommandations : Cette manière très simple de renseigner le titre convient surtout aux titres officiels et consensuels des oeuvres - des titres qui ne font pas l'objet d'ambiguité. Pour le renseignement de titres alternatifs ou populaires, voir plus bas.
+Recommandations : Cette manière minimale de renseigner le titre convient surtout aux titres officiels et consensuels des oeuvres - des titres qui ne font pas l'objet d'ambiguité. Pour le renseignement de titres alternatifs ou populaires, voir plus bas.
 
 Exemple :
+
+Titre simple d'une oeuvre :
 ```
 <workList xml:id="...">
    <work xml:id="...">
@@ -456,100 +458,122 @@ Exemple :
 </workList>
 ```
 
+Recommandation : Dans le cas de sections ou de mouvements d'une oeuvre, il est nécessaire de faire une distinction entre le titre de la partie encodée et l'oeuvre globale. Pour cela, il est nécessaire d'utiliser l'attribut @type et la valeur "uniform". De même, afin de mieux catégoriser les différents niveaux de titres, il est conseillé d'employer <titlePart>. La valeur "subordinate" peut être pratique pour hiérarchiser les divers syntagmes d'un même niveau de titre, comme le mouvement ou numéro d'opus.
+
+Titre d'un mouvement d'une oeuvre :
+
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <title type="main">Rondo alla Turca</title>
+      <title type="subordinate" label="movement">Allegretto</title>
+      <titlePart>
+         <title type="uniform">Sonate pour piano no. 11 en la majeur</title>
+         <title type="subordinate" label="Köchel">K. 331/300</title>
+      </titlePart>
+   </work>
+</workList>
+```
+Recommandation : Il est à noter que le renseignement du titre, métadonnée de première importance, est paradoxalement négligé dans les guidelines MEI. Divers exemples suggèrent une distinction minimale des niveaux de titres et une certaine liberté dans leur troncation. La raison réside certainement dans l'ambiguïté qui dérive des différentes formes de titres et de leurs usages multiples. Bien que @type soit régi par les valeurs contrôlées listées ci-dessus, les guidelines illustrent à l'occasion l'usage non conventionnel de @type="subtitle" pour encoder un syntagme subordonné au titre principal. Nous nous limiterons ici aux seuls vocables contrôlés précisés précédemment.
+
 #### Titre courant de l'oeuvre
 
-Clé : OTP
+Clé HUMDRUM : OTP
 
 Définition : Titre populaire de l'oeuvre encodée.
 
 Chapitre des Guidelines : -  
 
-Balise : <title>
+Balise : `<title type="alternative">`
 
 Autre option : -
 
-Recommandations : Le titre courant peut facilement se confondre avec le titre alternatif (voir ci-dessous). Sur ce point, seuls les usages peuvent apporter des réponses. Dans le doute, il est préférable de privilégier le titre alternatif, moins restrictif que le sens sous-entendu par titre "courant". 
+Recommandations : Le titre courant peut facilement se confondre avec le titre alternatif (voir ci-dessous). Sur ce point, seuls les usages peuvent apporter des réponses. Dans le doute, il est préférable de privilégier le titre alternatif, moins restrictif que le sens sous-entendu par titre "courant". Par ailleurs, @type dispose de valeurs contrôlées en MEI ("main", "subordinate", "abbreviated", "alternative", "translated", "uniform" et "desc") parmi lesquelles aucune ne couvre l'acception d'un titre "populaire". Pour l'usage de ces valeurs, voir ci-dessous dans "Titre alternatif de l'oeuvre"
 
-**Exemple :**
+Exemple :
 ```
 <workList xml:id="...">
    <work xml:id="...">
-      <title type="main">Sonate pour piano no. 11</title>
-      <title type="alternative">Marche turque</title>
+      <title type="main">Rondo alla Turca</title>
+      <title type="subordinate" label="movement">Allegretto</title>
+      <title type="alternative">Marche Turque</title>
+      <titlePart>
+         <title type="uniform">Sonate pour piano no. 11 en la majeur</title>
+         <title type="subordinate" label="Köchel">K. 331/300</title>
+      </titlePart>
    </work>
 </workList>
 ```
 
-#### Titre alternatif
+#### Titre alternatif de l'oeuvre
 
-**Clé :** OTA
+Clé HUMDRUM : OTA
 
-**Définition :** Titre alternatif
+Définition : Autre titre de l'oeuvre encodée, distinct du titre principal.
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : - 
 
-**Balise :** <workList xml:id="...">
-   <work xml:id="...">
-      <title type="main">Sonate pour piano no. 11</title>
-      <title type="alternative">Marche turque</title>
-   </work>
-</workList>
+Balise : `<title type="alternative">`
 
-**Autre option :** 
+Autre option, en fonction du contexte : `<title type="subordinate">`; `<title type="abbreviated">`; `<title type="translated">`; `<title type="uniform">`; `<title type="desc">`
 
-**Recommandations :** 
+Recommandations : Comme dit plus haut, l'attribut "alternative" demeure le plus simple pour renseigner un titre différent du titre officiel de l'oeuvre encodée. Toutefois, l'attribut @type dispose d'autres valeurs contrôlées, listées précédemment, qui peuvent affiner la nature du titre renseigné. Ainsi, dans l'exemple ci-dessous, apparaissent deux niveaux de titres (titre du mouvement encodé et titre de l'oeuvre globale) ainsi que leurs diverses formes potentielles.
 
-**Exemple :**
+Exemple :
 ```
 <workList xml:id="...">
    <work xml:id="...">
-      <title type="main">Sonate pour piano no. 11</title>
-      <title type="alternative">Marche turque</title>
+      <title type="main">Rondo alla Turca</title>
+      <title type="subordinate" label="movement">Allegretto</title>
+      <title type="abbreviated">Alla Turca</title>
+      <title type="alternative">Marche Turque</title>
+      <titlePart>
+         <title type="uniform">Sonate pour piano no. 11 en la majeur</title>
+         <title type="subordinate" label="Köchel">K. 331/300</title>
+         <title type="translated" xml:lang="DE">Sonate Nr. 11 A-Dur</title>
+         <title type="desc">Sonate pour piano très connue de Mozart</title>
+      </titlePart>
    </work>
 </workList>
 ```
 
 #### Titre de l'œuvre d'appartenance
 
-**Clé :** OPR
+Clé HUMDRUM : OPR
 
-**Définition :** Titre de l'œuvre d'appartenance
+Définition : Titre de l'œuvre globale dans le cas d'une section ou d'un mouvement.
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
-   <work>
-      <title type="main">Missa Je suis déshéritée</title>
-      <title type="part">Kyrie</title>
-   </work>
-</workList>  
+Balise :  <title type="main"> ; <title type="uniform">
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : Comme dit précédemment, si diverses formes de titre sont retenues dans l'édition, il est conseillé de structurer les différents niveaux à l'aide de <titlePart>, surtout si des valeurs semblables pour @type sont utilisées à la fois pour le titre du mouvement et pour le titre de l'oeuvre d'appartenance. Dans l'exemple ci-dessous, la description minimale ne nécessite pas une telle distinction.  
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
-      <title type="main">Missa Je suis déshéritée</title>
-      <title type="part">Kyrie</title>
+      <title type="main">Rondo alla Turca</title>
+      <title type="abbreviated">Alla Turca</title>
+      <title type="alternative">Marche Turque</title>
+      <title type="uniform">Sonate pour piano no. 11 en la majeur</title>
    </work>
 </workList>  
 ```
 
-
 #### Numéro d'acte
 
-**Clé :** OAC
+Clé HUMDRUM : OAC
 
-**Définition :** Numéro d'acte
+Définition : Numéro d'acte
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** <body>
+Autre option : <body>
    <mdiv label="act" n="1">
       <mdiv label="scene" n="1">
          <score></score>
@@ -568,9 +592,9 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
    </mdiv>
 </body>
 
-**Recommandations :** S'il est bien question d'une précision au sein de <music> : "The score and parts elements are placed here and not directly within the body element because score and part characteristics may change from mdiv to mdiv. For example, the 2nd movement of a symphony may require different performing forces (and therefore different score and part layout) than the other movements. The mdiv element may be recursively nested in order to represent music which exhibits this kind of structure. For example, an opera is normally divided into acts, which are in turn divided into scenes." https://music-encoding.org/guidelines/v5/elements/mdiv.html
+Recommandations : S'il est bien question d'une précision au sein de <music> : "The score and parts elements are placed here and not directly within the body element because score and part characteristics may change from mdiv to mdiv. For example, the 2nd movement of a symphony may require different performing forces (and therefore different score and part layout) than the other movements. The mdiv element may be recursively nested in order to represent music which exhibits this kind of structure. For example, an opera is normally divided into acts, which are in turn divided into scenes." https://music-encoding.org/guidelines/v5/elements/mdiv.html
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -578,15 +602,15 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
 
 #### Numéro de scène
 
-**Clé :** OSC
+Clé HUMDRUM : OSC
 
-**Définition :** Numéro de scène
+Définition : Numéro de scène
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** <body>
+Autre option : <body>
    <mdiv label="act" n="1">
       <mdiv label="scene" n="1">
          <score></score>
@@ -605,9 +629,9 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
    </mdiv>
 </body>
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -615,15 +639,15 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
 
 #### Numéro de mouvement
 
-**Clé :** OMV
+Clé HUMDRUM : OMV
 
-**Définition :** Numéro de mouvement
+Définition : Numéro de mouvement
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** <body>
+Autre option : <body>
    <mdiv label="Allegro" n="1">
       <score></score>
    </mdiv>
@@ -632,9 +656,9 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
    </mdiv>
 </body>
 
-**Recommandations :** Même commentaire que ci-dessous. Pour le numéro, nous pourrions ajouter dans les différents éléments @n.
+Recommandations : Même commentaire que ci-dessous. Pour le numéro, nous pourrions ajouter dans les différents éléments @n.
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -642,15 +666,15 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
 
 #### Désignation du mouvement ou nom du mouvement
 
-**Clé :** OMD
+Clé HUMDRUM : OMD
 
-**Définition :** Désignation du mouvement ou nom du mouvement
+Définition : Désignation du mouvement ou nom du mouvement
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** <body>
+Autre option : <body>
    <mdiv label="Allegro">
       <score></score>
    </mdiv>
@@ -659,9 +683,9 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
    </mdiv>
 </body> 
 
-**Recommandations :** S'il s'agit d'un seul mouvement encodé au sein du fichier MEI, alors il me semble que le renseignement est similaire à celui renseigné pour "titre de l'oeuvre d'appartenance". Sil s'agit de plusieurs mouvements encodés au sein d'un même fichier MEI (peu recommandé), dans ce cas il faudrait indiquer cette information dans <music> à l'aide de <mdiv>. 
+Recommandations : S'il s'agit d'un seul mouvement encodé au sein du fichier MEI, alors il me semble que le renseignement est similaire à celui renseigné pour "titre de l'oeuvre d'appartenance". Sil s'agit de plusieurs mouvements encodés au sein d'un même fichier MEI (peu recommandé), dans ce cas il faudrait indiquer cette information dans <music> à l'aide de <mdiv>. 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -669,13 +693,13 @@ Recommandations : Le titre courant peut facilement se confondre avec le titre al
 
 #### Numéro d'opus
 
-**Clé :** OPS
+Clé HUMDRUM : OPS
 
-**Définition :** Numéro d'opus
+Définition : Numéro d'opus
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <title type="main">Prélude en do majeur</title>
       <title type="subordinate" label="opus">28</title>
@@ -689,11 +713,11 @@ ____
    </work>
 </worklist>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -713,19 +737,19 @@ ____
 
 #### Numéro
 
-**Clé :** ONM
+Clé HUMDRUM : ONM
 
-**Définition :** Numéro
+Définition : Numéro
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -733,13 +757,13 @@ ____
 
 #### Volume
 
-**Clé :** OVM
+Clé HUMDRUM : OVM
 
-**Définition :** Volume
+Définition : Volume
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <source>
+Balise : <source>
   <bibl>
       <composer>
           <persName auth="VIAF" auth.uri="https://...">XXX</persName>
@@ -752,11 +776,11 @@ ____
    </bibl>
 </source>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** J'imagine que cela concerne essentiellement des données bibliographiques. J'emprunte cette manière à la TEI. La même est possible pour le numéro. 
+Recommandations : J'imagine que cela concerne essentiellement des données bibliographiques. J'emprunte cette manière à la TEI. La même est possible pour le numéro. 
 
-**Exemple :**
+Exemple :
 ```
 <source>
   <bibl>
@@ -775,13 +799,13 @@ ____
 
 #### Dédicace
 
-**Clé :** ODE
+Clé HUMDRUM : ODE
 
-**Définition :** Dédicace
+Définition : Dédicace
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <creation>
          <dedicatee>
@@ -791,7 +815,7 @@ ____
    </work>
 <workList>  
 
-**Autre option :** Ou si nous souhaitons ajouter plus d'informations sur la dédicace elle-même et son contexte:
+Autre option : Ou si nous souhaitons ajouter plus d'informations sur la dédicace elle-même et son contexte:
 
 <workList>
    <work>
@@ -807,9 +831,9 @@ ____
    </work>
 <workList>   
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -825,19 +849,19 @@ ____
 
 #### Committant (commettant ?)
 
-**Clé :** OCO
+Clé HUMDRUM : OCO
 
-**Définition :** Committant (commettant ?)
+Définition : Committant (commettant ?)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -845,19 +869,19 @@ ____
 
 #### Collectionneur ?
 
-**Clé :** OCL
+Clé HUMDRUM : OCL
 
-**Définition :** Collectionneur ?
+Définition : Collectionneur ?
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -865,19 +889,19 @@ ____
 
 #### Note de format libre / Nota bene
 
-**Clé :** ONB
+Clé HUMDRUM : ONB
 
-**Définition :** Note de format libre / Nota bene
+Définition : Note de format libre / Nota bene
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** Cela se trouverait dans <notesStmt> puis <annot> (pour le header).
+Recommandations : Cela se trouverait dans <notesStmt> puis <annot> (pour le header).
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -885,13 +909,13 @@ ____
 
 #### Date de composition
 
-**Clé :** ODT
+Clé HUMDRUM : ODT
 
-**Définition :** Date de composition
+Définition : Date de composition
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <creation>
          <date notbefore="1530" notafter="1550" cert="low">1540</date>
@@ -899,11 +923,11 @@ ____
    </work>
 </workList>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -917,13 +941,13 @@ ____
 
 #### Pays de composition
 
-**Clé :** OCY
+Clé HUMDRUM : OCY
 
-**Définition :** Pays de composition
+Définition : Pays de composition
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <creation>
          <date notbefore="1530" notafter="1550" cert="low">1540</date>
@@ -932,11 +956,11 @@ ____
    </work>
 </workList>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -951,13 +975,13 @@ ____
 
 #### Ville de composition
 
-**Clé :** OPC
+Clé HUMDRUM : OPC
 
-**Définition :** Ville de composition
+Définition : Ville de composition
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <creation>
          <date notbefore="1530" notafter="1550" cert="low">1540</date>
@@ -967,11 +991,11 @@ ____
    </work>
 </workList>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -987,13 +1011,13 @@ ____
 
 #### Nom du groupe des interprètes
 
-**Clé :** MGN
+Clé HUMDRUM : MGN
 
-**Définition :** Nom du groupe des interprètes
+Définition : Nom du groupe des interprètes
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <perfMedium>
          <castList>
@@ -1003,11 +1027,11 @@ ____
    </work>
 </workList> 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** Je ne crois pas que cela soit nécessaire dans un header d'une édition critique.
+Recommandations : Je ne crois pas que cela soit nécessaire dans un header d'une édition critique.
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -1023,13 +1047,13 @@ ____
 
 #### Nom de l'interprète
 
-**Clé :** MPN
+Clé HUMDRUM : MPN
 
-**Définition :** Nom de l'interprète
+Définition : Nom de l'interprète
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <perfMedium>
          <castList>
@@ -1039,11 +1063,11 @@ ____
    </work>
 </workList> 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -1059,19 +1083,19 @@ ____
 
 #### Interprète soupçonné (?)
 
-**Clé :** MPS
+Clé HUMDRUM : MPS
 
-**Définition :** Interprète soupçonné (?)
+Définition : Interprète soupçonné (?)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1079,19 +1103,19 @@ ____
 
 #### Date d'exécution/représentation
 
-**Clé :** MRD
+Clé HUMDRUM : MRD
 
-**Définition :** Date d'exécution/représentation
+Définition : Date d'exécution/représentation
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1099,19 +1123,19 @@ ____
 
 #### Lieu d'exécution/représentation
 
-**Clé :** MLC
+Clé HUMDRUM : MLC
 
-**Définition :** Lieu d'exécution/représentation
+Définition : Lieu d'exécution/représentation
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1119,19 +1143,19 @@ ____
 
 #### Nom du responsable de l'exécution/représentation (chef d'orchestre)
 
-**Clé :** MCN
+Clé HUMDRUM : MCN
 
-**Définition :** Nom du responsable de l'exécution/représentation (chef d'orchestre)
+Définition : Nom du responsable de l'exécution/représentation (chef d'orchestre)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1139,19 +1163,19 @@ ____
 
 #### Date de la première exécution/représentation
 
-**Clé :** MPD
+Clé HUMDRUM : MPD
 
-**Définition :** Date de la première exécution/représentation
+Définition : Date de la première exécution/représentation
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1159,19 +1183,19 @@ ____
 
 #### Titre de la collection
 
-**Clé :** GTL
+Clé HUMDRUM : GTL
 
-**Définition :** Titre de la collection
+Définition : Titre de la collection
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1179,19 +1203,19 @@ ____
 
 #### Œuvre associée (ex. Stéphane Mallarmé, L’Après-midi d’un faune)
 
-**Clé :** GAW
+Clé HUMDRUM : GAW
 
-**Définition :** Œuvre associée (ex. Stéphane Mallarmé, L’Après-midi d’un faune)
+Définition : Œuvre associée (ex. Stéphane Mallarmé, L’Après-midi d’un faune)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1199,19 +1223,19 @@ ____
 
 #### Désignation de la collection
 
-**Clé :** GCO
+Clé HUMDRUM : GCO
 
-**Définition :** Désignation de la collection
+Définition : Désignation de la collection
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1219,24 +1243,24 @@ ____
 
 #### État de publication (ex. publié, pas encore publié, en cours de publication)
 
-**Clé :** PUB
+Clé HUMDRUM : PUB
 
-**Définition :** État de publication (ex. publié, pas encore publié, en cours de publication)
+Définition : État de publication (ex. publié, pas encore publié, en cours de publication)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <sourceDesc>
+Balise : <sourceDesc>
    <source>
       <bibl>
          <unpub>En raison d'un manque de financement</unpub>
       </bibl>
    </source>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** En MEI, l'approche est à l'évidence très binaire : publié ou non. Nul besoin de le préciser si l'entité est bel et bien publiée (assez logique), mais par contre <unpub> est assez limité. Seul du texte est possible, expliquant les raisons de la non-publication. <unpub> peut d'ailleurs aussi aller dans <imprint> pour plus de précision sur le contexte de la non-publication (si celle-ci dépend de la maison d'édition).
+Recommandations : En MEI, l'approche est à l'évidence très binaire : publié ou non. Nul besoin de le préciser si l'entité est bel et bien publiée (assez logique), mais par contre <unpub> est assez limité. Seul du texte est possible, expliquant les raisons de la non-publication. <unpub> peut d'ailleurs aussi aller dans <imprint> pour plus de précision sur le contexte de la non-publication (si celle-ci dépend de la maison d'édition).
 
-**Exemple :**
+Exemple :
 ```
 <sourceDesc>
    <source>
@@ -1249,13 +1273,13 @@ ____
 
 #### Éditeur de la source utilisée pour l'édition digitale
 
-**Clé :** PED
+Clé HUMDRUM : PED
 
-**Définition :** Éditeur de la source utilisée pour l'édition digitale
+Définition : Éditeur de la source utilisée pour l'édition digitale
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** Si c'est une personne :
+Balise : Si c'est une personne :
 <sourceDesc>
    <source>
       <bibl>
@@ -1265,7 +1289,7 @@ ____
       </bibl>
    </source>
 
-**Autre option :** Si c'est une maison d'édition (cumulable) :
+Autre option : Si c'est une maison d'édition (cumulable) :
 <sourceDesc>
      <source>
          <bibl>
@@ -1277,9 +1301,9 @@ ____
          </bibl>
      </source>
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 Si c'est une personne :
 <sourceDesc>
@@ -1295,13 +1319,13 @@ Si c'est une personne :
 
 #### Premier éditeur
 
-**Clé :** PPR
+Clé HUMDRUM : PPR
 
-**Définition :** Premier éditeur
+Définition : Premier éditeur
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <sourceDesc>
+Balise : <sourceDesc>
    <source>
       <bibl>
          <editor xml:id="E1" n="1" precedes="#E2">
@@ -1313,11 +1337,11 @@ Si c'est une personne :
       </bibl>
    </source>
 
-**Autre option :** Même logique s'il s'agit de la maison d'édition en utilisant <imprint>. Des dates peuvent également être ajoutées pour <editor> pour plus de précisions.
+Autre option : Même logique s'il s'agit de la maison d'édition en utilisant <imprint>. Des dates peuvent également être ajoutées pour <editor> pour plus de précisions.
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <sourceDesc>
    <source>
@@ -1335,13 +1359,13 @@ Si c'est une personne :
 
 #### Date de la première publication
 
-**Clé :** PDT
+Clé HUMDRUM : PDT
 
-**Définition :** Date de la première publication
+Définition : Date de la première publication
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <sourceDesc>
+Balise : <sourceDesc>
    <source>
       <bibl>
          <edition xml:id="E1" n="1" precedes="#E2">
@@ -1358,11 +1382,11 @@ Si c'est une personne :
       </bibl>
    </source>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <sourceDesc>
    <source>
@@ -1385,13 +1409,13 @@ Si c'est une personne :
 
 #### Titre de publication
 
-**Clé :** PTL
+Clé HUMDRUM : PTL
 
-**Définition :** Titre de publication
+Définition : Titre de publication
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <sourceDesc>
+Balise : <sourceDesc>
    <source>
       <bibl>
          <title type="main"> Il nono libro de madrigali</title>
@@ -1399,11 +1423,11 @@ Si c'est une personne :
       </bibl>
    </source>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <sourceDesc>
    <source>
@@ -1417,13 +1441,13 @@ Si c'est une personne :
 
 #### Lieu de publication
 
-**Clé :** PPP
+Clé HUMDRUM : PPP
 
-**Définition :** Lieu de publication
+Définition : Lieu de publication
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <sourceDesc>
+Balise : <sourceDesc>
    <source recordtype="c">
       <bibl>
          <composer>
@@ -1439,11 +1463,11 @@ Si c'est une personne :
       </bibl>
    </source>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <sourceDesc>
    <source recordtype="c">
@@ -1465,19 +1489,19 @@ Si c'est une personne :
 
 #### Numéro de catalogue de l'éditeur (ex. cotage)
 
-**Clé :** PC#
+Clé HUMDRUM : PC#
 
-**Définition :** Numéro de catalogue de l'éditeur (ex. cotage)
+Définition : Numéro de catalogue de l'éditeur (ex. cotage)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1485,19 +1509,19 @@ Si c'est une personne :
 
 #### Numéro de catalogue scientifique (abr.) [ex. BWV 551]
 
-**Clé :** SCT
+Clé HUMDRUM : SCT
 
-**Définition :** Numéro de catalogue scientifique (abr.) [ex. BWV 551]
+Définition : Numéro de catalogue scientifique (abr.) [ex. BWV 551]
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1505,19 +1529,19 @@ Si c'est une personne :
 
 #### Numéro de catalogue scientifique (pas abr.) [ex. Koechel 117]
 
-**Clé :** SCA
+Clé HUMDRUM : SCA
 
-**Définition :** Numéro de catalogue scientifique (pas abr.) [ex. Koechel 117]
+Définition : Numéro de catalogue scientifique (pas abr.) [ex. Koechel 117]
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1525,13 +1549,13 @@ Si c'est une personne :
 
 #### Titre du manuscrit
 
-**Clé :** SMS
+Clé HUMDRUM : SMS
 
-**Définition :** Titre du manuscrit
+Définition : Titre du manuscrit
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <source recordtype="d">
+Balise : <source recordtype="d">
   <bibl>
      <physLoc>
        <repository>
@@ -1550,7 +1574,7 @@ Si c'est une personne :
   </bibl>
 </source>
 
-**Autre option :** <manifestation recordtype="d">
+Autre option : <manifestation recordtype="d">
    <identifier>
       <title>Le Roman de Fauvel</title>
    </identifier>
@@ -1578,9 +1602,9 @@ Si c'est une personne :
       </item>
    </itemList>
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <source recordtype="d">
   <bibl>
@@ -1605,13 +1629,13 @@ Si c'est une personne :
 
 #### Lieu de conservation du manuscrit
 
-**Clé :** SML
+Clé HUMDRUM : SML
 
-**Définition :** Lieu de conservation du manuscrit
+Définition : Lieu de conservation du manuscrit
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <source recordtype="d">
+Balise : <source recordtype="d">
   <bibl>
      <physLoc>
        <repository>
@@ -1630,7 +1654,7 @@ Si c'est une personne :
   </bibl>
 </source>
 
-**Autre option :** <manifestation recordtype="d">
+Autre option : <manifestation recordtype="d">
    <identifier>
       <title>Le Roman de Fauvel</title>
    </identifier>
@@ -1658,9 +1682,9 @@ Si c'est une personne :
       </item>
    </itemList>
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <source recordtype="d">
   <bibl>
@@ -1685,13 +1709,13 @@ Si c'est une personne :
 
 #### Info sur l'accès au manuscrit
 
-**Clé :** SMA
+Clé HUMDRUM : SMA
 
-**Définition :** Info sur l'accès au manuscrit
+Définition : Info sur l'accès au manuscrit
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <source recordtype="d">
+Balise : <source recordtype="d">
   <bibl>
      <physLoc>
        <repository>
@@ -1714,7 +1738,7 @@ Si c'est une personne :
   </bibl>
 </source>
 
-**Autre option :** <manifestation recordtype="d">
+Autre option : <manifestation recordtype="d">
    <identifier>
       <title>Le Roman de Fauvel</title>
    </identifier>
@@ -1742,9 +1766,9 @@ Si c'est une personne :
       </item>
    </itemList>
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <source recordtype="d">
   <bibl>
@@ -1773,23 +1797,23 @@ Si c'est une personne :
 
 #### Éditeur de l'édition électronique 
 
-**Clé :** YEP
+Clé HUMDRUM : YEP
 
-**Définition :** Éditeur de l'édition électronique 
+Définition : Éditeur de l'édition électronique 
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <fileDesc>
+Balise : <fileDesc>
   <titleStmt>
     <respStmt>
        <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
     </respStmt>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <fileDesc>
   <titleStmt>
@@ -1801,13 +1825,13 @@ Si c'est une personne :
 
 #### Date et propriétaire du copyright de l'édition électronique
 
-**Clé :** YEC
+Clé HUMDRUM : YEC
 
-**Définition :** Date et propriétaire du copyright de l'édition électronique
+Définition : Date et propriétaire du copyright de l'édition électronique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <pubStmt>
+Balise : <pubStmt>
    <availability>
      <useRestrict>
         <persName>...</persName>
@@ -1817,11 +1841,11 @@ Si c'est une personne :
    </availability>
 </pubStmt>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <pubStmt>
    <availability>
@@ -1837,13 +1861,13 @@ Si c'est une personne :
 
 #### Date de mise à disposition de l'édition électronique
 
-**Clé :** YER
+Clé HUMDRUM : YER
 
-**Définition :** Date de mise à disposition de l'édition électronique
+Définition : Date de mise à disposition de l'édition électronique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <pubStmt>
+Balise : <pubStmt>
    <availability>
      <useRestrict>
         <persName>...</persName>
@@ -1854,11 +1878,11 @@ Si c'est une personne :
    </availability>
 </pubStmt>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <pubStmt>
    <availability>
@@ -1875,13 +1899,13 @@ Si c'est une personne :
 
 #### License
 
-**Clé :** YEM
+Clé HUMDRUM : YEM
 
-**Définition :** License
+Définition : License
 
-**Chapitre des Guidelines :** 3.4.1.3 Publication, Distribution, etc.
+Chapitre des Guidelines : 3.4.1.3 Publication, Distribution, etc.
 
-**Balise :** <pubStmt>
+Balise : <pubStmt>
    <availability>
      <useRestrict>
         <persName>...</persName>
@@ -1894,15 +1918,15 @@ Si c'est une personne :
    </availability>
 </pubStmt>
 
-**Autre option :** <pubStmt xml : id…>
+Autre option : <pubStmt xml : id…>
     <availability xml : id…>
        <useRestrict xml : id…>Licence:... </useRestrict>
     </availability>
 </pubStmt>
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <pubStmt>
    <availability>
@@ -1921,13 +1945,13 @@ Si c'est une personne :
 
 #### Pays de copyright
 
-**Clé :** YEN
+Clé HUMDRUM : YEN
 
-**Définition :** Pays de copyright
+Définition : Pays de copyright
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <pubStmt>
+Balise : <pubStmt>
    <availability>
      <useRestrict>
         <persName>...</persName>
@@ -1941,11 +1965,11 @@ Si c'est une personne :
    </availability>
 </pubStmt>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <pubStmt>
    <availability>
@@ -1965,19 +1989,19 @@ Si c'est une personne :
 
 #### Document d'origine de l'édition électronique
 
-**Clé :** YOR
+Clé HUMDRUM : YOR
 
-**Définition :** Document d'origine de l'édition électronique
+Définition : Document d'origine de l'édition électronique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** Donc une source ? <sourceDesc ?> 
+Recommandations : Donc une source ? <sourceDesc ?> 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -1985,19 +2009,19 @@ Si c'est une personne :
 
 #### Propriétaire du document d'origine
 
-**Clé :** YOO
+Clé HUMDRUM : YOO
 
-**Définition :** Propriétaire du document d'origine
+Définition : Propriétaire du document d'origine
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2005,19 +2029,19 @@ Si c'est une personne :
 
 #### Année du copyright originaire
 
-**Clé :** YOE
+Clé HUMDRUM : YOE
 
-**Définition :** Année du copyright originaire
+Définition : Année du copyright originaire
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2025,19 +2049,19 @@ Si c'est une personne :
 
 #### Éditeur du document d'origine
 
-**Clé :** EED
+Clé HUMDRUM : EED
 
-**Définition :** Éditeur du document d'origine
+Définition : Éditeur du document d'origine
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2045,23 +2069,23 @@ Si c'est une personne :
 
 #### Éditeur de l'édition électronique (encodeur?)
 
-**Clé :** ENC
+Clé HUMDRUM : ENC
 
-**Définition :** Éditeur de l'édition électronique (encodeur?)
+Définition : Éditeur de l'édition électronique (encodeur?)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <fileDesc>
+Balise : <fileDesc>
   <titleStmt>
     <respStmt>
        <persName xml:id="VB" role="encoder" auth="Orcid" auth.uri="...">XXX</persName>
     </respStmt>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <fileDesc>
   <titleStmt>
@@ -2073,19 +2097,19 @@ Si c'est une personne :
 
 #### Date d'encodage de l'édition électronique
 
-**Clé :** END
+Clé HUMDRUM : END
 
-**Définition :** Date d'encodage de l'édition électronique
+Définition : Date d'encodage de l'édition électronique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <encodingDes>
+Balise : <encodingDes>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <encodingDes>
 ```
@@ -2093,19 +2117,19 @@ Si c'est une personne :
 
 #### Modification du document électronique
 
-**Clé :** EMD
+Clé HUMDRUM : EMD
 
-**Définition :** Modification du document électronique
+Définition : Modification du document électronique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <encodingDes>
+Balise : <encodingDes>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <encodingDes>
 ```
@@ -2113,19 +2137,19 @@ Si c'est une personne :
 
 #### Version de l'édition électronique
 
-**Clé :** EEV
+Clé HUMDRUM : EEV
 
-**Définition :** Version de l'édition électronique
+Définition : Version de l'édition électronique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <encodingDes>
+Balise : <encodingDes>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <encodingDes>
 ```
@@ -2133,19 +2157,19 @@ Si c'est une personne :
 
 #### Numéro du fichier électronique
 
-**Clé :** EFL
+Clé HUMDRUM : EFL
 
-**Définition :** Numéro du fichier électronique
+Définition : Numéro du fichier électronique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <encodingDes>
+Balise : <encodingDes>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <encodingDes>
 ```
@@ -2153,19 +2177,19 @@ Si c'est une personne :
 
 #### État de l'encodage
 
-**Clé :** EST
+Clé HUMDRUM : EST
 
-**Définition :** État de l'encodage
+Définition : État de l'encodage
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <encodingDes>
+Balise : <encodingDes>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <encodingDes>
 ```
@@ -2173,19 +2197,19 @@ Si c'est une personne :
 
 #### Désignation de la collection
 
-**Clé :** ACO
+Clé HUMDRUM : ACO
 
-**Définition :** Désignation de la collection
+Définition : Désignation de la collection
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2193,19 +2217,19 @@ Si c'est une personne :
 
 #### Désignation de la forme
 
-**Clé :** AFR
+Clé HUMDRUM : AFR
 
-**Définition :** Désignation de la forme
+Définition : Désignation de la forme
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2213,13 +2237,13 @@ Si c'est une personne :
 
 #### Désignation du genre musical
 
-**Clé :** AGN
+Clé HUMDRUM : AGN
 
-**Définition :** Désignation du genre musical
+Définition : Désignation du genre musical
 
-**Chapitre des Guidelines :** 3.4.1.5 Notes Statement
+Chapitre des Guidelines : 3.4.1.5 Notes Statement
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <classification xml :id="…">
          <termList xml:id="…">
@@ -2227,11 +2251,11 @@ Si c'est une personne :
          </termList>
       </classification>
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -2245,13 +2269,13 @@ Si c'est une personne :
 
 #### Désignation du style/période/typologie de l'œuvre
 
-**Clé :** AST
+Clé HUMDRUM : AST
 
-**Définition :** Désignation du style/période/typologie de l'œuvre
+Définition : Désignation du style/période/typologie de l'œuvre
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <creation xml:id="…">
          <periodName>Contemporary music</periodName>
@@ -2260,11 +2284,11 @@ Si c'est une personne :
    </work>
 </workList>   
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -2279,13 +2303,13 @@ Si c'est une personne :
 
 #### Classification du mode (Moyen âge et Renaissance)
 
-**Clé :** AMD
+Clé HUMDRUM : AMD
 
-**Définition :** Classification du mode (Moyen âge et Renaissance)
+Définition : Classification du mode (Moyen âge et Renaissance)
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** <workList>
+Balise : <workList>
    <work>
       <key mode="dorian">
       <creation xml:id="…">
@@ -2295,11 +2319,11 @@ Si c'est une personne :
    </work>
 </workList>  
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** En MEI, cela semble être une donnée à renseigner dans <key>, donc dans <work> ou <expression>, avec @mode. L'information peut également se retrouver dans la définition des portées. Il y a trois vocabulaires contrôlés MEI pour les modes. Voir data.mode.
+Recommandations : En MEI, cela semble être une donnée à renseigner dans <key>, donc dans <work> ou <expression>, avec @mode. L'information peut également se retrouver dans la définition des portées. Il y a trois vocabulaires contrôlés MEI pour les modes. Voir data.mode.
 
-**Exemple :**
+Exemple :
 ```
 <workList>
    <work>
@@ -2315,19 +2339,19 @@ Si c'est une personne :
 
 #### Classification métrique
 
-**Clé :** AMT
+Clé HUMDRUM : AMT
 
-**Définition :** Classification métrique
+Définition : Classification métrique
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2335,19 +2359,19 @@ Si c'est une personne :
 
 #### Effectif
 
-**Clé :** AIN
+Clé HUMDRUM : AIN
 
-**Définition :** Effectif
+Définition : Effectif
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2355,19 +2379,19 @@ Si c'est une personne :
 
 #### Origine géographique de l'œuvre
 
-**Clé :** ARE
+Clé HUMDRUM : ARE
 
-**Définition :** Origine géographique de l'œuvre
+Définition : Origine géographique de l'œuvre
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2375,19 +2399,19 @@ Si c'est une personne :
 
 #### Localisation géographique de l'œuvre
 
-**Clé :** ARL
+Clé HUMDRUM : ARL
 
-**Définition :** Localisation géographique de l'œuvre
+Définition : Localisation géographique de l'œuvre
 
-**Chapitre des Guidelines :** 
+Chapitre des Guidelines : 
 
-**Balise :** 
+Balise : 
 
-**Autre option :** 
+Autre option : 
 
-**Recommandations :** 
+Recommandations : 
 
-**Exemple :**
+Exemple :
 ```
 
 ```
@@ -2397,21 +2421,21 @@ Si c'est une personne :
 
 
 
-**On utilise 0 lorsque l'on est en presence de la source originale (normalement l'autographe de l'œuvre) et oméga "⍵" lorsque la source originale de l'œuvre ne nous est pas parvenue**
+On utilise 0 lorsque l'on est en presence de la source originale (normalement l'autographe de l'œuvre) et oméga "⍵" lorsque la source originale de l'œuvre ne nous est pas parvenue
 
 - _fileDesc_
-   - **Idem**
+   - Idem
 - _sourceDesc_ Ce module est l'élément central de notre protocole, puisque qu'il s'agit de la partie où nous décrivons de manière exacte le contenu scientifique. Selon les _guidelines_ MEI, il n'y a pas de renvoi au modèle FRBR au sein de _workList_. Il faut donc déployer le modèle FRBR à cet endroit.
    - _expressionList_ : il s'agit de nommer et détailler les différentes expressions, cette étape correspondant à notre protocole à la _recesio_ et donc à un discours commun aux théories de Lachmann et Bédier. Nous avons fait le choix de nommer l'expression de tradition directe _expression 0_. Les expressions indirectes se déploient ensuite avec des chiffres (1,2 _etc_) ou bien des noms en toutes lettres.
    - _manifestationList_ : de manière similaire à _expressionList_, nous nommons le manuscrit autographe (ou l'_omega_ issu du _stemma codicum_ si l'on ne possède pas l'autographe) _manifestation 0_. Pour chaque expression il convient d'utiliser une instance de _manifestationList_ et pour chaque manifestation un _itemList_. Dans le cadre de manuscrits, la manifestation et l'item ne font qu'un. Par ailleurs, il n'y a pas, pour des raisons de catalogage évidentes, d'_item 0_ ; nous partons donc du principe que la dénomination des items fait appel au bon sens des chercheur·euse·s, de la tradition et des nomenclatures en usage.
    - 
-   - **_Manifestation R7_is_exemplified_by Item_**
+   - _Manifestation R7_is_exemplified_by Item_
    - 
    - Le fichier MEI que nous sommes en train de renseigner constitue d'ailleurs une autre manifestation de l'œuvre, et doit par conséquent faire partie de la _manifestation_list_. Des xmlID seront utilisés pour chaque manifestation et item, afin d'assurer une inter-opérabilité maximale.
 
 Le principal atout de notre protocole est l'interopérabilité, couplé à une réelle exhaustivité. Bien que sa réalisation puisse être fastidieuse de par le nombre important d'éléments à renseigner, le protocole porte une réelle valeur philologique et ainsi parfaitement adapté dans le cadre de l'édition critique, mais aussi au partage de fichiers au sein de la communauté internationale MEI.
 
-**Faire un diagramme / en reparler avec Thomas et Marco**
+Faire un diagramme / en reparler avec Thomas et Marco
 
 ### 3. Pour conclure
 
@@ -2431,7 +2455,7 @@ tradition directe (tous les exemplaires liés directement au texte, cad tous les
 _4. 2. Usage du CIDOC CRM_
    
 choisir un thésaurus ?
-**il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR**
+il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR
 
 ThB présentation générale de LRM + un paragraphe sur la réflexion entre BDD sémantique centralisée vs l’information sémantisée dans les headers MEI
 
