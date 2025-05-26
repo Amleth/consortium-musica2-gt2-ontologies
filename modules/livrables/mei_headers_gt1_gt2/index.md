@@ -2,7 +2,7 @@
 
 ### 1. Présentation générale de l'approche méthodologique
 
-Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, vise à proposer un protocole détaillé de renseignement des métadonnées au sein des headers MEI dans le cadre des éditions critiques sous format numérique. L’objectif est d'établir un guide dédié aux éditions critiques encodées en MEI (Music Encoding Initiative) et de préciser où disposer les informations éditoriales et philologiques nécessaires, en proposant des choix réfléchis au détriment de la liberté habituellement accordée à l'encodeur par les guidelines MEI. Fixer des paramètres partagés et reconnus par la communauté musicologique permettra de créer des fichiers MEI qui pourront être contrôlés, vérifiés et échangés au profit de la transparence scientifique et de l'interopérabilité. Pour ce faire, le modèle FRBR appliqué à l'encodage MEI sera privilégié et suivi à l’occasion.
+Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, vise à proposer un protocole détaillé de renseignement des métadonnées au sein des headers MEI, plus particulièrement dans le cadre d'éditions critiques numériques. L’objectif est d'établir un guide dédié aux éditions encodées en MEI (Music Encoding Initiative) et de préciser où disposer les informations éditoriales et philologiques nécessaires, en proposant des choix raisonnés palliant diverses ambiguïtés des guidelines MEI. Fixer des paramètres partagés et reconnus par la communauté musicologique permettra de créer des fichiers MEI qui pourront être contrôlés, vérifiés et échangés au profit de la transparence scientifique et de l'interopérabilité. Pour ce faire, le modèle FRBR appliqué à l'encodage MEI sera privilégié et suivi à l’occasion.
 
 ### Partie plus tardive
 
@@ -251,7 +251,53 @@ Exemple :
 
 ### Nom de l'arrangeur 
 
+Clé HUMDRUM : LAR
 
+Définition : Indique le nom de l'arrangeur de l'oeuvre. 
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<arranger>`
+
+Autre option : `<persName role="arranger">`
+
+Recommandations : Suivant les guidelines MEI pour <arranger>, il est uniquement question du sens "classique" de la fonction - celui qui transcrit la pièce pour une nomenclature musicale différente de l'originale. Pour "orchestrateur", voir ci-dessous.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <arranger>
+         <persName auth.uri="..."></persName>
+      </arranger>   
+   </work>
+</workList>
+```
+
+### Nom de l'orchestrateur 
+
+Clé HUMDRUM : LOR
+
+Définition : Indique le nom de l'orchestrateur de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise : `<arranger role="orchestrator">`
+
+Autre option : `<persName role="orchestrator">`
+
+Recommandations : Comme dit ci-dessus, <arranger> représente uniquement le sens "classique" de la fonction : la personne qui transcrit la pièce pour une nomenclature musicale différente de l'originale. Il est donc nécessaire de préciser à l'aide de @role la qualité spécifique de l'arrangeur.  Dans la mesure où "orchestrator" n'est pas présent dans les Marc Relators, nous proposons de nous appuyer sur le vocabulaire Doremus des fonctions, comprenant "arranger" ainsi que de nombreuses sous-fonctions comme "orchestrator", "creator_of_musical_harmonization" ou encore "creator_of_musical_paraphrase" (https://github.com/DOREMUS-ANR/knowledge-base/blob/master/vocabularies/function.ttl).
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <arranger>
+         <persName role="orchestrator" auth.uri="..."></persName>
+      </arranger>   
+   </work>
+</workList>
+```
 
 #### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
 
