@@ -298,6 +298,59 @@ Exemple :
    </work>
 </workList>
 ```
+### Langue originaire du texte
+
+Clé HUMDRUM : TXO
+
+Définition : Indique la langue originale de l'oeuvre encodée. 
+
+Chapitre des Guidelines : 3.6.6 Language Usage
+
+Balise : `<langUsage>/<language>`
+
+Autre option : -
+
+Recommandations : <langUsage> contient l'ensemble des langues devant être décrites dans le fichier MEI. Dans le cas d'une seule langue renseignée, ici la langue originale, il n'apparait pas nécessaire de s'encombrer d'un attribut le précisant (comme dans l'exemple ci-dessous). Pour la distinction de plusieurs langues dans le cas de traductions ou d'adaptations, voir ci-dessous. 
+
+Il est cependant conseillé, pour des questions d'interopérabilité, d'ajouter l'identifiant ISO de la langue renseignée à l'aide des attributs @auth.uri et @uri.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="..." auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639">French</language>
+     </langUsage>         
+   </work>
+</workList>
+```
+
+### Langue originaire du texte
+
+Clé HUMDRUM : TXO
+
+Définition : Indique la langue originale de l'oeuvre encodée. 
+
+Chapitre des Guidelines : 3.6.6 Language Usage
+
+Balise : `<langUsage>/<language>`
+
+Autre option : -
+
+Recommandations : <langUsage> contient l'ensemble des langues devant être décrites dans le fichier MEI. Dans le cas d'une seule langue renseignée, ici la langue originale, il n'apparait pas nécessaire de s'encombrer d'un attribut le précisant (comme dans l'exemple ci-dessous). Pour la distinction de plusieurs langues dans le cas de traductions ou d'adaptations, voir ci-dessous. 
+
+Il est cependant conseillé, pour des questions d'interopérabilité, d'ajouter l'identifiant ISO de la langue renseignée à l'aide des attributs @auth.uri et @uri.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="..." auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639">French</language>
+     </langUsage>         
+   </work>
+</workList>
+```
 
 #### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
 
