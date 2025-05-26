@@ -123,7 +123,7 @@ Exemple:
 </workList>
 ```
 
-### Alias ou pseudonyme du compositeur
+#### Alias ou pseudonyme du compositeur
 
 Clé : COL
 
@@ -432,6 +432,1966 @@ Exemple :
    </work>
 </workList>
 ```
+
+#### Titre de l'oeuvre 
+
+Clé HUMDRUM :  OTL
+
+Définition : Titre de l'oeuvre encodée.
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise :<title>
+
+Autre option : -
+
+Recommandations : Cette manière très simple de renseigner le titre convient surtout aux titres officiels et consensuels des oeuvres - des titres qui ne font pas l'objet d'ambiguité. Pour le renseignement de titres alternatifs ou populaires, voir plus bas.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <title xml:id="...">Pavane pour une infante défunte</title>
+   </work>
+</workList>
+```
+
+#### Titre courant de l'oeuvre
+
+Clé : OTP
+
+Définition : Titre populaire de l'oeuvre encodée.
+
+Chapitre des Guidelines : -  
+
+Balise : <title>
+
+Autre option : -
+
+Recommandations : Le titre courant peut facilement se confondre avec le titre alternatif (voir ci-dessous). Sur ce point, seuls les usages peuvent apporter des réponses. Dans le doute, il est préférable de privilégier le titre alternatif, moins restrictif que le sens sous-entendu par titre "courant". 
+
+**Exemple :**
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <title type="main">Sonate pour piano no. 11</title>
+      <title type="alternative">Marche turque</title>
+   </work>
+</workList>
+```
+
+#### Titre alternatif
+
+**Clé :** OTA
+
+**Définition :** Titre alternatif
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList xml:id="...">
+   <work xml:id="...">
+      <title type="main">Sonate pour piano no. 11</title>
+      <title type="alternative">Marche turque</title>
+   </work>
+</workList>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <title type="main">Sonate pour piano no. 11</title>
+      <title type="alternative">Marche turque</title>
+   </work>
+</workList>
+```
+
+#### Titre de l'œuvre d'appartenance
+
+**Clé :** OPR
+
+**Définition :** Titre de l'œuvre d'appartenance
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <title type="main">Missa Je suis déshéritée</title>
+      <title type="part">Kyrie</title>
+   </work>
+</workList>  
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <title type="main">Missa Je suis déshéritée</title>
+      <title type="part">Kyrie</title>
+   </work>
+</workList>  
+```
+
+
+#### Numéro d'acte
+
+**Clé :** OAC
+
+**Définition :** Numéro d'acte
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** <body>
+   <mdiv label="act" n="1">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+   <mdiv label="act" n="2">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+</body>
+
+**Recommandations :** S'il est bien question d'une précision au sein de <music> : "The score and parts elements are placed here and not directly within the body element because score and part characteristics may change from mdiv to mdiv. For example, the 2nd movement of a symphony may require different performing forces (and therefore different score and part layout) than the other movements. The mdiv element may be recursively nested in order to represent music which exhibits this kind of structure. For example, an opera is normally divided into acts, which are in turn divided into scenes." https://music-encoding.org/guidelines/v5/elements/mdiv.html
+
+**Exemple :**
+```
+
+```
+
+
+#### Numéro de scène
+
+**Clé :** OSC
+
+**Définition :** Numéro de scène
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** <body>
+   <mdiv label="act" n="1">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+   <mdiv label="act" n="2">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+</body>
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Numéro de mouvement
+
+**Clé :** OMV
+
+**Définition :** Numéro de mouvement
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** <body>
+   <mdiv label="Allegro" n="1">
+      <score></score>
+   </mdiv>
+   <mdiv label="Menuet" n="2">
+      <score></score>
+   </mdiv>
+</body>
+
+**Recommandations :** Même commentaire que ci-dessous. Pour le numéro, nous pourrions ajouter dans les différents éléments @n.
+
+**Exemple :**
+```
+
+```
+
+
+#### Désignation du mouvement ou nom du mouvement
+
+**Clé :** OMD
+
+**Définition :** Désignation du mouvement ou nom du mouvement
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** <body>
+   <mdiv label="Allegro">
+      <score></score>
+   </mdiv>
+   <mdiv label="Menuet">
+      <score></score>
+   </mdiv>
+</body> 
+
+**Recommandations :** S'il s'agit d'un seul mouvement encodé au sein du fichier MEI, alors il me semble que le renseignement est similaire à celui renseigné pour "titre de l'oeuvre d'appartenance". Sil s'agit de plusieurs mouvements encodés au sein d'un même fichier MEI (peu recommandé), dans ce cas il faudrait indiquer cette information dans <music> à l'aide de <mdiv>. 
+
+**Exemple :**
+```
+
+```
+
+
+#### Numéro d'opus
+
+**Clé :** OPS
+
+**Définition :** Numéro d'opus
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <title type="main">Prélude en do majeur</title>
+      <title type="subordinate" label="opus">28</title>
+   </work>
+</worklist> 
+____
+<workList>
+   <work>
+      <title type="main">Sonate pour piano no. 11</title>
+      <title type="subordinate" label="Köchel">331/300</title>
+   </work>
+</worklist>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <title type="main">Prélude en do majeur</title>
+      <title type="subordinate" label="opus">28</title>
+   </work>
+</worklist> 
+____
+<workList>
+   <work>
+      <title type="main">Sonate pour piano no. 11</title>
+      <title type="subordinate" label="Köchel">331/300</title>
+   </work>
+</worklist>
+```
+
+
+#### Numéro
+
+**Clé :** ONM
+
+**Définition :** Numéro
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Volume
+
+**Clé :** OVM
+
+**Définition :** Volume
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <source>
+  <bibl>
+      <composer>
+          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
+      </composer>
+      <title type="main">XXX</title>
+      <editor>
+          <persName auth="VIAF" auth.uri="..."></persName>
+      </editor>
+      <biblScope label="volume">1</biblScope>
+   </bibl>
+</source>
+
+**Autre option :** 
+
+**Recommandations :** J'imagine que cela concerne essentiellement des données bibliographiques. J'emprunte cette manière à la TEI. La même est possible pour le numéro. 
+
+**Exemple :**
+```
+<source>
+  <bibl>
+      <composer>
+          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
+      </composer>
+      <title type="main">XXX</title>
+      <editor>
+          <persName auth="VIAF" auth.uri="..."></persName>
+      </editor>
+      <biblScope label="volume">1</biblScope>
+   </bibl>
+</source>
+```
+
+
+#### Dédicace
+
+**Clé :** ODE
+
+**Définition :** Dédicace
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <creation>
+         <dedicatee>
+            <persName>...</persName>
+         </dedicatee>
+      </creation>
+   </work>
+<workList>  
+
+**Autre option :** Ou si nous souhaitons ajouter plus d'informations sur la dédicace elle-même et son contexte:
+
+<workList>
+   <work>
+      <creation>
+         <dedication>
+            <quote>...</quote>
+            <eventList>...</eventList>
+            <dedicatee>
+               <persName>...</persName>
+            </dedicatee>
+         </dedication>
+      </creation>
+   </work>
+<workList>   
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <creation>
+         <dedicatee>
+            <persName>...</persName>
+         </dedicatee>
+      </creation>
+   </work>
+<workList>  
+```
+
+
+#### Committant (commettant ?)
+
+**Clé :** OCO
+
+**Définition :** Committant (commettant ?)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Collectionneur ?
+
+**Clé :** OCL
+
+**Définition :** Collectionneur ?
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Note de format libre / Nota bene
+
+**Clé :** ONB
+
+**Définition :** Note de format libre / Nota bene
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** Cela se trouverait dans <notesStmt> puis <annot> (pour le header).
+
+**Exemple :**
+```
+
+```
+
+
+#### Date de composition
+
+**Clé :** ODT
+
+**Définition :** Date de composition
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <creation>
+         <date notbefore="1530" notafter="1550" cert="low">1540</date>
+      </creation>
+   </work>
+</workList>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <creation>
+         <date notbefore="1530" notafter="1550" cert="low">1540</date>
+      </creation>
+   </work>
+</workList>
+```
+
+
+#### Pays de composition
+
+**Clé :** OCY
+
+**Définition :** Pays de composition
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <creation>
+         <date notbefore="1530" notafter="1550" cert="low">1540</date>
+         <country>France</country>
+      </creation>
+   </work>
+</workList>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <creation>
+         <date notbefore="1530" notafter="1550" cert="low">1540</date>
+         <country>France</country>
+      </creation>
+   </work>
+</workList>
+```
+
+
+#### Ville de composition
+
+**Clé :** OPC
+
+**Définition :** Ville de composition
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <creation>
+         <date notbefore="1530" notafter="1550" cert="low">1540</date>
+         <country>France</country>
+         <settlement>Paris</settlement>
+      </creation>
+   </work>
+</workList>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <creation>
+         <date notbefore="1530" notafter="1550" cert="low">1540</date>
+         <country>France</country>
+         <settlement>Paris</settlement>
+      </creation>
+   </work>
+</workList>
+```
+
+
+#### Nom du groupe des interprètes
+
+**Clé :** MGN
+
+**Définition :** Nom du groupe des interprètes
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <perfMedium>
+         <castList>
+            <castItem>Quatuor Voce</castItem>
+         </castList>
+      </perfMedium>
+   </work>
+</workList> 
+
+**Autre option :** 
+
+**Recommandations :** Je ne crois pas que cela soit nécessaire dans un header d'une édition critique.
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <perfMedium>
+         <castList>
+            <castItem>Quatuor Voce</castItem>
+         </castList>
+      </perfMedium>
+   </work>
+</workList> 
+```
+
+
+#### Nom de l'interprète
+
+**Clé :** MPN
+
+**Définition :** Nom de l'interprète
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <perfMedium>
+         <castList>
+            <castItem>Guillaume Becker</castItem>
+         </castList>
+      </perfMedium>
+   </work>
+</workList> 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <perfMedium>
+         <castList>
+            <castItem>Guillaume Becker</castItem>
+         </castList>
+      </perfMedium>
+   </work>
+</workList> 
+```
+
+
+#### Interprète soupçonné (?)
+
+**Clé :** MPS
+
+**Définition :** Interprète soupçonné (?)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Date d'exécution/représentation
+
+**Clé :** MRD
+
+**Définition :** Date d'exécution/représentation
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Lieu d'exécution/représentation
+
+**Clé :** MLC
+
+**Définition :** Lieu d'exécution/représentation
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Nom du responsable de l'exécution/représentation (chef d'orchestre)
+
+**Clé :** MCN
+
+**Définition :** Nom du responsable de l'exécution/représentation (chef d'orchestre)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Date de la première exécution/représentation
+
+**Clé :** MPD
+
+**Définition :** Date de la première exécution/représentation
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Titre de la collection
+
+**Clé :** GTL
+
+**Définition :** Titre de la collection
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Œuvre associée (ex. Stéphane Mallarmé, L’Après-midi d’un faune)
+
+**Clé :** GAW
+
+**Définition :** Œuvre associée (ex. Stéphane Mallarmé, L’Après-midi d’un faune)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Désignation de la collection
+
+**Clé :** GCO
+
+**Définition :** Désignation de la collection
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### État de publication (ex. publié, pas encore publié, en cours de publication)
+
+**Clé :** PUB
+
+**Définition :** État de publication (ex. publié, pas encore publié, en cours de publication)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <sourceDesc>
+   <source>
+      <bibl>
+         <unpub>En raison d'un manque de financement</unpub>
+      </bibl>
+   </source>
+
+**Autre option :** 
+
+**Recommandations :** En MEI, l'approche est à l'évidence très binaire : publié ou non. Nul besoin de le préciser si l'entité est bel et bien publiée (assez logique), mais par contre <unpub> est assez limité. Seul du texte est possible, expliquant les raisons de la non-publication. <unpub> peut d'ailleurs aussi aller dans <imprint> pour plus de précision sur le contexte de la non-publication (si celle-ci dépend de la maison d'édition).
+
+**Exemple :**
+```
+<sourceDesc>
+   <source>
+      <bibl>
+         <unpub>En raison d'un manque de financement</unpub>
+      </bibl>
+   </source>
+```
+
+
+#### Éditeur de la source utilisée pour l'édition digitale
+
+**Clé :** PED
+
+**Définition :** Éditeur de la source utilisée pour l'édition digitale
+
+**Chapitre des Guidelines :** 
+
+**Balise :** Si c'est une personne :
+<sourceDesc>
+   <source>
+      <bibl>
+         <editor>
+           <persName auth="VIAF" auth.uri="https://viaf.org/viaf/12395760/">Paolo Fabri</persName>
+         </editor>
+      </bibl>
+   </source>
+
+**Autre option :** Si c'est une maison d'édition (cumulable) :
+<sourceDesc>
+     <source>
+         <bibl>
+            <imprint>
+               <corpName>Edizioni Suvini Zerboni</corpName>
+               <date>2000</date>
+               <settlement auth="GeoNames" auth.uri="https://www.geonames.org/3173435/milan.html">Milano</settlement>
+            </imprint>
+         </bibl>
+     </source>
+
+**Recommandations :** 
+
+**Exemple :**
+```
+Si c'est une personne :
+<sourceDesc>
+   <source>
+      <bibl>
+         <editor>
+           <persName auth="VIAF" auth.uri="https://viaf.org/viaf/12395760/">Paolo Fabri</persName>
+         </editor>
+      </bibl>
+   </source>
+```
+
+
+#### Premier éditeur
+
+**Clé :** PPR
+
+**Définition :** Premier éditeur
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <sourceDesc>
+   <source>
+      <bibl>
+         <editor xml:id="E1" n="1" precedes="#E2">
+            <persName></persName>
+         </editor>
+         <editor xml:id="E2" n="2" follows="#E1">>
+            <persName></persName>
+         </editor>     
+      </bibl>
+   </source>
+
+**Autre option :** Même logique s'il s'agit de la maison d'édition en utilisant <imprint>. Des dates peuvent également être ajoutées pour <editor> pour plus de précisions.
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<sourceDesc>
+   <source>
+      <bibl>
+         <editor xml:id="E1" n="1" precedes="#E2">
+            <persName></persName>
+         </editor>
+         <editor xml:id="E2" n="2" follows="#E1">>
+            <persName></persName>
+         </editor>     
+      </bibl>
+   </source>
+```
+
+
+#### Date de la première publication
+
+**Clé :** PDT
+
+**Définition :** Date de la première publication
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <sourceDesc>
+   <source>
+      <bibl>
+         <edition xml:id="E1" n="1" precedes="#E2">
+            <editor  n="1">
+               <persName></persName>
+            </editor>
+            <date>1940</date>
+         <edition xml:id="E2" n="2" follows="#E1">   
+            <editor n="2">
+               <persName></persName>
+            </editor> 
+            <date>1999</date> 
+         </edition>     
+      </bibl>
+   </source>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<sourceDesc>
+   <source>
+      <bibl>
+         <edition xml:id="E1" n="1" precedes="#E2">
+            <editor  n="1">
+               <persName></persName>
+            </editor>
+            <date>1940</date>
+         <edition xml:id="E2" n="2" follows="#E1">   
+            <editor n="2">
+               <persName></persName>
+            </editor> 
+            <date>1999</date> 
+         </edition>     
+      </bibl>
+   </source>
+```
+
+
+#### Titre de publication
+
+**Clé :** PTL
+
+**Définition :** Titre de publication
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <sourceDesc>
+   <source>
+      <bibl>
+         <title type="main"> Il nono libro de madrigali</title>
+         <title type="subordinate">a cinque voci (1599)</title>  
+      </bibl>
+   </source>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<sourceDesc>
+   <source>
+      <bibl>
+         <title type="main"> Il nono libro de madrigali</title>
+         <title type="subordinate">a cinque voci (1599)</title>  
+      </bibl>
+   </source>
+```
+
+
+#### Lieu de publication
+
+**Clé :** PPP
+
+**Définition :** Lieu de publication
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <sourceDesc>
+   <source recordtype="c">
+      <bibl>
+         <composer>
+           <persName auth="VIAF" auth.uri="https://viaf.org/viaf/2656905/">Luca Marenzio</persName>
+         </composer>
+         <title type="main"> Il nono libro de madrigali</title>
+         <title type="subordinate">a cinque voci (1599)</title>
+         <imprint>
+            <corpName>Edizioni Suvini Zerboni</corpName>
+            <date>2000</date>
+            <settlement auth="GeoNames" auth.uri="https://www.geonames.org/3173435/milan.html">Milano</settlement>
+         </imprint>
+      </bibl>
+   </source>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<sourceDesc>
+   <source recordtype="c">
+      <bibl>
+         <composer>
+           <persName auth="VIAF" auth.uri="https://viaf.org/viaf/2656905/">Luca Marenzio</persName>
+         </composer>
+         <title type="main"> Il nono libro de madrigali</title>
+         <title type="subordinate">a cinque voci (1599)</title>
+         <imprint>
+            <corpName>Edizioni Suvini Zerboni</corpName>
+            <date>2000</date>
+            <settlement auth="GeoNames" auth.uri="https://www.geonames.org/3173435/milan.html">Milano</settlement>
+         </imprint>
+      </bibl>
+   </source>
+```
+
+
+#### Numéro de catalogue de l'éditeur (ex. cotage)
+
+**Clé :** PC#
+
+**Définition :** Numéro de catalogue de l'éditeur (ex. cotage)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Numéro de catalogue scientifique (abr.) [ex. BWV 551]
+
+**Clé :** SCT
+
+**Définition :** Numéro de catalogue scientifique (abr.) [ex. BWV 551]
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Numéro de catalogue scientifique (pas abr.) [ex. Koechel 117]
+
+**Clé :** SCA
+
+**Définition :** Numéro de catalogue scientifique (pas abr.) [ex. Koechel 117]
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Titre du manuscrit
+
+**Clé :** SMS
+
+**Définition :** Titre du manuscrit
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <source recordtype="d">
+  <bibl>
+     <physLoc>
+       <repository>
+          <corpName>Bibliothèque nationale de France</corpName>
+          <abbr>BnF</abbr>
+       </repository>
+     </physLoc>
+     <relatedItem>
+       <bibl>
+          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+          <abbr>Fr. 146</abbr>
+          <title type="alternative">Roman de Fauvel</title>
+          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+       </bibl>
+     </relatedItem>
+  </bibl>
+</source>
+
+**Autre option :** <manifestation recordtype="d">
+   <identifier>
+      <title>Le Roman de Fauvel</title>
+   </identifier>
+   <langUsage>
+      <language n="1">Français</language>
+      <language n="2">Latin</language>
+   </langUsage>   
+   <itemList>
+      <item recordtype="d">
+         <physLoc>
+            <repository>
+               <corpName>Bibliothèque nationale de France</corpName>
+               <abbr>BnF</abbr>
+            </repository>
+         </physLoc>
+         <identifier>
+            <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+            <abbr>Fr. 146</abbr>
+            <title type="alternative">Roman de Fauvel</title>
+            <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+         </identifier>  
+         <availability>
+            <accessRestrict>Non consultable en bibliothèque</accessRestrict>
+         </availability> 
+      </item>
+   </itemList>
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<source recordtype="d">
+  <bibl>
+     <physLoc>
+       <repository>
+          <corpName>Bibliothèque nationale de France</corpName>
+          <abbr>BnF</abbr>
+       </repository>
+     </physLoc>
+     <relatedItem>
+       <bibl>
+          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+          <abbr>Fr. 146</abbr>
+          <title type="alternative">Roman de Fauvel</title>
+          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+       </bibl>
+     </relatedItem>
+  </bibl>
+</source>
+```
+
+
+#### Lieu de conservation du manuscrit
+
+**Clé :** SML
+
+**Définition :** Lieu de conservation du manuscrit
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <source recordtype="d">
+  <bibl>
+     <physLoc>
+       <repository>
+          <corpName>Bibliothèque nationale de France</corpName>
+          <abbr>BnF</abbr>
+       </repository>
+     </physLoc>
+     <relatedItem>
+       <bibl>
+          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+          <abbr>Fr. 146</abbr>
+          <title type="alternative">Roman de Fauvel</title>
+          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+       </bibl>
+     </relatedItem>
+  </bibl>
+</source>
+
+**Autre option :** <manifestation recordtype="d">
+   <identifier>
+      <title>Le Roman de Fauvel</title>
+   </identifier>
+   <langUsage>
+      <language n="1">Français</language>
+      <language n="2">Latin</language>
+   </langUsage>   
+   <itemList>
+      <item recordtype="d">
+         <physLoc>
+            <repository>
+               <corpName>Bibliothèque nationale de France</corpName>
+               <abbr>BnF</abbr>
+            </repository>
+         </physLoc>
+         <identifier>
+            <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+            <abbr>Fr. 146</abbr>
+            <title type="alternative">Roman de Fauvel</title>
+            <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+         </identifier>  
+         <availability>
+            <accessRestrict>Non consultable en bibliothèque</accessRestrict>
+         </availability> 
+      </item>
+   </itemList>
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<source recordtype="d">
+  <bibl>
+     <physLoc>
+       <repository>
+          <corpName>Bibliothèque nationale de France</corpName>
+          <abbr>BnF</abbr>
+       </repository>
+     </physLoc>
+     <relatedItem>
+       <bibl>
+          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+          <abbr>Fr. 146</abbr>
+          <title type="alternative">Roman de Fauvel</title>
+          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+       </bibl>
+     </relatedItem>
+  </bibl>
+</source>
+```
+
+
+#### Info sur l'accès au manuscrit
+
+**Clé :** SMA
+
+**Définition :** Info sur l'accès au manuscrit
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <source recordtype="d">
+  <bibl>
+     <physLoc>
+       <repository>
+          <corpName>Bibliothèque nationale de France</corpName>
+          <abbr>BnF</abbr>
+       </repository>
+     </physLoc>
+     <relatedItem>
+       <bibl>
+          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+          <abbr>Fr. 146</abbr>
+          <title type="alternative">Roman de Fauvel</title>
+          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+          <ref target="https://gallica.bnf.fr/ark:/12148/btv1b8454675g"/>
+          <availability>
+             <accessRestrict>Non consultable en bibliothèque</accessRestrict>
+          </availability>
+       </bibl>
+     </relatedItem>     
+  </bibl>
+</source>
+
+**Autre option :** <manifestation recordtype="d">
+   <identifier>
+      <title>Le Roman de Fauvel</title>
+   </identifier>
+   <langUsage>
+      <language n="1">Français</language>
+      <language n="2">Latin</language>
+   </langUsage>   
+   <itemList>
+      <item recordtype="d">
+         <physLoc>
+            <repository>
+               <corpName>Bibliothèque nationale de France</corpName>
+               <abbr>BnF</abbr>
+            </repository>
+         </physLoc>
+         <identifier>
+            <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+            <abbr>Fr. 146</abbr>
+            <title type="alternative">Roman de Fauvel</title>
+            <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+         </identifier>  
+         <availability>
+            <accessRestrict>Non consultable en bibliothèque</accessRestrict>
+         </availability> 
+      </item>
+   </itemList>
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<source recordtype="d">
+  <bibl>
+     <physLoc>
+       <repository>
+          <corpName>Bibliothèque nationale de France</corpName>
+          <abbr>BnF</abbr>
+       </repository>
+     </physLoc>
+     <relatedItem>
+       <bibl>
+          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+          <abbr>Fr. 146</abbr>
+          <title type="alternative">Roman de Fauvel</title>
+          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+          <ref target="https://gallica.bnf.fr/ark:/12148/btv1b8454675g"/>
+          <availability>
+             <accessRestrict>Non consultable en bibliothèque</accessRestrict>
+          </availability>
+       </bibl>
+     </relatedItem>     
+  </bibl>
+</source>
+```
+
+
+#### Éditeur de l'édition électronique 
+
+**Clé :** YEP
+
+**Définition :** Éditeur de l'édition électronique 
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+```
+
+
+#### Date et propriétaire du copyright de l'édition électronique
+
+**Clé :** YEC
+
+**Définition :** Date et propriétaire du copyright de l'édition électronique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+   </availability>
+</pubStmt>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+   </availability>
+</pubStmt>
+```
+
+
+#### Date de mise à disposition de l'édition électronique
+
+**Clé :** YER
+
+**Définition :** Date de mise à disposition de l'édition électronique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+```
+
+
+#### License
+
+**Clé :** YEM
+
+**Définition :** License
+
+**Chapitre des Guidelines :** 3.4.1.3 Publication, Distribution, etc.
+
+**Balise :** <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</p>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+
+**Autre option :** <pubStmt xml : id…>
+    <availability xml : id…>
+       <useRestrict xml : id…>Licence:... </useRestrict>
+    </availability>
+</pubStmt>
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</p>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+```
+
+
+#### Pays de copyright
+
+**Clé :** YEN
+
+**Définition :** Pays de copyright
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <country>France</country>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</P>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <country>France</country>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</P>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+```
+
+
+#### Document d'origine de l'édition électronique
+
+**Clé :** YOR
+
+**Définition :** Document d'origine de l'édition électronique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** Donc une source ? <sourceDesc ?> 
+
+**Exemple :**
+```
+
+```
+
+
+#### Propriétaire du document d'origine
+
+**Clé :** YOO
+
+**Définition :** Propriétaire du document d'origine
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Année du copyright originaire
+
+**Clé :** YOE
+
+**Définition :** Année du copyright originaire
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Éditeur du document d'origine
+
+**Clé :** EED
+
+**Définition :** Éditeur du document d'origine
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Éditeur de l'édition électronique (encodeur?)
+
+**Clé :** ENC
+
+**Définition :** Éditeur de l'édition électronique (encodeur?)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="encoder" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="encoder" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+```
+
+
+#### Date d'encodage de l'édition électronique
+
+**Clé :** END
+
+**Définition :** Date d'encodage de l'édition électronique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <encodingDes>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<encodingDes>
+```
+
+
+#### Modification du document électronique
+
+**Clé :** EMD
+
+**Définition :** Modification du document électronique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <encodingDes>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<encodingDes>
+```
+
+
+#### Version de l'édition électronique
+
+**Clé :** EEV
+
+**Définition :** Version de l'édition électronique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <encodingDes>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<encodingDes>
+```
+
+
+#### Numéro du fichier électronique
+
+**Clé :** EFL
+
+**Définition :** Numéro du fichier électronique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <encodingDes>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<encodingDes>
+```
+
+
+#### État de l'encodage
+
+**Clé :** EST
+
+**Définition :** État de l'encodage
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <encodingDes>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<encodingDes>
+```
+
+
+#### Désignation de la collection
+
+**Clé :** ACO
+
+**Définition :** Désignation de la collection
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Désignation de la forme
+
+**Clé :** AFR
+
+**Définition :** Désignation de la forme
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Désignation du genre musical
+
+**Clé :** AGN
+
+**Définition :** Désignation du genre musical
+
+**Chapitre des Guidelines :** 3.4.1.5 Notes Statement
+
+**Balise :** <workList>
+   <work>
+      <classification xml :id="…">
+         <termList xml:id="…">
+            <term label="music genre" xml:id="…">...</term>
+         </termList>
+      </classification>
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <classification xml :id="…">
+         <termList xml:id="…">
+            <term label="music genre" xml:id="…">...</term>
+         </termList>
+      </classification>
+```
+
+
+#### Désignation du style/période/typologie de l'œuvre
+
+**Clé :** AST
+
+**Définition :** Désignation du style/période/typologie de l'œuvre
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <creation xml:id="…">
+         <periodName>Contemporary music</periodName>
+         <styleName>Minimalist</styleName>
+      </creation>
+   </work>
+</workList>   
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <creation xml:id="…">
+         <periodName>Contemporary music</periodName>
+         <styleName>Minimalist</styleName>
+      </creation>
+   </work>
+</workList>   
+```
+
+
+#### Classification du mode (Moyen âge et Renaissance)
+
+**Clé :** AMD
+
+**Définition :** Classification du mode (Moyen âge et Renaissance)
+
+**Chapitre des Guidelines :** 
+
+**Balise :** <workList>
+   <work>
+      <key mode="dorian">
+      <creation xml:id="…">
+         <periodName>Contemporary music</periodName>
+         <styleName>Minimalist</styleName>
+      </creation>
+   </work>
+</workList>  
+
+**Autre option :** 
+
+**Recommandations :** En MEI, cela semble être une donnée à renseigner dans <key>, donc dans <work> ou <expression>, avec @mode. L'information peut également se retrouver dans la définition des portées. Il y a trois vocabulaires contrôlés MEI pour les modes. Voir data.mode.
+
+**Exemple :**
+```
+<workList>
+   <work>
+      <key mode="dorian">
+      <creation xml:id="…">
+         <periodName>Contemporary music</periodName>
+         <styleName>Minimalist</styleName>
+      </creation>
+   </work>
+</workList>  
+```
+
+
+#### Classification métrique
+
+**Clé :** AMT
+
+**Définition :** Classification métrique
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Effectif
+
+**Clé :** AIN
+
+**Définition :** Effectif
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Origine géographique de l'œuvre
+
+**Clé :** ARE
+
+**Définition :** Origine géographique de l'œuvre
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
+
+#### Localisation géographique de l'œuvre
+
+**Clé :** ARL
+
+**Définition :** Localisation géographique de l'œuvre
+
+**Chapitre des Guidelines :** 
+
+**Balise :** 
+
+**Autre option :** 
+
+**Recommandations :** 
+
+**Exemple :**
+```
+
+```
+
 
 #### Encoding Sources in MEI (3.7) - Encodage des sources en MEI
 
