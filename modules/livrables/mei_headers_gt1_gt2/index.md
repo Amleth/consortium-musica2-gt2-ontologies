@@ -325,7 +325,7 @@ Exemple :
 </workList>
 ```
 
-### Langue originaire du texte
+### Langue originale de la pièce
 
 Clé HUMDRUM : TXO
 
@@ -348,6 +348,34 @@ Exemple :
       <langUsage>
          <language xml:id="..." auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639">French</language>
      </langUsage>         
+   </work>
+</workList>
+```
+
+### Langue de la pièce encodée (si différente de la langue originale)
+
+Clé HUMDRUM : TXL
+
+Définition : Indique la langue de l'oeuvre encodée, si différente de la langue originale (traduction, adaptation, etc). 
+
+Chapitre des Guidelines : 3.6.6 Language Usage
+
+Balise : `<langUsage>/<language>`
+
+Autre option : -
+
+Recommandations : En cas de langue traduite utilisée au sein du fichier, il semble que la seule possibilité en MEI (en raison de l'absence du <ProfilDesc> de la TEI) est de préciser la nature des langues à l'aide d'un @type (type="original", type="translation"). C'est à ce niveau que la balise <langUsage> trouve véritablement son sens en permettant de lister plusieurs langues. 
+
+En plus de l'identifiant ISO, il est conseillé de préciser un @xml:id propre à chaque langue afin de pouvoir renseigner ce même identifiant dans la partie <music>, dans <verse> ou <syl> à l'aide de @xml:lang - précisant ainsi la langue utilisée pour chaque entité textuelle présente dans l'édition numérique.  
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="Lat" auth.uri="https://iso639-3.sil.org/code/lat" uri="ISO 639-3" type="original">Latin</language>
+         <language xml:id="Fr" auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639-3" type="translation">French</language>
+     </langUsage>          
    </work>
 </workList>
 ```
