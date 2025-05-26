@@ -387,9 +387,9 @@ Définition : Indique, le cas échéant, l'identité de la personne responsable 
 
 Chapitre des Guidelines : -
 
-Balise (dans le cas d'un traducteur historique, propre à l'oeuvre encodée) : `<contributor>/<persName>`
+Balise (dans le cas d'un traducteur historique, propre à l'oeuvre encodée) : `<contributor>`/`<persName>`
 
-Autre option (dans le cas d'un traducteur ad hoc, pour l'édition numérique ou l'édition moderne utilisée comme source) : '<respStmt>/<persName>`
+Autre option (dans le cas d'un traducteur ad hoc, pour l'édition numérique ou l'édition moderne utilisée comme source) : `<respStmt>`/`<persName>`
 
 Recommandations : Renseigner la personne responsable de la traduction d'une oeuvre dépend avant tout du statut de cette dernière. S'il s'agit d'un traducteur historique (dans le cas où la traduction est une manifestation de l'oeuvre), celui-ci est renseigné comme un <contributor> au sein de <workList>. Sa fonction précise est indiquée à l'aide de @role="translator" - le terme "translator" fait partie des Marc Relators ainsi que du vocabulaire des fonctions de Doremus. L'identifiant du traducteur (@xml:id) doit être ajouté dans la définition de la langue <language>.
 
@@ -545,7 +545,7 @@ Définition : Titre de l'œuvre globale dans le cas d'une section ou d'un mouvem
 
 Chapitre des Guidelines : 
 
-Balise :  <title type="main"> ; <title type="uniform">
+Balise : `<title type="main">` ; `<title type="uniform">`
 
 Autre option : 
 
@@ -563,175 +563,31 @@ Exemple :
 </workList>  
 ```
 
-#### Numéro d'acte
-
-Clé HUMDRUM : OAC
-
-Définition : Numéro d'acte
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="act" n="1">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-   <mdiv label="act" n="2">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-</body>
-
-Recommandations : S'il est bien question d'une précision au sein de <music> : "The score and parts elements are placed here and not directly within the body element because score and part characteristics may change from mdiv to mdiv. For example, the 2nd movement of a symphony may require different performing forces (and therefore different score and part layout) than the other movements. The mdiv element may be recursively nested in order to represent music which exhibits this kind of structure. For example, an opera is normally divided into acts, which are in turn divided into scenes." https://music-encoding.org/guidelines/v5/elements/mdiv.html
-
-Exemple :
-```
-
-```
-
-
-#### Numéro de scène
-
-Clé HUMDRUM : OSC
-
-Définition : Numéro de scène
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="act" n="1">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-   <mdiv label="act" n="2">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-</body>
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-
-#### Numéro de mouvement
-
-Clé HUMDRUM : OMV
-
-Définition : Numéro de mouvement
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="Allegro" n="1">
-      <score></score>
-   </mdiv>
-   <mdiv label="Menuet" n="2">
-      <score></score>
-   </mdiv>
-</body>
-
-Recommandations : Même commentaire que ci-dessous. Pour le numéro, nous pourrions ajouter dans les différents éléments @n.
-
-Exemple :
-```
-
-```
-
-
-#### Désignation du mouvement ou nom du mouvement
-
-Clé HUMDRUM : OMD
-
-Définition : Désignation du mouvement ou nom du mouvement
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="Allegro">
-      <score></score>
-   </mdiv>
-   <mdiv label="Menuet">
-      <score></score>
-   </mdiv>
-</body> 
-
-Recommandations : S'il s'agit d'un seul mouvement encodé au sein du fichier MEI, alors il me semble que le renseignement est similaire à celui renseigné pour "titre de l'oeuvre d'appartenance". Sil s'agit de plusieurs mouvements encodés au sein d'un même fichier MEI (peu recommandé), dans ce cas il faudrait indiquer cette information dans <music> à l'aide de <mdiv>. 
-
-Exemple :
-```
-
-```
-
-
 #### Numéro d'opus
 
 Clé HUMDRUM : OPS
 
-Définition : Numéro d'opus
+Définition : Numéro d'opus de l'oeuvre d'appartenance de l'oeuvre encodée.
 
-Chapitre des Guidelines : 
+Chapitre des Guidelines : 3.3.1 Title Statement
 
-Balise : <workList>
-   <work>
-      <title type="main">Prélude en do majeur</title>
-      <title type="subordinate" label="opus">28</title>
-   </work>
-</worklist> 
-____
-<workList>
-   <work>
-      <title type="main">Sonate pour piano no. 11</title>
-      <title type="subordinate" label="Köchel">331/300</title>
-   </work>
-</worklist>
+Balise : `<title type="uniform">`/`<title type="subordinate" label="opus">`
 
-Autre option : 
+Autre option : `<identifier label="opus">`
 
-Recommandations : 
+Recommandations : Nous envisageons le numéro d'opus comme un syntagme du titre de l'oeuvre d'appartenance. Ainsi, nous recommandons de l'encoder à l'aide d'une balise <title> et du @type="subordinate", tout en précisant le @label pour plus de clarté. Toutefois, les guidelines MEI semblent privilégier <identifier>, utilisé comme élément enfant de <title>. Nous proposons cette possibilité comme une option alternative, bien que celle-ci apparaisse structurellement discutable, notamment au regard du sens particulièrement vague de l'élément <identifier> ("Examples include an International Standard Book/Music Number, Library of Congress Control Number, publisher’s number, a personal identification number, an entry in a bibliography or catalog, etc."). Nous conseillons a minima de bien préciser chaque fois @label="opus". 
 
 Exemple :
 ```
 <workList>
    <work>
       <title type="main">Prélude en do majeur</title>
-      <title type="subordinate" label="opus">28</title>
+      <titlePart>
+         <title type="uniform">Vingt-quatre Préludes pour piano</title>
+         <title type="subordinate" label="opus">28</title>
+      <titlePart>
    </work>
 </worklist> 
-____
-<workList>
-   <work>
-      <title type="main">Sonate pour piano no. 11</title>
-      <title type="subordinate" label="Köchel">331/300</title>
-   </work>
-</worklist>
 ```
 
 
@@ -911,50 +767,41 @@ Exemple :
 
 Clé HUMDRUM : ODT
 
-Définition : Date de composition
+Définition : Date de composition de l'oeuvre encodée.
 
-Chapitre des Guidelines : 
+Chapitre des Guidelines : 3.5.6 Work History
 
-Balise : <workList>
-   <work>
-      <creation>
-         <date notbefore="1530" notafter="1550" cert="low">1540</date>
-      </creation>
-   </work>
-</workList>
+Balise : <creation>/<date>
 
 Autre option : 
 
-Recommandations : 
+Recommandations : La date de composition peut aussi être nuancée ou approchée à l'aide d'attributs, surtout dans le cas d'une date incertaine. En MEI, la date renseignée dans les attributs doit suivre la norme ISO 8601 (AAAA-MM-JJ). La valeur de la balise <date> est  libre pour sa part. Plusieurs usages se rencontrent d'ailleurs dans les guidelines ("June 1987"; "2011"). Nous conseillons toutefois de suivre au maximum la norme ISO (AAAA ; AAAA-MM ou AAAA-MM-JJ) pour assurer sa bonne compréhension. Par ailleurs, le niveau de certitude accordé à une date peut également être précisé à l'aide de l'attribut @cert dont les valeurs sont "high", "medium", "low" et "unknown".
 
 Exemple :
 ```
 <workList>
    <work>
       <creation>
-         <date notbefore="1530" notafter="1550" cert="low">1540</date>
+         <date notbefore="1530-01-01" notafter="1550-01-01" cert="low">1540</date>
       </creation>
    </work>
 </workList>
 ```
 
 
-#### Pays de composition
+#### Pays de composition de l'oeuvre encodée
 
 Clé HUMDRUM : OCY
 
-Définition : Pays de composition
+Définition : Pays dans lequel l'oeuvre encodée à été composée. 
 
 Chapitre des Guidelines : 
 
-Balise : <workList>
-   <work>
-      <creation>
+Balise : <creation>
          <date notbefore="1530" notafter="1550" cert="low">1540</date>
          <country>France</country>
       </creation>
-   </work>
-</workList>
+
 
 Autre option : 
 
@@ -2410,6 +2257,133 @@ Balise :
 Autre option : 
 
 Recommandations : 
+
+Exemple :
+```
+
+```
+
+#### Numéro d'acte (<music?>)
+
+Clé HUMDRUM : OAC
+
+Définition : Numéro d'acte
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="act" n="1">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+   <mdiv label="act" n="2">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+</body>
+
+Recommandations : S'il est bien question d'une précision au sein de <music> : "The score and parts elements are placed here and not directly within the body element because score and part characteristics may change from mdiv to mdiv. For example, the 2nd movement of a symphony may require different performing forces (and therefore different score and part layout) than the other movements. The mdiv element may be recursively nested in order to represent music which exhibits this kind of structure. For example, an opera is normally divided into acts, which are in turn divided into scenes." https://music-encoding.org/guidelines/v5/elements/mdiv.html
+
+Exemple :
+```
+
+```
+
+
+#### Numéro de scène (<music?>)
+
+Clé HUMDRUM : OSC
+
+Définition : Numéro de scène
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="act" n="1">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+   <mdiv label="act" n="2">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+</body>
+
+Recommandations : 
+
+Exemple :
+```
+
+```
+
+
+#### Numéro de mouvement (<music?>)
+
+Clé HUMDRUM : OMV
+
+Définition : Numéro de mouvement
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="Allegro" n="1">
+      <score></score>
+   </mdiv>
+   <mdiv label="Menuet" n="2">
+      <score></score>
+   </mdiv>
+</body>
+
+Recommandations : Même commentaire que ci-dessous. Pour le numéro, nous pourrions ajouter dans les différents éléments @n.
+
+Exemple :
+```
+
+```
+
+
+#### Désignation du mouvement ou nom du mouvement
+
+Clé HUMDRUM : OMD
+
+Définition : Désignation du mouvement ou nom du mouvement
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="Allegro">
+      <score></score>
+   </mdiv>
+   <mdiv label="Menuet">
+      <score></score>
+   </mdiv>
+</body> 
+
+Recommandations : S'il s'agit d'un seul mouvement encodé au sein du fichier MEI, alors il me semble que le renseignement est similaire à celui renseigné pour "titre de l'oeuvre d'appartenance". Sil s'agit de plusieurs mouvements encodés au sein d'un même fichier MEI (peu recommandé), dans ce cas il faudrait indiquer cette information dans <music> à l'aide de <mdiv>. 
 
 Exemple :
 ```
