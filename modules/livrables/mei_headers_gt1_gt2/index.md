@@ -31,7 +31,70 @@ Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines 
 
 ## Information about an MEI file (3.4) - Informations sur un fichier MEI
 
-### File description 
+### File description
+
+#### SourceDesc
+
+#### Numéro
+
+Clé HUMDRUM : ONM
+
+Définition : Numéro
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+
+```
+
+
+#### Volume
+
+Clé HUMDRUM : OVM
+
+Définition : Volume
+
+Chapitre des Guidelines : 
+
+Balise : <source>
+  <bibl>
+      <composer>
+          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
+      </composer>
+      <title type="main">XXX</title>
+      <editor>
+          <persName auth="VIAF" auth.uri="..."></persName>
+      </editor>
+      <biblScope label="volume">1</biblScope>
+   </bibl>
+</source>
+
+Autre option : 
+
+Recommandations : J'imagine que cela concerne essentiellement des données bibliographiques. J'emprunte cette manière à la TEI. La même est possible pour le numéro. 
+
+Exemple :
+```
+<source>
+  <bibl>
+      <composer>
+          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
+      </composer>
+      <title type="main">XXX</title>
+      <editor>
+          <persName auth="VIAF" auth.uri="..."></persName>
+      </editor>
+      <biblScope label="volume">1</biblScope>
+   </bibl>
+</source>
+```
 
 ### Edition Statement
 
@@ -588,68 +651,6 @@ Exemple :
       <titlePart>
    </work>
 </worklist> 
-```
-
-
-#### Numéro
-
-Clé HUMDRUM : ONM
-
-Définition : Numéro
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-
-#### Volume
-
-Clé HUMDRUM : OVM
-
-Définition : Volume
-
-Chapitre des Guidelines : 
-
-Balise : <source>
-  <bibl>
-      <composer>
-          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
-      </composer>
-      <title type="main">XXX</title>
-      <editor>
-          <persName auth="VIAF" auth.uri="..."></persName>
-      </editor>
-      <biblScope label="volume">1</biblScope>
-   </bibl>
-</source>
-
-Autre option : 
-
-Recommandations : J'imagine que cela concerne essentiellement des données bibliographiques. J'emprunte cette manière à la TEI. La même est possible pour le numéro. 
-
-Exemple :
-```
-<source>
-  <bibl>
-      <composer>
-          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
-      </composer>
-      <title type="main">XXX</title>
-      <editor>
-          <persName auth="VIAF" auth.uri="..."></persName>
-      </editor>
-      <biblScope label="volume">1</biblScope>
-   </bibl>
-</source>
 ```
 
 
@@ -2224,44 +2225,7 @@ Exemple :
 ```
 
 
-#### Origine géographique de l'œuvre
-
-Clé HUMDRUM : ARE
-
-Définition : Origine géographique de l'œuvre
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-
-#### Localisation géographique de l'œuvre
-
-Clé HUMDRUM : ARL
-
-Définition : Localisation géographique de l'œuvre
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
+### Dans la partie <music> (il faut dire que ce genre d'usage n'est pas recommandé) 
 
 #### Numéro d'acte (<music?>)
 
