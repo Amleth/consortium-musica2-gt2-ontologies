@@ -33,9 +33,9 @@ Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines 
 
 ### File description
 
-#### Titre du fichier MEI
+#### Titre de l'édition MEI
 
-Clé HUMDRUM : OTL
+Clé HUMDRUM : ≈ OTL
 
 Définition : Numéro
 
@@ -45,7 +45,7 @@ Balise :`<title type=main>`/`<title type="subordinate">`
 
 Autre option : `<title>`
 
-Recommandations : Le titre est une information souvent ambiguë dans les éditions numériques en raison de la confusion qui règne entre le titre de l'oeuvre complète, le titre de la partie encodée ou encore le titre de l'édition. D'ailleurs, le vocabulaire Humdrum ne dispose pas de clé spécifique pour cette dernière valeur. En MEI, dans <fileDesc>, les usages sont nombreux et divergent. Pourtant, il est manifeste que <title> se réfère ici au titre de l'édition numérique qui peut être distinct du titre de l'oeuvre encodée. En pratique, ces deux niveaux de titres se superposent souvent. Ainsi, pour distinguer le titre de l'édition et celui de la pièce (proprement encodé dans <workList>), nous proposons d'observer l'un des conseils donnés dans les guidelines tout en en uniformisant l'encodage. Ainsi, le <title> principal est suivi d'un <title> subordonné précisant que l'objet est ici l'édition numérique et non l'oeuvre en elle-même.
+Recommandations : Le titre est une information souvent ambiguë dans les éditions numériques en raison de la confusion qui règne entre le titre de l'oeuvre complète, le titre de la partie encodée ou encore le titre de l'édition. D'ailleurs, le vocabulaire Humdrum ne dispose pas de clé spécifique pour cette dernière valeur (OTL est le titre de l'oeuvre). En MEI, dans <fileDesc>, les usages sont nombreux et divergent. Pourtant, il est manifeste que <title> se réfère ici au titre de l'édition numérique qui peut être distinct du titre de l'oeuvre encodée. En pratique, ces deux niveaux de titres se superposent souvent. Ainsi, pour distinguer le titre de l'édition et celui de la pièce (proprement encodé dans <workList>), nous proposons d'observer l'un des conseils donnés dans les guidelines tout en en uniformisant l'encodage. Ainsi, le <title> principal est suivi d'un <title> subordonné précisant que l'objet est ici l'édition numérique et non l'oeuvre en elle-même.
 
 Exemple :
 ```
