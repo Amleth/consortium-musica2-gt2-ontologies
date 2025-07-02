@@ -8,7 +8,9 @@ Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, 
 
 L’interopérabilité des éditions critiques encodées en MEI repose sur l’adoption de normes partagées qui garantissent la cohérence et la compatibilité des fichiers produits. Actuellement, la grande liberté laissée aux encodeurs pour le renseignement des métadonnées dans le header MEI nuit à cette interopérabilité, en raison des choix individuels et des interprétations subjectives qui en résultent. Une telle hétérogénéité complique non seulement l’échange et l’exploitation des données, mais compromet également la transparence scientifique, un impératif fondamental des éditions critiques. C'est pourquoi nous proposons ici de proposer des alternatives d'encodage en FRBR ainsi que, le cas échéants, des alignements avec les clés de métadonnées HUMDRUM. Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines MEI afin d’en faciliter l’adoption et la mise en œuvre. Pour illustrer concrètement ces recommandations, des exemples détaillés sont intégrés au repository, accompagnés d’un modèle vierge prêt à l’emploi. 
 
-### Description du fichier MEI encodé <fileDesc>
+Le protocole est présenté de manière logique en abordant dans un premier temps les informations liées au fichier MEI encodé, ensuite la définition de l'œuvre avant de détailler la source. Bien que cette information ne respecte pas l'ordre des Guidelines MEI, elle nous semble conceptuellement logique car permettant de révéler l'intérêt du modèle FRBR dans les cas complexes de l'édition critique musicale.
+
+### 3. Description du fichier MEI encodé <fileDesc>
 
 #### Titre de l'édition MEI
 
