@@ -8,11 +8,7 @@ Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, 
 
 L’interopérabilité des éditions critiques encodées en MEI repose sur l’adoption de normes partagées qui garantissent la cohérence et la compatibilité des fichiers produits. Actuellement, la grande liberté laissée aux encodeurs pour le renseignement des métadonnées dans le header MEI nuit à cette interopérabilité, en raison des choix individuels et des interprétations subjectives qui en résultent. Une telle hétérogénéité complique non seulement l’échange et l’exploitation des données, mais compromet également la transparence scientifique, un impératif fondamental des éditions critiques. C'est pourquoi nous proposons ici de proposer des alternatives d'encodage en FRBR ainsi que, le cas échéants, des alignements avec les clés de métadonnées HUMDRUM. Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines MEI afin d’en faciliter l’adoption et la mise en œuvre. Pour illustrer concrètement ces recommandations, des exemples détaillés sont intégrés au repository, accompagnés d’un modèle vierge prêt à l’emploi. 
 
-## Common Metadata Concepts (3.3) - Concepts sur les métadonnées communes - (optionnel finalement, un peu redondant) 
-
-## Information about an MEI file (3.4) - Informations sur un fichier MEI
-
-### File description
+### Description du fichier MEI encodé <fileDesc>
 
 #### Titre de l'édition MEI
 
@@ -64,82 +60,7 @@ Exemple :
    </work>
 </workList>
 ```
-
-
-### SourceDesc
-
-#### Numéro
-
-Clé HUMDRUM : ONM
-
-Définition : Numéro
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-
-#### Volume
-
-Clé HUMDRUM : OVM
-
-Définition : Volume
-
-Chapitre des Guidelines : 
-
-Balise : <source>
-  <bibl>
-      <composer>
-          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
-      </composer>
-      <title type="main">XXX</title>
-      <editor>
-          <persName auth="VIAF" auth.uri="..."></persName>
-      </editor>
-      <biblScope label="volume">1</biblScope>
-   </bibl>
-</source>
-
-Autre option : 
-
-Recommandations : J'imagine que cela concerne essentiellement des données bibliographiques. J'emprunte cette manière à la TEI. La même est possible pour le numéro. 
-
-Exemple :
-```
-<source>
-  <bibl>
-      <composer>
-          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
-      </composer>
-      <title type="main">XXX</title>
-      <editor>
-          <persName auth="VIAF" auth.uri="..."></persName>
-      </editor>
-      <biblScope label="volume">1</biblScope>
-   </bibl>
-</source>
-```
-
-### Edition Statement
-
-### Revision Description
-
-## Functional Requirements for Bibliographic Records (3.5) - FRBR
-
-## Work Description (3.6) - Description de l'oeuvre
-
-### Work Identification
-
-#### Renseignement d'un ou plusieurs compositeurs
+### Description de l'œuvre musicale <worklist
 
 Clé HUMDRUM : COM
 
@@ -1120,37 +1041,7 @@ Exemple :
 ```
 
 ```
-
-
-#### État de publication (ex. publié, pas encore publié, en cours de publication)
-
-Clé HUMDRUM : PUB
-
-Définition : État de publication (ex. publié, pas encore publié, en cours de publication)
-
-Chapitre des Guidelines : 
-
-Balise : <sourceDesc>
-   <source>
-      <bibl>
-         <unpub>En raison d'un manque de financement</unpub>
-      </bibl>
-   </source>
-
-Autre option : 
-
-Recommandations : En MEI, l'approche est à l'évidence très binaire : publié ou non. Nul besoin de le préciser si l'entité est bel et bien publiée (assez logique), mais par contre <unpub> est assez limité. Seul du texte est possible, expliquant les raisons de la non-publication. <unpub> peut d'ailleurs aussi aller dans <imprint> pour plus de précision sur le contexte de la non-publication (si celle-ci dépend de la maison d'édition).
-
-Exemple :
-```
-<sourceDesc>
-   <source>
-      <bibl>
-         <unpub>En raison d'un manque de financement</unpub>
-      </bibl>
-   </source>
-```
-
+### Description de la source <SourceDesc>
 
 #### Éditeur de la source utilisée pour l'édition digitale
 
@@ -1197,7 +1088,6 @@ Si c'est une personne :
    </source>
 ```
 
-
 #### Premier éditeur
 
 Clé HUMDRUM : PPR
@@ -1236,7 +1126,6 @@ Exemple :
       </bibl>
    </source>
 ```
-
 
 #### Date de la première publication
 
@@ -1427,6 +1316,91 @@ Exemple :
 
 ```
 
+#### Numéro
+
+Clé HUMDRUM : ONM
+
+Définition : Numéro
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+```
+#### Volume
+
+Clé HUMDRUM : OVM
+
+Définition : Volume
+
+Chapitre des Guidelines : 
+
+Balise : <source>
+  <bibl>
+      <composer>
+          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
+      </composer>
+      <title type="main">XXX</title>
+      <editor>
+          <persName auth="VIAF" auth.uri="..."></persName>
+      </editor>
+      <biblScope label="volume">1</biblScope>
+   </bibl>
+</source>
+
+Autre option : 
+
+Recommandations : J'imagine que cela concerne essentiellement des données bibliographiques. J'emprunte cette manière à la TEI. La même est possible pour le numéro. 
+
+Exemple :
+```
+<source>
+  <bibl>
+      <composer>
+          <persName auth="VIAF" auth.uri="https://...">XXX</persName>
+      </composer>
+      <title type="main">XXX</title>
+      <editor>
+          <persName auth="VIAF" auth.uri="..."></persName>
+      </editor>
+      <biblScope label="volume">1</biblScope>
+   </bibl>
+</source>
+```
+#### Publication
+
+Clé HUMDRUM : PUB
+
+Définition : État de publication (ex. publié, pas encore publié, en cours de publication)
+
+Chapitre des Guidelines : 
+
+Balise : <sourceDesc>
+   <source>
+      <bibl>
+         <unpub>En raison d'un manque de financement</unpub>
+      </bibl>
+   </source>
+
+Autre option : 
+
+Recommandations : En MEI, l'approche est à l'évidence très binaire : publié ou non. Nul besoin de le préciser si l'entité est bel et bien publiée (assez logique), mais par contre <unpub> est assez limité. Seul du texte est possible, expliquant les raisons de la non-publication. <unpub> peut d'ailleurs aussi aller dans <imprint> pour plus de précision sur le contexte de la non-publication (si celle-ci dépend de la maison d'édition).
+
+Exemple :
+```
+<sourceDesc>
+   <source>
+      <bibl>
+         <unpub>En raison d'un manque de financement</unpub>
+      </bibl>
+   </source>
+```
 
 #### Titre du manuscrit
 
@@ -1506,7 +1480,6 @@ Exemple :
   </bibl>
 </source>
 ```
-
 
 #### Lieu de conservation du manuscrit
 
@@ -1702,7 +1675,6 @@ Exemple :
        <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
     </respStmt>
 ```
-
 
 #### Date et propriétaire du copyright de l'édition électronique
 
