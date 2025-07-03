@@ -37,31 +37,6 @@ Exemple :
 ```
 Recommandations : Dans <fileDesc>, il n'est pas nécessaire que le titre dispose d'une granularité fine comparable au renseignement du titre de l'oeuvre dans <workList>. Il n'existe cependant aucune restriction. Le plus important est de rester vigilant quant à la hiérarchie des titres spécifiée à l'aide de l'attribut @title dont les valeurs sont contrôlées (pour plus d'information sur les niveaux de titres, voir "Titre alternatif de l'oeuvre"). 
 
-#### Nom du compositeur
-
-Clé HUMDRUM : COM
-
-Définition : Indique le nom du compositeur de l'œuvre.
-
-Chapitre des Guidelines : 3.3.1. Title Statement
-
-Balise : `<composer>`
-
-Autre option : `<persName role="creator">`
-
-Recommandations : La partie <titleSmt> dispose d'éléments qui, à première vue, semblent redondant avec la description de l'oeuvre (<workList>), comme l'identité du compositeur, de l'arrangeur ou encore du librettiste. En réalité, il s'agit surtout de décrire proprement l'édition nuémrique (contexte bibliographique) et non l'oeuvre encodée elle-même. Globalement, les modalités d'encodage sont similaires à celles abordées dans la partie "Work Description" de ce guide. Le ou les compositeurs renseignés ici ne concernent toutefois que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. 
-
-
-Exemple : 
-```
-<workList xml:id=""..."">
-   <work xml:id=""..."">
-      <composer xml:id=""..."">
-          <persName role=""creator"" (""composer"") auth.uri=""http://..."">...</persName>
-      </composer>
-   </work>
-</workList>
-```
 #### Éditeur de l'édition électronique 
 
 Clé HUMDRUM : YEP
@@ -205,7 +180,6 @@ Exemple :
    </availability>
 </pubStmt>
 ```
-
 
 #### Pays de copyright
 
