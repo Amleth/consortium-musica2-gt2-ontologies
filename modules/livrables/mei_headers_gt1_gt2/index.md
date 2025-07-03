@@ -4,6 +4,24 @@
 
 Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, vise à proposer un protocole détaillé de renseignement des métadonnées au sein des headers MEI, plus particulièrement dans le cadre d'éditions critiques numériques. L’objectif est d'établir un guide dédié aux éditions encodées en MEI (Music Encoding Initiative) et de préciser où disposer les informations éditoriales et philologiques nécessaires, en proposant des choix raisonnés palliant diverses ambiguïtés des guidelines MEI. Fixer des paramètres partagés et reconnus par la communauté musicologique permettra de créer des fichiers MEI qui pourront être contrôlés, vérifiés et échangés au profit de la transparence scientifique et de l'interopérabilité. Pour ce faire, le modèle FRBR appliqué à l'encodage MEI sera privilégié et suivi à l’occasion.
 
+---
+  
+tradition directe (tous les exemplaires liés directement au texte, cad tous les exemplaires qui transmettent le texte tel qu'il est) ou indirecte (exemplaires qui témoignent d'une tradition en parallèle : les traductions, des textes qui font référence et qui citent, les commentaires, les parodies, etc... / utile lorsqu'un texte est corrompu, car fenêtre sur un moment historique précis où le texte n'était pas corrompu) ? La tradition inderecte correspond à notre _expression_list_
+--> exemple de Sophie : une expression, deux manifestations, deux items.
+
+  Il s'agira donc de rentrer dans le détail de l'organisation MEI/FRBR de expressionList, manifestationList et itemList => un document fils pour chaque de ce trois 'chapitres'.
+
+   - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
+---
+   
+choisir un thésaurus ?
+il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR
+
+ThB présentation générale de LRM + un paragraphe sur la réflexion entre BDD sémantique centralisée vs l’information sémantisée dans les headers MEI
+
+Faire valider par Kévin pour la place du modèle FRBR, pour nous c'est dans <workList>
+Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Johannes Kepper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
+
 ### 2. Approche des GT1 et GT2 pour la complétion des headers MEI
 
 L’interopérabilité des éditions critiques encodées en MEI repose sur l’adoption de normes partagées qui garantissent la cohérence et la compatibilité des fichiers produits. Actuellement, la grande liberté laissée aux encodeurs pour le renseignement des métadonnées dans le header MEI nuit à cette interopérabilité, en raison des choix individuels et des interprétations subjectives qui en résultent. Une telle hétérogénéité complique non seulement l’échange et l’exploitation des données, mais compromet également la transparence scientifique, un impératif fondamental des éditions critiques. C'est pourquoi nous proposons ici de proposer des alternatives d'encodage en FRBR ainsi que, le cas échéants, des alignements avec les clés de métadonnées HUMDRUM. Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines MEI afin d’en faciliter l’adoption et la mise en œuvre. Pour illustrer concrètement ces recommandations, des exemples détaillés sont intégrés au repository, accompagnés d’un modèle vierge prêt à l’emploi. 
@@ -2374,26 +2392,7 @@ En conclusion, il nous semble particulièrement important d'insister sur l'impor
 
  
 
- ### 4. Modules
 
-_4. 1. Éclairer les approches de la _recensio__
-  
-tradition directe (tous les exemplaires liés directement au texte, cad tous les exemplaires qui transmettent le texte tel qu'il est) ou indirecte (exemplaires qui témoignent d'une tradition en parallèle : les traductions, des textes qui font référence et qui citent, les commentaires, les parodies, etc... / utile lorsqu'un texte est corrompu, car fenêtre sur un moment historique précis où le texte n'était pas corrompu) ? La tradition inderecte correspond à notre _expression_list_
---> exemple de Sophie : une expression, deux manifestations, deux items.
-
-  Il s'agira donc de rentrer dans le détail de l'organisation MEI/FRBR de expressionList, manifestationList et itemList => un document fils pour chaque de ce trois 'chapitres'.
-
-   - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
-
-_4. 2. Usage du CIDOC CRM_
-   
-choisir un thésaurus ?
-il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR
-
-ThB présentation générale de LRM + un paragraphe sur la réflexion entre BDD sémantique centralisée vs l’information sémantisée dans les headers MEI
-
-Faire valider par Kévin pour la place du modèle FRBR, pour nous c'est dans <workList>
-Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Johannes Kepper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
 
 La _recensio_ consiste en deux étapes, la première desquelles s'occupe de différencier les sources de la « tradition directe » - tous les exemplaires qui transmettent l'œuvre en question - et les sources de la « tradition indirecte » – les traductions, citations, commentaires et parodies. Une fois cette première étape terminée, la seconde étape de la _recensio_ peut s'effectuer afin de procéder au dépouillement des toutes les sources recoltées et au recensement détaillé proprement dit. Le troisième point de la méthode est la _collatio_, qui consiste en la compairaison systématique des variantes et des erreurs attestés dans les sources, avant de démarer une étape plus critique, l'_eliminatio codicum descriptorum_, qui consiste à éliminer les exemplaires qui sont la copie exacte d'autres exemplaires conservés, afin de constituer un corpus cohérent et propice au _stemma codicum_, la dernière étape du processus consistant en la détermination de la relation entre les sources. Cette dernière étape permet l'établissement d'un arbre généalogique des sources représentant la tradition d'une œuvre.
 
