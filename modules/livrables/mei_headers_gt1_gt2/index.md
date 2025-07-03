@@ -62,6 +62,194 @@ Exemple :
    </work>
 </workList>
 ```
+#### Éditeur de l'édition électronique 
+
+Clé HUMDRUM : YEP
+
+Définition : Éditeur de l'édition électronique 
+
+Chapitre des Guidelines : 
+
+Balise : <fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+```
+
+#### Date et propriétaire du copyright de l'édition électronique
+
+Clé HUMDRUM : YEC
+
+Définition : Date et propriétaire du copyright de l'édition électronique
+
+Chapitre des Guidelines : 
+
+Balise : <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+   </availability>
+</pubStmt>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+   </availability>
+</pubStmt>
+```
+
+#### Date de mise à disposition de l'édition électronique
+
+Clé HUMDRUM : YER
+
+Définition : Date de mise à disposition de l'édition électronique
+
+Chapitre des Guidelines : 
+
+Balise : <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+```
+
+#### License
+
+Clé HUMDRUM : YEM
+
+Définition : License
+
+Chapitre des Guidelines : 3.4.1.3 Publication, Distribution, etc.
+
+Balise : <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</p>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+
+Autre option : <pubStmt xml : id…>
+    <availability xml : id…>
+       <useRestrict xml : id…>Licence:... </useRestrict>
+    </availability>
+</pubStmt>
+
+Recommandations : 
+
+Exemple :
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</p>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+```
+
+
+#### Pays de copyright
+
+Clé HUMDRUM : YEN
+
+Définition : Pays de copyright
+
+Chapitre des Guidelines : 
+
+Balise : <pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <country>France</country>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</P>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<pubStmt>
+   <availability>
+     <useRestrict>
+        <persName>...</persName>
+        <corpName>...</corpName>
+        <country>France</country>
+        <date>2024</date>
+        <head>Licence</head>
+        <p>CC-BY-NC</P>
+     </useRestrict>
+     <date isodate="2024-01-02">01/02/24</date>
+   </availability>
+</pubStmt>
+```
+
 ### Description de l'œuvre musicale <worklist
 
 Clé HUMDRUM : COM
@@ -1651,195 +1839,6 @@ Exemple :
 ```
 
 
-#### Éditeur de l'édition électronique 
-
-Clé HUMDRUM : YEP
-
-Définition : Éditeur de l'édition électronique 
-
-Chapitre des Guidelines : 
-
-Balise : <fileDesc>
-  <titleStmt>
-    <respStmt>
-       <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
-    </respStmt>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<fileDesc>
-  <titleStmt>
-    <respStmt>
-       <persName xml:id="VB" role="editor" auth="Orcid" auth.uri="...">XXX</persName>
-    </respStmt>
-```
-
-#### Date et propriétaire du copyright de l'édition électronique
-
-Clé HUMDRUM : YEC
-
-Définition : Date et propriétaire du copyright de l'édition électronique
-
-Chapitre des Guidelines : 
-
-Balise : <pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <date>2024</date>
-     </useRestrict>
-   </availability>
-</pubStmt>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <date>2024</date>
-     </useRestrict>
-   </availability>
-</pubStmt>
-```
-
-
-#### Date de mise à disposition de l'édition électronique
-
-Clé HUMDRUM : YER
-
-Définition : Date de mise à disposition de l'édition électronique
-
-Chapitre des Guidelines : 
-
-Balise : <pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <date>2024</date>
-     </useRestrict>
-     <date isodate="2024-01-02">01/02/24</date>
-   </availability>
-</pubStmt>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <date>2024</date>
-     </useRestrict>
-     <date isodate="2024-01-02">01/02/24</date>
-   </availability>
-</pubStmt>
-```
-
-
-#### License
-
-Clé HUMDRUM : YEM
-
-Définition : License
-
-Chapitre des Guidelines : 3.4.1.3 Publication, Distribution, etc.
-
-Balise : <pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <date>2024</date>
-        <head>Licence</head>
-        <p>CC-BY-NC</p>
-     </useRestrict>
-     <date isodate="2024-01-02">01/02/24</date>
-   </availability>
-</pubStmt>
-
-Autre option : <pubStmt xml : id…>
-    <availability xml : id…>
-       <useRestrict xml : id…>Licence:... </useRestrict>
-    </availability>
-</pubStmt>
-
-Recommandations : 
-
-Exemple :
-```
-<pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <date>2024</date>
-        <head>Licence</head>
-        <p>CC-BY-NC</p>
-     </useRestrict>
-     <date isodate="2024-01-02">01/02/24</date>
-   </availability>
-</pubStmt>
-```
-
-
-#### Pays de copyright
-
-Clé HUMDRUM : YEN
-
-Définition : Pays de copyright
-
-Chapitre des Guidelines : 
-
-Balise : <pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <country>France</country>
-        <date>2024</date>
-        <head>Licence</head>
-        <p>CC-BY-NC</P>
-     </useRestrict>
-     <date isodate="2024-01-02">01/02/24</date>
-   </availability>
-</pubStmt>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<pubStmt>
-   <availability>
-     <useRestrict>
-        <persName>...</persName>
-        <corpName>...</corpName>
-        <country>France</country>
-        <date>2024</date>
-        <head>Licence</head>
-        <p>CC-BY-NC</P>
-     </useRestrict>
-     <date isodate="2024-01-02">01/02/24</date>
-   </availability>
-</pubStmt>
-```
 
 
 #### Document d'origine de l'édition électronique
@@ -1860,7 +1859,6 @@ Exemple :
 ```
 
 ```
-
 
 #### Propriétaire du document d'origine
 
