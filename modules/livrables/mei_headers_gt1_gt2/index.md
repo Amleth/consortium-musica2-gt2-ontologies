@@ -4,23 +4,7 @@
 
 Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, vise à proposer un protocole détaillé de renseignement des métadonnées au sein des headers MEI, plus particulièrement dans le cadre d'éditions critiques numériques. L’objectif est d'établir un guide dédié aux éditions encodées en MEI (Music Encoding Initiative) et de préciser où disposer les informations éditoriales et philologiques nécessaires, en proposant des choix raisonnés palliant diverses ambiguïtés des guidelines MEI. Fixer des paramètres partagés et reconnus par la communauté musicologique permettra de créer des fichiers MEI qui pourront être contrôlés, vérifiés et échangés au profit de la transparence scientifique et de l'interopérabilité. Pour ce faire, le modèle FRBR appliqué à l'encodage MEI sera privilégié et suivi à l’occasion.
 
-L'édition critique musicale pose un grand nombre de problèmes, notamment dans les cas où il est nécessaire de marquer la différence entre tradition directe (tous les exemplaires transmettant le texte sous sa forme originelle) ou indirecte (exemplaires qui témoignent d'une tradition en parallèle : les traductions, des textes qui font référence et qui citent, les commentaires, les parodies, etc...). Ces derniers sont particulièrement utiles lorsqu'un texte est corrompu, car ils donnent une fenêtre sur un moment historique précis où le texte était intouché.
-
-? La tradition inderecte correspond à notre _expression_list_
---> exemple de Sophie : une expression, deux manifestations, deux items.
-
-  Il s'agira donc de rentrer dans le détail de l'organisation MEI/FRBR de expressionList, manifestationList et itemList => un document fils pour chaque de ce trois 'chapitres'.
-
-   - Trouver un cas où on a pas l'autographe mais où on l'a reconstitué, ce serait intéressant
----
-   
-choisir un thésaurus ?
-il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR
-
-ThB présentation générale de LRM + un paragraphe sur la réflexion entre BDD sémantique centralisée vs l’information sémantisée dans les headers MEI
-
-Faire valider par Kévin pour la place du modèle FRBR, pour nous c'est dans <workList>
-Marco a donné des gens à contacter pour partager tout ça : Laurent Pugin, Johannes Kepper (va s'opposer ; attention on tient aux protocoles pour l'interopérabilité) 
+L'édition critique musicale pose un nombre significatif de problèmes, notamment dans les cas où il est nécessaire de marquer la différence entre tradition directe (tous les exemplaires transmettant le texte sous sa forme originelle) ou indirecte (exemplaires qui témoignent d'une tradition en parallèle : les traductions, des textes qui font référence et qui citent, les commentaires, les parodies, etc...). Ces derniers sont particulièrement utiles lorsqu'un texte est corrompu, car ils donnent une fenêtre sur un moment historique précis où le texte était intouché.
 
 ### 2. Approche des GT1 et GT2 pour la complétion des headers MEI
 
@@ -2355,7 +2339,14 @@ On utilise 0 lorsque l'on est en presence de la source originale (normalement l'
   
 Le fichier MEI que nous sommes en train de renseigner constitue d'ailleurs une autre manifestation de l'œuvre, et doit par conséquent faire partie de la _manifestation_list_. Des xmlID seront utilisés pour chaque manifestation et item, afin d'assurer une inter-opérabilité maximale.
 
-### 3. Pour conclure
+### 4. Quelques remarques 
+
+choisir un thésaurus ?
+il nous est nécessaire de concevoir une batterie de types E55 pour typer les différents niveaux des sources d'après le modèle FRBR
+
+ThB présentation générale de LRM + un paragraphe sur la réflexion entre BDD sémantique centralisée vs l’information sémantisée dans les headers MEI
+
+### 5. Pour conclure
 
 Notre protocole se distingue par une interopérabilité maximale, couplée à une réelle exhaustivité. Bien que sa réalisation puisse être fastidieuse par le nombre important d'éléments à renseigner, le protocole porte une réelle valeur philologique et est ainsi parfaitement adapté à l'édition critique mais aussi au partage de fichiers au sein de la communauté internationale MEI.
 
