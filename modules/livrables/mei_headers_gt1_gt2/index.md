@@ -99,6 +99,160 @@ Exemple :
 </pubStmt>
 ```
 
+#### Éditeur de l'édition électronique (encodeur?)
+
+Clé HUMDRUM : ENC
+
+Définition : Éditeur de l'édition électronique (encodeur?)
+
+Chapitre des Guidelines : 
+
+Balise : <fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="encoder" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<fileDesc>
+  <titleStmt>
+    <respStmt>
+       <persName xml:id="VB" role="encoder" auth="Orcid" auth.uri="...">XXX</persName>
+    </respStmt>
+```
+
+#### Date d'encodage de l'édition électronique
+
+Clé HUMDRUM : END
+
+Définition : Date d'encodage de l'édition électronique
+
+Chapitre des Guidelines : 
+
+Balise : <encodingDes>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<encodingDes>
+```
+
+#### Modification du document électronique
+
+Clé HUMDRUM : EMD
+
+Définition : Modification du document électronique
+
+Chapitre des Guidelines : 
+
+Balise : <encodingDes>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<encodingDes>
+```
+
+#### Version de l'édition électronique
+
+Clé HUMDRUM : EEV
+
+Définition : Version de l'édition électronique
+
+Chapitre des Guidelines : 
+
+Balise : <encodingDes>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<encodingDes>
+```
+
+#### Numéro du fichier électronique
+
+Clé HUMDRUM : EFL
+
+Définition : Numéro du fichier électronique
+
+Chapitre des Guidelines : 
+
+Balise : <encodingDes>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<encodingDes>
+```
+
+#### État de l'encodage
+
+Clé HUMDRUM : EST
+
+Définition : État de l'encodage
+
+Chapitre des Guidelines : 
+
+Balise : <encodingDes>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<encodingDes>
+```
+
+#### Désignation de la collection
+
+Clé HUMDRUM : ACO
+
+Définition : Désignation de la collection
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+
+#### Désignation de la forme
+
+Clé HUMDRUM : AFR
+
+Définition : Désignation de la forme
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+
 #### Date de mise à disposition de l'édition électronique
 
 Clé HUMDRUM : YER
@@ -1892,175 +2046,6 @@ Exemple :
 ```
 
 ```
-
-
-#### Éditeur de l'édition électronique (encodeur?)
-
-Clé HUMDRUM : ENC
-
-Définition : Éditeur de l'édition électronique (encodeur?)
-
-Chapitre des Guidelines : 
-
-Balise : <fileDesc>
-  <titleStmt>
-    <respStmt>
-       <persName xml:id="VB" role="encoder" auth="Orcid" auth.uri="...">XXX</persName>
-    </respStmt>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<fileDesc>
-  <titleStmt>
-    <respStmt>
-       <persName xml:id="VB" role="encoder" auth="Orcid" auth.uri="...">XXX</persName>
-    </respStmt>
-```
-
-
-#### Date d'encodage de l'édition électronique
-
-Clé HUMDRUM : END
-
-Définition : Date d'encodage de l'édition électronique
-
-Chapitre des Guidelines : 
-
-Balise : <encodingDes>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<encodingDes>
-```
-
-
-#### Modification du document électronique
-
-Clé HUMDRUM : EMD
-
-Définition : Modification du document électronique
-
-Chapitre des Guidelines : 
-
-Balise : <encodingDes>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<encodingDes>
-```
-
-
-#### Version de l'édition électronique
-
-Clé HUMDRUM : EEV
-
-Définition : Version de l'édition électronique
-
-Chapitre des Guidelines : 
-
-Balise : <encodingDes>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<encodingDes>
-```
-
-
-#### Numéro du fichier électronique
-
-Clé HUMDRUM : EFL
-
-Définition : Numéro du fichier électronique
-
-Chapitre des Guidelines : 
-
-Balise : <encodingDes>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<encodingDes>
-```
-
-
-#### État de l'encodage
-
-Clé HUMDRUM : EST
-
-Définition : État de l'encodage
-
-Chapitre des Guidelines : 
-
-Balise : <encodingDes>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<encodingDes>
-```
-
-
-#### Désignation de la collection
-
-Clé HUMDRUM : ACO
-
-Définition : Désignation de la collection
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-
-#### Désignation de la forme
-
-Clé HUMDRUM : AFR
-
-Définition : Désignation de la forme
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
 
 #### Désignation du genre musical
 
