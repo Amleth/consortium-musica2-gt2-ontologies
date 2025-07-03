@@ -8,7 +8,7 @@ Ce document didactique, élaboré dans le cadre du consortium Huma-Num Musica2, 
 
 L’interopérabilité des éditions critiques encodées en MEI repose sur l’adoption de normes partagées qui garantissent la cohérence et la compatibilité des fichiers produits. Actuellement, la grande liberté laissée aux encodeurs pour le renseignement des métadonnées dans le header MEI nuit à cette interopérabilité, en raison des choix individuels et des interprétations subjectives qui en résultent. Une telle hétérogénéité complique non seulement l’échange et l’exploitation des données, mais compromet également la transparence scientifique, un impératif fondamental des éditions critiques. C'est pourquoi nous proposons ici de proposer des alternatives d'encodage en FRBR ainsi que, le cas échéants, des alignements avec les clés de métadonnées HUMDRUM. Nous détaillons ci-dessous notre protocole en nous appuyant sur les guidelines MEI afin d’en faciliter l’adoption et la mise en œuvre. Pour illustrer concrètement ces recommandations, des exemples détaillés sont intégrés au repository, accompagnés d’un modèle vierge prêt à l’emploi. 
 
-Le protocole est présenté de manière logique en abordant dans un premier temps les informations liées au fichier MEI encodé, ensuite la définition de l'œuvre avant de détailler la source. Bien que cette information ne respecte pas l'ordre des Guidelines MEI, elle nous semble conceptuellement logique car permettant de révéler l'intérêt du modèle FRBR dans les cas complexes de l'édition critique musicale.
+Le protocole est présenté de manière logique en abordant dans un premier temps les informations liées au fichier MEI encodé, ensuite la définition de l'œuvre avant de détailler la source. Bien que cette information ne respecte pas l'ordre des Guidelines MEI, elle nous semble conceptuellement logique et permet de révéler l'intérêt du modèle FRBR dans les cas complexes de l'édition critique musicale.
 
 ### 3. Description du fichier MEI encodé <fileDesc>
 
@@ -2334,14 +2334,14 @@ On utilise 0 lorsque l'on est en presence de la source originale (normalement l'
    - 
    - _Manifestation R7_is_exemplified_by Item_
    - 
-   - Le fichier MEI que nous sommes en train de renseigner constitue d'ailleurs une autre manifestation de l'œuvre, et doit par conséquent faire partie de la _manifestation_list_. Des xmlID seront utilisés pour chaque manifestation et item, afin d'assurer une inter-opérabilité maximale.
-
-Le principal atout de notre protocole est l'interopérabilité, couplé à une réelle exhaustivité. Bien que sa réalisation puisse être fastidieuse de par le nombre important d'éléments à renseigner, le protocole porte une réelle valeur philologique et ainsi parfaitement adapté dans le cadre de l'édition critique, mais aussi au partage de fichiers au sein de la communauté internationale MEI.
-
+  
+Le fichier MEI que nous sommes en train de renseigner constitue d'ailleurs une autre manifestation de l'œuvre, et doit par conséquent faire partie de la _manifestation_list_. Des xmlID seront utilisés pour chaque manifestation et item, afin d'assurer une inter-opérabilité maximale.
 
 ### 3. Pour conclure
 
-Paragraphe final pour maintenir la section _source_desc_ auprès de la communauté MEI car il permet d'exprimer au mieux, document considéré comme un "manifeste méthodologique"
+Notre protocole se distingue par une interopérabilité maximale, couplée à une réelle exhaustivité. Bien que sa réalisation puisse être fastidieuse par le nombre important d'éléments à renseigner, le protocole porte une réelle valeur philologique et est ainsi parfaitement adapté à l'édition critique mais aussi au partage de fichiers au sein de la communauté internationale MEI.
+
+En conclusion, il nous semble particulièrement important d'insister sur l'importance de _sourceDesc_ au sein du header MEI. Comme nous avons pu le démontrer à travers un nombre important d'exemples, il est le lieu le plus approprié pour l'expression de la source et les éventuelles opérations ayant permis la _recensio_.
 
 
 
