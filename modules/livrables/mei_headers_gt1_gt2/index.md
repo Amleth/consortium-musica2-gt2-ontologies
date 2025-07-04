@@ -9,7 +9,7 @@ L'édition critique pose un nombre significatif de problèmes, notamment dans le
 
 Dans le cas précis de l'édition musicale, les problématiques d'arrangement, de transcription d'une formation instrumentale à une autre ainsi que la reconstruction des voix posent des problèmes conséquents qui justifient une approche détaillée bien que parfois redondante.
 
-### 2. Appui sur le modèle FRBR pour la complétion des headers MEI
+### 2. Appui sur le modèle FRBR au sein de _source_desc_
 
 L’interopérabilité des éditions critiques encodées en MEI repose sur l’adoption de normes partagées qui garantissent la cohérence et la compatibilité des fichiers produits. Actuellement, la grande liberté laissée aux encodeurs pour le renseignement des métadonnées dans le header MEI peut nuire à cette interopérabilité, en raison de choix individuels et des interprétations subjectives qui en résultent. Une telle hétérogénéité complique non seulement l’échange et l’exploitation des données, mais compromet également la transparence scientifique, un impératif fondamental des éditions critiques. C'est pourquoi nous proposons ici de proposer des alternatives d'encodage s'inspirant de la norme FRBR ainsi que, le cas échéants, des alignements avec les clés de métadonnées HUMDRUM. Pour illustrer concrètement ces recommandations, des exemples détaillés sont intégrés au repository, accompagnés d’un modèle vierge prêt à l’emploi. 
 
