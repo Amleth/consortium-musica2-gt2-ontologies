@@ -17,7 +17,7 @@ Notre protocole de complétion des headers est présenté de manière logique en
 
 Historiquement, les besoins de l'édition critique textuelle se sont structurés à partir de deux modèles philologiques principaux dûs à Lachmann et Bédier. Ces méthodes et leurs dérivés convergent toutes vers la première étape nécessaire de la _recensio_, soit l'identification des sources et l'étude de la tradition. Dans le cadre de la présentation de notre protocole de renseignement des métadonnées au sein des headers MEI pour l'établissement d'éditions critiques, nous prenons donc appui sur la _recensio_, qui est renseignée soit de manière "classique" en MEI à travers _sourceDesc_, soit en suivant les différents états induits par le modèle FRBR. 
 
-Les quatre états de l'œuvre en FRBR sont légérèment adaptés en MEI, puisque "manifestation" devient <source>, tandis que <work>, <expression> et <manifestation> restent inchangés.
+Les quatre états de l'œuvre en FRBR sont légérèment adaptés en MEI, puisque "manifestation" devient _source_, tandis que _work_, _expression_ et _item_ restent inchangés.
 
 
 
