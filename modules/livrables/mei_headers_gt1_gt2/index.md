@@ -1,4 +1,5 @@
-## MEI Headers
+## Approche de la complétion des Headers MEI par les GT1&GT2 du Consortium-HN Musica2
+Bottini, T. (CNRS, IReMus), Braud. A. (CNRS, RicercarLab), Gurrieri, M. (CNRS, IReMus), Roger K. (ULorraine, CRULH)
 
 ### 1. Présentation générale de l'approche méthodologique
 
