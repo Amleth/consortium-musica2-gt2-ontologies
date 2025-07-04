@@ -25,8 +25,7 @@ Les quatre états de l'œuvre en FRBR sont légérèment adaptés en MEI, puisqu
 
 Le fichier MEI que nous sommes en train de renseigner constitue d'ailleurs une autre manifestation de l'œuvre, et doit par conséquent faire partie de la _sourceList_. Des xmlID seront utilisés pour chaque manifestation et item, afin d'assurer une inter-opérabilité maximale. Les normes FRBR ainsi intégrées de la MEI - qui à partir de l‘œuvre s'articulent en listes des expressions, des manifestations puis des items - correspondent précisement à la _recensio_ la plus complète possible, ce qui est la promesse méthodologique de chaque édition critique. L'emploi du modèle FRBR est ainsi particulièrement adapté à à des œuvres éditées sous forme de conducteur d'orchrestre puis deux parties séparées, qui nécessitent par exemple de détailler les caractéristiques de chacune des éditions, ici qualifiées de "sources" (équivalent FRBR - MEI). Pour des éditions plus simples, il convient de faire preuve de bon sens et de privilégier les solutions natives à la MEI.
 
-
-Notre protocole s'appuie ainsi sur un principe de redondance : toutes les informations nécessaires doivent être renseignées à chaque niveau du modèle FRBR. Il est ainsi probable que des métadonnées soient régulièrement répétées, par exemple le nom du compositeur ou le titre de l’œuvre.
+Il est également important de noter que notre protocole s'appuie sur un principe de redondance : toutes les informations nécessaires doivent être renseignées à chaque niveau du header et, le cas échéant, du modèle FRBR. Il est ainsi probable que des métadonnées soient régulièrement répétées, par exemple le nom du compositeur ou le titre de l’œuvre.
 
 ### 3. Description du fichier MEI encodé <fileDesc>
 
