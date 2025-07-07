@@ -397,6 +397,42 @@ Exemple :
 
 ### Description de l'œuvre musicale <worklist
 
+#### Titre de l'édition MEI
+
+Clé HUMDRUM : ≈ OTL
+
+Définition : Numéro
+
+Chapitre des Guidelines : 3.3.1. Title Statement
+
+Balise :`<title type=main>`/`<title type="subordinate">`
+
+Autre option : `<title>`
+
+Recommandations :
+
+Exemples :
+```
+"<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <title xml:id=""..."">...</title>
+   </work>
+</workList>"
+```
+```
+"<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <title xml:id=""..."">  
+      <expressionList xml:id=""..."">  
+        <expression xml:id=""..."">
+        </expression>
+      </expressionList>
+      </title>
+   </work>
+</workList>"
+```
+#### Compositeur de l'offre musicale
+
 Clé HUMDRUM : COM
 
 Définition : Indique le nom du compositeur de l'œuvre.
