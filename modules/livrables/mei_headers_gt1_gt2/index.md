@@ -54,6 +54,31 @@ Exemple :
 ```
 Recommandations : Dans <fileDesc>, il n'est pas nécessaire que le titre dispose d'une granularité fine comparable au renseignement du titre de l'oeuvre dans <workList>. Il n'existe cependant aucune restriction. Le plus important est de rester vigilant quant à la hiérarchie des titres spécifiée à l'aide de l'attribut @title dont les valeurs sont contrôlées (pour plus d'information sur les niveaux de titres, voir "Titre alternatif de l'oeuvre"). 
 
+#### Compositeur de l'offre musicale
+
+Clé HUMDRUM : COM
+
+Définition : Indique le nom du compositeur de l'œuvre.
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<composer>`
+
+Autre option : `<persName role="creator">`
+
+Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. À noter également que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation tels que VIAFF. Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
+
+Exemples :
+```
+"<fileDesc xml:id=""..."">
+   <titleStmt xml:id=""..."">
+       <composer xml:id=""..."">
+          <persName role=""creator"" auth.uri=""http://..."">...</persName>
+       </composer>
+   </titleStmt>
+</fileDesc>"
+```
+
 #### Éditeur de l'édition électronique 
 
 Clé HUMDRUM : YEP
