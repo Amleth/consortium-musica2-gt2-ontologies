@@ -409,7 +409,7 @@ Balise :`<title type=main>`/`<title type="subordinate">`
 
 Autre option : `<title>`
 
-Recommandations :
+Recommandations : Les deux exemples ci-dessous explicitent l'inscription du titre de l'œuvre dans un premier temps au niveau de l'œuvre elle-même, puis au niveau de son expression.
 
 Exemples :
 ```
