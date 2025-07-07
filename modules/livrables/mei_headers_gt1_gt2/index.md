@@ -848,7 +848,7 @@ Titre simple d'une oeuvre :
 
 Recommandation : Dans le cas de sections ou de mouvements d'une oeuvre, il est nécessaire de faire une distinction entre le titre de la partie encodée et l'oeuvre globale. Pour cela, il est nécessaire d'utiliser l'attribut @type et la valeur "uniform". De même, afin de mieux catégoriser les différents niveaux de titres, il est conseillé d'employer <titlePart>. La valeur "subordinate" peut être pratique pour hiérarchiser les divers syntagmes d'un même niveau de titre, comme le mouvement ou numéro d'opus.
 
-Titre d'un mouvement d'une oeuvre :
+#### Titre d'un mouvement d'une oeuvre :
 
 ```
 <workList xml:id="...">
@@ -978,7 +978,6 @@ Exemple :
 </worklist> 
 ```
 
-
 #### Dédicace
 
 Clé HUMDRUM : ODE
@@ -1028,7 +1027,6 @@ Exemple :
 <workList>  
 ```
 
-
 #### Committant (commettant ?)
 
 Clé HUMDRUM : OCO
@@ -1047,7 +1045,6 @@ Exemple :
 ```
 
 ```
-
 
 #### Collectionneur ?
 
@@ -1087,7 +1084,6 @@ Exemple :
 ```
 
 ```
-
 
 #### Date de composition
 
@@ -1414,6 +1410,29 @@ Exemple :
 ```
 ### Description de la source <SourceDesc>
 
+Clé HUMDRUM :  OTL
+
+Définition : Titre de la source.
+
+Chapitre des Guidelines : 3.4.1.6 Source Description
+
+Balise :`<title>`
+
+Autre option : -
+
+Recommandations : Cette manière minimale de renseigner le titre convient surtout aux titres officiels et consensuels des oeuvres - des titres qui ne font pas l'objet d'ambiguité. Pour le renseignement de titres alternatifs ou populaires, voir plus bas.
+
+Exemple :
+
+
+"<sourceDesc xml:id=""..."">
+   <source xml:id=""..."">
+      <bibl xml:id=""..."">
+         <title xml:id=""..."">...</title>
+      </bibl>
+   </source>   
+</sourceDesc>"
+
 #### Éditeur de la source utilisée pour l'édition digitale
 
 Clé HUMDRUM : PED
@@ -1421,7 +1440,7 @@ Clé HUMDRUM : PED
 Définition : Éditeur de la source utilisée pour l'édition digitale
 
 Chapitre des Guidelines : 
-
+```
 Balise : Si c'est une personne :
 <sourceDesc>
    <source>
@@ -1431,8 +1450,11 @@ Balise : Si c'est une personne :
          </editor>
       </bibl>
    </source>
+```
 
 Autre option : Si c'est une maison d'édition (cumulable) :
+
+```
 <sourceDesc>
      <source>
          <bibl>
@@ -1443,6 +1465,7 @@ Autre option : Si c'est une maison d'édition (cumulable) :
             </imprint>
          </bibl>
      </source>
+```
 
 Recommandations : 
 
