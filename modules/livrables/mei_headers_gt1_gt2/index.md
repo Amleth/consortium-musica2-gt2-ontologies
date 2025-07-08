@@ -446,7 +446,7 @@ Exemple :
 </pubStmt>
 ```
 
-### Description de l'œuvre musicale <worklist
+### Description de l'œuvre musicale <worklist>
 
 #### a. Titre
 ##### Titre de l'œuvre musicale
