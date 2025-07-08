@@ -1016,7 +1016,7 @@ Exemple :
    </work>
 </workList>
 ```
-#### c. Informations liées à l'édition
+#### c. Informations liées à l'œuvre
 ##### Numéro d'opus
 
 Clé HUMDRUM : OPS
@@ -1044,6 +1044,188 @@ Exemple :
 </worklist> 
 ```
 
+##### Effectif
+
+Clé HUMDRUM : AIN
+
+Définition : Effectif
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+
+```
+
+### Dans la partie <music> (il faut dire que ce genre d'usage n'est pas recommandé) 
+
+##### Numéro d'acte (<music?>)
+
+Clé HUMDRUM : OAC
+
+Définition : Numéro d'acte
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="act" n="1">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+   <mdiv label="act" n="2">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+</body>
+
+Recommandations : S'il est bien question d'une précision au sein de <music> : "The score and parts elements are placed here and not directly within the body element because score and part characteristics may change from mdiv to mdiv. For example, the 2nd movement of a symphony may require different performing forces (and therefore different score and part layout) than the other movements. The mdiv element may be recursively nested in order to represent music which exhibits this kind of structure. For example, an opera is normally divided into acts, which are in turn divided into scenes." https://music-encoding.org/guidelines/v5/elements/mdiv.html
+
+Exemple :
+```
+
+```
+
+##### Numéro de scène (<music?>)
+
+Clé HUMDRUM : OSC
+
+Définition : Numéro de scène
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="act" n="1">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+   <mdiv label="act" n="2">
+      <mdiv label="scene" n="1">
+         <score></score>
+      </mdiv>
+      <mdiv label="scene" n="2">
+         <score></score>
+      </mdiv>
+   </mdiv>
+</body>
+
+Recommandations : 
+
+Exemple :
+```
+
+```
+
+##### Numéro de mouvement (<music?>)
+
+Clé HUMDRUM : OMV
+
+Définition : Numéro de mouvement
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="Allegro" n="1">
+      <score></score>
+   </mdiv>
+   <mdiv label="Menuet" n="2">
+      <score></score>
+   </mdiv>
+</body>
+
+Recommandations : Même commentaire que ci-dessous. Pour le numéro, nous pourrions ajouter dans les différents éléments @n.
+
+Exemple :
+```
+
+```
+
+##### Désignation du mouvement ou nom du mouvement
+
+Clé HUMDRUM : OMD
+
+Définition : Désignation du mouvement ou nom du mouvement
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : <body>
+   <mdiv label="Allegro">
+      <score></score>
+   </mdiv>
+   <mdiv label="Menuet">
+      <score></score>
+   </mdiv>
+</body> 
+
+Recommandations : S'il s'agit d'un seul mouvement encodé au sein du fichier MEI, alors il me semble que le renseignement est similaire à celui renseigné pour "titre de l'oeuvre d'appartenance". Sil s'agit de plusieurs mouvements encodés au sein d'un même fichier MEI (peu recommandé), dans ce cas il faudrait indiquer cette information dans <music> à l'aide de <mdiv>. 
+
+Exemple :
+```
+
+```
+
+##### Committant (commettant ? commanditaire ?)
+
+Clé HUMDRUM : OCO
+
+Définition : Committant (commettant ?)
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+
+```
+
+#### Collectionneur ?
+
+Clé HUMDRUM : OCL
+
+Définition : Collectionneur ?
+
+Chapitre des Guidelines : 
+
+Balise : 
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+
+```
 ##### Dédicace
 
 Clé HUMDRUM : ODE
@@ -1288,189 +1470,6 @@ Exemple :
 Clé HUMDRUM : AMT
 
 Définition : Classification métrique
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-##### Effectif
-
-Clé HUMDRUM : AIN
-
-Définition : Effectif
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-### Dans la partie <music> (il faut dire que ce genre d'usage n'est pas recommandé) 
-
-##### Numéro d'acte (<music?>)
-
-Clé HUMDRUM : OAC
-
-Définition : Numéro d'acte
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="act" n="1">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-   <mdiv label="act" n="2">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-</body>
-
-Recommandations : S'il est bien question d'une précision au sein de <music> : "The score and parts elements are placed here and not directly within the body element because score and part characteristics may change from mdiv to mdiv. For example, the 2nd movement of a symphony may require different performing forces (and therefore different score and part layout) than the other movements. The mdiv element may be recursively nested in order to represent music which exhibits this kind of structure. For example, an opera is normally divided into acts, which are in turn divided into scenes." https://music-encoding.org/guidelines/v5/elements/mdiv.html
-
-Exemple :
-```
-
-```
-
-##### Numéro de scène (<music?>)
-
-Clé HUMDRUM : OSC
-
-Définition : Numéro de scène
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="act" n="1">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-   <mdiv label="act" n="2">
-      <mdiv label="scene" n="1">
-         <score></score>
-      </mdiv>
-      <mdiv label="scene" n="2">
-         <score></score>
-      </mdiv>
-   </mdiv>
-</body>
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-##### Numéro de mouvement (<music?>)
-
-Clé HUMDRUM : OMV
-
-Définition : Numéro de mouvement
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="Allegro" n="1">
-      <score></score>
-   </mdiv>
-   <mdiv label="Menuet" n="2">
-      <score></score>
-   </mdiv>
-</body>
-
-Recommandations : Même commentaire que ci-dessous. Pour le numéro, nous pourrions ajouter dans les différents éléments @n.
-
-Exemple :
-```
-
-```
-
-##### Désignation du mouvement ou nom du mouvement
-
-Clé HUMDRUM : OMD
-
-Définition : Désignation du mouvement ou nom du mouvement
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : <body>
-   <mdiv label="Allegro">
-      <score></score>
-   </mdiv>
-   <mdiv label="Menuet">
-      <score></score>
-   </mdiv>
-</body> 
-
-Recommandations : S'il s'agit d'un seul mouvement encodé au sein du fichier MEI, alors il me semble que le renseignement est similaire à celui renseigné pour "titre de l'oeuvre d'appartenance". Sil s'agit de plusieurs mouvements encodés au sein d'un même fichier MEI (peu recommandé), dans ce cas il faudrait indiquer cette information dans <music> à l'aide de <mdiv>. 
-
-Exemple :
-```
-
-```
-
-##### Committant (commettant ? commanditaire ?)
-
-Clé HUMDRUM : OCO
-
-Définition : Committant (commettant ?)
-
-Chapitre des Guidelines : 
-
-Balise : 
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-
-```
-
-#### Collectionneur ?
-
-Clé HUMDRUM : OCL
-
-Définition : Collectionneur ?
 
 Chapitre des Guidelines : 
 
