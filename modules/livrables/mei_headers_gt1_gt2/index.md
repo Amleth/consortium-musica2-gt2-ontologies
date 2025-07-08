@@ -511,7 +511,7 @@ Titre simple d'une oeuvre :
 
 Recommandation : Dans le cas de sections ou de mouvements d'une oeuvre, il est nécessaire de faire une distinction entre le titre de la partie encodée et l'oeuvre globale. Pour cela, il est nécessaire d'utiliser l'attribut @type et la valeur "uniform". De même, afin de mieux catégoriser les différents niveaux de titres, il est conseillé d'employer <titlePart>. La valeur "subordinate" peut être pratique pour hiérarchiser les divers syntagmes d'un même niveau de titre, comme le mouvement ou numéro d'opus.
 
-##### Titre d'un mouvement d'une oeuvre :
+##### Titre d'un mouvement d'une oeuvre 
 
 ```
 <workList xml:id="...">
@@ -556,7 +556,7 @@ Exemple :
 </workList>
 ```
 
-#### Titre alternatif de l'oeuvre
+##### Titre alternatif de l'oeuvre
 
 Clé HUMDRUM : OTA
 
@@ -588,7 +588,7 @@ Exemple :
 </workList>
 ```
 
-#### Titre de l'œuvre d'appartenance
+##### Titre de l'œuvre d'appartenance
 
 Clé HUMDRUM : OPR
 
@@ -614,7 +614,7 @@ Exemple :
 </workList>  
 ```
 #### b. Compositeur, librettiste, _etc._
-##### Compositeur de l'offre musicale
+##### Compositeur de l'œuvre musicale
 
 Clé HUMDRUM : COM
 
@@ -1017,8 +1017,7 @@ Exemple :
 </workList>
 ```
 #### c. Informations liées à l'édition
-
-#### Numéro d'opus
+##### Numéro d'opus
 
 Clé HUMDRUM : OPS
 
@@ -1045,7 +1044,7 @@ Exemple :
 </worklist> 
 ```
 
-#### Dédicace
+##### Dédicace
 
 Clé HUMDRUM : ODE
 
@@ -1093,7 +1092,7 @@ Exemple :
    </work>
 <workList>  
 ```
-#### Date de composition
+##### Date de composition
 
 Clé HUMDRUM : ODT
 
@@ -1118,8 +1117,7 @@ Exemple :
 </workList>
 ```
 
-
-#### Pays de composition de l'oeuvre encodée
+##### Pays de composition de l'oeuvre encodée
 
 Clé HUMDRUM : OCY
 
@@ -1149,8 +1147,7 @@ Exemple :
 </workList>
 ```
 
-
-#### Ville de composition
+##### Ville de composition
 
 Clé HUMDRUM : OPC
 
@@ -1185,7 +1182,9 @@ Exemple :
 </workList>
 ```
 
-#### Désignation du genre musical
+#### d. Éléments esthétiques
+
+##### Désignation du genre musical
 
 Clé HUMDRUM : AGN
 
@@ -1217,7 +1216,7 @@ Exemple :
 ```
 
 
-#### Désignation du style/période/typologie de l'œuvre
+##### Désignation du style/période/typologie de l'œuvre
 
 Clé HUMDRUM : AST
 
@@ -1250,8 +1249,7 @@ Exemple :
 </workList>   
 ```
 
-
-#### Classification du mode (Moyen âge et Renaissance)
+##### Classification du mode (Moyen âge et Renaissance)
 
 Clé HUMDRUM : AMD
 
