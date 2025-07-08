@@ -1486,8 +1486,7 @@ Autre option : -
 Recommandations : Cette manière minimale de renseigner le titre convient surtout aux titres officiels et consensuels des oeuvres - des titres qui ne font pas l'objet d'ambiguité. Pour le renseignement de titres alternatifs ou populaires, voir plus bas.
 
 Exemple :
-
-
+```
 "<sourceDesc xml:id=""..."">
    <source xml:id=""..."">
       <bibl xml:id=""..."">
@@ -1495,7 +1494,35 @@ Exemple :
       </bibl>
    </source>   
 </sourceDesc>"
+```
+#### Compositeur de la source utilisée pour l'édition digitale
 
+Clé HUMDRUM : COM
+
+Définition : Indique le nom du compositeur de l'œuvre.
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<composer>`
+
+Autre option : `<persName role="creator">`
+
+Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. À noter également que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation tels que VIAFF. Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
+
+Exemples :
+
+
+```
+"<sourceDesc xml:id=""..."">
+   <source xml:id=""..."">
+      <bibl xml:id=""..."">
+         <composer xml:id=""..."">
+            <persName role=""creator"" auth.uri=""http://..."">...</persName>
+         </composer>
+      </bibl>
+   </source>
+</sourceDesc>"
+```
 #### Éditeur de la source utilisée pour l'édition digitale
 
 Clé HUMDRUM : PED
