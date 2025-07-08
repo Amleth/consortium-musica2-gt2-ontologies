@@ -1473,6 +1473,8 @@ Exemple :
 ```
 ### Description de la source <SourceDesc>
 
+#### Titre de la source utilisée pour l'édition digitale
+
 Clé HUMDRUM :  OTL
 
 Définition : Titre de la source.
