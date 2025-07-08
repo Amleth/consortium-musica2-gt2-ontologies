@@ -167,7 +167,7 @@ Exemple :
 </pubStmt>
 ```
 
-#### Éditeur de l'édition électronique (encodeur?)
+##### ou bien...
 
 Clé HUMDRUM : ENC
 
@@ -194,7 +194,7 @@ Exemple :
     </respStmt>
 ```
 
-#### Date d'encodage de l'édition électronique
+##### Date d'encodage de l'édition électronique
 
 Clé HUMDRUM : END
 
@@ -213,7 +213,7 @@ Exemple :
 <encodingDes>
 ```
 
-#### Modification du document électronique
+##### Modification du document électronique
 
 Clé HUMDRUM : EMD
 
@@ -232,7 +232,7 @@ Exemple :
 <encodingDes>
 ```
 
-#### Version de l'édition électronique
+##### Version de l'édition électronique
 
 Clé HUMDRUM : EEV
 
@@ -251,7 +251,7 @@ Exemple :
 <encodingDes>
 ```
 
-#### Numéro du fichier électronique
+##### Numéro du fichier électronique
 
 Clé HUMDRUM : EFL
 
@@ -270,7 +270,7 @@ Exemple :
 <encodingDes>
 ```
 
-#### État de l'encodage
+##### État de l'encodage
 
 Clé HUMDRUM : EST
 
@@ -289,7 +289,7 @@ Exemple :
 <encodingDes>
 ```
 
-#### Désignation de la collection
+##### Désignation de la collection
 
 Clé HUMDRUM : ACO
 
@@ -305,7 +305,7 @@ Recommandations :
 
 Exemple :
 
-#### Désignation de la forme
+##### Désignation de la forme
 
 Clé HUMDRUM : AFR
 
@@ -321,7 +321,7 @@ Recommandations :
 
 Exemple :
 
-#### Date de mise à disposition de l'édition électronique
+##### Date de mise à disposition de l'édition électronique
 
 Clé HUMDRUM : YER
 
@@ -358,7 +358,7 @@ Exemple :
 </pubStmt>
 ```
 
-#### License
+##### License
 
 Clé HUMDRUM : YEM
 
@@ -403,7 +403,7 @@ Exemple :
 </pubStmt>
 ```
 
-#### Pays de copyright
+##### Pays de copyright
 
 Clé HUMDRUM : YEN
 
@@ -448,7 +448,8 @@ Exemple :
 
 ### Description de l'œuvre musicale <worklist
 
-#### Titre de l'œuvre musicale
+#### a. Titre
+##### Titre de l'œuvre musicale
 
 Clé HUMDRUM : ≈ OTL
 
@@ -482,410 +483,8 @@ Exemples :
    </work>
 </workList>"
 ```
-#### Compositeur de l'offre musicale
 
-Clé HUMDRUM : COM
-
-Définition : Indique le nom du compositeur de l'œuvre.
-
-Chapitre des Guidelines : 3.6 Work Description
-
-Balise : `<composer>`
-
-Autre option : `<persName role="creator">`
-
-Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. À noter également que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation tels que VIAFF. Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
-
-Exemples :
-```
-<workList xml:id=""..."">
-   <work xml:id=""..."">
-      <composer xml:id=""..."">
-          <persName role=""creator"" (""composer"") auth.uri=""http://..."">...</persName>
-      </composer>
-   </work>
-</workList>
-```
-```
-"<workList xml:id=""..."">
-   <work xml:id=""..."">
-      <expressionList xml:id=""..."">  
-        <expression xml:id=""..."">
-          <composer xml:id=""..."">
-            <persName role=""creator"" (""composer""?) auth.uri=""http://..."">...</persName>
-          </composer>
-        </expression>
-      </expressionList>
-   </work>
-</workList>"
-```
-
-Dans le cas de plusieurs compositeurs, recourir à une numération dans le cadre de role ou de l'xml id. Ex :
-
-`<persName role="creator1">`
-
-#### Compositeur attribué
-
-Clé HUMDRUM : COA 
-
-Définition : Désigne un compositeur attribué sur la base de preuves internes, externes ou par conjecture.  
-
-Chapitre des Guidelines : 3.6 Work Description  
-
-Balise : `<composer evidence="...">` 
-
-Autre option : `<persName>`
-
-Recommandations : La provenance de l’attribution doit être précisée à l'aide de l'attribut @evidence et des valeurs suivantes="internal, external, conjecture".  
-
-Exemple :
-```
-<workList xml:id=""..."">
-   <work xml:id=""..."">
-      <composer xml:id=""..."" evidence=""..."" (internal, external or conjecture)>
-          <persName auth.uri=""http://..."">...</persName>
-      </composer>
-   </work>
-</workList>
-```
-
-#### Compositeur soupçonné
-
-Clé HUMDRUM : COS
-
-Définition : Désigne un compositeur soupçonné avec un niveau de certitude.
-
-Chapitre des Guidelines : 3.6 Work Description
-
-Balise : `<composer>`
-
-Autre option : `<persName>`
-
-Recommandations : Il est conseillé d’utiliser l’attribut @cert pour indiquer le degré de certitude. Les valeurs autorisées sont : high, 
-medium, low ou unknown.
-
-Exemple:
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <composer xml:id="..." cert="low">
-          <persName role="suspected creator" auth.uri="http://...">Nom soupçonné</persName>
-      </composer>
-   </work>
-</workList>
-```
-
-#### Alias ou pseudonyme du compositeur
-
-Clé HUMDRUM : COL
-
-Définition : Indique un alias ou pseudonyme d’un compositeur.
-
-Chapitre des Guidelines : 3.6 Work Description
-
-Balise : `<persName>` et `<foreName>`
-
-Autre option : `<foreName>` et `<famName>`
-
-Recommandations : Peut être utilisé pour les noms d’emprunt, les noms de plume ou les pseudonymes historiques. Il est à noter que d'autres balises peuvent couvrir des sens de nomination plus fins : famName, genName, addName, genName, nameLink, et roleName. Leur gestion est sensiblement identique à celle de <foreName>.
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <composer xml:id="...">
-          <persName role="creator" auth.uri="http://...">Nom réel</persName>
-          <persName>
-            <foreName>Alias</foreName>
-          </persName>  
-      </composer>
-   </work>
-</workList>
-```
-
-### Dates de naissance et de décès du compositeur
-
-Clé HUMDRUM : CDT
-
-Définition : Indique les dates de naissance et de décès du compositeur.
-
-Chapitre des Guidelines : -
-
-Balise : `<persName>` avec les attributs @startdate et @enddate.
-
-Recommandations : Peut être omis si le compositeur est référencé avec une URI externe.
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <composer xml:id="...">
-          <persName startdate="1685" enddate="1750" auth.uri="http://...">Nom du compositeur</persName>
-      </composer>
-   </work>
-</workList>
-```
-
-### Nationalité du compositeur
-
-Clé HUMDRUM : CNT
-
-Définition : Indique la nationalité du compositeur.
-
-Chapitre des Guidelines : 3.6 Work Description
-
-Balise : `<annot>` 
-
-Recommandations : Peut être omis si le compositeur est référencé avec une URI externe.
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <composer xml:id="...">
-          <persName auth.uri="http://...">Nom du compositeur</persName>
-          <annot label="nationality">Français</annot>
-      </composer>
-   </work>
-</workList>
-```
-
-### Lieu de naissance et de décès d'un compositeur
-
-Clé HUMDRUM : CBL et CDL
-
-Définition : Indique le lieu de naissance et de décès d'un compositeur.
-
-Chapitre des Guidelines : -
-
-Balise : `<persName>` et `<date>` avec les attributs @startdate et @enddate.
-
-Recommandations : Peut être omis si le compositeur est référencé avec un URI externe. Il est conseillé d'utiliser un URI, via @auth.uri, pour préciser le lieu. Nous préconisons l'usage d'un URI GeoNames.  
-
-Exemple :
-```
-<workList xml:id=""..."">
-   <work xml:id=""..."">
-      <composer xml:id=""..."">
-          <persName auth.uri=""http://..."">...</persName>
-          <date stardate=""..."">
-             <country auth.uri="...">XXX</country>
-          </date>
-          <date enddate=""..."">
-             <country>XXX</country>
-         </date>     
-      </composer>
-   </work>
-</workList>
-```
-### Nom du librettiste
-
-Clé HUMDRUM : LIB
-
-Définition : Indique le nom du librettiste de l'oeuvre. 
-
-Chapitre des Guidelines : -
-
-Balise : `<librettist>`
-
-Autre option : `<persName role="librettist">`
-
-Exemple :
-```
-<workList xml:id=""..."">
-   <work xml:id=""..."">
-      <librettist>
-         <persName auth.uri=""...""></persName>
-      </librettist>   
-   </work>
-</workList>
-```
-
-### Nom de l'arrangeur 
-
-Clé HUMDRUM : LAR
-
-Définition : Indique le nom de l'arrangeur de l'oeuvre. 
-
-Chapitre des Guidelines : 3.6 Work Description
-
-Balise : `<arranger>`
-
-Autre option : `<persName role="arranger">`
-
-Recommandations : Suivant les guidelines MEI pour <arranger>, il est uniquement question du sens "classique" de la fonction - celui qui transcrit la pièce pour une nomenclature musicale différente de l'originale. Pour "orchestrateur", voir ci-dessous.
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <arranger>
-         <persName auth.uri="..."></persName>
-      </arranger>   
-   </work>
-</workList>
-```
-
-### Nom de l'orchestrateur 
-
-Clé HUMDRUM : LOR
-
-Définition : Indique le nom de l'orchestrateur de l'oeuvre. 
-
-Chapitre des Guidelines : -
-
-Balise : `<arranger role="orchestrator">`
-
-Autre option : `<persName role="orchestrator">`
-
-Recommandations : Comme dit ci-dessus, <arranger> représente uniquement le sens "classique" de la fonction : la personne qui transcrit la pièce pour une nomenclature musicale différente de l'originale. Il est donc nécessaire de préciser à l'aide de @role la qualité spécifique de l'arrangeur.  Dans la mesure où "orchestrator" n'est pas présent dans les Marc Relators, nous proposons de nous appuyer sur le vocabulaire Doremus des fonctions, comprenant "arranger" ainsi que de nombreuses sous-fonctions comme "orchestrator", "creator_of_musical_harmonization" ou encore "creator_of_musical_paraphrase" (https://github.com/DOREMUS-ANR/knowledge-base/blob/master/vocabularies/function.ttl).
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <arranger>
-         <persName role="orchestrator" auth.uri="..."></persName>
-      </arranger>   
-   </work>
-</workList>
-```
-### Langue originaire du texte
-
-Clé HUMDRUM : TXO
-
-Définition : Indique la langue originale de l'oeuvre encodée. 
-
-Chapitre des Guidelines : 3.6.6 Language Usage
-
-Balise : `<langUsage>/<language>`
-
-Autre option : -
-
-Recommandations : <langUsage> contient l'ensemble des langues devant être décrites dans le fichier MEI. Dans le cas d'une seule langue renseignée, ici la langue originale, il n'apparait pas nécessaire de s'encombrer d'un attribut le précisant (comme dans l'exemple ci-dessous). Pour la distinction de plusieurs langues dans le cas de traductions ou d'adaptations, voir ci-dessous. 
-
-Il est cependant conseillé, pour des questions d'interopérabilité, d'ajouter l'identifiant ISO de la langue renseignée à l'aide des attributs @auth.uri et @uri.
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <langUsage>
-         <language xml:id="..." auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639">French</language>
-     </langUsage>         
-   </work>
-</workList>
-```
-
-### Langue originale de la pièce
-
-Clé HUMDRUM : TXO
-
-Définition : Indique la langue originale de l'oeuvre encodée. 
-
-Chapitre des Guidelines : 3.6.6 Language Usage
-
-Balise : `<langUsage>/<language>`
-
-Autre option : -
-
-Recommandations : <langUsage> contient l'ensemble des langues devant être décrites dans le fichier MEI. Dans le cas d'une seule langue renseignée, ici la langue originale, il n'apparait pas nécessaire de s'encombrer d'un attribut le précisant (comme dans l'exemple ci-dessous). Pour la distinction de plusieurs langues dans le cas de traductions ou d'adaptations, voir ci-dessous. 
-
-Il est cependant conseillé, pour des questions d'interopérabilité, d'ajouter l'identifiant ISO de la langue renseignée à l'aide des attributs @auth.uri et @uri.
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <langUsage>
-         <language xml:id="..." auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639">French</language>
-     </langUsage>         
-   </work>
-</workList>
-```
-
-### Langue de la pièce encodée (si différente de la langue originale)
-
-Clé HUMDRUM : TXL
-
-Définition : Indique la langue de l'oeuvre encodée, si différente de la langue originale (traduction, adaptation, etc). 
-
-Chapitre des Guidelines : 3.6.6 Language Usage
-
-Balise : `<langUsage>/<language>`
-
-Autre option : -
-
-Recommandations : En cas de langue traduite utilisée au sein du fichier, il semble que la seule possibilité en MEI (en raison de l'absence du <ProfilDesc> de la TEI) est de préciser la nature des langues à l'aide d'un @type (type="original", type="translation"). C'est à ce niveau que la balise <langUsage> trouve véritablement son sens en permettant de lister plusieurs langues. 
-
-En plus de l'identifiant ISO, il est conseillé de préciser un @xml:id propre à chaque langue afin de pouvoir renseigner ce même identifiant dans la partie <music>, dans <verse> ou <syl> à l'aide de @xml:lang - précisant ainsi la langue utilisée pour chaque entité textuelle présente dans l'édition numérique.  
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <langUsage>
-         <language xml:id="Lat" auth.uri="https://iso639-3.sil.org/code/lat" uri="ISO 639-3" type="original">Latin</language>
-         <language xml:id="Fr" auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639-3" type="translation">French</language>
-     </langUsage>          
-   </work>
-</workList>
-```
-### Traducteur du texte
-
-Clé HUMDRUM : TRN
-
-Définition : Indique, le cas échéant, l'identité de la personne responsable de la traduction de l'oeuvre. 
-
-Chapitre des Guidelines : -
-
-Balise (dans le cas d'un traducteur historique, propre à l'oeuvre encodée) : `<contributor>`/`<persName>`
-
-Autre option (dans le cas d'un traducteur ad hoc, pour l'édition numérique ou l'édition moderne utilisée comme source) : `<respStmt>`/`<persName>`
-
-Recommandations : Renseigner la personne responsable de la traduction d'une oeuvre dépend avant tout du statut de cette dernière. S'il s'agit d'un traducteur historique (dans le cas où la traduction est une manifestation de l'oeuvre), celui-ci est renseigné comme un <contributor> au sein de <workList>. Sa fonction précise est indiquée à l'aide de @role="translator" - le terme "translator" fait partie des Marc Relators ainsi que du vocabulaire des fonctions de Doremus. L'identifiant du traducteur (@xml:id) doit être ajouté dans la définition de la langue <language>.
-
-Exemple :
-```
-<workList xml:id="...">
-   <work xml:id="...">
-      <contributor>
-         <persName xml:id="T1" role="translator" auth.uri="...">XXX</persName>
-      </contributor>   
-      <langUsage>
-         <language xml:id="Lat" type="original">Latin</language>
-         <language xml:id="Fr" resp="T1" type="translation">French</language>
-     </langUsage>          
-   </work>
-</workList>
-```
-Recommandations : Si, à l'inverse, il s'agit d'un traducteur ad hoc dont la traduction n'a qu'une valeur éditoriale, il est préférable de renseigner son identité dans <fileDesc>, avec l'ensemble des personnes disposant d'une responsabilité éditoriale. Le fonctionnement reste cependant le même que précédemment, dans la mesure où l'identifiant du traducteur doit à nouveau être indiqué dans la définition de la langue concernée (dans <workList>), via @resp. 
-
-Il est à noter que bien localiser la place du traducteur et de renseigner son identifiant dans <language> pallie l'absence de différence explicite en MEI entre un texte traduit constitutif de l'oeuvre (traduction historique) et un texte traduit pour les besoins de l'édition (traduction éditoriale). 
-
-Exemple :
-```
-<fileDesc xml:id="...">
-   <titleStmt xml:id="...">
-       <respStmt xml:id="...">
-          <persName xml:id="VV" role="translator" auth.uri="http://...">...</persName>
-       </respStmt>
-   </titleStmt>
-</fileDesc>
-
--------# plus bas
-
-<workList xml:id="...">
-   <work xml:id="...">
-      <langUsage>
-         <language xml:id="..." type="original">...</language>
-         <language xml:id="Fr" resp="VV" type="translation">...</language>
-     </langUsage>          
-   </work>
-</workList>
-```
-
-#### Titre de l'oeuvre 
+##### Titre de l'oeuvre 
 
 Clé HUMDRUM :  OTL
 
@@ -912,7 +511,7 @@ Titre simple d'une oeuvre :
 
 Recommandation : Dans le cas de sections ou de mouvements d'une oeuvre, il est nécessaire de faire une distinction entre le titre de la partie encodée et l'oeuvre globale. Pour cela, il est nécessaire d'utiliser l'attribut @type et la valeur "uniform". De même, afin de mieux catégoriser les différents niveaux de titres, il est conseillé d'employer <titlePart>. La valeur "subordinate" peut être pratique pour hiérarchiser les divers syntagmes d'un même niveau de titre, comme le mouvement ou numéro d'opus.
 
-#### Titre d'un mouvement d'une oeuvre :
+##### Titre d'un mouvement d'une oeuvre :
 
 ```
 <workList xml:id="...">
@@ -928,7 +527,7 @@ Recommandation : Dans le cas de sections ou de mouvements d'une oeuvre, il est n
 ```
 Recommandation : Il est à noter que le renseignement du titre, métadonnée de première importance, est paradoxalement négligé dans les guidelines MEI. Divers exemples suggèrent une distinction minimale des niveaux de titres et une certaine liberté dans leur troncation. La raison réside certainement dans l'ambiguïté qui dérive des différentes formes de titres et de leurs usages multiples. Bien que @type soit régi par les valeurs contrôlées listées ci-dessus, les guidelines illustrent à l'occasion l'usage non conventionnel de @type="subtitle" pour encoder un syntagme subordonné au titre principal. Nous nous limiterons ici aux seuls vocables contrôlés précisés précédemment.
 
-#### Titre courant de l'oeuvre
+##### Titre courant de l'oeuvre
 
 Clé HUMDRUM : OTP
 
@@ -1014,6 +613,410 @@ Exemple :
    </work>
 </workList>  
 ```
+#### b. Compositeur, librettiste, _etc._
+##### Compositeur de l'offre musicale
+
+Clé HUMDRUM : COM
+
+Définition : Indique le nom du compositeur de l'œuvre.
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<composer>`
+
+Autre option : `<persName role="creator">`
+
+Recommandations : Le ou les compositeurs renseignés ici ne concernent que l'oeuvre encodée dans le fichier MEI et non une oeuvre tierce. À noter également que la valeur de rôle est libre. Toutefois, il est conseillé de suivre un thesaurus ou un vocabulaire contrôlé dans un souci de standardisation tels que VIAFF. Pour finir, nous préconisons de renseigner un URI identifiant l'individu concerné sur le web afin d'améliorer l'interopérabilité des métadonnées (ici aussi, préciser). 
+
+Exemples :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <composer xml:id=""..."">
+          <persName role=""creator"" (""composer"") auth.uri=""http://..."">...</persName>
+      </composer>
+   </work>
+</workList>
+```
+```
+"<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <expressionList xml:id=""..."">  
+        <expression xml:id=""..."">
+          <composer xml:id=""..."">
+            <persName role=""creator"" (""composer""?) auth.uri=""http://..."">...</persName>
+          </composer>
+        </expression>
+      </expressionList>
+   </work>
+</workList>"
+```
+
+Dans le cas de plusieurs compositeurs, recourir à une numération dans le cadre de role ou de l'xml id. Ex :
+
+`<persName role="creator1">`
+
+##### Compositeur attribué
+
+Clé HUMDRUM : COA 
+
+Définition : Désigne un compositeur attribué sur la base de preuves internes, externes ou par conjecture.  
+
+Chapitre des Guidelines : 3.6 Work Description  
+
+Balise : `<composer evidence="...">` 
+
+Autre option : `<persName>`
+
+Recommandations : La provenance de l’attribution doit être précisée à l'aide de l'attribut @evidence et des valeurs suivantes="internal, external, conjecture".  
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <composer xml:id=""..."" evidence=""..."" (internal, external or conjecture)>
+          <persName auth.uri=""http://..."">...</persName>
+      </composer>
+   </work>
+</workList>
+```
+
+##### Compositeur soupçonné
+
+Clé HUMDRUM : COS
+
+Définition : Désigne un compositeur soupçonné avec un niveau de certitude.
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<composer>`
+
+Autre option : `<persName>`
+
+Recommandations : Il est conseillé d’utiliser l’attribut @cert pour indiquer le degré de certitude. Les valeurs autorisées sont : high, 
+medium, low ou unknown.
+
+Exemple:
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="..." cert="low">
+          <persName role="suspected creator" auth.uri="http://...">Nom soupçonné</persName>
+      </composer>
+   </work>
+</workList>
+```
+
+##### Alias ou pseudonyme du compositeur
+
+Clé HUMDRUM : COL
+
+Définition : Indique un alias ou pseudonyme d’un compositeur.
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<persName>` et `<foreName>`
+
+Autre option : `<foreName>` et `<famName>`
+
+Recommandations : Peut être utilisé pour les noms d’emprunt, les noms de plume ou les pseudonymes historiques. Il est à noter que d'autres balises peuvent couvrir des sens de nomination plus fins : famName, genName, addName, genName, nameLink, et roleName. Leur gestion est sensiblement identique à celle de <foreName>.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="...">
+          <persName role="creator" auth.uri="http://...">Nom réel</persName>
+          <persName>
+            <foreName>Alias</foreName>
+          </persName>  
+      </composer>
+   </work>
+</workList>
+```
+
+##### Dates de naissance et de décès du compositeur
+
+Clé HUMDRUM : CDT
+
+Définition : Indique les dates de naissance et de décès du compositeur.
+
+Chapitre des Guidelines : -
+
+Balise : `<persName>` avec les attributs @startdate et @enddate.
+
+Recommandations : Peut être omis si le compositeur est référencé avec une URI externe.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="...">
+          <persName startdate="1685" enddate="1750" auth.uri="http://...">Nom du compositeur</persName>
+      </composer>
+   </work>
+</workList>
+```
+
+##### Nationalité du compositeur
+
+Clé HUMDRUM : CNT
+
+Définition : Indique la nationalité du compositeur.
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<annot>` 
+
+Recommandations : Peut être omis si le compositeur est référencé avec une URI externe.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <composer xml:id="...">
+          <persName auth.uri="http://...">Nom du compositeur</persName>
+          <annot label="nationality">Français</annot>
+      </composer>
+   </work>
+</workList>
+```
+
+##### Lieu de naissance et de décès d'un compositeur
+
+Clé HUMDRUM : CBL et CDL
+
+Définition : Indique le lieu de naissance et de décès d'un compositeur.
+
+Chapitre des Guidelines : -
+
+Balise : `<persName>` et `<date>` avec les attributs @startdate et @enddate.
+
+Recommandations : Peut être omis si le compositeur est référencé avec un URI externe. Il est conseillé d'utiliser un URI, via @auth.uri, pour préciser le lieu. Nous préconisons l'usage d'un URI GeoNames.  
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <composer xml:id=""..."">
+          <persName auth.uri=""http://..."">...</persName>
+          <date stardate=""..."">
+             <country auth.uri="...">XXX</country>
+          </date>
+          <date enddate=""..."">
+             <country>XXX</country>
+         </date>     
+      </composer>
+   </work>
+</workList>
+```
+##### Nom du librettiste
+
+Clé HUMDRUM : LIB
+
+Définition : Indique le nom du librettiste de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise : `<librettist>`
+
+Autre option : `<persName role="librettist">`
+
+Exemple :
+```
+<workList xml:id=""..."">
+   <work xml:id=""..."">
+      <librettist>
+         <persName auth.uri=""...""></persName>
+      </librettist>   
+   </work>
+</workList>
+```
+
+##### Nom de l'arrangeur 
+
+Clé HUMDRUM : LAR
+
+Définition : Indique le nom de l'arrangeur de l'oeuvre. 
+
+Chapitre des Guidelines : 3.6 Work Description
+
+Balise : `<arranger>`
+
+Autre option : `<persName role="arranger">`
+
+Recommandations : Suivant les guidelines MEI pour <arranger>, il est uniquement question du sens "classique" de la fonction - celui qui transcrit la pièce pour une nomenclature musicale différente de l'originale. Pour "orchestrateur", voir ci-dessous.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <arranger>
+         <persName auth.uri="..."></persName>
+      </arranger>   
+   </work>
+</workList>
+```
+
+##### Nom de l'orchestrateur 
+
+Clé HUMDRUM : LOR
+
+Définition : Indique le nom de l'orchestrateur de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise : `<arranger role="orchestrator">`
+
+Autre option : `<persName role="orchestrator">`
+
+Recommandations : Comme dit ci-dessus, <arranger> représente uniquement le sens "classique" de la fonction : la personne qui transcrit la pièce pour une nomenclature musicale différente de l'originale. Il est donc nécessaire de préciser à l'aide de @role la qualité spécifique de l'arrangeur.  Dans la mesure où "orchestrator" n'est pas présent dans les Marc Relators, nous proposons de nous appuyer sur le vocabulaire Doremus des fonctions, comprenant "arranger" ainsi que de nombreuses sous-fonctions comme "orchestrator", "creator_of_musical_harmonization" ou encore "creator_of_musical_paraphrase" (https://github.com/DOREMUS-ANR/knowledge-base/blob/master/vocabularies/function.ttl).
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <arranger>
+         <persName role="orchestrator" auth.uri="..."></persName>
+      </arranger>   
+   </work>
+</workList>
+```
+##### Langue originaire du texte
+
+Clé HUMDRUM : TXO
+
+Définition : Indique la langue originale de l'oeuvre encodée. 
+
+Chapitre des Guidelines : 3.6.6 Language Usage
+
+Balise : `<langUsage>/<language>`
+
+Autre option : -
+
+Recommandations : <langUsage> contient l'ensemble des langues devant être décrites dans le fichier MEI. Dans le cas d'une seule langue renseignée, ici la langue originale, il n'apparait pas nécessaire de s'encombrer d'un attribut le précisant (comme dans l'exemple ci-dessous). Pour la distinction de plusieurs langues dans le cas de traductions ou d'adaptations, voir ci-dessous. 
+
+Il est cependant conseillé, pour des questions d'interopérabilité, d'ajouter l'identifiant ISO de la langue renseignée à l'aide des attributs @auth.uri et @uri.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="..." auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639">French</language>
+     </langUsage>         
+   </work>
+</workList>
+```
+
+##### Langue originale de la pièce
+
+Clé HUMDRUM : TXO
+
+Définition : Indique la langue originale de l'oeuvre encodée. 
+
+Chapitre des Guidelines : 3.6.6 Language Usage
+
+Balise : `<langUsage>/<language>`
+
+Autre option : -
+
+Recommandations : <langUsage> contient l'ensemble des langues devant être décrites dans le fichier MEI. Dans le cas d'une seule langue renseignée, ici la langue originale, il n'apparait pas nécessaire de s'encombrer d'un attribut le précisant (comme dans l'exemple ci-dessous). Pour la distinction de plusieurs langues dans le cas de traductions ou d'adaptations, voir ci-dessous. 
+
+Il est cependant conseillé, pour des questions d'interopérabilité, d'ajouter l'identifiant ISO de la langue renseignée à l'aide des attributs @auth.uri et @uri.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="..." auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639">French</language>
+     </langUsage>         
+   </work>
+</workList>
+```
+
+##### Langue de la pièce encodée (si différente de la langue originale)
+
+Clé HUMDRUM : TXL
+
+Définition : Indique la langue de l'oeuvre encodée, si différente de la langue originale (traduction, adaptation, etc). 
+
+Chapitre des Guidelines : 3.6.6 Language Usage
+
+Balise : `<langUsage>/<language>`
+
+Autre option : -
+
+Recommandations : En cas de langue traduite utilisée au sein du fichier, il semble que la seule possibilité en MEI (en raison de l'absence du <ProfilDesc> de la TEI) est de préciser la nature des langues à l'aide d'un @type (type="original", type="translation"). C'est à ce niveau que la balise <langUsage> trouve véritablement son sens en permettant de lister plusieurs langues. 
+
+En plus de l'identifiant ISO, il est conseillé de préciser un @xml:id propre à chaque langue afin de pouvoir renseigner ce même identifiant dans la partie <music>, dans <verse> ou <syl> à l'aide de @xml:lang - précisant ainsi la langue utilisée pour chaque entité textuelle présente dans l'édition numérique.  
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="Lat" auth.uri="https://iso639-3.sil.org/code/lat" uri="ISO 639-3" type="original">Latin</language>
+         <language xml:id="Fr" auth.uri="https://iso639-3.sil.org/code/fra" uri="ISO 639-3" type="translation">French</language>
+     </langUsage>          
+   </work>
+</workList>
+```
+##### Traducteur du texte
+
+Clé HUMDRUM : TRN
+
+Définition : Indique, le cas échéant, l'identité de la personne responsable de la traduction de l'oeuvre. 
+
+Chapitre des Guidelines : -
+
+Balise (dans le cas d'un traducteur historique, propre à l'oeuvre encodée) : `<contributor>`/`<persName>`
+
+Autre option (dans le cas d'un traducteur ad hoc, pour l'édition numérique ou l'édition moderne utilisée comme source) : `<respStmt>`/`<persName>`
+
+Recommandations : Renseigner la personne responsable de la traduction d'une oeuvre dépend avant tout du statut de cette dernière. S'il s'agit d'un traducteur historique (dans le cas où la traduction est une manifestation de l'oeuvre), celui-ci est renseigné comme un <contributor> au sein de <workList>. Sa fonction précise est indiquée à l'aide de @role="translator" - le terme "translator" fait partie des Marc Relators ainsi que du vocabulaire des fonctions de Doremus. L'identifiant du traducteur (@xml:id) doit être ajouté dans la définition de la langue <language>.
+
+Exemple :
+```
+<workList xml:id="...">
+   <work xml:id="...">
+      <contributor>
+         <persName xml:id="T1" role="translator" auth.uri="...">XXX</persName>
+      </contributor>   
+      <langUsage>
+         <language xml:id="Lat" type="original">Latin</language>
+         <language xml:id="Fr" resp="T1" type="translation">French</language>
+     </langUsage>          
+   </work>
+</workList>
+```
+Recommandations : Si, à l'inverse, il s'agit d'un traducteur ad hoc dont la traduction n'a qu'une valeur éditoriale, il est préférable de renseigner son identité dans <fileDesc>, avec l'ensemble des personnes disposant d'une responsabilité éditoriale. Le fonctionnement reste cependant le même que précédemment, dans la mesure où l'identifiant du traducteur doit à nouveau être indiqué dans la définition de la langue concernée (dans <workList>), via @resp. 
+
+Il est à noter que bien localiser la place du traducteur et de renseigner son identifiant dans <language> pallie l'absence de différence explicite en MEI entre un texte traduit constitutif de l'oeuvre (traduction historique) et un texte traduit pour les besoins de l'édition (traduction éditoriale). 
+
+Exemple :
+```
+<fileDesc xml:id="...">
+   <titleStmt xml:id="...">
+       <respStmt xml:id="...">
+          <persName xml:id="VV" role="translator" auth.uri="http://...">...</persName>
+       </respStmt>
+   </titleStmt>
+</fileDesc>
+
+-------# plus bas
+
+<workList xml:id="...">
+   <work xml:id="...">
+      <langUsage>
+         <language xml:id="..." type="original">...</language>
+         <language xml:id="Fr" resp="VV" type="translation">...</language>
+     </langUsage>          
+   </work>
+</workList>
+```
+#### c. Informations liées à l'édition
 
 #### Numéro d'opus
 
