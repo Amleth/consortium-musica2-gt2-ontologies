@@ -1090,7 +1090,7 @@ Exemple :
 <workList>  
 ```
 
-#### Committant (commettant ?)
+#### Committant (commettant ? commanditaire ?)
 
 Clé HUMDRUM : OCO
 
