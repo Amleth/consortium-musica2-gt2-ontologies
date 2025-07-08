@@ -28,8 +28,8 @@ Le fichier MEI que nous sommes en train de renseigner constitue d'ailleurs une a
 Il est également important de noter que notre protocole s'appuie sur un principe de redondance : toutes les informations nécessaires doivent être renseignées à chaque niveau du header et, le cas échéant, du modèle FRBR. Il est ainsi probable que des métadonnées soient régulièrement répétées, par exemple le nom du compositeur ou le titre de l’œuvre.
 
 ### 3. Description du fichier MEI encodé <fileDesc>
-
-#### Titre de l'édition MEI
+#### a. Titre
+##### Titre de l'édition MEI
 
 Clé HUMDRUM : ≈ OTL
 
@@ -54,7 +54,8 @@ Exemple :
 ```
 Recommandations : Dans <fileDesc>, il n'est pas nécessaire que le titre dispose d'une granularité fine comparable au renseignement du titre de l'oeuvre dans <workList>. Il n'existe cependant aucune restriction. Le plus important est de rester vigilant quant à la hiérarchie des titres spécifiée à l'aide de l'attribut @title dont les valeurs sont contrôlées (pour plus d'information sur les niveaux de titres, voir "Titre alternatif de l'oeuvre"). 
 
-#### Compositeur de l'édition MEI encodée
+#### b. Compositeur
+##### Compositeur de l'édition MEI encodée
 
 Clé HUMDRUM : COM
 
@@ -79,7 +80,7 @@ Exemples :
 </fileDesc>"
 ```
 
-#### Compositeur attribué à l'édition MEI encodée
+##### Compositeur attribué à l'édition MEI encodée
 
 Clé HUMDRUM : COA 
 
@@ -103,8 +104,8 @@ Exemple :
    </titleStmt>
 </fileDesc>"
 ```
-
-#### Éditeur de l'édition électronique 
+#### c. Informations liées à l'édition
+##### Éditeur de l'édition électronique 
 
 Clé HUMDRUM : YEP
 
@@ -131,7 +132,7 @@ Exemple :
     </respStmt>
 ```
 
-#### Date et propriétaire du copyright de l'édition électronique
+##### Date et propriétaire du copyright de l'édition électronique
 
 Clé HUMDRUM : YEC
 
