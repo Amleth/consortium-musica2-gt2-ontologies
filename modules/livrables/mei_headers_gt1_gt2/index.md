@@ -1215,7 +1215,6 @@ Exemple :
       </classification>
 ```
 
-
 ##### Désignation du style/période/typologie de l'œuvre
 
 Clé HUMDRUM : AST
@@ -1284,8 +1283,7 @@ Exemple :
 </workList>  
 ```
 
-
-#### Classification métrique
+##### Classification métrique
 
 Clé HUMDRUM : AMT
 
@@ -1304,8 +1302,7 @@ Exemple :
 
 ```
 
-
-#### Effectif
+##### Effectif
 
 Clé HUMDRUM : AIN
 
@@ -1324,10 +1321,9 @@ Exemple :
 
 ```
 
-
 ### Dans la partie <music> (il faut dire que ce genre d'usage n'est pas recommandé) 
 
-#### Numéro d'acte (<music?>)
+##### Numéro d'acte (<music?>)
 
 Clé HUMDRUM : OAC
 
@@ -1363,8 +1359,7 @@ Exemple :
 
 ```
 
-
-#### Numéro de scène (<music?>)
+##### Numéro de scène (<music?>)
 
 Clé HUMDRUM : OSC
 
@@ -1400,8 +1395,7 @@ Exemple :
 
 ```
 
-
-#### Numéro de mouvement (<music?>)
+##### Numéro de mouvement (<music?>)
 
 Clé HUMDRUM : OMV
 
@@ -1427,8 +1421,7 @@ Exemple :
 
 ```
 
-
-#### Désignation du mouvement ou nom du mouvement
+##### Désignation du mouvement ou nom du mouvement
 
 Clé HUMDRUM : OMD
 
@@ -1454,7 +1447,7 @@ Exemple :
 
 ```
 
-#### Committant (commettant ? commanditaire ?)
+##### Committant (commettant ? commanditaire ?)
 
 Clé HUMDRUM : OCO
 
@@ -1492,8 +1485,7 @@ Exemple :
 
 ```
 
-
-#### Note de format libre / Nota bene
+##### Note de format libre / Nota bene
 
 Clé HUMDRUM : ONB
 
@@ -1512,7 +1504,8 @@ Exemple :
 
 ```
 
-#### Nom du groupe des interprètes
+#### e. Interprétation de l'œuvre
+##### Nom du groupe des interprètes
 
 Clé HUMDRUM : MGN
 
@@ -1548,7 +1541,7 @@ Exemple :
 ```
 
 
-#### Nom de l'interprète
+##### Nom de l'interprète
 
 Clé HUMDRUM : MPN
 
