@@ -54,7 +54,7 @@ Exemple :
 ```
 Recommandations : Dans <fileDesc>, il n'est pas nécessaire que le titre dispose d'une granularité fine comparable au renseignement du titre de l'oeuvre dans <workList>. Il n'existe cependant aucune restriction. Le plus important est de rester vigilant quant à la hiérarchie des titres spécifiée à l'aide de l'attribut @title dont les valeurs sont contrôlées (pour plus d'information sur les niveaux de titres, voir "Titre alternatif de l'oeuvre"). 
 
-#### Compositeur de l'offre musicale
+#### Compositeur de l'édition MEI encodée
 
 Clé HUMDRUM : COM
 
@@ -75,6 +75,31 @@ Exemples :
        <composer xml:id=""..."">
           <persName role=""creator"" auth.uri=""http://..."">...</persName>
        </composer>
+   </titleStmt>
+</fileDesc>"
+```
+
+#### Compositeur attribué à l'édition MEI encodée
+
+Clé HUMDRUM : COA 
+
+Définition : Désigne un compositeur attribué sur la base de preuves internes, externes ou par conjecture.  
+
+Chapitre des Guidelines : 3.6 Work Description  
+
+Balise : `<composer evidence="...">` 
+
+Autre option : `<persName>`
+
+Recommandations : La provenance de l’attribution doit être précisée à l'aide de l'attribut @evidence et des valeurs suivantes="internal, external, conjecture".  
+
+Exemple :
+```
+"<fileDesc xml:id=""..."">
+   <titleStmt xml:id=""..."">
+      <composer xml:id=""..."" evidence=""..."" (internal, external or conjecture)>
+          <persName role=""attributed creator"" (""attributed composer""?) auth.uri=""http://..."">...</persName>
+      </composer>
    </titleStmt>
 </fileDesc>"
 ```
