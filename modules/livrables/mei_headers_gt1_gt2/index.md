@@ -1760,6 +1760,95 @@ Exemple :
    </source>   
 </sourceDesc>"
 ```
+##### Titre de publication
+
+Clé HUMDRUM : PTL
+
+Définition : Titre de publication
+
+Chapitre des Guidelines : 
+
+Balise : <sourceDesc>
+   <source>
+      <bibl>
+         <title type="main"> Il nono libro de madrigali</title>
+         <title type="subordinate">a cinque voci (1599)</title>  
+      </bibl>
+   </source>
+
+Autre option : 
+
+Recommandations : 
+
+Exemple :
+```
+<sourceDesc>
+   <source>
+      <bibl>
+         <title type="main"> Il nono libro de madrigali</title>
+         <title type="subordinate">a cinque voci (1599)</title>  
+      </bibl>
+   </source>
+```
+##### Titre du manuscrit
+
+Clé HUMDRUM : SMS
+
+Définition : Titre du manuscrit
+
+Chapitre des Guidelines : 
+```
+Balise : <source recordtype="d">
+  <bibl>
+     <physLoc>
+       <repository>
+          <corpName>Bibliothèque nationale de France</corpName>
+          <abbr>BnF</abbr>
+       </repository>
+     </physLoc>
+     <relatedItem>
+       <bibl>
+          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+          <abbr>Fr. 146</abbr>
+          <title type="alternative">Roman de Fauvel</title>
+          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+       </bibl>
+     </relatedItem>
+  </bibl>
+</source>
+```
+Autre option : 
+
+```
+<manifestation recordtype="d">
+   <identifier>
+      <title>Le Roman de Fauvel</title>
+   </identifier>
+   <langUsage>
+      <language n="1">Français</language>
+      <language n="2">Latin</language>
+   </langUsage>   
+   <itemList>
+      <item recordtype="d">
+         <physLoc>
+            <repository>
+               <corpName>Bibliothèque nationale de France</corpName>
+               <abbr>BnF</abbr>
+            </repository>
+         </physLoc>
+         <identifier>
+            <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
+            <abbr>Fr. 146</abbr>
+            <title type="alternative">Roman de Fauvel</title>
+            <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
+         </identifier>  
+         <availability>
+            <accessRestrict>Non consultable en bibliothèque</accessRestrict>
+         </availability> 
+      </item>
+   </itemList>
+```
+
 #### b. Compositeur
 ##### Compositeur de la source utilisée pour l'édition digitale
 
@@ -1923,38 +2012,6 @@ Exemple :
             </editor> 
             <date>1999</date> 
          </edition>     
-      </bibl>
-   </source>
-```
-
-
-##### Titre de publication
-
-Clé HUMDRUM : PTL
-
-Définition : Titre de publication
-
-Chapitre des Guidelines : 
-
-Balise : <sourceDesc>
-   <source>
-      <bibl>
-         <title type="main"> Il nono libro de madrigali</title>
-         <title type="subordinate">a cinque voci (1599)</title>  
-      </bibl>
-   </source>
-
-Autre option : 
-
-Recommandations : 
-
-Exemple :
-```
-<sourceDesc>
-   <source>
-      <bibl>
-         <title type="main"> Il nono libro de madrigali</title>
-         <title type="subordinate">a cinque voci (1599)</title>  
       </bibl>
    </source>
 ```
@@ -2148,61 +2205,6 @@ Exemple :
       </bibl>
    </source>
 ```
-
-##### Titre du manuscrit
-
-Clé HUMDRUM : SMS
-
-Définition : Titre du manuscrit
-
-Chapitre des Guidelines : 
-
-Balise : <source recordtype="d">
-  <bibl>
-     <physLoc>
-       <repository>
-          <corpName>Bibliothèque nationale de France</corpName>
-          <abbr>BnF</abbr>
-       </repository>
-     </physLoc>
-     <relatedItem>
-       <bibl>
-          <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
-          <abbr>Fr. 146</abbr>
-          <title type="alternative">Roman de Fauvel</title>
-          <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
-       </bibl>
-     </relatedItem>
-  </bibl>
-</source>
-
-Autre option : <manifestation recordtype="d">
-   <identifier>
-      <title>Le Roman de Fauvel</title>
-   </identifier>
-   <langUsage>
-      <language n="1">Français</language>
-      <language n="2">Latin</language>
-   </langUsage>   
-   <itemList>
-      <item recordtype="d">
-         <physLoc>
-            <repository>
-               <corpName>Bibliothèque nationale de France</corpName>
-               <abbr>BnF</abbr>
-            </repository>
-         </physLoc>
-         <identifier>
-            <identifier auth="BnF" auth.uri="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc45158c">Français 146</identifier>
-            <abbr>Fr. 146</abbr>
-            <title type="alternative">Roman de Fauvel</title>
-            <locus label="folio" from="1r" to="2r">ff. 1r-2r</locus>
-         </identifier>  
-         <availability>
-            <accessRestrict>Non consultable en bibliothèque</accessRestrict>
-         </availability> 
-      </item>
-   </itemList>
 
 Recommandations : 
 
