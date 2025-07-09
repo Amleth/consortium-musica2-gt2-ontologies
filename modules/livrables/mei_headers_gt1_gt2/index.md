@@ -1735,8 +1735,8 @@ Exemple :
 
 ```
 ### Description de la source <SourceDesc>
-
-#### Titre de la source utilisée pour l'édition digitale
+#### a. Titre
+##### Titre de la source utilisée pour l'édition digitale
 
 Clé HUMDRUM :  OTL
 
@@ -1760,7 +1760,8 @@ Exemple :
    </source>   
 </sourceDesc>"
 ```
-#### Compositeur de la source utilisée pour l'édition digitale
+#### b. Compositeur
+##### Compositeur de la source utilisée pour l'édition digitale
 
 Clé HUMDRUM : COM
 
@@ -1788,7 +1789,8 @@ Exemples :
    </source>
 </sourceDesc>"
 ```
-#### Éditeur de la source utilisée pour l'édition digitale
+#### c. Informations liées à l'édition 
+##### Éditeur de la source utilisée pour l'édition digitale
 
 Clé HUMDRUM : PED
 
@@ -1837,7 +1839,7 @@ Si c'est une personne :
    </source>
 ```
 
-#### Premier éditeur
+##### Premier éditeur
 
 Clé HUMDRUM : PPR
 
@@ -1876,7 +1878,7 @@ Exemple :
    </source>
 ```
 
-#### Date de la première publication
+##### Date de la première publication
 
 Clé HUMDRUM : PDT
 
@@ -1926,7 +1928,7 @@ Exemple :
 ```
 
 
-#### Titre de publication
+##### Titre de publication
 
 Clé HUMDRUM : PTL
 
@@ -1957,8 +1959,7 @@ Exemple :
    </source>
 ```
 
-
-#### Lieu de publication
+##### Lieu de publication
 
 Clé HUMDRUM : PPP
 
@@ -2005,8 +2006,7 @@ Exemple :
    </source>
 ```
 
-
-#### Numéro de catalogue de l'éditeur (ex. cotage)
+##### Numéro de catalogue de l'éditeur (ex. cotage)
 
 Clé HUMDRUM : PC#
 
@@ -2025,8 +2025,7 @@ Exemple :
 
 ```
 
-
-#### Numéro de catalogue scientifique (abr.) [ex. BWV 551]
+##### Numéro de catalogue scientifique (abr.) [ex. BWV 551]
 
 Clé HUMDRUM : SCT
 
@@ -2045,8 +2044,7 @@ Exemple :
 
 ```
 
-
-#### Numéro de catalogue scientifique (pas abr.) [ex. Koechel 117]
+##### Numéro de catalogue scientifique (pas abr.) [ex. Koechel 117]
 
 Clé HUMDRUM : SCA
 
@@ -2065,7 +2063,7 @@ Exemple :
 
 ```
 
-#### Numéro
+##### Numéro
 
 Clé HUMDRUM : ONM
 
@@ -2082,7 +2080,7 @@ Recommandations :
 Exemple :
 ```
 ```
-#### Volume
+##### Volume
 
 Clé HUMDRUM : OVM
 
@@ -2122,7 +2120,7 @@ Exemple :
    </bibl>
 </source>
 ```
-#### Publication
+##### Publication
 
 Clé HUMDRUM : PUB
 
@@ -2151,7 +2149,7 @@ Exemple :
    </source>
 ```
 
-#### Titre du manuscrit
+##### Titre du manuscrit
 
 Clé HUMDRUM : SMS
 
@@ -2230,7 +2228,7 @@ Exemple :
 </source>
 ```
 
-#### Lieu de conservation du manuscrit
+##### Lieu de conservation du manuscrit
 
 Clé HUMDRUM : SML
 
@@ -2309,7 +2307,7 @@ Exemple :
 </source>
 ```
 
-#### Info sur l'accès au manuscrit
+##### Info sur l'accès au manuscrit
 
 Clé HUMDRUM : SMA
 
@@ -2396,7 +2394,7 @@ Exemple :
 </source>
 ```
 
-#### Document d'origine de l'édition électronique
+##### Document d'origine de l'édition électronique
 
 Clé HUMDRUM : YOR
 
@@ -2414,7 +2412,7 @@ Exemple :
 ```
 
 ```
-#### Propriétaire du document d'origine
+##### Propriétaire du document d'origine
 
 Clé HUMDRUM : YOO
 
@@ -2432,7 +2430,7 @@ Exemple :
 ```
 
 ```
-#### Année du copyright originaire
+##### Année du copyright originaire
 
 Clé HUMDRUM : YOE
 
@@ -2450,7 +2448,7 @@ Exemple :
 ```
 
 ```
-#### Éditeur du document d'origine
+##### Éditeur du document d'origine
 
 Clé HUMDRUM : EED
 
