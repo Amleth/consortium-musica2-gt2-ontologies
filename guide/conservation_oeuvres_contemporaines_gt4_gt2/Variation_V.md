@@ -30,8 +30,8 @@ B(lrm:F2_expression<br>37 remarques à partir d'une production audiovisuelle) --
 
 W(crm:E12_creation) --> |crm:P2_has_type| X(crm:E55_has_type<br>Enregistrement)
 Y(lrm:F5_item) --> |crm:P2_has_type| V(crm:E55_type<br>Bande)
-W(crm:E12_creation) ---> |crm:P14_carried_out_by| R(crm:E21_person<br>John Cage)
-W(crm:E12_creation) --> |crm:P108_has_produced| Y(lrm:F5_item)
+W(crm:E65_creation) ---> |crm:P14_carried_out_by| R(crm:E21_person<br>John Cage)
+W(crm:E65_creation) --> |crm:P108_has_produced| Y(lrm:F5_item)
 
 O(lrm:F28_expression_creation<br>Variation V) -->|crm:P14_carried_out_by| Q(crm:E21_person<br>Merce Cunningham)
 O(lrm:F28_expression_creation<br>Variation V) -->|frbr:R17_created| K(lrm:F28_expression_creation<br>Chorégraphie)
